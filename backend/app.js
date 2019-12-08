@@ -15,7 +15,7 @@ app.get('/handlers', (req, res) => {
 })
 
 
-app.get('/query/:shop/:querystring', (req, res) => {
+app.get('/query/:shop/:querystring', async (req, res) => {
     const shop = req.params.shop
     if (!(shop in HANDLERS)){
         return res.json({error: 'invalid_handler'})
@@ -23,7 +23,7 @@ app.get('/query/:shop/:querystring', (req, res) => {
     const handler = require(HANDLERS[shop])
     res.json({
         shop: shop,
-        data: handler(req.params.querystring)
+        data: await handler(req.params.querystring)
     })
 })
 
