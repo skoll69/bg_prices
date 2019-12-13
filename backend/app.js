@@ -5,6 +5,7 @@ const HANDLERS = {
     lautapelit: './parsers/lautapelit.js',
     fantasiapelit: './parsers/fantasiapelit.js',
     puolenkuunpelit: './parsers/puolenkuunpelit.js',
+    poromagia: './parsers/poromagia.js',
 }
 
 const app = express()

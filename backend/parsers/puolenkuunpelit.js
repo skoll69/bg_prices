@@ -15,7 +15,7 @@ async function query(querystring){
             imageUrl: 'https://www.puolenkuunpelit.com/kauppa/' + items[i].firstChild.firstChild.getAttribute('src'),
             price: getPrice(items[i+2]),
             available: items[i+1].childNodes[6].getAttribute('src') == 'images/varastotuote_veryvihrea.gif',
-            itemUrl: items[i].firstChild.getAttribute('href'),
+            itemUrl: items[i].firstChild.getAttribute('href').replace('http:', 'https:'),
             currency: '€',
         })
     }

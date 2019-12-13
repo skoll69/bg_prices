@@ -9,6 +9,7 @@ const mockResponses = require('./mock_responses')
 const lautapelit = require('./parsers/lautapelit');
 const fantasiapelit = require('./parsers/fantasiapelit');
 const puolenkuunpelit = require('./parsers/puolenkuunpelit');
+const poromagia = require('./parsers/poromagia');
 
 chai.use(chaiHttp);
 
@@ -20,7 +21,7 @@ describe("Handlers", function(){
             .get('/handlers/')
             .end((err, res) => {
                 res.should.have.status(200);
-                res.body.should.have.length(3);
+                res.body.should.have.length(4);
                 done();
             })
     })
@@ -73,6 +74,22 @@ describe("Intergration", function(){
             let res = await chai.request(server).get('/query/puolenkuunpelit/dungeon%20lords')
             res.should.have.status(200);
             res.body.shop.should.equal('puolenkuunpelit');
+
+            let item = res.body.data[0]
+            item.should.have.property('name');
+            item.should.have.property('imageUrl');
+            item.should.have.property('price');
+            item.should.have.property('available');
+            item.should.have.property('itemUrl');
+            item.should.have.property('currency');
+        })
+    })
+
+    describe("Poromagia", function(){
+        xit("should return a proper data structure", async()=>{
+            let res = await chai.request(server).get('/query/poromagia/dungeon%20lords')
+            res.should.have.status(200);
+            res.body.shop.should.equal('poromagia');
 
             let item = res.body.data[0]
             item.should.have.property('name');
@@ -150,11 +167,33 @@ describe("Unit", function(){
             item.should.have.property('imageUrl', 'https://www.puolenkuunpelit.com/kauppa/images/zmg_dungeonlords.jpg');
             item.should.have.property('price', 39.9);
             item.should.have.property('available', true);
-            item.should.have.property('itemUrl', 'http://www.puolenkuunpelit.com/kauppa/product_info.php?manufacturers_id=23&products_id=41553');
+            item.should.have.property('itemUrl', 'https://www.puolenkuunpelit.com/kauppa/product_info.php?manufacturers_id=23&products_id=41553');
             item.should.have.property('currency', '€');
 
             item = res[1]
             item.should.have.property('price', 39);
+            item.should.have.property('available', false);
+        })
+    })
+
+    describe("Poromagia", function(){
+        it("should process the reponse", async function(){
+            let qs = 'spirint%20island'
+            nock('https://poromagia.com')
+            .get('/en/search/?q=' + qs)
+            .reply(200, mockResponses.RESPONSE_POROMAGIA)
+
+            res = await poromagia(qs)
+            item = res[0]
+            item.should.have.property('name', 'Spirit Island: Branch & Claw');
+            item.should.have.property('imageUrl', 'https://poromagia.com/media/cache/d7/c0/d7c0f057cee88ed86b37767114be6697.jpg');
+            item.should.have.property('price', 29.95);
+            item.should.have.property('available', true);
+            item.should.have.property('itemUrl', 'https://poromagia.com/en/catalogue/spirit-island-branch-claw-exp_147062/');
+            item.should.have.property('currency', '€');
+
+            item = res[1]
+            item.should.have.property('price', 71.95);
             item.should.have.property('available', false);
         })
     })
