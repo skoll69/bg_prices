@@ -10,7 +10,6 @@ async function query(querystring){
     let items = document.querySelectorAll('.centruutu')
     let out = [];
     for (const el of items) {
-        //console.log(el.firstChild.firstChild.childNodes[2].getAttribute('src'))
         out.push({
             name: el.firstChild.firstChild.firstChild.textContent,
             imageUrl: 'https://fantasiapelit.com/' + el.firstChild.firstChild.childNodes[2].getAttribute('src'),

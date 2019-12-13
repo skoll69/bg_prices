@@ -4,6 +4,7 @@ const cors = require('cors')
 const HANDLERS = {
     lautapelit: './parsers/lautapelit.js',
     fantasiapelit: './parsers/fantasiapelit.js',
+    puolenkuunpelit: './parsers/puolenkuunpelit.js',
 }
 
 const app = express()
