@@ -1,5 +1,4 @@
 const rp = require('request-promise')
-const request = require('request')
 
 const baseUrl = 'https://www.lautapelit.fi/sysNet/getProductsJSON/getProductsJSON.aspx?sua=1&lang=1&reID=1&sanaHaku='
 

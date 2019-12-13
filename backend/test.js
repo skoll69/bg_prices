@@ -89,7 +89,7 @@ describe("Unit", function(){
             item.should.have.property('price', 45);
             item.should.have.property('available', true);
             item.should.have.property('itemUrl', 'http://www.lautapelit.fi/product.asp?sua=1&lang=1&s=16588');
-            item.should.have.property('currency');
+            item.should.have.property('currency', '€');
 
             item = res[1]
             item.should.have.property('available', false);
@@ -107,10 +107,10 @@ describe("Unit", function(){
             item = res[0]
             item.should.have.property('name', 'Dungeon Lords');
             item.should.have.property('imageUrl', 'https://fantasiapelit.com/pikkukuva.php?xy=1&img=larg9/165665.jpg');
-            item.should.have.property('price', 45);
+            item.should.have.property('price', 50);
             item.should.have.property('available', true);
-            item.should.have.property('itemUrl', 'http://www.lautapelit.fi/product.asp?sua=1&lang=1&s=16588');
-            item.should.have.property('currency');
+            item.should.have.property('itemUrl', 'https://fantasiapelit.com/index.php?main=ai&kat=single&mista=indeksi&etsittava=_165665');
+            item.should.have.property('currency', '€');
 
             item = res[1]
             item.should.have.property('available', false);
