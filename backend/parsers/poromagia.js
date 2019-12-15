@@ -5,8 +5,8 @@ const { JSDOM } = jsdom;
 const baseUrl = 'https://poromagia.com/en/search/?q='
 
 async function query(querystring){
-    let data = await rp(baseUrl + querystring, {gzip: false})
-    let { document } = (new JSDOM(data)).window
+    let html = await rp(baseUrl + querystring)
+    let { document } = (new JSDOM(html)).window
     let items = document.querySelectorAll('.product_line')
     let out = [];
     for (const el of items) {
@@ -49,35 +49,3 @@ function getPriceContainer(el){
 }
 
 module.exports = query
-
-
-// function get_price_from_html(\DOMElement $data){
-//     return str_replace("€", "", get_price_container($data)->firstChild->firstChild->nodeValue);
-
-// }
-
-// function get_url_from_html(\DOMElement $data){
-//     return "http://www.poromagia.com".$data->childNodes->item(1)->firstChild->firstChild->getAttribute('href');
-// }
-
-// function get_image_url_from_html(\DOMElement $data){
-//     return "http://www.poromagia.com".$data->firstChild->firstChild->firstChild->firstChild->getAttribute('src');
-// }
-
-// function get_availability_from_html(\DOMElement $data){
-//     $item = get_price_container($data);
-//     if ($item->childNodes->length == 2){
-//         return strpos($item->childNodes->item(1)->firstChild->nodeValue, 'In stock') !== false;
-//     } else {
-//         return strpos($item->childNodes->item(1)->nodeValue, 'In stock') !== false;
-//     }
-//     return strpos(get_price_container($data)->firstChild->nodeValue, 'In stock') !== false;
-// }
-
-// function get_price_container($data){
-//     if ($data->childNodes->length == 3) {
-//         return $data->lastChild->firstChild->childNodes->item(1)->firstChild;
-//     } else {
-//         return $data->lastChild->childNodes->item(1)->childNodes->item(1)->firstChild;
-//     }
-// }

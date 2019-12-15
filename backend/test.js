@@ -10,6 +10,7 @@ const lautapelit = require('./parsers/lautapelit');
 const fantasiapelit = require('./parsers/fantasiapelit');
 const puolenkuunpelit = require('./parsers/puolenkuunpelit');
 const poromagia = require('./parsers/poromagia');
+const pelipeikko = require('./parsers/pelipeikko');
 
 chai.use(chaiHttp);
 
@@ -21,7 +22,7 @@ describe("Handlers", function(){
             .get('/handlers/')
             .end((err, res) => {
                 res.should.have.status(200);
-                res.body.should.have.length(4);
+                res.body.should.have.length(5);
                 done();
             })
     })
@@ -90,6 +91,22 @@ describe("Intergration", function(){
             let res = await chai.request(server).get('/query/poromagia/dungeon%20lords')
             res.should.have.status(200);
             res.body.shop.should.equal('poromagia');
+
+            let item = res.body.data[0]
+            item.should.have.property('name');
+            item.should.have.property('imageUrl');
+            item.should.have.property('price');
+            item.should.have.property('available');
+            item.should.have.property('itemUrl');
+            item.should.have.property('currency');
+        })
+    })
+
+    describe("Pelipeikko", function(){
+        xit("should return a proper data structure", async()=>{
+            let res = await chai.request(server).get('/query/pelipeikko/dungeon%20lords')
+            res.should.have.status(200);
+            res.body.shop.should.equal('pelipeikko');
 
             let item = res.body.data[0]
             item.should.have.property('name');
@@ -194,6 +211,32 @@ describe("Unit", function(){
 
             item = res[1]
             item.should.have.property('price', 71.95);
+            item.should.have.property('available', false);
+        })
+    })
+
+    describe("Pelipeikko", function(){
+        it("should process the reponse", async function(){
+            let qs = 'spirint%20island'
+            nock('https://pelipeikko.fi')
+            .get('/en/search?s=' + qs)
+            .reply(200, mockResponses.RESPONSE_PELIPEIKKO)
+            .get('/en/home/110-spirit-island')
+            .reply(200, mockResponses.RESPONSE_PELIPEIKKO_SPIRIT_ISLAND)
+            .get('/en/home/126-spirit-island-branch-claw')
+            .reply(200, mockResponses.RESPONSE_PELIPEIKKO_SPIRIT_ISLAND_BRANCH_CLAW)
+
+            res = await pelipeikko(qs)
+            item = res[0]
+            item.should.have.property('name', 'Spirit Island');
+            item.should.have.property('imageUrl', 'https://pelipeikko.fi/1394-home_default/spirit-island.jpg');
+            item.should.have.property('price', 71.95);
+            item.should.have.property('available', true);
+            item.should.have.property('itemUrl', 'https://pelipeikko.fi/en/home/110-spirit-island');
+            item.should.have.property('currency', '€');
+
+            item = res[1]
+            item.should.have.property('price', 28.95);
             item.should.have.property('available', false);
         })
     })

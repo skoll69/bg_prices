@@ -67,6 +67,1839 @@ module.exports = {
     Laji: []
   },
 
+  RESPONSE_PELIPEIKKO: `
+
+  <!doctype html>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Search</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1519654645">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1519654645">
+  <link rel="stylesheet" href="https://pelipeikko.fi/themes/digitalplug/assets/css/theme.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/modules/blockreassurance/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/js/jquery/ui/themes/base/minified/jquery-ui.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/modules/tc_imageslider/views/css/flexslider.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/themes/digitalplug/assets/css/custom.css" type="text/css" media="all">
+  <script type="text/javascript">
+		  var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"\u20ac0.00"},"total_including_tax":{"type":"total","label":"Total (tax incl.)","amount":0,"value":"\u20ac0.00"},"total_excluding_tax":{"type":"total","label":"Total (tax excl.)","amount":0,"value":"\u20ac0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"\u20ac0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Shipping","amount":0,"value":"Free"},"tax":{"type":"tax","label":"Included taxes","amount":0,"value":"\u20ac0.00"}},"products_count":0,"summary_string":"0 items","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"English (English)","iso_code":"en","locale":"en-US","language_code":"en-us","is_rtl":"0","date_format_lite":"d-m-Y","date_format_full":"d-m-Y H:i:s","id":1},"page":{"title":"","canonical":null,"meta":{"title":"Search","description":"","keywords":"","robots":"index"},"page_name":"search","body_classes":{"lang-en":true,"lang-rtl":false,"country-FI":true,"currency-EUR":true,"layout-left-column":true,"page-search":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Pelipeikko","logo":"\/img\/pelipeikko-logo-1506709164.jpg","stores_icon":"\/img\/logo_stores.png","favicon":"\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/pelipeikko.fi\/","current_url":"https:\/\/pelipeikko.fi\/en\/search?s=spirit+island","shop_domain_url":"https:\/\/pelipeikko.fi","img_ps_url":"https:\/\/pelipeikko.fi\/img\/","img_cat_url":"https:\/\/pelipeikko.fi\/img\/c\/","img_lang_url":"https:\/\/pelipeikko.fi\/img\/l\/","img_prod_url":"https:\/\/pelipeikko.fi\/img\/p\/","img_manu_url":"https:\/\/pelipeikko.fi\/img\/m\/","img_sup_url":"https:\/\/pelipeikko.fi\/img\/su\/","img_ship_url":"https:\/\/pelipeikko.fi\/img\/s\/","img_store_url":"https:\/\/pelipeikko.fi\/img\/st\/","img_col_url":"https:\/\/pelipeikko.fi\/img\/co\/","img_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/img\/","css_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/css\/","js_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/js\/","pic_url":"https:\/\/pelipeikko.fi\/upload\/","pages":{"address":"https:\/\/pelipeikko.fi\/en\/address","addresses":"https:\/\/pelipeikko.fi\/en\/addresses","authentication":"https:\/\/pelipeikko.fi\/en\/login","cart":"https:\/\/pelipeikko.fi\/en\/cart","category":"https:\/\/pelipeikko.fi\/en\/index.php?controller=category","cms":"https:\/\/pelipeikko.fi\/en\/index.php?controller=cms","contact":"https:\/\/pelipeikko.fi\/en\/contact-us---","discount":"https:\/\/pelipeikko.fi\/en\/discount","guest_tracking":"https:\/\/pelipeikko.fi\/en\/guest-tracking","history":"https:\/\/pelipeikko.fi\/en\/order-history","identity":"https:\/\/pelipeikko.fi\/en\/identity","index":"https:\/\/pelipeikko.fi\/en\/","my_account":"https:\/\/pelipeikko.fi\/en\/my-account","order_confirmation":"https:\/\/pelipeikko.fi\/en\/order-confirmation","order_detail":"https:\/\/pelipeikko.fi\/en\/index.php?controller=order-detail","order_follow":"https:\/\/pelipeikko.fi\/en\/order-follow","order":"https:\/\/pelipeikko.fi\/en\/order","order_return":"https:\/\/pelipeikko.fi\/en\/index.php?controller=order-return","order_slip":"https:\/\/pelipeikko.fi\/en\/credit-slip","pagenotfound":"https:\/\/pelipeikko.fi\/en\/page-not-found","password":"https:\/\/pelipeikko.fi\/en\/password-recovery","pdf_invoice":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/pelipeikko.fi\/en\/prices-drop","product":"https:\/\/pelipeikko.fi\/en\/index.php?controller=product","search":"https:\/\/pelipeikko.fi\/en\/search","sitemap":"https:\/\/pelipeikko.fi\/en\/sitemap","stores":"https:\/\/pelipeikko.fi\/en\/stores","supplier":"https:\/\/pelipeikko.fi\/en\/supplier","register":"https:\/\/pelipeikko.fi\/en\/login?create_account=1","order_login":"https:\/\/pelipeikko.fi\/en\/order?login=1"},"alternative_langs":{"en-us":"https:\/\/pelipeikko.fi\/en\/search?s=spirit+island","fi-fi":"https:\/\/pelipeikko.fi\/fi\/search?s=spirit+island"},"theme_assets":"\/themes\/digitalplug\/assets\/","actions":{"logout":"https:\/\/pelipeikko.fi\/en\/?mylogout="},"no_picture_image":{"bySize":{"cart_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-cart_default.jpg","width":80,"height":90},"small_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-small_default.jpg","width":80,"height":90},"medium_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-medium_default.jpg","width":239,"height":300},"home_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-home_default.jpg","width":239,"height":300},"large_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-large_default.jpg","width":670,"height":830}},"small":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-cart_default.jpg","width":80,"height":90},"medium":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-medium_default.jpg","width":239,"height":300},"large":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-large_default.jpg","width":670,"height":830},"legend":""}},"configuration":{"display_taxes_label":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":false},"quantity_discount":{"type":"price","label":"Price"},"voucher_enabled":1,"return_enabled":1},"field_required":[],"breadcrumb":{"links":[{"title":"Home","url":"https:\/\/pelipeikko.fi\/en\/"}],"count":1},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1576392293,"static_token":"08d2d7521b8f4b48450ba39ca67190a7","token":"f5874bf2707667ed1318e950f7b3cc4c"};
+		  var psr_icon_color = "#F19D76";
+		</script>
+  <script type="text/javascript">
+	  (window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+			  ga('create', 'UA-109858368-1', 'auto');
+				  
+	  ga('require', 'ec');
+  </script>
+  </head>
+  <body id="search" class="lang-en country-fi currency-eur layout-left-column page-search tax-display-enabled">
+  <main>
+  <header id="header">
+  <div class="header-banner">
+  </div>
+  <nav class="header-nav">
+  <div class="container">
+  <div class="nav-inner">
+  <div class="hidden-md-down">
+  <div class="left-nav">
+  <div id="_desktop_language_selector">
+  <div class="language-selector-wrapper">
+  
+  <div class="language-selector dropdown js-dropdown">
+  <span class="expand-more hidden-md-down" data-toggle="dropdown">English</span>
+  <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hidden-md-down">
+  <i class="material-icons expand-more">&#xE5CF;</i>
+  </a>
+  <ul class="dropdown-menu hidden-md-down">
+  <li class="current">
+  <a href="https://pelipeikko.fi/en/search?s=spirit+island" class="dropdown-item">English</a>
+  </li>
+  <li>
+  <a href="https://pelipeikko.fi/fi/search?s=spirit+island" class="dropdown-item">Suomi</a>
+  </li>
+  </ul>
+  <select class="link hidden-lg-up">
+  <option value="https://pelipeikko.fi/en/search?s=spirit+island" selected="selected">English</option>
+  <option value="https://pelipeikko.fi/fi/search?s=spirit+island">Suomi</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="right-nav">
+  <div id="tcblocktopcms">
+  <div class="tic-blocktopcms"><span style="font-size:11pt;line-height:107%;font-family:Calibri, sans-serif;color:#ffffff;" xml:lang="en-us" lang="en-us">Shipping Cost 5,5€, free above 80€</span></div>
+  </div>
+  </div>
+  </div>
+  <div class="hidden-lg-up text-xs-center mobile">
+  <div class="pull-xs-left" id="menu-icon">
+  <i class="material-icons menu-open">&#xE5D2;</i>
+  <i class="material-icons menu-close">&#xE5CD;</i>
+  </div>
+  <div class="pull-xs-right" id="_mobile_cart"></div>
+  <div class="pull-xs-right" id="_mobile_user_info"></div>
+  <div class="top-logo" id="_mobile_logo"></div>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </div>
+  </nav>
+  <div class="header-top">
+  <div class="container">
+  <div class="header_logo hidden-md-down" id="_desktop_logo">
+  <a href="https://pelipeikko.fi/">
+  <img class="logo img-responsive" src="/img/pelipeikko-logo-1506709164.jpg" alt="Pelipeikko">
+  </a>
+  </div>
+  <div id="_desktop_cart">
+  <div class="blockcart cart-preview inactive" data-refresh-url="//pelipeikko.fi/en/module/ps_shoppingcart/ajax">
+  <div class="header blockcart-header dropdown js-dropdown">
+  <a rel="nofollow" href="//pelipeikko.fi/en/cart?action=show" class="cart-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <span class="cart-products-count">
+  0
+  </span>
+  </a>
+  </div>
+  </div>
+  </div>
+  <div id="_desktop_user_info">
+  <div class="tm_userinfotitle"></div>
+  <div class="user-info">
+  <a href="https://pelipeikko.fi/en/my-account" title="Log in to your customer account" rel="nofollow">
+  <i class="material-icons">&#xE899;</i>
+  <span class="sign-in">Sign in</span>
+  </a>
+  </div>
+  </div>
+  <div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="//pelipeikko.fi/en/search">
+  <div class="searchtoggle">
+  <form method="get" action="//pelipeikko.fi/en/search">
+  <input type="hidden" name="controller" value="search">
+  <input type="text" name="s" value="spirit island" placeholder="Search our Products">
+  <button type="submit">
+  <span class="tc-search-icon"></span>
+  </button>
+  </form>
+  </div>
+  </div>
+  
+  <script type="application/ld+json">
+  {
+	 "@context": "http://schema.org",
+	 "@type": "WebSite",
+	 "url": "http://pelipeikko.fi/"
+	 , "name" : "Pelipeikko",
+	 "alternateName" : ""   ,
+	 "potentialAction": {
+	   "@type": "SearchAction",
+	   "target": "https://pelipeikko.fi/en/search?search_query={search_query}",
+	   "query-input": "required name=search_query"
+	 }
+	 }
+  </script>
+  <div id="mobile_top_menu_wrapper" class="row hidden-lg-up" style="display:none;">
+  <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
+  <div class="js-top-menu-bottom">
+  <div id="_mobile_currency_selector"></div>
+  <div id="_mobile_language_selector"></div>
+  <div id="_mobile_contact_link"></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="nav-bar">
+  <div class="container">
+  <div class="menu tc-top-menu col-lg-8 col-md-7 js-top-menu position-static hidden-md-down" id="_desktop_top_menu">
+  <ul class="top-menu container" id="top-menu" data-depth="0">
+  <li class="link" id="lnk-board-games">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/12-board-games" data-depth="0">
+  Board Games
+  </a>
+  </li>
+  <li class="link" id="lnk-damaged-in-transit-reduced-priced">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/25-damaged-in-transit-reduced-priced" data-depth="0">
+  Damaged in transit / reduced priced
+  </a>
+  </li>
+  <li class="category" id="category-26">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/26-upcoming-games" data-depth="0">
+  Upcoming Games
+  </a>
+  </li>
+  <li class="cms-page" id="cms-page-14">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/content/14-tips-tricks" data-depth="0">
+  Tips &amp; Tricks
+  </a>
+  </li>
+  <li class="link" id="lnk-contact-us">
+  <a class="dropdown-item" href="https://pelipeikko.fi/index.php?controller=contact" data-depth="0">
+  Contact Us
+  </a>
+  </li>
+  </ul>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </div>
+  </header>
+  <aside id="notifications">
+  <div class="container">
+  </div>
+  </aside>
+  <nav data-depth="1" class="breadcrumb hidden-sm-down">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  <a itemprop="item" href="https://pelipeikko.fi/en/">
+  <span itemprop="name">Home</span>
+  </a>
+  <meta itemprop="position" content="1">
+  </li>
+  </ol>
+  </nav>
+  <div class="container">
+  <section id="wrapper">
+  <div id="columns_inner">
+  <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
+  <div class="block-categories block">
+  <h4 class="block_title hidden-md-down">
+  <a href="https://pelipeikko.fi/en/2-home">Home</a>
+  </h4>
+  <h4 class="block_title hidden-lg-up" data-target="#block_categories_toggle" data-toggle="collapse">
+  <a href="https://pelipeikko.fi/en/2-home">Home</a>
+  <span class="pull-xs-right">
+  <span class="navbar-toggler collapse-icons">
+  <i class="material-icons add">&#xE313;</i>
+  <i class="material-icons remove">&#xE316;</i>
+  </span>
+  </span>
+  </h4>
+  <div id="block_categories_toggle" class="block_content collapse">
+  <ul class="category-top-menu">
+  <li>
+  <ul class="category-sub-menu"><li data-depth="0"><a href="https://pelipeikko.fi/en/12-board-games">Board Games</a><div class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar12"><i class="material-icons add">&#xE145;</i><i class="material-icons remove">&#xE15B;</i></div><div class="collapse" id="exCollapsingNavbar12">
+  <ul class="category-sub-menu"><li data-depth="1"><a class="category-sub-link" href="https://pelipeikko.fi/en/16-strategy-games">Strategy Games</a></li><li data-depth="1"><a class="category-sub-link" href="https://pelipeikko.fi/en/18-co-operative-games">Co-operative Games</a></li><li data-depth="1"><a class="category-sub-link" href="https://pelipeikko.fi/en/21-2-player-games">2-Player Games</a></li><li data-depth="1"><a class="category-sub-link" href="https://pelipeikko.fi/en/19-card-games">Card Games</a></li><li data-depth="1"><a class="category-sub-link" href="https://pelipeikko.fi/en/17-party-games">Party Games</a></li><li data-depth="1"><a class="category-sub-link" href="https://pelipeikko.fi/en/20-expansions">Expansions</a></li></ul></div></li><li data-depth="0"><a href="https://pelipeikko.fi/en/23-featured-products">Featured Products</a></li><li data-depth="0"><a href="https://pelipeikko.fi/en/25-damaged-in-transit-reduced-priced">Damaged in transit / reduced priced</a></li><li data-depth="0"><a href="https://pelipeikko.fi/en/26-upcoming-games">Upcoming Games</a></li><li data-depth="0"><a href="https://pelipeikko.fi/en/38-summer-sale">Summer Sale</a></li></ul></li>
+  </ul>
+  </div>
+  </div>
+  <div id="search_filters_wrapper" class="hidden-md-down block">
+  <div id="search_filter_controls" class="hidden-lg-up">
+  <span id="_mobile_search_filters_clear_all"></span>
+  <button class="btn btn-secondary ok">
+  <i class="material-icons">&#xE876;</i>
+  OK
+  </button>
+  </div>
+  </div>
+  <div id="tmleftbanner">
+  <ul>
+  <li class="slide tmleftbanner-container">
+  <a href="https://www.facebook.com/Pelipeikko.fi/" title="LeftBanner 1">
+  <img src="https://pelipeikko.fi/modules/tc_leftbanner/views/img/6ff7e1ac77b7a05d73a8e6c9c8a0f844680fccea_fbreklame.jpg" alt="LeftBanner 1" title="LeftBanner 1" />
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  <div id="content-wrapper" class="left-column col-xs-12 col-sm-8 col-md-9">
+  <section id="main">
+  <h2 class="h2">Search results</h2>
+  <section id="products">
+  <div id="">
+  <div id="js-product-list-top" class="row products-selection">
+  <div class="col-md-6 hidden-md-down total-products">
+  <ul class="display hidden-xs grid_list">
+  <li id="grid"><a href="#" title="Grid">Grid</a></li>
+  <li id="list"><a href="#" title="List">List</a></li>
+  </ul>
+  <p>There are 11 products.</p>
+  </div>
+  <div class="col-md-6 sort-select">
+  <div class="row sort-by-row">
+  <span class="col-sm-3 col-md-3 hidden-sm-down sort-by">Sort by:</span>
+  <div class="col-sm-12 col-xs-12 col-md-9 products-sort-order dropdown">
+  <a class="select-title" rel="nofollow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Relevance
+  <i class="material-icons pull-xs-right">&#xE5C5;</i>
+  </a>
+  <div class="dropdown-menu">
+  <a rel="nofollow" href="https://pelipeikko.fi/en/search?order=product.position.desc&amp;s=spirit+island" class="select-list current js-search-link">
+  Relevance
+  </a>
+  <a rel="nofollow" href="https://pelipeikko.fi/en/search?order=product.name.asc&amp;s=spirit+island" class="select-list js-search-link">
+  Name, A to Z
+  </a>
+  <a rel="nofollow" href="https://pelipeikko.fi/en/search?order=product.name.desc&amp;s=spirit+island" class="select-list js-search-link">
+  Name, Z to A
+  </a>
+  <a rel="nofollow" href="https://pelipeikko.fi/en/search?order=product.price.asc&amp;s=spirit+island" class="select-list js-search-link">
+  Price, low to high
+  </a>
+  <a rel="nofollow" href="https://pelipeikko.fi/en/search?order=product.price.desc&amp;s=spirit+island" class="select-list js-search-link">
+  Price, high to low
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="col-sm-12 hidden-lg-up showing">
+  Showing 1-11 of 11 item(s)
+  </div>
+  </div>
+  </div>
+  <div id="">
+  <div id="js-product-list">
+  <div class="products row">
+  <ul class="product_list grid gridcount"> 
+  <li class="product_item col-xs-12 col-sm-6 col-md-6 col-lg-4">
+  <div class="product-miniature js-product-miniature" data-id-product="110" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+  <div class="image-block">
+  <a href="https://pelipeikko.fi/en/home/110-spirit-island" class="thumbnail product-thumbnail">
+  <img class="primary-image" src="https://pelipeikko.fi/1394-home_default/spirit-island.jpg" alt="" data-full-size-image-url="https://pelipeikko.fi/1394-large_default/spirit-island.jpg">
+  </a>
+  <a href="#" class="quick-view" data-link-action="quickview">
+  Quick view
+  <span class="tc-product-quickview tc-product-tooltip">Quick View</span>
+  </a>
+  <div class="hoverimage">
+  <div class="product-actions">
+  <a href="https://pelipeikko.fi/en/home/110-spirit-island" class="btn btn-primary view-button">
+  <i class="material-icons">&#xE317;</i>
+  View Details
+  
+  </a>
+  </div>
+  </div>
+  </div>
+  <ul class="product-flags">
+  </ul>
+  </div>
+  <div class="product-description">
+  <h3 class="h3 product-title" itemprop="name"><a href="https://pelipeikko.fi/en/home/110-spirit-island">Spirit Island</a></h3>
+  <div class="product-price-and-shipping">
+  <span itemprop="price" class="price">€71.95</span>
+  </div>
+  <div class="product-detail" itemprop="description"><p>Spirit Island is a cooperative, settler-destruction strategy game for 1 to 4 players designed by R. Eric Reuss and set in an alternate-history world around A.D. 1700. Players are different spirits of the land, each with their own unique elemental powers, forced to defend their island home from colonizing Invaders spreading blight and destruction. Work with your fellow spirits and the native islanders to increase your power and drive the invading colonists from your island in this strategic area-control game.</p></div>
+  <div class="highlighted-informations no-variants hidden-sm-down">
+  </div>
+  </div>
+  </div>
+  </li>
+  <li class="product_item col-xs-12 col-sm-6 col-md-6 col-lg-4">
+  <div class="product-miniature js-product-miniature" data-id-product="126" data-id-product-attribute="0" itemscope itemtype="http://schema.org/Product">
+  <div class="thumbnail-container">
+  <div class="image-block">
+  <a href="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw" class="thumbnail product-thumbnail">
+  <img class="primary-image" src="https://pelipeikko.fi/1392-home_default/spirit-island-branch-claw.jpg" alt="" data-full-size-image-url="https://pelipeikko.fi/1392-large_default/spirit-island-branch-claw.jpg">
+  </a>
+  <a href="#" class="quick-view" data-link-action="quickview">
+  Quick view
+  <span class="tc-product-quickview tc-product-tooltip">Quick View</span>
+  </a>
+  <div class="hoverimage">
+  <div class="product-actions">
+  <a href="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw" class="btn btn-primary view-button">
+  <i class="material-icons">&#xE317;</i>
+  View Details
+  
+  </a>
+  </div>
+  </div>
+  </div>
+  <ul class="product-flags">
+  </ul>
+  </div>
+  <div class="product-description">
+  <h3 class="h3 product-title" itemprop="name"><a href="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw">Spirit Island: Branch &amp; Claw</a></h3>
+  <div class="product-price-and-shipping">
+  <span itemprop="price" class="price">€28.95</span>
+  </div>
+  <div class="product-detail" itemprop="description"><p>Expansion for base game</p>
+  <p>The Branch &amp; Claw Expansion for Spirit Island, featuring two new Spirits (Sharp Fangs Behind the Leaves and Keeper of the Forbidden Wilds) and a new Adversary (France) as well as adding Events to the Invader Phase of the game!</p>
+  <p>The Event Deck has events that happen each turn, adding further variation to the game play. In addition, the expansion has Tokens that prevent the invaders from exploring, building, or ravaging or add wild Beasts to the land, a new set of powers (31 Minor and 21 Major) that use the new Tokens and expand the gameplay, 15 new Fear cards, new Blight cards, and new Scenarios.</p>
+  <p></p></div>
+  <div class="highlighted-informations no-variants hidden-sm-down">
+  </div>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <nav class="pagination row">
+  <div class="col-md-4">
+  Showing 1-11 of 11 item(s)
+  </div>
+  <div class="col-md-8">
+  <ul class="page-list clearfix text-xs-center">
+  <li>
+  <a rel="prev" href="https://pelipeikko.fi/en/search?page=1&amp;s=spirit+island" class="previous disabled js-search-link">
+  <i class="material-icons">&#xE314;</i>Previous
+  </a>
+  </li>
+  <li class="current">
+  <a rel="nofollow" href="https://pelipeikko.fi/en/search?page=1&amp;s=spirit+island" class="disabled js-search-link">
+  1
+  </a>
+  </li>
+  <li>
+  <a rel="next" href="https://pelipeikko.fi/en/search?page=1&amp;s=spirit+island" class="next disabled js-search-link">
+  Next<i class="material-icons">&#xE315;</i>
+  </a>
+  </li>
+  </ul>
+  </div>
+  </nav>
+  
+  </div>
+  </div>
+  <div id="js-product-list-bottom">
+  <div id="js-product-list-bottom"></div>
+  </div>
+  </section>
+  </section>
+  </div>
+  </div>
+  </section>
+  </div>
+  <footer id="footer">
+  <div class="footer-before">
+  <div class="container">
+  </div>
+  </div>
+  <div class="footer-container">
+  <div class="container">
+  <div class="row footer">
+  <div class="col-md-4 links block links">
+  <h3 class="h3  hidden-md-down hidden-md-up">Links</h3>
+  <div class="title block_title h3 clearfix hidden-md-up " data-target="#footer_sub_menu_90975" data-toggle="collapse">
+  <span class="">Links</span>
+  <span class="pull-xs-right hidden-lg-up">
+  <span class="navbar-toggler collapse-icons">
+  <i class="material-icons add">&#xE313;</i>
+  <i class="material-icons remove">&#xE316;</i>
+  </span>
+  </span>
+  </div>
+  <ul id="footer_sub_menu_90975" class="collapse block_content">
+  <li>
+  <a id="link-cms-page-1-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/1-Shipping-and-Returns" title="Shipping &amp; Returns">
+  Shipping &amp; Returns
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-4-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/4-Terms-Conditions" title="Terms &amp; Conditions">
+  Terms &amp; Conditions
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-10-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/10-faq" title="">
+  FAQ
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-18-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/18-about-us" title="">
+  About us
+  </a>
+  </li>
+  <li>
+  <a id="link-custom-page-Contact Us-2" class="custom-page-link" href="https://pelipeikko.fi/en/contact-us" title="">
+  Contact Us
+  </a>
+  </li>
+  <li>
+  <a id="link-custom-page-My account-2" class="custom-page-link" href="https://pelipeikko.fi/en/my-account" title="">
+  My account
+  </a>
+  </li>
+  </ul>
+  </div>
+  <img class="img-fluid" src="https://pelipeikko.fi/img/cms/pay.jpg" width="1024" height="95" alt="pay.jpg" />
+  </div>
+  <div class="row footer-after">
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <a class="top_button" href="#" style="">&nbsp;</a>
+  </footer>
+  </main>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/core.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/theme.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/blockreassurance/views/js/front.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_googleanalytics/views/js/GoogleAnalyticActionLib.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/js/jquery/ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_searchbar/ps_searchbar.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_shoppingcart/ps_shoppingcart.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/tc_imageslider/views/js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/owl.carousel.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/totalstorage.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/custom.js"></script>
+  <script type="text/javascript">
+				  var time_start;
+				  $(window).load(
+					  function() {
+						  time_start = new Date();
+					  }
+				  );
+				  $(window).unload(
+					  function() {
+						  var time_end = new Date();
+						  var pagetime = new Object;
+						  pagetime.type = "pagetime";
+						  pagetime.id_connections = "1014056";
+						  pagetime.id_page = "43";
+						  pagetime.time_start = "2019-12-15 08:44:53";
+						  pagetime.token = "f6345a3b4677cfd14cd57bebd1e4d97b841e537c";
+						  pagetime.time = time_end-time_start;
+						  $.post("https://pelipeikko.fi/en/index.php?controller=statistics", pagetime);
+					  }
+				  );
+			  </script>
+  </body>
+  </html>
+`,
+
+  RESPONSE_PELIPEIKKO_SPIRIT_ISLAND: `
+
+  <!doctype html>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="canonical" href="https://pelipeikko.fi/en/home/110-spirit-island">
+  <title>Spirit Island - Lautapeli - Pelipeikko</title>
+  <meta name="description" content="Get Spirit Island and other new board games at Pelipeikko. Free shipping on orders above €80">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1519654645">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1519654645">
+  <link rel="stylesheet" href="https://pelipeikko.fi/themes/digitalplug/assets/css/theme.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/modules/blockreassurance/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/modules/backinstock/views/css/hook/productupdate.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/js/jquery/ui/themes/base/minified/jquery-ui.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/modules/tc_imageslider/views/css/flexslider.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/themes/digitalplug/assets/css/custom.css" type="text/css" media="all">
+  <script type="text/javascript">
+		  var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"\u20ac0.00"},"total_including_tax":{"type":"total","label":"Total (tax incl.)","amount":0,"value":"\u20ac0.00"},"total_excluding_tax":{"type":"total","label":"Total (tax excl.)","amount":0,"value":"\u20ac0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"\u20ac0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Shipping","amount":0,"value":"Free"},"tax":{"type":"tax","label":"Included taxes","amount":0,"value":"\u20ac0.00"}},"products_count":0,"summary_string":"0 items","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"English (English)","iso_code":"en","locale":"en-US","language_code":"en-us","is_rtl":"0","date_format_lite":"d-m-Y","date_format_full":"d-m-Y H:i:s","id":1},"page":{"title":"","canonical":null,"meta":{"title":"Spirit Island","description":"Get Spirit Island and other new board games at Pelipeikko. Free shipping on orders above \u20ac80","keywords":"","robots":"index"},"page_name":"product","body_classes":{"lang-en":true,"lang-rtl":false,"country-FI":true,"currency-EUR":true,"layout-full-width":true,"page-product":true,"tax-display-enabled":true,"product-id-110":true,"product-Spirit Island":true,"product-id-category-2":true,"product-id-manufacturer-3":true,"product-id-supplier-0":true,"product-available-for-order":true},"admin_notifications":[]},"shop":{"name":"Pelipeikko","logo":"\/img\/pelipeikko-logo-1506709164.jpg","stores_icon":"\/img\/logo_stores.png","favicon":"\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/pelipeikko.fi\/","current_url":"https:\/\/pelipeikko.fi\/en\/home\/110-spirit-island","shop_domain_url":"https:\/\/pelipeikko.fi","img_ps_url":"https:\/\/pelipeikko.fi\/img\/","img_cat_url":"https:\/\/pelipeikko.fi\/img\/c\/","img_lang_url":"https:\/\/pelipeikko.fi\/img\/l\/","img_prod_url":"https:\/\/pelipeikko.fi\/img\/p\/","img_manu_url":"https:\/\/pelipeikko.fi\/img\/m\/","img_sup_url":"https:\/\/pelipeikko.fi\/img\/su\/","img_ship_url":"https:\/\/pelipeikko.fi\/img\/s\/","img_store_url":"https:\/\/pelipeikko.fi\/img\/st\/","img_col_url":"https:\/\/pelipeikko.fi\/img\/co\/","img_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/img\/","css_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/css\/","js_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/js\/","pic_url":"https:\/\/pelipeikko.fi\/upload\/","pages":{"address":"https:\/\/pelipeikko.fi\/en\/address","addresses":"https:\/\/pelipeikko.fi\/en\/addresses","authentication":"https:\/\/pelipeikko.fi\/en\/login","cart":"https:\/\/pelipeikko.fi\/en\/cart","category":"https:\/\/pelipeikko.fi\/en\/index.php?controller=category","cms":"https:\/\/pelipeikko.fi\/en\/index.php?controller=cms","contact":"https:\/\/pelipeikko.fi\/en\/contact-us---","discount":"https:\/\/pelipeikko.fi\/en\/discount","guest_tracking":"https:\/\/pelipeikko.fi\/en\/guest-tracking","history":"https:\/\/pelipeikko.fi\/en\/order-history","identity":"https:\/\/pelipeikko.fi\/en\/identity","index":"https:\/\/pelipeikko.fi\/en\/","my_account":"https:\/\/pelipeikko.fi\/en\/my-account","order_confirmation":"https:\/\/pelipeikko.fi\/en\/order-confirmation","order_detail":"https:\/\/pelipeikko.fi\/en\/index.php?controller=order-detail","order_follow":"https:\/\/pelipeikko.fi\/en\/order-follow","order":"https:\/\/pelipeikko.fi\/en\/order","order_return":"https:\/\/pelipeikko.fi\/en\/index.php?controller=order-return","order_slip":"https:\/\/pelipeikko.fi\/en\/credit-slip","pagenotfound":"https:\/\/pelipeikko.fi\/en\/page-not-found","password":"https:\/\/pelipeikko.fi\/en\/password-recovery","pdf_invoice":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/pelipeikko.fi\/en\/prices-drop","product":"https:\/\/pelipeikko.fi\/en\/index.php?controller=product","search":"https:\/\/pelipeikko.fi\/en\/search","sitemap":"https:\/\/pelipeikko.fi\/en\/sitemap","stores":"https:\/\/pelipeikko.fi\/en\/stores","supplier":"https:\/\/pelipeikko.fi\/en\/supplier","register":"https:\/\/pelipeikko.fi\/en\/login?create_account=1","order_login":"https:\/\/pelipeikko.fi\/en\/order?login=1"},"alternative_langs":{"en-us":"https:\/\/pelipeikko.fi\/en\/home\/110-spirit-island","fi-fi":"https:\/\/pelipeikko.fi\/fi\/home\/110-spirit-island"},"theme_assets":"\/themes\/digitalplug\/assets\/","actions":{"logout":"https:\/\/pelipeikko.fi\/en\/?mylogout="},"no_picture_image":{"bySize":{"cart_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-cart_default.jpg","width":80,"height":90},"small_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-small_default.jpg","width":80,"height":90},"medium_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-medium_default.jpg","width":239,"height":300},"home_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-home_default.jpg","width":239,"height":300},"large_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-large_default.jpg","width":670,"height":830}},"small":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-cart_default.jpg","width":80,"height":90},"medium":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-medium_default.jpg","width":239,"height":300},"large":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-large_default.jpg","width":670,"height":830},"legend":""}},"configuration":{"display_taxes_label":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":false},"quantity_discount":{"type":"price","label":"Price"},"voucher_enabled":1,"return_enabled":1},"field_required":[],"breadcrumb":{"links":[{"title":"Home","url":"https:\/\/pelipeikko.fi\/en\/"},{"title":"Spirit Island","url":"https:\/\/pelipeikko.fi\/en\/home\/110-spirit-island"}],"count":2},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1576393891,"static_token":"08d2d7521b8f4b48450ba39ca67190a7","token":"f5874bf2707667ed1318e950f7b3cc4c"};
+		  var psr_icon_color = "#F19D76";
+		</script>
+  <script type="text/javascript">
+	  (window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+			  ga('create', 'UA-109858368-1', 'auto');
+				  
+	  ga('require', 'ec');
+  </script>
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://pelipeikko.fi/en/home/110-spirit-island">
+  <meta property="og:title" content="Spirit Island">
+  <meta property="og:site_name" content="Pelipeikko">
+  <meta property="og:description" content="Get Spirit Island and other new board games at Pelipeikko. Free shipping on orders above €80">
+  <meta property="og:image" content="https://pelipeikko.fi/1394-large_default/spirit-island.jpg">
+  <meta property="product:pretax_price:amount" content="58.024194">
+  <meta property="product:pretax_price:currency" content="EUR">
+  <meta property="product:price:amount" content="71.95">
+  <meta property="product:price:currency" content="EUR">
+  </head>
+  <body id="product" class="lang-en country-fi currency-eur layout-full-width page-product tax-display-enabled product-id-110 product-spirit-island product-id-category-2 product-id-manufacturer-3 product-id-supplier-0 product-available-for-order">
+  <main>
+  <header id="header">
+  <div class="header-banner">
+  </div>
+  <nav class="header-nav">
+  <div class="container">
+  <div class="nav-inner">
+  <div class="hidden-md-down">
+  <div class="left-nav">
+  <div id="_desktop_language_selector">
+  <div class="language-selector-wrapper">
+  
+  <div class="language-selector dropdown js-dropdown">
+  <span class="expand-more hidden-md-down" data-toggle="dropdown">English</span>
+  <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hidden-md-down">
+  <i class="material-icons expand-more">&#xE5CF;</i>
+  </a>
+  <ul class="dropdown-menu hidden-md-down">
+  <li class="current">
+  <a href="https://pelipeikko.fi/en/home/110-spirit-island" class="dropdown-item">English</a>
+  </li>
+  <li>
+  <a href="https://pelipeikko.fi/fi/home/110-spirit-island" class="dropdown-item">Suomi</a>
+  </li>
+  </ul>
+  <select class="link hidden-lg-up">
+  <option value="https://pelipeikko.fi/en/home/110-spirit-island" selected="selected">English</option>
+  <option value="https://pelipeikko.fi/fi/home/110-spirit-island">Suomi</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="right-nav">
+  <div id="tcblocktopcms">
+  <div class="tic-blocktopcms"><span style="font-size:11pt;line-height:107%;font-family:Calibri, sans-serif;color:#ffffff;" xml:lang="en-us" lang="en-us">Shipping Cost 5,5€, free above 80€</span></div>
+  </div>
+  </div>
+  </div>
+  <div class="hidden-lg-up text-xs-center mobile">
+  <div class="pull-xs-left" id="menu-icon">
+  <i class="material-icons menu-open">&#xE5D2;</i>
+  <i class="material-icons menu-close">&#xE5CD;</i>
+  </div>
+  <div class="pull-xs-right" id="_mobile_cart"></div>
+  <div class="pull-xs-right" id="_mobile_user_info"></div>
+  <div class="top-logo" id="_mobile_logo"></div>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </div>
+  </nav>
+  <div class="header-top">
+  <div class="container">
+  <div class="header_logo hidden-md-down" id="_desktop_logo">
+  <a href="https://pelipeikko.fi/">
+  <img class="logo img-responsive" src="/img/pelipeikko-logo-1506709164.jpg" alt="Pelipeikko">
+  </a>
+  </div>
+  <div id="_desktop_cart">
+  <div class="blockcart cart-preview inactive" data-refresh-url="//pelipeikko.fi/en/module/ps_shoppingcart/ajax">
+  <div class="header blockcart-header dropdown js-dropdown">
+  <a rel="nofollow" href="//pelipeikko.fi/en/cart?action=show" class="cart-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <span class="cart-products-count">
+  0
+  </span>
+  </a>
+  </div>
+  </div>
+  </div>
+  <div id="_desktop_user_info">
+  <div class="tm_userinfotitle"></div>
+  <div class="user-info">
+  <a href="https://pelipeikko.fi/en/my-account" title="Log in to your customer account" rel="nofollow">
+  <i class="material-icons">&#xE899;</i>
+  <span class="sign-in">Sign in</span>
+  </a>
+  </div>
+  </div>
+  <div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="//pelipeikko.fi/en/search">
+  <div class="searchtoggle">
+  <form method="get" action="//pelipeikko.fi/en/search">
+  <input type="hidden" name="controller" value="search">
+  <input type="text" name="s" value="" placeholder="Search our Products">
+  <button type="submit">
+  <span class="tc-search-icon"></span>
+  </button>
+  </form>
+  </div>
+  </div>
+  
+  <script type="application/ld+json">
+  {
+	 "@context": "http://schema.org",
+	 "@type": "WebSite",
+	 "url": "http://pelipeikko.fi/"
+	 , "name" : "Pelipeikko",
+	 "alternateName" : ""   ,
+	 "potentialAction": {
+	   "@type": "SearchAction",
+	   "target": "https://pelipeikko.fi/en/search?search_query={search_query}",
+	   "query-input": "required name=search_query"
+	 }
+	 }
+  </script>
+  <div id="mobile_top_menu_wrapper" class="row hidden-lg-up" style="display:none;">
+  <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
+  <div class="js-top-menu-bottom">
+  <div id="_mobile_currency_selector"></div>
+  <div id="_mobile_language_selector"></div>
+  <div id="_mobile_contact_link"></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="nav-bar">
+  <div class="container">
+  <div class="menu tc-top-menu col-lg-8 col-md-7 js-top-menu position-static hidden-md-down" id="_desktop_top_menu">
+  <ul class="top-menu container" id="top-menu" data-depth="0">
+  <li class="link" id="lnk-board-games">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/12-board-games" data-depth="0">
+  Board Games
+  </a>
+  </li>
+  <li class="link" id="lnk-damaged-in-transit-reduced-priced">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/25-damaged-in-transit-reduced-priced" data-depth="0">
+  Damaged in transit / reduced priced
+  </a>
+  </li>
+  <li class="category" id="category-26">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/26-upcoming-games" data-depth="0">
+  Upcoming Games
+  </a>
+  </li>
+  <li class="cms-page" id="cms-page-14">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/content/14-tips-tricks" data-depth="0">
+  Tips &amp; Tricks
+  </a>
+  </li>
+  <li class="link" id="lnk-contact-us">
+  <a class="dropdown-item" href="https://pelipeikko.fi/index.php?controller=contact" data-depth="0">
+  Contact Us
+  </a>
+  </li>
+  </ul>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </div>
+  </header>
+  <aside id="notifications">
+  <div class="container">
+  </div>
+  </aside>
+  <nav data-depth="2" class="breadcrumb hidden-sm-down">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  <a itemprop="item" href="https://pelipeikko.fi/en/">
+  <span itemprop="name">Home</span>
+  </a>
+  <meta itemprop="position" content="1">
+  </li>
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  <a itemprop="item" href="https://pelipeikko.fi/en/home/110-spirit-island">
+  <span itemprop="name">Spirit Island</span>
+  </a>
+  <meta itemprop="position" content="2">
+  </li>
+  </ol>
+  </nav>
+  <div class="container">
+  <section id="wrapper">
+  <div id="columns_inner">
+  <div id="content-wrapper">
+  <section id="main" itemscope itemtype="https://schema.org/Product">
+  <meta itemprop="url" content="https://pelipeikko.fi/en/home/110-spirit-island">
+  <div class="row">
+  <div class="col-md-6">
+  <section class="page-content" id="content">
+  <div class="product-leftside">
+  <ul class="product-flags">
+  </ul>
+  <div class="images-container">
+  <div class="product-cover">
+  <img class="js-qv-product-cover" src="https://pelipeikko.fi/1394-large_default/spirit-island.jpg" alt="" title="" style="width:100%;" itemprop="image">
+  <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
+  <i class="material-icons zoom-in">&#xE8FF;</i>
+  </div>
+  </div>
+  <div class="js-qv-mask mask">
+  <ul class="product-images js-qv-product-images">
+  <li class="thumb-container">
+  <img class="thumb js-thumb  selected " data-image-medium-src="https://pelipeikko.fi/1394-medium_default/spirit-island.jpg" data-image-large-src="https://pelipeikko.fi/1394-large_default/spirit-island.jpg" src="https://pelipeikko.fi/1394-home_default/spirit-island.jpg" alt="" title="" width="100" itemprop="image">
+  </li>
+  <li class="thumb-container">
+  <img class="thumb js-thumb " data-image-medium-src="https://pelipeikko.fi/1395-medium_default/spirit-island.jpg" data-image-large-src="https://pelipeikko.fi/1395-large_default/spirit-island.jpg" src="https://pelipeikko.fi/1395-home_default/spirit-island.jpg" alt="" title="" width="100" itemprop="image">
+  </li>
+  </ul>
+  </div>
+  <div class="scroll-box-arrows">
+  <i class="material-icons left">&#xE314;</i>
+  <i class="material-icons right">&#xE315;</i>
+  </div>
+  </div>
+  </div>
+  </section>
+  </div>
+  <div class="col-md-6">
+  <h1 class="h1 productpage_title" itemprop="name">Spirit Island</h1>
+  <div class="product-prices">
+  <div class="product-price h5 " itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+  <link itemprop="availability" href="https://schema.org/InStock" />
+  <meta itemprop="priceCurrency" content="EUR">
+  <div class="current-price">
+   <span itemprop="price" content="71.95">€71.95</span>
+  </div>
+  </div>
+  <div class="tax-shipping-delivery-label">
+  VAT included
+  </div>
+  </div>
+  <div class="product-information">
+  <div id="product-description-short-110" itemprop="description"><p>Spirit Island is a cooperative, settler-destruction strategy game for 1 to 4 players designed by R. Eric Reuss and set in an alternate-history world around A.D. 1700. Players are different spirits of the land, each with their own unique elemental powers, forced to defend their island home from colonizing Invaders spreading blight and destruction. Work with your fellow spirits and the native islanders to increase your power and drive the invading colonists from your island in this strategic area-control game.</p></div>
+  <div class="product-actions">
+  <form action="https://pelipeikko.fi/en/cart" method="post" id="add-to-cart-or-refresh">
+  <input type="hidden" name="token" value="08d2d7521b8f4b48450ba39ca67190a7">
+  <input type="hidden" name="id_product" value="110" id="product_page_product_id">
+  <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+  <div class="product-variants">
+  </div>
+  <section class="product-discounts">
+  </section>
+  <div class="product-add-to-cart">
+  <span class="control-label">Quantity</span>
+  <div class="product-quantity">
+  <div class="qty">
+  <input type="text" name="qty" id="quantity_wanted" value="1" class="input-group" min="1">
+  </div>
+  <div class="add">
+  <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+  <i class="material-icons shopping-cart">&#xE547;</i>
+  Add to cart
+  </button>
+  <span id="product-availability">
+  <i class="material-icons product-available">&#xE14B;</i>
+  In Stock
+  </span>
+  </div>
+  </div>
+  <div class="clearfix"></div>
+  <p class="product-minimal-quantity">
+  </p>
+  </div>
+  <div class="product-additional-info">
+  <style type="text/css"></style><script type="text/javascript"></script><script>
+	  var backinstock_privacy_accept_error = "Please accept the terms of service and privacy policy before proceeding.";
+  </script>
+  <div id="product_update_block_back">
+  <div id="pal_title_row_stock_back" style="display:none; background: #ffffff; border:1px solid #ffffff;">
+  <div class="pal_l_heading_back" style='color:#676161'>Notify me when this product is in stock&nbsp;</div>
+  <div class="clear"></div>
+  <input type='hidden' name='actual_price' id='actual_price' value='71.950001' />
+  <input type='hidden' name='product_id' value='110' />
+  <input type='hidden' name='customer_id' value='0' />
+  <input type='hidden' name='combination_id' id='pal_attribute_id_back' value='' />
+  <input type='hidden' name='currency_id' value='2' />
+  <input type='hidden' name='currency_code' value='EUR' />
+  <input type='hidden' name='shop_id' value='1' />
+  <input type='hidden' name='subscribe_type_back' id='subscribe_type_back' value='' />
+  <div class="clear"></div>
+  <div>
+  <div id="email_data_back" class="pal_popup_product_email_row_back">
+  <div class="pal_small_input_row pal_email_label" style="width:20%;color:#676161">E-mail:</div>
+  <div id="notify_email_back" class="pal_small_input_row pal_email_input_back" style="width:55%;">
+  <input type="text" id='user_email_subscribe_back' name="customer_email_back" placeholder="Email" value='' />
+  <div id="email_error_back"></div>
+  </div>
+  </div>
+  <div id="submit_alert_product_back" class="pal_popup_product_email_row_back" style="border:none;margin:2%; width: 100%;">
+  <span id="loading_image_back" style="display: none; text-align: center; margin-left: 37%;float: left;"><img src="/modules/backinstock/views/img/loading.gif" height="25" width="25" /></span><input class="save_subscribe_back" onclick="save_subscribe_data_back()" type="button" value='Notify Me' name="alert_submit" style="height:98%;margin: 0% 0%;width: 45%; float:right; font-size: 70%; font-weight: bold;" />
+  </div>
+  </div>
+  <div class="clear"></div>
+  <div id="arrow_update_back"></div>
+  </div>
+  </div>
+  <script type='text/javascript'>
+		  var block_id;
+  
+		  //var quantityAvailable = 0;
+		  var pal_email_require = "Please enter your email id";
+		  var pal_email_invalid_error = "Please enter a valid email id";
+		  var pal_alert_create_success_msg = "You are successfully subscribed";
+		  var pal_alert_update_success_msg = "You are already subscribed";
+  
+  
+		  var action_product_front_back = 'https://pelipeikko.fi/en/module/backinstock/success?render=add';
+		  var empty_fname = "Please enter First name.";
+		  var maxchar_fname = "First name cannot be greater than # characters.";
+		  var minchar_fname = "First name cannot be less than # characters.";
+		  var empty_mname = "Please enter middle name.";
+		  var maxchar_mname = "Middle name cannot be greater than # characters.";
+		  var minchar_mname = "Middle name cannot be less than # characters.";
+		  var only_alphabet = "Only alphabets are allowed.";
+		  var empty_lname = "Please enter Last name.";
+		  var maxchar_lname = "Last name cannot be greater than # characters.";
+		  var minchar_lname = "Last name cannot be less than # characters.";
+		  var alphanumeric = "Field should be alphanumeric.";
+		  var empty_pass = "Please enter Password.";
+		  var maxchar_pass = "Password cannot be greater than # characters.";
+		  var minchar_pass = "Password cannot be less than # characters.";
+		  var specialchar_pass = "Password should contain atleast 1 special character.";
+		  var alphabets_pass = "Password should contain alphabets.";
+		  var capital_alphabets_pass = "Password should contain atleast 1 capital letter.";
+		  var small_alphabets_pass = "Password should contain atleast 1 small letter.";
+		  var digit_pass = "Password should contain atleast 1 digit.";
+		  var empty_field = "Field cannot be empty.";
+		  var number_field = "You can enter only numbers.";
+		  var positive_number = "Number should be greater than 0.";
+		  var maxchar_field = "Field cannot be greater than # characters.";
+		  var minchar_field = "Field cannot be less than # character(s).";
+		  var empty_email = "Please enter Email.";
+		  var validate_email = "Please enter a valid Email.";
+		  var empty_country = "Please enter country name.";
+		  var maxchar_country = "Country cannot be greater than # characters.";
+		  var minchar_country = "Country cannot be less than # characters.";
+		  var empty_city = "Please enter city name.";
+		  var maxchar_city = "City cannot be greater than # characters.";
+		  var minchar_city = "City cannot be less than # characters.";
+		  var empty_state = "Please enter state name.";
+		  var maxchar_state = "State cannot be greater than # characters.";
+		  var minchar_state = "State cannot be less than # characters.";
+		  var empty_proname = "Please enter product name.";
+		  var maxchar_proname = "Product cannot be greater than # characters.";
+		  var minchar_proname = "Product cannot be less than # characters.";
+		  var empty_catname = "Please enter category name.";
+		  var maxchar_catname = "Category cannot be greater than # characters.";
+		  var minchar_catname = "Category cannot be less than # characters.";
+		  var empty_zip = "Please enter zip code.";
+		  var maxchar_zip = "Zip cannot be greater than # characters.";
+		  var minchar_zip = "Zip cannot be less than # characters.";
+		  var empty_username = "Please enter Username.";
+		  var maxchar_username = "Username cannot be greater than # characters.";
+		  var minchar_username = "Username cannot be less than # characters.";
+		  var invalid_date = "Invalid date format.";
+		  var maxchar_sku = "SKU cannot be greater than # characters.";
+		  var minchar_sku = "SKU cannot be less than # characters.";
+		  var invalid_sku = "Invalid SKU format.";
+		  var empty_sku = "Please enter SKU.";
+		  var validate_range = "Number is not in the valid range. It should be betwen # and %%";
+		  var empty_address = "Please enter address.";
+		  var minchar_address = "Address cannot be less than # characters.";
+		  var maxchar_address = "Address cannot be greater than # characters.";
+		  var empty_company = "Please enter company name.";
+		  var minchar_company = "Company name cannot be less than # characters.";
+		  var maxchar_company = "Company name cannot be greater than # characters.";
+		  var invalid_phone = "Phone number is invalid.";
+		  var empty_phone = "Please enter phone number.";
+		  var minchar_phone = "Phone number cannot be less than # characters.";
+		  var maxchar_phone = "Phone number cannot be greater than # characters.";
+		  var empty_brand = "Please enter brand name.";
+		  var maxchar_brand = "Brand name cannot be greater than # characters.";
+		  var minchar_brand = "Brand name cannot be less than # characters.";
+		  var empty_shipment = "Please enter Shimpment.";
+		  var maxchar_shipment = "Shipment cannot be greater than # characters.";
+		  var minchar_shipment = "Shipment cannot be less than # characters.";
+		  var invalid_ip = "Invalid IP format.";
+		  var invalid_url = "Invalid URL format.";
+		  var empty_url = "Please enter URL.";
+		  var valid_amount = "Field should be numeric.";
+		  var valid_decimal = "Field can have only upto two decimal values.";
+		  var max_email = "Email cannot be greater than # characters.";
+		  var specialchar_zip = "Zip should not have special characters.";
+		  var specialchar_sku = "SKU should not have special characters.";
+		  var max_url = "URL cannot be greater than # characters.";
+		  var valid_percentage = "Percentage should be in number.";
+		  var between_percentage = "Percentage should be between 0 and 100.";
+		  var maxchar_size = "Size cannot be greater than # characters.";
+		  var specialchar_size = "Size should not have special characters.";
+		  var specialchar_upc = "UPC should not have special characters.";
+		  var maxchar_upc = "UPC cannot be greater than # characters.";
+		  var specialchar_ean = "EAN should not have special characters.";
+		  var maxchar_ean = "EAN cannot be greater than # characters.";
+		  var specialchar_bar = "Barcode should not have special characters.";
+		  var maxchar_bar = "Barcode cannot be greater than # characters.";
+		  var positive_amount = "Field should be positive.";
+		  var maxchar_color = "Color could not be greater than # characters.";
+		  var invalid_color = "Color is not valid.";
+		  var specialchar = "Special characters are not allowed.";
+		  var script = "Script tags are not allowed.";
+		  var style = "Style tags are not allowed.";
+		  var iframe = "Iframe tags are not allowed.";
+		  var not_image = "Uploaded file is not an image.";
+		  var image_size = "Uploaded file size must be less than #.";
+		  var html_tags = "Field should not contain HTML tags.";
+		  var number_pos = "You can enter only positive numbers.";
+		  var invalid_separator = "Invalid comma (#) separated values.";
+  
+		  var price_alert_product_price = '€71.95';
+				  var price_alert_product_image = 'https://pelipeikko.fi/1394-cart_default/spirit-island.jpg';
+		  
+	  </script>
+  </div>
+  <input class="product-refresh ps-hidden-by-js" name="refresh" type="submit" value="Refresh">
+  </form>
+  </div>
+  <div class="blockreassurance_product">
+  <div>
+  <span class="item-product">
+  <img class="svg invisible" src="/modules/blockreassurance/img/reassurance-2-1.jpg">
+  &nbsp;
+  </span>
+  <p class="block-title" style="color:#000000;">1 - 2 working days delivery</p>
+  </div>
+  <div>
+  <span class="item-product">
+  <img class="svg invisible" src="/modules/blockreassurance/img/ic_swap_horiz_black_36dp_1x.png">
+  &nbsp;
+  </span>
+  <p class="block-title" style="color:#000000;">30-day return policy</p>
+  </div>
+  <div>
+  <span class="item-product">
+  <img class="svg invisible" src="/modules/blockreassurance/img/reassurance-6-1.jpg">
+  &nbsp;
+  </span>
+  <p class="block-title" style="color:#000000;">Shipping Cost 5,5€, free above 80€</p>
+  </div>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <section class="product-tabcontent">
+  <div class="tabs">
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+  <a class="nav-link active" data-toggle="tab" href="#product-details">
+  Product Details
+  </a>
+  </li>
+  </ul>
+  <div class="tab-content" id="tab-content">
+  <div class="tab-pane fade in" id="description">
+  <div class="product-description"></div>
+  </div>
+  <div class="tab-pane fade in active" id="product-details" data-product="{&quot;id_shop_default&quot;:&quot;1&quot;,&quot;id_manufacturer&quot;:&quot;3&quot;,&quot;id_supplier&quot;:&quot;0&quot;,&quot;reference&quot;:&quot;GTGSISL-CORE&quot;,&quot;is_virtual&quot;:&quot;0&quot;,&quot;delivery_in_stock&quot;:&quot;&quot;,&quot;delivery_out_stock&quot;:&quot;&quot;,&quot;id_category_default&quot;:&quot;2&quot;,&quot;on_sale&quot;:&quot;0&quot;,&quot;online_only&quot;:&quot;0&quot;,&quot;ecotax&quot;:0,&quot;minimal_quantity&quot;:&quot;1&quot;,&quot;low_stock_threshold&quot;:null,&quot;low_stock_alert&quot;:&quot;0&quot;,&quot;price&quot;:71.9500000000000028421709430404007434844970703125,&quot;unity&quot;:&quot;&quot;,&quot;unit_price_ratio&quot;:&quot;0.000000&quot;,&quot;additional_shipping_cost&quot;:&quot;0.00&quot;,&quot;customizable&quot;:&quot;0&quot;,&quot;text_fields&quot;:&quot;0&quot;,&quot;uploadable_files&quot;:&quot;0&quot;,&quot;redirect_type&quot;:&quot;404&quot;,&quot;id_type_redirected&quot;:&quot;0&quot;,&quot;available_for_order&quot;:&quot;1&quot;,&quot;available_date&quot;:&quot;0000-00-00&quot;,&quot;show_condition&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;show_price&quot;:&quot;1&quot;,&quot;indexed&quot;:&quot;1&quot;,&quot;visibility&quot;:&quot;both&quot;,&quot;cache_default_attribute&quot;:&quot;0&quot;,&quot;advanced_stock_management&quot;:&quot;0&quot;,&quot;date_add&quot;:&quot;2018-01-02 13:49:57&quot;,&quot;date_upd&quot;:&quot;2019-11-28 16:13:32&quot;,&quot;pack_stock_type&quot;:&quot;3&quot;,&quot;meta_description&quot;:&quot;Get Spirit Island and other new board games at Pelipeikko. Free shipping on orders above \u20ac80&quot;,&quot;meta_keywords&quot;:&quot;&quot;,&quot;meta_title&quot;:&quot;&quot;,&quot;link_rewrite&quot;:&quot;spirit-island&quot;,&quot;name&quot;:&quot;Spirit Island&quot;,&quot;description&quot;:&quot;&quot;,&quot;description_short&quot;:&quot;&lt;p&gt;Spirit Island is a cooperative, settler-destruction strategy game for 1 to 4 players designed by R. Eric Reuss and set in an alternate-history world around A.D. 1700. Players are different spirits of the land, each with their own unique elemental powers, forced to defend their island home from colonizing Invaders spreading blight and destruction. Work with your fellow spirits and the native islanders to increase your power and drive the invading colonists from your island in this strategic area-control game.&lt;\/p&gt;&quot;,&quot;available_now&quot;:&quot;&quot;,&quot;available_later&quot;:&quot;&quot;,&quot;id&quot;:110,&quot;id_product&quot;:110,&quot;out_of_stock&quot;:2,&quot;new&quot;:0,&quot;id_product_attribute&quot;:0,&quot;quantity_wanted&quot;:1,&quot;extraContent&quot;:[],&quot;allow_oosp&quot;:0,&quot;category&quot;:&quot;home&quot;,&quot;category_name&quot;:&quot;Home&quot;,&quot;link&quot;:&quot;https:\/\/pelipeikko.fi\/en\/home\/110-spirit-island&quot;,&quot;attribute_price&quot;:0,&quot;price_tax_exc&quot;:58.02419400000000138106770464219152927398681640625,&quot;price_without_reduction&quot;:71.9500010000000003174136509187519550323486328125,&quot;reduction&quot;:0,&quot;specific_prices&quot;:[],&quot;quantity&quot;:0,&quot;quantity_all_versions&quot;:0,&quot;id_image&quot;:&quot;en-default&quot;,&quot;features&quot;:{&quot;8&quot;:{&quot;values&quot;:[&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],&quot;name&quot;:&quot;Number of Players&quot;,&quot;id_feature&quot;:&quot;8&quot;,&quot;value&quot;:&quot;0, 0, 0, 0&quot;},&quot;11&quot;:{&quot;values&quot;:[&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],&quot;name&quot;:&quot;Game Mechanics&quot;,&quot;id_feature&quot;:&quot;11&quot;,&quot;value&quot;:&quot;0, 0, 0, 0&quot;},&quot;13&quot;:{&quot;values&quot;:[&quot;0&quot;],&quot;name&quot;:&quot;Recommended Age&quot;,&quot;id_feature&quot;:&quot;13&quot;,&quot;value&quot;:&quot;0&quot;},&quot;14&quot;:{&quot;values&quot;:[&quot;0&quot;],&quot;name&quot;:&quot;Language&quot;,&quot;id_feature&quot;:&quot;14&quot;,&quot;value&quot;:&quot;0&quot;},&quot;15&quot;:{&quot;values&quot;:[&quot;0&quot;],&quot;name&quot;:&quot;Playing Time&quot;,&quot;id_feature&quot;:&quot;15&quot;,&quot;value&quot;:&quot;0&quot;},&quot;17&quot;:{&quot;values&quot;:[&quot;0&quot;],&quot;name&quot;:&quot;Production Year&quot;,&quot;id_feature&quot;:&quot;17&quot;,&quot;value&quot;:&quot;0&quot;}},&quot;attachments&quot;:[],&quot;virtual&quot;:0,&quot;pack&quot;:0,&quot;packItems&quot;:[],&quot;nopackprice&quot;:0,&quot;customization_required&quot;:false,&quot;rate&quot;:24,&quot;tax_name&quot;:&quot;ALV FI 24%&quot;,&quot;ecotax_rate&quot;:0,&quot;unit_price&quot;:0,&quot;customizations&quot;:{&quot;fields&quot;:[]},&quot;id_customization&quot;:0,&quot;is_customizable&quot;:false,&quot;show_quantities&quot;:false,&quot;quantity_label&quot;:&quot;Item&quot;,&quot;quantity_discounts&quot;:[],&quot;customer_group_discount&quot;:0}">
+  <div class="product-out-of-stock">
+  </div>
+  <section class="product-features">
+  <h3 class="h6">Data sheet</h3>
+  <dl class="data-sheet">
+  <dt class="name">Number of Players</dt>
+  <dd class="value">0, 0, 0, 0</dd>
+  <dt class="name">Game Mechanics</dt>
+  <dd class="value">0, 0, 0, 0</dd>
+  <dt class="name">Recommended Age</dt>
+  <dd class="value">0</dd>
+  <dt class="name">Language</dt>
+  <dd class="value">0</dd>
+  <dt class="name">Playing Time</dt>
+  <dd class="value">0</dd>
+  <dt class="name">Production Year</dt>
+  <dd class="value">0</dd>
+  </dl>
+  </section>
+  </div>
+  </div>
+  </div>
+  </section>
+  <script type="text/javascript">
+					  document.addEventListener('DOMContentLoaded', function() {
+						  var MBG = GoogleAnalyticEnhancedECommerce;
+						  MBG.setCurrency('EUR');
+						  MBG.addProductDetailView({"id":110,"name":"spirit-island","category":"home","brand":"","variant":false,"type":"typical","position":"0","quantity":1,"list":"product","url":"https%3A%2F%2Fpelipeikko.fi%2Fen%2Fhome%2F110-spirit-island","price":"\u20ac71.95"});
+					  });
+				  </script>
+  <div class="modal fade js-product-images-modal" id="product-modal">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-body">
+  <figure>
+  <img class="js-modal-product-cover product-cover-modal" width="670" src="https://pelipeikko.fi/1394-large_default/spirit-island.jpg" alt="" title="" itemprop="image">
+  <figcaption class="image-caption">
+  <div id="product-description-short" itemprop="description"><p>Spirit Island is a cooperative, settler-destruction strategy game for 1 to 4 players designed by R. Eric Reuss and set in an alternate-history world around A.D. 1700. Players are different spirits of the land, each with their own unique elemental powers, forced to defend their island home from colonizing Invaders spreading blight and destruction. Work with your fellow spirits and the native islanders to increase your power and drive the invading colonists from your island in this strategic area-control game.</p></div>
+  </figcaption>
+  </figure>
+  <aside id="thumbnails" class="thumbnails js-thumbnails text-xs-center">
+  <div class="js-modal-mask mask  nomargin ">
+  <ul class="product-images js-modal-product-images">
+  <li class="thumb-container">
+  <img data-image-large-src="https://pelipeikko.fi/1394-large_default/spirit-island.jpg" class="thumb js-modal-thumb" src="https://pelipeikko.fi/1394-medium_default/spirit-island.jpg" alt="" title="" width="239" itemprop="image">
+  </li>
+  <li class="thumb-container">
+  <img data-image-large-src="https://pelipeikko.fi/1395-large_default/spirit-island.jpg" class="thumb js-modal-thumb" src="https://pelipeikko.fi/1395-medium_default/spirit-island.jpg" alt="" title="" width="239" itemprop="image">
+  </li>
+  </ul>
+  </div>
+  </aside>
+  </div>
+  </div>
+  </div>
+  </div>
+  <footer class="page-footer">
+  
+  </footer>
+  </section>
+  </div>
+  </div>
+  </section>
+  </div>
+  <footer id="footer">
+  <div class="footer-before">
+  <div class="container">
+  </div>
+  </div>
+  <div class="footer-container">
+  <div class="container">
+  <div class="row footer">
+  <div class="col-md-4 links block links">
+  <h3 class="h3  hidden-md-down hidden-md-up">Links</h3>
+  <div class="title block_title h3 clearfix hidden-md-up " data-target="#footer_sub_menu_39185" data-toggle="collapse">
+  <span class="">Links</span>
+  <span class="pull-xs-right hidden-lg-up">
+  <span class="navbar-toggler collapse-icons">
+  <i class="material-icons add">&#xE313;</i>
+  <i class="material-icons remove">&#xE316;</i>
+  </span>
+  </span>
+  </div>
+  <ul id="footer_sub_menu_39185" class="collapse block_content">
+  <li>
+  <a id="link-cms-page-1-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/1-Shipping-and-Returns" title="Shipping &amp; Returns">
+  Shipping &amp; Returns
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-4-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/4-Terms-Conditions" title="Terms &amp; Conditions">
+  Terms &amp; Conditions
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-10-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/10-faq" title="">
+  FAQ
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-18-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/18-about-us" title="">
+  About us
+  </a>
+  </li>
+  <li>
+  <a id="link-custom-page-Contact Us-2" class="custom-page-link" href="https://pelipeikko.fi/en/contact-us" title="">
+  Contact Us
+  </a>
+  </li>
+  <li>
+  <a id="link-custom-page-My account-2" class="custom-page-link" href="https://pelipeikko.fi/en/my-account" title="">
+  My account
+  </a>
+  </li>
+  </ul>
+  </div>
+  <img class="img-fluid" src="https://pelipeikko.fi/img/cms/pay.jpg" width="1024" height="95" alt="pay.jpg" />
+  </div>
+  <div class="row footer-after">
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <a class="top_button" href="#" style="">&nbsp;</a>
+  </footer>
+  </main>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/core.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/theme.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/blockreassurance/views/js/front.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_googleanalytics/views/js/GoogleAnalyticActionLib.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_emailalerts/js/mailalerts.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/backinstock/views/js/velovalidation.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/backinstock/views/js/front/backinstock.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/js/jquery/ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_searchbar/ps_searchbar.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_shoppingcart/ps_shoppingcart.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/tc_imageslider/views/js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/owl.carousel.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/totalstorage.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/custom.js"></script>
+  <script type="text/javascript">
+				  var time_start;
+				  $(window).load(
+					  function() {
+						  time_start = new Date();
+					  }
+				  );
+				  $(window).unload(
+					  function() {
+						  var time_end = new Date();
+						  var pagetime = new Object;
+						  pagetime.type = "pagetime";
+						  pagetime.id_connections = "1014151";
+						  pagetime.id_page = "98";
+						  pagetime.time_start = "2019-12-15 09:11:31";
+						  pagetime.token = "3594c9efe1f7d02833b1bcdc28f386c1a2d3bf46";
+						  pagetime.time = time_end-time_start;
+						  $.post("https://pelipeikko.fi/en/index.php?controller=statistics", pagetime);
+					  }
+				  );
+			  </script>
+  </body>
+  </html>
+`,
+
+  RESPONSE_PELIPEIKKO_SPIRIT_ISLAND_BRANCH_CLAW: `
+
+  <!doctype html>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="canonical" href="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw">
+  <title>Spirit Island: Branch &amp; Claw - Lautapeli - Pelipeikko</title>
+  <meta name="description" content="Get Spirit Island: Branch &amp; Claw and other new board games at Pelipeikko. Free shipping on orders above €80">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="/img/favicon.ico?1519654645">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico?1519654645">
+  <link rel="stylesheet" href="https://pelipeikko.fi/themes/digitalplug/assets/css/theme.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/modules/blockreassurance/views/css/front.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/modules/backinstock/views/css/hook/productupdate.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/js/jquery/ui/themes/base/minified/jquery-ui.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/modules/tc_imageslider/views/css/flexslider.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://pelipeikko.fi/themes/digitalplug/assets/css/custom.css" type="text/css" media="all">
+  <script type="text/javascript">
+		  var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"Total","amount":0,"value":"\u20ac0.00"},"total_including_tax":{"type":"total","label":"Total (tax incl.)","amount":0,"value":"\u20ac0.00"},"total_excluding_tax":{"type":"total","label":"Total (tax excl.)","amount":0,"value":"\u20ac0.00"}},"subtotals":{"products":{"type":"products","label":"Subtotal","amount":0,"value":"\u20ac0.00"},"discounts":null,"shipping":{"type":"shipping","label":"Shipping","amount":0,"value":"Free"},"tax":{"type":"tax","label":"Included taxes","amount":0,"value":"\u20ac0.00"}},"products_count":0,"summary_string":"0 items","vouchers":{"allowed":1,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"name":"Euro","iso_code":"EUR","iso_code_num":"978","sign":"\u20ac"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"English (English)","iso_code":"en","locale":"en-US","language_code":"en-us","is_rtl":"0","date_format_lite":"d-m-Y","date_format_full":"d-m-Y H:i:s","id":1},"page":{"title":"","canonical":null,"meta":{"title":"Spirit Island: Branch & Claw","description":"Get Spirit Island: Branch & Claw and other new board games at Pelipeikko. Free shipping on orders above \u20ac80","keywords":"","robots":"index"},"page_name":"product","body_classes":{"lang-en":true,"lang-rtl":false,"country-FI":true,"currency-EUR":true,"layout-full-width":true,"page-product":true,"tax-display-enabled":true,"product-id-126":true,"product-Spirit Island: Branch & Claw":true,"product-id-category-2":true,"product-id-manufacturer-3":true,"product-id-supplier-0":true,"product-available-for-order":true},"admin_notifications":[]},"shop":{"name":"Pelipeikko","logo":"\/img\/pelipeikko-logo-1506709164.jpg","stores_icon":"\/img\/logo_stores.png","favicon":"\/img\/favicon.ico"},"urls":{"base_url":"https:\/\/pelipeikko.fi\/","current_url":"https:\/\/pelipeikko.fi\/en\/home\/126-spirit-island-branch-claw","shop_domain_url":"https:\/\/pelipeikko.fi","img_ps_url":"https:\/\/pelipeikko.fi\/img\/","img_cat_url":"https:\/\/pelipeikko.fi\/img\/c\/","img_lang_url":"https:\/\/pelipeikko.fi\/img\/l\/","img_prod_url":"https:\/\/pelipeikko.fi\/img\/p\/","img_manu_url":"https:\/\/pelipeikko.fi\/img\/m\/","img_sup_url":"https:\/\/pelipeikko.fi\/img\/su\/","img_ship_url":"https:\/\/pelipeikko.fi\/img\/s\/","img_store_url":"https:\/\/pelipeikko.fi\/img\/st\/","img_col_url":"https:\/\/pelipeikko.fi\/img\/co\/","img_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/img\/","css_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/css\/","js_url":"https:\/\/pelipeikko.fi\/themes\/digitalplug\/assets\/js\/","pic_url":"https:\/\/pelipeikko.fi\/upload\/","pages":{"address":"https:\/\/pelipeikko.fi\/en\/address","addresses":"https:\/\/pelipeikko.fi\/en\/addresses","authentication":"https:\/\/pelipeikko.fi\/en\/login","cart":"https:\/\/pelipeikko.fi\/en\/cart","category":"https:\/\/pelipeikko.fi\/en\/index.php?controller=category","cms":"https:\/\/pelipeikko.fi\/en\/index.php?controller=cms","contact":"https:\/\/pelipeikko.fi\/en\/contact-us---","discount":"https:\/\/pelipeikko.fi\/en\/discount","guest_tracking":"https:\/\/pelipeikko.fi\/en\/guest-tracking","history":"https:\/\/pelipeikko.fi\/en\/order-history","identity":"https:\/\/pelipeikko.fi\/en\/identity","index":"https:\/\/pelipeikko.fi\/en\/","my_account":"https:\/\/pelipeikko.fi\/en\/my-account","order_confirmation":"https:\/\/pelipeikko.fi\/en\/order-confirmation","order_detail":"https:\/\/pelipeikko.fi\/en\/index.php?controller=order-detail","order_follow":"https:\/\/pelipeikko.fi\/en\/order-follow","order":"https:\/\/pelipeikko.fi\/en\/order","order_return":"https:\/\/pelipeikko.fi\/en\/index.php?controller=order-return","order_slip":"https:\/\/pelipeikko.fi\/en\/credit-slip","pagenotfound":"https:\/\/pelipeikko.fi\/en\/page-not-found","password":"https:\/\/pelipeikko.fi\/en\/password-recovery","pdf_invoice":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-invoice","pdf_order_return":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-order-return","pdf_order_slip":"https:\/\/pelipeikko.fi\/en\/index.php?controller=pdf-order-slip","prices_drop":"https:\/\/pelipeikko.fi\/en\/prices-drop","product":"https:\/\/pelipeikko.fi\/en\/index.php?controller=product","search":"https:\/\/pelipeikko.fi\/en\/search","sitemap":"https:\/\/pelipeikko.fi\/en\/sitemap","stores":"https:\/\/pelipeikko.fi\/en\/stores","supplier":"https:\/\/pelipeikko.fi\/en\/supplier","register":"https:\/\/pelipeikko.fi\/en\/login?create_account=1","order_login":"https:\/\/pelipeikko.fi\/en\/order?login=1"},"alternative_langs":{"en-us":"https:\/\/pelipeikko.fi\/en\/home\/126-spirit-island-branch-claw","fi-fi":"https:\/\/pelipeikko.fi\/fi\/home\/126-spirit-island-branch-claw"},"theme_assets":"\/themes\/digitalplug\/assets\/","actions":{"logout":"https:\/\/pelipeikko.fi\/en\/?mylogout="},"no_picture_image":{"bySize":{"cart_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-cart_default.jpg","width":80,"height":90},"small_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-small_default.jpg","width":80,"height":90},"medium_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-medium_default.jpg","width":239,"height":300},"home_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-home_default.jpg","width":239,"height":300},"large_default":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-large_default.jpg","width":670,"height":830}},"small":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-cart_default.jpg","width":80,"height":90},"medium":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-medium_default.jpg","width":239,"height":300},"large":{"url":"https:\/\/pelipeikko.fi\/img\/p\/en-default-large_default.jpg","width":670,"height":830},"legend":""}},"configuration":{"display_taxes_label":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":false},"quantity_discount":{"type":"price","label":"Price"},"voucher_enabled":1,"return_enabled":1},"field_required":[],"breadcrumb":{"links":[{"title":"Home","url":"https:\/\/pelipeikko.fi\/en\/"},{"title":"Spirit Island: Branch & Claw","url":"https:\/\/pelipeikko.fi\/en\/home\/126-spirit-island-branch-claw"}],"count":2},"link":{"protocol_link":"https:\/\/","protocol_content":"https:\/\/"},"time":1576394081,"static_token":"08d2d7521b8f4b48450ba39ca67190a7","token":"f5874bf2707667ed1318e950f7b3cc4c"};
+		  var psr_icon_color = "#F19D76";
+		</script>
+  <script type="text/javascript">
+	  (window.gaDevIds=window.gaDevIds||[]).push('d6YPbH');
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+			  ga('create', 'UA-109858368-1', 'auto');
+				  
+	  ga('require', 'ec');
+  </script>
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw">
+  <meta property="og:title" content="Spirit Island: Branch &amp; Claw">
+  <meta property="og:site_name" content="Pelipeikko">
+  <meta property="og:description" content="Get Spirit Island: Branch &amp; Claw and other new board games at Pelipeikko. Free shipping on orders above €80">
+  <meta property="og:image" content="https://pelipeikko.fi/1392-large_default/spirit-island-branch-claw.jpg">
+  <meta property="product:pretax_price:amount" content="23.346774">
+  <meta property="product:pretax_price:currency" content="EUR">
+  <meta property="product:price:amount" content="28.95">
+  <meta property="product:price:currency" content="EUR">
+  </head>
+  <body id="product" class="lang-en country-fi currency-eur layout-full-width page-product tax-display-enabled product-id-126 product-spirit-island-branch-claw product-id-category-2 product-id-manufacturer-3 product-id-supplier-0 product-available-for-order">
+  <main>
+  <header id="header">
+  <div class="header-banner">
+  </div>
+  <nav class="header-nav">
+  <div class="container">
+  <div class="nav-inner">
+  <div class="hidden-md-down">
+  <div class="left-nav">
+  <div id="_desktop_language_selector">
+  <div class="language-selector-wrapper">
+  
+  <div class="language-selector dropdown js-dropdown">
+  <span class="expand-more hidden-md-down" data-toggle="dropdown">English</span>
+  <a data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hidden-md-down">
+  <i class="material-icons expand-more">&#xE5CF;</i>
+  </a>
+  <ul class="dropdown-menu hidden-md-down">
+  <li class="current">
+  <a href="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw" class="dropdown-item">English</a>
+  </li>
+  <li>
+  <a href="https://pelipeikko.fi/fi/home/126-spirit-island-branch-claw" class="dropdown-item">Suomi</a>
+  </li>
+  </ul>
+  <select class="link hidden-lg-up">
+  <option value="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw" selected="selected">English</option>
+  <option value="https://pelipeikko.fi/fi/home/126-spirit-island-branch-claw">Suomi</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="right-nav">
+  <div id="tcblocktopcms">
+  <div class="tic-blocktopcms"><span style="font-size:11pt;line-height:107%;font-family:Calibri, sans-serif;color:#ffffff;" xml:lang="en-us" lang="en-us">Shipping Cost 5,5€, free above 80€</span></div>
+  </div>
+  </div>
+  </div>
+  <div class="hidden-lg-up text-xs-center mobile">
+  <div class="pull-xs-left" id="menu-icon">
+  <i class="material-icons menu-open">&#xE5D2;</i>
+  <i class="material-icons menu-close">&#xE5CD;</i>
+  </div>
+  <div class="pull-xs-right" id="_mobile_cart"></div>
+  <div class="pull-xs-right" id="_mobile_user_info"></div>
+  <div class="top-logo" id="_mobile_logo"></div>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </div>
+  </nav>
+  <div class="header-top">
+  <div class="container">
+  <div class="header_logo hidden-md-down" id="_desktop_logo">
+  <a href="https://pelipeikko.fi/">
+  <img class="logo img-responsive" src="/img/pelipeikko-logo-1506709164.jpg" alt="Pelipeikko">
+  </a>
+  </div>
+  <div id="_desktop_cart">
+  <div class="blockcart cart-preview inactive" data-refresh-url="//pelipeikko.fi/en/module/ps_shoppingcart/ajax">
+  <div class="header blockcart-header dropdown js-dropdown">
+  <a rel="nofollow" href="//pelipeikko.fi/en/cart?action=show" class="cart-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <span class="cart-products-count">
+  0
+  </span>
+  </a>
+  </div>
+  </div>
+  </div>
+  <div id="_desktop_user_info">
+  <div class="tm_userinfotitle"></div>
+  <div class="user-info">
+  <a href="https://pelipeikko.fi/en/my-account" title="Log in to your customer account" rel="nofollow">
+  <i class="material-icons">&#xE899;</i>
+  <span class="sign-in">Sign in</span>
+  </a>
+  </div>
+  </div>
+  <div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="//pelipeikko.fi/en/search">
+  <div class="searchtoggle">
+  <form method="get" action="//pelipeikko.fi/en/search">
+  <input type="hidden" name="controller" value="search">
+  <input type="text" name="s" value="" placeholder="Search our Products">
+  <button type="submit">
+  <span class="tc-search-icon"></span>
+  </button>
+  </form>
+  </div>
+  </div>
+  
+  <script type="application/ld+json">
+  {
+	 "@context": "http://schema.org",
+	 "@type": "WebSite",
+	 "url": "http://pelipeikko.fi/"
+	 , "name" : "Pelipeikko",
+	 "alternateName" : ""   ,
+	 "potentialAction": {
+	   "@type": "SearchAction",
+	   "target": "https://pelipeikko.fi/en/search?search_query={search_query}",
+	   "query-input": "required name=search_query"
+	 }
+	 }
+  </script>
+  <div id="mobile_top_menu_wrapper" class="row hidden-lg-up" style="display:none;">
+  <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
+  <div class="js-top-menu-bottom">
+  <div id="_mobile_currency_selector"></div>
+  <div id="_mobile_language_selector"></div>
+  <div id="_mobile_contact_link"></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="nav-bar">
+  <div class="container">
+  <div class="menu tc-top-menu col-lg-8 col-md-7 js-top-menu position-static hidden-md-down" id="_desktop_top_menu">
+  <ul class="top-menu container" id="top-menu" data-depth="0">
+  <li class="link" id="lnk-board-games">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/12-board-games" data-depth="0">
+  Board Games
+  </a>
+  </li>
+  <li class="link" id="lnk-damaged-in-transit-reduced-priced">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/25-damaged-in-transit-reduced-priced" data-depth="0">
+  Damaged in transit / reduced priced
+  </a>
+  </li>
+  <li class="category" id="category-26">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/26-upcoming-games" data-depth="0">
+  Upcoming Games
+  </a>
+  </li>
+  <li class="cms-page" id="cms-page-14">
+  <a class="dropdown-item" href="https://pelipeikko.fi/en/content/14-tips-tricks" data-depth="0">
+  Tips &amp; Tricks
+  </a>
+  </li>
+  <li class="link" id="lnk-contact-us">
+  <a class="dropdown-item" href="https://pelipeikko.fi/index.php?controller=contact" data-depth="0">
+  Contact Us
+  </a>
+  </li>
+  </ul>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </div>
+  </header>
+  <aside id="notifications">
+  <div class="container">
+  </div>
+  </aside>
+  <nav data-depth="2" class="breadcrumb hidden-sm-down">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  <a itemprop="item" href="https://pelipeikko.fi/en/">
+  <span itemprop="name">Home</span>
+  </a>
+  <meta itemprop="position" content="1">
+  </li>
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  <a itemprop="item" href="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw">
+  <span itemprop="name">Spirit Island: Branch &amp; Claw</span>
+  </a>
+  <meta itemprop="position" content="2">
+  </li>
+  </ol>
+  </nav>
+  <div class="container">
+  <section id="wrapper">
+  <div id="columns_inner">
+  <div id="content-wrapper">
+  <section id="main" itemscope itemtype="https://schema.org/Product">
+  <meta itemprop="url" content="https://pelipeikko.fi/en/home/126-spirit-island-branch-claw">
+  <div class="row">
+  <div class="col-md-6">
+  <section class="page-content" id="content">
+  <div class="product-leftside">
+  <ul class="product-flags">
+  </ul>
+  <div class="images-container">
+  <div class="product-cover">
+  <img class="js-qv-product-cover" src="https://pelipeikko.fi/1392-large_default/spirit-island-branch-claw.jpg" alt="" title="" style="width:100%;" itemprop="image">
+  <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
+  <i class="material-icons zoom-in">&#xE8FF;</i>
+  </div>
+  </div>
+  <div class="js-qv-mask mask">
+  <ul class="product-images js-qv-product-images">
+  <li class="thumb-container">
+  <img class="thumb js-thumb  selected " data-image-medium-src="https://pelipeikko.fi/1392-medium_default/spirit-island-branch-claw.jpg" data-image-large-src="https://pelipeikko.fi/1392-large_default/spirit-island-branch-claw.jpg" src="https://pelipeikko.fi/1392-home_default/spirit-island-branch-claw.jpg" alt="" title="" width="100" itemprop="image">
+  </li>
+  <li class="thumb-container">
+  <img class="thumb js-thumb " data-image-medium-src="https://pelipeikko.fi/1393-medium_default/spirit-island-branch-claw.jpg" data-image-large-src="https://pelipeikko.fi/1393-large_default/spirit-island-branch-claw.jpg" src="https://pelipeikko.fi/1393-home_default/spirit-island-branch-claw.jpg" alt="" title="" width="100" itemprop="image">
+  </li>
+  </ul>
+  </div>
+  <div class="scroll-box-arrows">
+  <i class="material-icons left">&#xE314;</i>
+  <i class="material-icons right">&#xE315;</i>
+  </div>
+  </div>
+  </div>
+  </section>
+  </div>
+  <div class="col-md-6">
+  <h1 class="h1 productpage_title" itemprop="name">Spirit Island: Branch &amp; Claw</h1>
+  
+  <div class="product-prices">
+  <div class="product-price h5 " itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+  <link itemprop="availability" href="https://schema.org/InStock" />
+  <meta itemprop="priceCurrency" content="EUR">
+  <div class="current-price">
+  <span itemprop="price" content="28.95">€28.95</span>
+  </div>
+  </div>
+  <div class="tax-shipping-delivery-label">
+  VAT included
+  </div>
+  </div>
+  <div class="product-information">
+  <div id="product-description-short-126" itemprop="description"><p>Expansion for base game</p>
+  <p>The Branch &amp; Claw Expansion for Spirit Island, featuring two new Spirits (Sharp Fangs Behind the Leaves and Keeper of the Forbidden Wilds) and a new Adversary (France) as well as adding Events to the Invader Phase of the game!</p>
+  <p>The Event Deck has events that happen each turn, adding further variation to the game play. In addition, the expansion has Tokens that prevent the invaders from exploring, building, or ravaging or add wild Beasts to the land, a new set of powers (31 Minor and 21 Major) that use the new Tokens and expand the gameplay, 15 new Fear cards, new Blight cards, and new Scenarios.</p>
+  <p></p></div>
+  <div class="product-actions">
+  <form action="https://pelipeikko.fi/en/cart" method="post" id="add-to-cart-or-refresh">
+  <input type="hidden" name="token" value="08d2d7521b8f4b48450ba39ca67190a7">
+  <input type="hidden" name="id_product" value="126" id="product_page_product_id">
+  <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+  <div class="product-variants">
+  </div>
+  <section class="product-discounts">
+  </section>
+  <div class="product-add-to-cart">
+  <span class="control-label">Quantity</span>
+  <div class="product-quantity">
+  <div class="qty">
+  <input type="text" name="qty" id="quantity_wanted" value="1" class="input-group" min="1">
+  </div>
+  <div class="add">
+  <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit" disabled>
+  <i class="material-icons shopping-cart">&#xE547;</i>
+  Add to cart
+  </button>
+  <span id="product-availability">
+  <i class="material-icons product-unavailable">&#xE14B;</i>
+  Out of stock
+  </span>
+  </div>
+  </div>
+  <div class="clearfix"></div>
+  <p class="product-minimal-quantity">
+  </p>
+  </div>
+  <div class="product-additional-info">
+  <style type="text/css"></style><script type="text/javascript"></script><script>
+	  var backinstock_privacy_accept_error = "Please accept the terms of service and privacy policy before proceeding.";
+  </script>
+  <div id="product_update_block_back">
+  <div id="pal_title_row_stock_back" style="display:none; background: #ffffff; border:1px solid #ffffff;">
+  <div class="pal_l_heading_back" style='color:#676161'>Notify me when this product is in stock&nbsp;</div>
+  <div class="clear"></div>
+  <input type='hidden' name='actual_price' id='actual_price' value='28.95' />
+  <input type='hidden' name='product_id' value='126' />
+  <input type='hidden' name='customer_id' value='0' />
+  <input type='hidden' name='combination_id' id='pal_attribute_id_back' value='' />
+  <input type='hidden' name='currency_id' value='2' />
+  <input type='hidden' name='currency_code' value='EUR' />
+  <input type='hidden' name='shop_id' value='1' />
+  <input type='hidden' name='subscribe_type_back' id='subscribe_type_back' value='' />
+  <div class="clear"></div>
+  <div>
+  <div id="email_data_back" class="pal_popup_product_email_row_back">
+  <div class="pal_small_input_row pal_email_label" style="width:20%;color:#676161">E-mail:</div>
+  <div id="notify_email_back" class="pal_small_input_row pal_email_input_back" style="width:55%;">
+  <input type="text" id='user_email_subscribe_back' name="customer_email_back" placeholder="Email" value='' />
+  <div id="email_error_back"></div>
+  </div>
+  </div>
+  <div id="submit_alert_product_back" class="pal_popup_product_email_row_back" style="border:none;margin:2%; width: 100%;">
+  <span id="loading_image_back" style="display: none; text-align: center; margin-left: 37%;float: left;"><img src="/modules/backinstock/views/img/loading.gif" height="25" width="25" /></span><input class="save_subscribe_back" onclick="save_subscribe_data_back()" type="button" value='Notify Me' name="alert_submit" style="height:98%;margin: 0% 0%;width: 45%; float:right; font-size: 70%; font-weight: bold;" />
+  </div>
+  </div>
+  <div class="clear"></div>
+  <div id="arrow_update_back"></div>
+  </div>
+  </div>
+  <script type='text/javascript'>
+		  var block_id;
+  
+		  //var quantityAvailable = 0;
+		  var pal_email_require = "Please enter your email id";
+		  var pal_email_invalid_error = "Please enter a valid email id";
+		  var pal_alert_create_success_msg = "You are successfully subscribed";
+		  var pal_alert_update_success_msg = "You are already subscribed";
+  
+  
+		  var action_product_front_back = 'https://pelipeikko.fi/en/module/backinstock/success?render=add';
+		  var empty_fname = "Please enter First name.";
+		  var maxchar_fname = "First name cannot be greater than # characters.";
+		  var minchar_fname = "First name cannot be less than # characters.";
+		  var empty_mname = "Please enter middle name.";
+		  var maxchar_mname = "Middle name cannot be greater than # characters.";
+		  var minchar_mname = "Middle name cannot be less than # characters.";
+		  var only_alphabet = "Only alphabets are allowed.";
+		  var empty_lname = "Please enter Last name.";
+		  var maxchar_lname = "Last name cannot be greater than # characters.";
+		  var minchar_lname = "Last name cannot be less than # characters.";
+		  var alphanumeric = "Field should be alphanumeric.";
+		  var empty_pass = "Please enter Password.";
+		  var maxchar_pass = "Password cannot be greater than # characters.";
+		  var minchar_pass = "Password cannot be less than # characters.";
+		  var specialchar_pass = "Password should contain atleast 1 special character.";
+		  var alphabets_pass = "Password should contain alphabets.";
+		  var capital_alphabets_pass = "Password should contain atleast 1 capital letter.";
+		  var small_alphabets_pass = "Password should contain atleast 1 small letter.";
+		  var digit_pass = "Password should contain atleast 1 digit.";
+		  var empty_field = "Field cannot be empty.";
+		  var number_field = "You can enter only numbers.";
+		  var positive_number = "Number should be greater than 0.";
+		  var maxchar_field = "Field cannot be greater than # characters.";
+		  var minchar_field = "Field cannot be less than # character(s).";
+		  var empty_email = "Please enter Email.";
+		  var validate_email = "Please enter a valid Email.";
+		  var empty_country = "Please enter country name.";
+		  var maxchar_country = "Country cannot be greater than # characters.";
+		  var minchar_country = "Country cannot be less than # characters.";
+		  var empty_city = "Please enter city name.";
+		  var maxchar_city = "City cannot be greater than # characters.";
+		  var minchar_city = "City cannot be less than # characters.";
+		  var empty_state = "Please enter state name.";
+		  var maxchar_state = "State cannot be greater than # characters.";
+		  var minchar_state = "State cannot be less than # characters.";
+		  var empty_proname = "Please enter product name.";
+		  var maxchar_proname = "Product cannot be greater than # characters.";
+		  var minchar_proname = "Product cannot be less than # characters.";
+		  var empty_catname = "Please enter category name.";
+		  var maxchar_catname = "Category cannot be greater than # characters.";
+		  var minchar_catname = "Category cannot be less than # characters.";
+		  var empty_zip = "Please enter zip code.";
+		  var maxchar_zip = "Zip cannot be greater than # characters.";
+		  var minchar_zip = "Zip cannot be less than # characters.";
+		  var empty_username = "Please enter Username.";
+		  var maxchar_username = "Username cannot be greater than # characters.";
+		  var minchar_username = "Username cannot be less than # characters.";
+		  var invalid_date = "Invalid date format.";
+		  var maxchar_sku = "SKU cannot be greater than # characters.";
+		  var minchar_sku = "SKU cannot be less than # characters.";
+		  var invalid_sku = "Invalid SKU format.";
+		  var empty_sku = "Please enter SKU.";
+		  var validate_range = "Number is not in the valid range. It should be betwen # and %%";
+		  var empty_address = "Please enter address.";
+		  var minchar_address = "Address cannot be less than # characters.";
+		  var maxchar_address = "Address cannot be greater than # characters.";
+		  var empty_company = "Please enter company name.";
+		  var minchar_company = "Company name cannot be less than # characters.";
+		  var maxchar_company = "Company name cannot be greater than # characters.";
+		  var invalid_phone = "Phone number is invalid.";
+		  var empty_phone = "Please enter phone number.";
+		  var minchar_phone = "Phone number cannot be less than # characters.";
+		  var maxchar_phone = "Phone number cannot be greater than # characters.";
+		  var empty_brand = "Please enter brand name.";
+		  var maxchar_brand = "Brand name cannot be greater than # characters.";
+		  var minchar_brand = "Brand name cannot be less than # characters.";
+		  var empty_shipment = "Please enter Shimpment.";
+		  var maxchar_shipment = "Shipment cannot be greater than # characters.";
+		  var minchar_shipment = "Shipment cannot be less than # characters.";
+		  var invalid_ip = "Invalid IP format.";
+		  var invalid_url = "Invalid URL format.";
+		  var empty_url = "Please enter URL.";
+		  var valid_amount = "Field should be numeric.";
+		  var valid_decimal = "Field can have only upto two decimal values.";
+		  var max_email = "Email cannot be greater than # characters.";
+		  var specialchar_zip = "Zip should not have special characters.";
+		  var specialchar_sku = "SKU should not have special characters.";
+		  var max_url = "URL cannot be greater than # characters.";
+		  var valid_percentage = "Percentage should be in number.";
+		  var between_percentage = "Percentage should be between 0 and 100.";
+		  var maxchar_size = "Size cannot be greater than # characters.";
+		  var specialchar_size = "Size should not have special characters.";
+		  var specialchar_upc = "UPC should not have special characters.";
+		  var maxchar_upc = "UPC cannot be greater than # characters.";
+		  var specialchar_ean = "EAN should not have special characters.";
+		  var maxchar_ean = "EAN cannot be greater than # characters.";
+		  var specialchar_bar = "Barcode should not have special characters.";
+		  var maxchar_bar = "Barcode cannot be greater than # characters.";
+		  var positive_amount = "Field should be positive.";
+		  var maxchar_color = "Color could not be greater than # characters.";
+		  var invalid_color = "Color is not valid.";
+		  var specialchar = "Special characters are not allowed.";
+		  var script = "Script tags are not allowed.";
+		  var style = "Style tags are not allowed.";
+		  var iframe = "Iframe tags are not allowed.";
+		  var not_image = "Uploaded file is not an image.";
+		  var image_size = "Uploaded file size must be less than #.";
+		  var html_tags = "Field should not contain HTML tags.";
+		  var number_pos = "You can enter only positive numbers.";
+		  var invalid_separator = "Invalid comma (#) separated values.";
+  
+		  var price_alert_product_price = '€28.95';
+				  var price_alert_product_image = 'https://pelipeikko.fi/1392-cart_default/spirit-island-branch-claw.jpg';
+		  
+	  </script>
+  </div>
+  <input class="product-refresh ps-hidden-by-js" name="refresh" type="submit" value="Refresh">
+  </form>
+  </div>
+  <div class="blockreassurance_product">
+  <div>
+  <span class="item-product">
+  <img class="svg invisible" src="/modules/blockreassurance/img/reassurance-2-1.jpg">
+  &nbsp;
+  </span>
+  <p class="block-title" style="color:#000000;">1 - 2 working days delivery</p>
+  </div>
+  <div>
+  <span class="item-product">
+  <img class="svg invisible" src="/modules/blockreassurance/img/ic_swap_horiz_black_36dp_1x.png">
+  &nbsp;
+  </span>
+  <p class="block-title" style="color:#000000;">30-day return policy</p>
+  </div>
+  <div>
+  <span class="item-product">
+  <img class="svg invisible" src="/modules/blockreassurance/img/reassurance-6-1.jpg">
+  &nbsp;
+  </span>
+  <p class="block-title" style="color:#000000;">Shipping Cost 5,5€, free above 80€</p>
+  </div>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <section class="product-tabcontent">
+  <div class="tabs">
+  <ul class="nav nav-tabs">
+  <li class="nav-item">
+  <a class="nav-link active" data-toggle="tab" href="#product-details">
+  Product Details
+  </a>
+  </li>
+  </ul>
+  <div class="tab-content" id="tab-content">
+  <div class="tab-pane fade in" id="description">
+  <div class="product-description"></div>
+  </div>
+  <div class="tab-pane fade in active" id="product-details" data-product="{&quot;id_shop_default&quot;:&quot;1&quot;,&quot;id_manufacturer&quot;:&quot;3&quot;,&quot;id_supplier&quot;:&quot;0&quot;,&quot;reference&quot;:&quot;GTGSISLBRCL&quot;,&quot;is_virtual&quot;:&quot;0&quot;,&quot;delivery_in_stock&quot;:&quot;&quot;,&quot;delivery_out_stock&quot;:&quot;&quot;,&quot;id_category_default&quot;:&quot;2&quot;,&quot;on_sale&quot;:&quot;0&quot;,&quot;online_only&quot;:&quot;0&quot;,&quot;ecotax&quot;:0,&quot;minimal_quantity&quot;:&quot;1&quot;,&quot;low_stock_threshold&quot;:null,&quot;low_stock_alert&quot;:&quot;0&quot;,&quot;price&quot;:28.949999999999999289457264239899814128875732421875,&quot;unity&quot;:&quot;&quot;,&quot;unit_price_ratio&quot;:&quot;0.000000&quot;,&quot;additional_shipping_cost&quot;:&quot;0.00&quot;,&quot;customizable&quot;:&quot;0&quot;,&quot;text_fields&quot;:&quot;0&quot;,&quot;uploadable_files&quot;:&quot;0&quot;,&quot;redirect_type&quot;:&quot;404&quot;,&quot;id_type_redirected&quot;:&quot;0&quot;,&quot;available_for_order&quot;:&quot;1&quot;,&quot;available_date&quot;:&quot;0000-00-00&quot;,&quot;show_condition&quot;:&quot;0&quot;,&quot;condition&quot;:&quot;new&quot;,&quot;show_price&quot;:&quot;1&quot;,&quot;indexed&quot;:&quot;1&quot;,&quot;visibility&quot;:&quot;both&quot;,&quot;cache_default_attribute&quot;:&quot;0&quot;,&quot;advanced_stock_management&quot;:&quot;0&quot;,&quot;date_add&quot;:&quot;2018-02-06 16:21:12&quot;,&quot;date_upd&quot;:&quot;2019-11-28 16:08:19&quot;,&quot;pack_stock_type&quot;:&quot;3&quot;,&quot;meta_description&quot;:&quot;Get Spirit Island: Branch &amp; Claw and other new board games at Pelipeikko. Free shipping on orders above \u20ac80&quot;,&quot;meta_keywords&quot;:&quot;&quot;,&quot;meta_title&quot;:&quot;&quot;,&quot;link_rewrite&quot;:&quot;spirit-island-branch-claw&quot;,&quot;name&quot;:&quot;Spirit Island: Branch &amp; Claw&quot;,&quot;description&quot;:&quot;&quot;,&quot;description_short&quot;:&quot;&lt;p&gt;Expansion for base game&lt;\/p&gt;\n&lt;p&gt;The Branch &amp;amp; Claw Expansion for Spirit Island, featuring two new Spirits (Sharp Fangs Behind the Leaves and Keeper of the Forbidden Wilds) and a new Adversary (France) as well as adding Events to the Invader Phase of the game!&lt;\/p&gt;\n&lt;p&gt;The Event Deck has events that happen each turn, adding further variation to the game play. In addition, the expansion has Tokens that prevent the invaders from exploring, building, or ravaging or add wild Beasts to the land, a new set of powers (31 Minor and 21 Major) that use the new Tokens and expand the gameplay, 15 new Fear cards, new Blight cards, and new Scenarios.&lt;\/p&gt;\n&lt;p&gt;&lt;\/p&gt;&quot;,&quot;available_now&quot;:&quot;&quot;,&quot;available_later&quot;:&quot;&quot;,&quot;id&quot;:126,&quot;id_product&quot;:126,&quot;out_of_stock&quot;:2,&quot;new&quot;:0,&quot;id_product_attribute&quot;:0,&quot;quantity_wanted&quot;:1,&quot;extraContent&quot;:[],&quot;allow_oosp&quot;:0,&quot;category&quot;:&quot;home&quot;,&quot;category_name&quot;:&quot;Home&quot;,&quot;link&quot;:&quot;https:\/\/pelipeikko.fi\/en\/home\/126-spirit-island-branch-claw&quot;,&quot;attribute_price&quot;:0,&quot;price_tax_exc&quot;:23.346773999999999915644366410560905933380126953125,&quot;price_without_reduction&quot;:28.949999999999999289457264239899814128875732421875,&quot;reduction&quot;:0,&quot;specific_prices&quot;:[],&quot;quantity&quot;:0,&quot;quantity_all_versions&quot;:0,&quot;id_image&quot;:&quot;en-default&quot;,&quot;features&quot;:{&quot;8&quot;:{&quot;values&quot;:[&quot;1 Player&quot;,&quot;2 Players&quot;,&quot;3 Players&quot;,&quot;4 Players&quot;],&quot;name&quot;:&quot;Number of Players&quot;,&quot;id_feature&quot;:&quot;8&quot;,&quot;value&quot;:&quot;1 Player, 2 Players, 3 Players, 4 Players&quot;},&quot;11&quot;:{&quot;values&quot;:[&quot;Co-operative\/Alliance&quot;,&quot;War\/Fighting&quot;,&quot;Card Drafting&quot;,&quot;Hand Management&quot;],&quot;name&quot;:&quot;Game Mechanics&quot;,&quot;id_feature&quot;:&quot;11&quot;,&quot;value&quot;:&quot;Co-operative\/Alliance, War\/Fighting, Card Drafting, Hand Management&quot;},&quot;13&quot;:{&quot;values&quot;:[&quot;13+&quot;],&quot;name&quot;:&quot;Recommended Age&quot;,&quot;id_feature&quot;:&quot;13&quot;,&quot;value&quot;:&quot;13+&quot;},&quot;14&quot;:{&quot;values&quot;:[&quot;English&quot;],&quot;name&quot;:&quot;Language&quot;,&quot;id_feature&quot;:&quot;14&quot;,&quot;value&quot;:&quot;English&quot;},&quot;15&quot;:{&quot;values&quot;:[&quot;60-120 Minutes&quot;],&quot;name&quot;:&quot;Playing Time&quot;,&quot;id_feature&quot;:&quot;15&quot;,&quot;value&quot;:&quot;60-120 Minutes&quot;},&quot;17&quot;:{&quot;values&quot;:[&quot;2017&quot;],&quot;name&quot;:&quot;Production Year&quot;,&quot;id_feature&quot;:&quot;17&quot;,&quot;value&quot;:&quot;2017&quot;}},&quot;attachments&quot;:[],&quot;virtual&quot;:0,&quot;pack&quot;:0,&quot;packItems&quot;:[],&quot;nopackprice&quot;:0,&quot;customization_required&quot;:false,&quot;rate&quot;:24,&quot;tax_name&quot;:&quot;ALV FI 24%&quot;,&quot;ecotax_rate&quot;:0,&quot;unit_price&quot;:0,&quot;customizations&quot;:{&quot;fields&quot;:[]},&quot;id_customization&quot;:0,&quot;is_customizable&quot;:false,&quot;show_quantities&quot;:false,&quot;quantity_label&quot;:&quot;Item&quot;,&quot;quantity_discounts&quot;:[],&quot;customer_group_discount&quot;:0}">
+  <div class="product-out-of-stock">
+  </div>
+  <section class="product-features">
+  <h3 class="h6">Data sheet</h3>
+  <dl class="data-sheet">
+  <dt class="name">Number of Players</dt>
+  <dd class="value">1 Player, 2 Players, 3 Players, 4 Players</dd>
+  <dt class="name">Game Mechanics</dt>
+  <dd class="value">Co-operative/Alliance, War/Fighting, Card Drafting, Hand Management</dd>
+  <dt class="name">Recommended Age</dt>
+  <dd class="value">13+</dd>
+  <dt class="name">Language</dt>
+  <dd class="value">English</dd>
+  <dt class="name">Playing Time</dt>
+  <dd class="value">60-120 Minutes</dd>
+  <dt class="name">Production Year</dt>
+  <dd class="value">2017</dd>
+  </dl>
+  </section>
+  </div>
+  </div>
+  </div>
+  </section>
+  <script type="text/javascript">
+					  document.addEventListener('DOMContentLoaded', function() {
+						  var MBG = GoogleAnalyticEnhancedECommerce;
+						  MBG.setCurrency('EUR');
+						  MBG.addProductDetailView({"id":126,"name":"spirit-island-branch-claw","category":"home","brand":"","variant":false,"type":"typical","position":"0","quantity":1,"list":"product","url":"https%3A%2F%2Fpelipeikko.fi%2Fen%2Fhome%2F126-spirit-island-branch-claw","price":"\u20ac28.95"});
+					  });
+				  </script>
+  <div class="modal fade js-product-images-modal" id="product-modal">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+  <div class="modal-body">
+  <figure>
+  <img class="js-modal-product-cover product-cover-modal" width="670" src="https://pelipeikko.fi/1392-large_default/spirit-island-branch-claw.jpg" alt="" title="" itemprop="image">
+  <figcaption class="image-caption">
+  <div id="product-description-short" itemprop="description"><p>Expansion for base game</p>
+  <p>The Branch &amp; Claw Expansion for Spirit Island, featuring two new Spirits (Sharp Fangs Behind the Leaves and Keeper of the Forbidden Wilds) and a new Adversary (France) as well as adding Events to the Invader Phase of the game!</p>
+  <p>The Event Deck has events that happen each turn, adding further variation to the game play. In addition, the expansion has Tokens that prevent the invaders from exploring, building, or ravaging or add wild Beasts to the land, a new set of powers (31 Minor and 21 Major) that use the new Tokens and expand the gameplay, 15 new Fear cards, new Blight cards, and new Scenarios.</p>
+  <p></p></div>
+  </figcaption>
+  </figure>
+  <aside id="thumbnails" class="thumbnails js-thumbnails text-xs-center">
+  <div class="js-modal-mask mask  nomargin ">
+  <ul class="product-images js-modal-product-images">
+  <li class="thumb-container">
+  <img data-image-large-src="https://pelipeikko.fi/1392-large_default/spirit-island-branch-claw.jpg" class="thumb js-modal-thumb" src="https://pelipeikko.fi/1392-medium_default/spirit-island-branch-claw.jpg" alt="" title="" width="239" itemprop="image">
+  </li>
+  <li class="thumb-container">
+  <img data-image-large-src="https://pelipeikko.fi/1393-large_default/spirit-island-branch-claw.jpg" class="thumb js-modal-thumb" src="https://pelipeikko.fi/1393-medium_default/spirit-island-branch-claw.jpg" alt="" title="" width="239" itemprop="image">
+  </li>
+  </ul>
+  </div>
+  </aside>
+  </div>
+  </div>
+  </div>
+  </div>
+  <footer class="page-footer">
+  
+  </footer>
+  </section>
+  </div>
+  </div>
+  </section>
+  </div>
+  <footer id="footer">
+  <div class="footer-before">
+  <div class="container">
+  </div>
+  </div>
+  <div class="footer-container">
+  <div class="container">
+  <div class="row footer">
+  <div class="col-md-4 links block links">
+  <h3 class="h3  hidden-md-down hidden-md-up">Links</h3>
+  <div class="title block_title h3 clearfix hidden-md-up " data-target="#footer_sub_menu_18127" data-toggle="collapse">
+  <span class="">Links</span>
+  <span class="pull-xs-right hidden-lg-up">
+  <span class="navbar-toggler collapse-icons">
+  <i class="material-icons add">&#xE313;</i>
+  <i class="material-icons remove">&#xE316;</i>
+  </span>
+  </span>
+  </div>
+  <ul id="footer_sub_menu_18127" class="collapse block_content">
+  <li>
+  <a id="link-cms-page-1-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/1-Shipping-and-Returns" title="Shipping &amp; Returns">
+  Shipping &amp; Returns
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-4-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/4-Terms-Conditions" title="Terms &amp; Conditions">
+  Terms &amp; Conditions
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-10-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/10-faq" title="">
+  FAQ
+  </a>
+  </li>
+  <li>
+  <a id="link-cms-page-18-2" class="cms-page-link" href="https://pelipeikko.fi/en/content/18-about-us" title="">
+  About us
+  </a>
+  </li>
+  <li>
+  <a id="link-custom-page-Contact Us-2" class="custom-page-link" href="https://pelipeikko.fi/en/contact-us" title="">
+  Contact Us
+  </a>
+  </li>
+  <li>
+  <a id="link-custom-page-My account-2" class="custom-page-link" href="https://pelipeikko.fi/en/my-account" title="">
+  My account
+  </a>
+  </li>
+  </ul>
+  </div>
+  <img class="img-fluid" src="https://pelipeikko.fi/img/cms/pay.jpg" width="1024" height="95" alt="pay.jpg" />
+  </div>
+  <div class="row footer-after">
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <a class="top_button" href="#" style="">&nbsp;</a>
+  </footer>
+  </main>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/core.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/theme.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/blockreassurance/views/js/front.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_googleanalytics/views/js/GoogleAnalyticActionLib.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_emailalerts/js/mailalerts.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/backinstock/views/js/velovalidation.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/backinstock/views/js/front/backinstock.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/js/jquery/ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_searchbar/ps_searchbar.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/ps_shoppingcart/ps_shoppingcart.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/modules/tc_imageslider/views/js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/owl.carousel.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/totalstorage.js"></script>
+  <script type="text/javascript" src="https://pelipeikko.fi/themes/digitalplug/assets/js/custom.js"></script>
+  <script type="text/javascript">
+				  var time_start;
+				  $(window).load(
+					  function() {
+						  time_start = new Date();
+					  }
+				  );
+				  $(window).unload(
+					  function() {
+						  var time_end = new Date();
+						  var pagetime = new Object;
+						  pagetime.type = "pagetime";
+						  pagetime.id_connections = "1014151";
+						  pagetime.id_page = "154";
+						  pagetime.time_start = "2019-12-15 09:14:42";
+						  pagetime.token = "9e77bbbbeda63a67ec26d8a804a86d45d671e23f";
+						  pagetime.time = time_end-time_start;
+						  $.post("https://pelipeikko.fi/en/index.php?controller=statistics", pagetime);
+					  }
+				  );
+			  </script>
+  </body>
+  </html>
+  `,
+
   RESPONSE_POROMAGIA: `
   <!DOCTYPE html><html class="no-js" lang="en"><head><title>"spirit island" | Poromagia</title><meta content="text/html; charset=utf-8" http-equiv="content-type"/><meta content="2019-12-13" name="created"/><meta content="Poromagia on lauta-, kortti- ja miniatyyripelien täyden palvelun erikoisliike. Haluamme edistää kaikenlaista pelaamista ja kaikki toimintamme tähtää pelaajien viihtymiseen." name="description"/><meta content="width=device-width" name="viewport"/><meta content="NOINDEX,FOLLOW" name="robots"/><link href="https://poromagia.com/en/search/?q=spirit+island" rel="canonical"/><link href="https://poromagia.com/search/?q=spirit+island" hreflang="fi-ax" rel="alternate"/><link href="https://poromagia.com/en/search/?q=spirit+island" hreflang="x-default" rel="alternate"/><link href="https://poromagia.com/fi/search/?q=spirit+island" hreflang="fi" rel="alternate"/><link href="https://poromagia.com/sv/search/?q=spirit+island" hreflang="sv" rel="alternate"/><link href="https://poromagia.com/en/search/?q=spirit+island" hreflang="en" rel="alternate"/><!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><meta content="@Poromagia" property="twitter:site"/><meta content="https://poromagia.com/en/search/" property="og:url"/><meta content="https://poromagia.com/static/favicon/android-chrome-256x256.png" property="og:image"/><link href="/favicon.ico" rel="shortcut icon"/><link href="/static/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/static/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/static/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/static/favicon/manifest.json" rel="manifest"/><link color="#5bbad5" href="/static/favicon/safari-pinned-tab.svg" rel="mask-icon"/><meta content="/static/favicon/browserconfig.xml" name="msapplication-config"/><meta content="Poromagia" name="apple-mobile-web-app-title"/><meta content="Poromagia" name="application-name"/><meta content="#ffffff" name="theme-color"/><link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/><link href="/static/CACHE/css/e6e9ca499d1c.css" rel="stylesheet" type="text/css"/><link href="/static/CACHE/css/459e38eedf98.css" rel="stylesheet" type="text/css"/><script type="application/ld+json">[{"image": "https://poromagia.com/static/poromagia-ulkoota.jpg", "telephone": "+358 50 355 2252", "openingHours": ["Mo 13:00-20:00", "Tu 13:00-20:00", "We-Fr 13:00-19:00", "Sa 10:00-17:00", "Su 12:00-16:00"], "address": {"addressCountry": "Finland", "addressLocality": "Helsinki", "streetAddress": "Opastinsilta 8B", "postalCode": "00520", "@type": "PostalAddress"}, "currenciesAccepted": "EUR", "logo": "https://poromagia.com/static/favicon/android-chrome-256x256.png", "contactPoint": [{"contactType": "customer support", "@type": "ContactPoint", "telephone": "+358 50 355 2252"}, {"contactType": "sales", "@type": "ContactPoint", "telephone": "+358 40 669 2227"}], "name": "Poromagia", "url": "https://poromagia.com", "email": "info@poromagia.com", "priceRange": "$$", "legalName": "Poromagia Oy", "@context": "http://schema.org", "paymentAccepted": ["Cash", "Card"], "@type": "Store"}]</script><meta content="BirotjqSMFzm9VRVom7HNrcLGV4f6tRaL45XvD36VmI" name="google-site-verification"/><!-- Google Analytics --><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
