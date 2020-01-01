@@ -266,21 +266,21 @@ describe("Unit", function(){
             .get('/en/search?ajaxSearch=1&id_lang=2&q=' + qs)
             .reply(200, mockResponses.RESPONSE_PHILIBERTNET)
             .get('/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html')
-            .reply(200, mockResponses.RESPONSE_PELIPEIKKO_SPIRIT_ISLAND)
-            //.get('/en/home/126-spirit-island-branch-claw')
-            //.reply(200, mockResponses.RESPONSE_PELIPEIKKO_SPIRIT_ISLAND_BRANCH_CLAW)
+            .reply(200, mockResponses.RESPONSE_PHILIBERTNET_SPIRIT_ISLAND)
+            .get('/en/folded-space/78145-spirit-island-insert-3800500972596.html')
+            .reply(200, mockResponses.RESPONSE_PHILIBERTNET_SPIRIT_ISLAND_INSERT)
 
             res = await philibertnet(qs)
             item = res[0]
-            item.should.have.property('name', 'Spirit Island');
-            item.should.have.property('imageUrl', 'https://pelipeikko.fi/1394-home_default/spirit-island.jpg');
-            item.should.have.property('price', 71.95);
+            item.should.have.property('name', 'Spirit Island Core Game');
+            item.should.have.property('imageUrl', 'https://cdn1.philibertnet.com/377832-large_default/spirit-island-core-game.jpg');
+            item.should.have.property('price', 74.95);
             item.should.have.property('available', true);
-            item.should.have.property('itemUrl', 'https://pelipeikko.fi/en/home/110-spirit-island');
+            item.should.have.property('itemUrl', 'https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html');
             item.should.have.property('currency', '€');
 
             item = res[1]
-            item.should.have.property('price', 28.95);
+            item.should.have.property('price', 15.95);
             item.should.have.property('available', false);
         })
     })
