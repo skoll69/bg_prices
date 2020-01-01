@@ -14,7 +14,7 @@
     <section class="section">
       <div class="container">
         <div class="columns is-multiline">
-          <shopcontainer v-for="shop in shops" :key="shop.name" :title="shop.name" :results="shop.data"></shopcontainer>
+          <shopcontainer v-for="shop in shops" :key="shop.name" :title="shop.name" :results="shop.data" :searching="shop.searching"></shopcontainer>
         </div>
       </div>
     </section>
@@ -40,17 +40,17 @@ export default {
   methods: {
     search: function () {
       this.shops.forEach(element => {
+        element.searching = true
+        element.data = []
         axios.get(BASEURL + 'query/' + element.name + '/' + this.querystring).then(response => {
-            console.log(element)
             let index = this.shopIndex[response.data.shop]
             let shop = this.shops[index]
             shop.data = response.data.data
             this.$set(this.shops, index, shop)
-
+            shop.searching = false
         })
       });
       axios.get(BASEURL + 'query/' + 'lautapelit/' + this.querystring).then(response => {
-          //console.log(response.data)
           let index = this.shopIndex[response.data.shop]
           let shop = this.shops[index]
           shop.data = response.data.data
@@ -63,7 +63,7 @@ export default {
     axios.get(BASEURL + 'handlers').then(response => {
       for (let i in response.data){
         let name = response.data[i]
-        let index = this.shops.push({name}) - 1
+        let index = this.shops.push({name, data: [], searching: false}) - 1
         this.shopIndex[name] = index
       }
 
