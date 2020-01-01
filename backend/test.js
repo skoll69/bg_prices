@@ -164,6 +164,7 @@ describe("Unit", function(){
 
             item = res[1]
             item.should.have.property('available', false);
+            item.should.have.property('imageUrl', 'https://lautapelit.fi/images/tuotekuvat/kuva100/lautapelit/Dungeon-petz-dark-alleys.jpg');
         })
     })
 
