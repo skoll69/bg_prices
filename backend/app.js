@@ -7,6 +7,7 @@ const HANDLERS = {
     puolenkuunpelit: './parsers/puolenkuunpelit.js',
     poromagia: './parsers/poromagia.js',
     pelipeikko: './parsers/pelipeikko.js',
+    philibertnet: './parsers/philibertnet.js',
 }
 
 const app = express()

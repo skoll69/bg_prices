@@ -11,6 +11,7 @@ const fantasiapelit = require('./parsers/fantasiapelit');
 const puolenkuunpelit = require('./parsers/puolenkuunpelit');
 const poromagia = require('./parsers/poromagia');
 const pelipeikko = require('./parsers/pelipeikko');
+const philibertnet = require('./parsers/philibertnet');
 
 chai.use(chaiHttp);
 
@@ -22,13 +23,13 @@ describe("Handlers", function(){
             .get('/handlers/')
             .end((err, res) => {
                 res.should.have.status(200);
-                res.body.should.have.length(5);
+                res.body.should.have.length(6);
                 done();
             })
     })
 })
 
-xdescribe("Intergration", function(){
+describe("Intergration", function(){
     this.timeout(15000)
     this.slow(10000)
     before(function() {
@@ -44,7 +45,6 @@ xdescribe("Intergration", function(){
             res.body.shop.should.equal('lautapelit');
 
             let item = res.body.data[0]
-            //item.should.have.keys('name', 'imageUrl');
             item.should.have.property('name');
             item.should.have.property('imageUrl');
             item.should.have.property('price');
@@ -117,6 +117,22 @@ xdescribe("Intergration", function(){
             item.should.have.property('currency');
         })
     })
+
+    describe("Philibertnet", function(){
+        it("should return a proper data structure", async()=>{
+            let res = await chai.request(server).get('/query/philibertnet/dungeon%20lords')
+            res.should.have.status(200);
+            res.body.shop.should.equal('philibertnet');
+
+            let item = res.body.data[0]
+            item.should.have.property('name');
+            item.should.have.property('imageUrl');
+            item.should.have.property('price');
+            item.should.have.property('available');
+            item.should.have.property('itemUrl');
+            item.should.have.property('currency');
+        })
+    })
 })
 
 describe("Unit", function(){
@@ -147,6 +163,7 @@ describe("Unit", function(){
 
             item = res[1]
             item.should.have.property('available', false);
+            item.should.have.property('imageUrl', 'https://lautapelit.fi/images/tuotekuvat/kuva100/lautapelit/Dungeon-petz-dark-alleys.jpg');
         })
     })
 
@@ -234,6 +251,32 @@ describe("Unit", function(){
             item = res[1]
             item.should.have.property('price', 27.95);
             item.should.have.property('available', true);
+        })
+    })
+
+    describe("Philibertnet", function(){
+        it("should process the reponse", async function(){
+            let qs = 'spirint%20island'
+            nock('https://www.philibertnet.com')
+            .get('/en/search?ajaxSearch=1&id_lang=2&q=' + qs)
+            .reply(200, mockResponses.RESPONSE_PHILIBERTNET)
+            .get('/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html')
+            .reply(200, mockResponses.RESPONSE_PHILIBERTNET_SPIRIT_ISLAND)
+            .get('/en/folded-space/78145-spirit-island-insert-3800500972596.html')
+            .reply(200, mockResponses.RESPONSE_PHILIBERTNET_SPIRIT_ISLAND_INSERT)
+
+            res = await philibertnet(qs)
+            item = res[0]
+            item.should.have.property('name', 'Spirit Island Core Game');
+            item.should.have.property('imageUrl', 'https://cdn1.philibertnet.com/377832-large_default/spirit-island-core-game.jpg');
+            item.should.have.property('price', 74.95);
+            item.should.have.property('available', true);
+            item.should.have.property('itemUrl', 'https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html');
+            item.should.have.property('currency', '€');
+
+            item = res[1]
+            item.should.have.property('price', 15.95);
+            item.should.have.property('available', false);
         })
     })
 })
