@@ -33,8 +33,7 @@ app.get('/query/:shop/:querystring', async (req, res) => {
 
 app.use(express.static('public'))
 
-const server = app.listen(3000)
+module.exports = app
 
-// For unit testing
-module.exports = server
+// const server = app.listen(3000)
 
