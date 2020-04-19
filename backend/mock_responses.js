@@ -67,6 +67,258 @@ module.exports = {
     Laji: []
   },
 
+  RESPONSE_PELIPEIKKO:
+  {
+    "result": {},
+    "label": "Hakutulokset",
+    "products": [
+        {
+            "id_product": "110",
+            "price": "69,95 €",
+            "reference": "GTGSISL-CORE",
+            "active": "1",
+            "description_short": "<p>Spirit Island is a cooperative, settler-destruction strategy game for 1 to 4 players designed by R. Eric Reuss and set in an alternate-history world around A.D. 1700. Players are different spirits of the land, each with their own unique elemental powers, forced to defend their island home from colonizing Invaders spreading blight and destruction. Work with your fellow spirits and the native islanders to increase your power and drive the invading colonists from your island in this strategic area-control game.</p>",
+            "link_rewrite": "spirit-island",
+            "name": "Spirit Island",
+            "manufacturer_name": "Greater Than Games",
+            "position": "12",
+            "link": "https://pelipeikko.fi/fi/home/110-spirit-island",
+            "rate": 24,
+            "tax_name": "ALV FI 24%",
+            "unit_price": "",
+            "cover": {
+                "bySize": {
+                    "cart_default": {
+                        "url": "https://pelipeikko.fi/1394-cart_default/spirit-island.jpg",
+                        "width": 80,
+                        "height": 90
+                    },
+                    "small_default": {
+                        "url": "https://pelipeikko.fi/1394-small_default/spirit-island.jpg",
+                        "width": 80,
+                        "height": 90
+                    },
+                    "medium_default": {
+                        "url": "https://pelipeikko.fi/1394-medium_default/spirit-island.jpg",
+                        "width": 239,
+                        "height": 300
+                    },
+                    "home_default": {
+                        "url": "https://pelipeikko.fi/1394-home_default/spirit-island.jpg",
+                        "width": 239,
+                        "height": 300
+                    },
+                    "large_default": {
+                        "url": "https://pelipeikko.fi/1394-large_default/spirit-island.jpg",
+                        "width": 670,
+                        "height": 830
+                    }
+                },
+                "small": {
+                    "url": "https://pelipeikko.fi/1394-cart_default/spirit-island.jpg",
+                    "width": 80,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://pelipeikko.fi/1394-medium_default/spirit-island.jpg",
+                    "width": 239,
+                    "height": 300
+                },
+                "large": {
+                    "url": "https://pelipeikko.fi/1394-large_default/spirit-island.jpg",
+                    "width": 670,
+                    "height": 830
+                },
+                "legend": "",
+                "cover": "1",
+                "id_image": "1394",
+                "position": "1",
+                "associatedVariants": []
+            },
+            "url": "https://pelipeikko.fi/fi/home/110-spirit-island",
+            "canonical_url": "https://pelipeikko.fi/fi/home/110-spirit-island",
+            "has_discount": false,
+            "discount_type": null,
+            "discount_percentage": null,
+            "discount_percentage_absolute": null,
+            "discount_amount": null,
+            "price_amount": 69.9500000000000028421709430404007434844970703125,
+            "regular_price_amount": 69.9500000000000028421709430404007434844970703125,
+            "regular_price": "69,95 €",
+            "discount_to_display": null,
+            "add_to_cart_url": null,
+            "main_variants": [],
+            "labels": {
+                "tax_short": "(sis. alv)",
+                "tax_long": "Sisältää alv:n"
+            }
+        },
+        {
+            "id_product": "126",
+            "price": "27,95 €",
+            "reference": "GTGSISLBRCL",
+            "active": "1",
+            "description_short": "<p>Expansion for base game</p>\n<p>The Branch &amp; Claw Expansion for Spirit Island, featuring two new Spirits (Sharp Fangs Behind the Leaves and Keeper of the Forbidden Wilds) and a new Adversary (France) as well as adding Events to the Invader Phase of the game!</p>\n<p>The Event Deck has events that happen each turn, adding further variation to the game play. In addition, the expansion has Tokens that prevent the invaders from exploring, building, or ravaging or add wild Beasts to the land, a new set of powers (31 Minor and 21 Major) that use the new Tokens and expand the gameplay, 15 new Fear cards, new Blight cards, and new Scenarios.<br />Expansion for base game</p>\n<p></p>",
+            "link_rewrite": "spirit-island-branch-claw",
+            "name": "Spirit Island: Branch & Claw",
+            "manufacturer_name": "Greater Than Games",
+            "position": "12",
+            "link": "https://pelipeikko.fi/fi/home/126-spirit-island-branch-claw",
+            "rate": 24,
+            "tax_name": "ALV FI 24%",
+            "unit_price": "",
+            "cover": {
+                "bySize": {
+                    "cart_default": {
+                        "url": "https://pelipeikko.fi/1392-cart_default/spirit-island-branch-claw.jpg",
+                        "width": 80,
+                        "height": 90
+                    },
+                    "small_default": {
+                        "url": "https://pelipeikko.fi/1392-small_default/spirit-island-branch-claw.jpg",
+                        "width": 80,
+                        "height": 90
+                    },
+                    "medium_default": {
+                        "url": "https://pelipeikko.fi/1392-medium_default/spirit-island-branch-claw.jpg",
+                        "width": 239,
+                        "height": 300
+                    },
+                    "home_default": {
+                        "url": "https://pelipeikko.fi/1392-home_default/spirit-island-branch-claw.jpg",
+                        "width": 239,
+                        "height": 300
+                    },
+                    "large_default": {
+                        "url": "https://pelipeikko.fi/1392-large_default/spirit-island-branch-claw.jpg",
+                        "width": 670,
+                        "height": 830
+                    }
+                },
+                "small": {
+                    "url": "https://pelipeikko.fi/1392-cart_default/spirit-island-branch-claw.jpg",
+                    "width": 80,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://pelipeikko.fi/1392-medium_default/spirit-island-branch-claw.jpg",
+                    "width": 239,
+                    "height": 300
+                },
+                "large": {
+                    "url": "https://pelipeikko.fi/1392-large_default/spirit-island-branch-claw.jpg",
+                    "width": 670,
+                    "height": 830
+                },
+                "legend": "",
+                "cover": "1",
+                "id_image": "1392",
+                "position": "1",
+                "associatedVariants": []
+            },
+            "url": "https://pelipeikko.fi/fi/home/126-spirit-island-branch-claw",
+            "canonical_url": "https://pelipeikko.fi/fi/home/126-spirit-island-branch-claw",
+            "has_discount": false,
+            "discount_type": null,
+            "discount_percentage": null,
+            "discount_percentage_absolute": null,
+            "discount_amount": null,
+            "price_amount": 27.949999999999999289457264239899814128875732421875,
+            "regular_price_amount": 27.949999999999999289457264239899814128875732421875,
+            "regular_price": "27,95 €",
+            "discount_to_display": null,
+            "add_to_cart_url": "https://pelipeikko.fi/fi/cart?add=1&id_product=126&id_product_attribute=0",
+            "main_variants": [],
+            "labels": {
+                "tax_short": "(sis. alv)",
+                "tax_long": "Sisältää alv:n"
+            }
+        }
+    ],
+    "sort_orders": [
+        {
+            "entity": "product",
+            "field": "position",
+            "direction": "desc",
+            "label": "Valmistaja",
+            "urlParameter": "product.position.desc",
+            "current": true,
+            "url": "https://pelipeikko.fi/fi/search?order=product.position.desc&s=spirit+island"
+        },
+        {
+            "entity": "product",
+            "field": "name",
+            "direction": "asc",
+            "label": "Aakkosjärjestys",
+            "urlParameter": "product.name.asc",
+            "current": false,
+            "url": "https://pelipeikko.fi/fi/search?order=product.name.asc&s=spirit+island"
+        },
+        {
+            "entity": "product",
+            "field": "name",
+            "direction": "desc",
+            "label": "Käänteinen aakkosjärjestys",
+            "urlParameter": "product.name.desc",
+            "current": false,
+            "url": "https://pelipeikko.fi/fi/search?order=product.name.desc&s=spirit+island"
+        },
+        {
+            "entity": "product",
+            "field": "price",
+            "direction": "asc",
+            "label": "Hinta, nouseva",
+            "urlParameter": "product.price.asc",
+            "current": false,
+            "url": "https://pelipeikko.fi/fi/search?order=product.price.asc&s=spirit+island"
+        },
+        {
+            "entity": "product",
+            "field": "price",
+            "direction": "desc",
+            "label": "Hinta, laskeva",
+            "urlParameter": "product.price.desc",
+            "current": false,
+            "url": "https://pelipeikko.fi/fi/search?order=product.price.desc&s=spirit+island"
+        }
+    ],
+    "sort_selected": "Valmistaja",
+    "pagination": {
+        "total_items": "12",
+        "items_shown_from": 1,
+        "items_shown_to": "12",
+        "pages": [
+            {
+                "type": "previous",
+                "page": 1,
+                "clickable": false,
+                "current": false,
+                "url": "https://pelipeikko.fi/fi/search?page=1&s=spirit+island"
+            },
+            {
+                "type": "page",
+                "page": 1,
+                "clickable": false,
+                "current": true,
+                "url": "https://pelipeikko.fi/fi/search?page=1&s=spirit+island"
+            },
+            {
+                "type": "next",
+                "page": 1,
+                "clickable": false,
+                "current": false,
+                "url": "https://pelipeikko.fi/fi/search?page=1&s=spirit+island"
+            }
+        ],
+        "should_be_displayed": false
+    },
+    "rendered_facets": "",
+    "rendered_active_filters": "",
+    "js_enabled": true,
+    "current_url": "https://pelipeikko.fi/fi/search?s=spirit+island"
+},
+
+
   RESPONSE_POROMAGIA: `
   <!DOCTYPE html><html class="no-js" lang="en"><head><title>"spirit island" | Poromagia</title><meta content="text/html; charset=utf-8" http-equiv="content-type"/><meta content="2019-12-13" name="created"/><meta content="Poromagia on lauta-, kortti- ja miniatyyripelien täyden palvelun erikoisliike. Haluamme edistää kaikenlaista pelaamista ja kaikki toimintamme tähtää pelaajien viihtymiseen." name="description"/><meta content="width=device-width" name="viewport"/><meta content="NOINDEX,FOLLOW" name="robots"/><link href="https://poromagia.com/en/search/?q=spirit+island" rel="canonical"/><link href="https://poromagia.com/search/?q=spirit+island" hreflang="fi-ax" rel="alternate"/><link href="https://poromagia.com/en/search/?q=spirit+island" hreflang="x-default" rel="alternate"/><link href="https://poromagia.com/fi/search/?q=spirit+island" hreflang="fi" rel="alternate"/><link href="https://poromagia.com/sv/search/?q=spirit+island" hreflang="sv" rel="alternate"/><link href="https://poromagia.com/en/search/?q=spirit+island" hreflang="en" rel="alternate"/><!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><meta content="@Poromagia" property="twitter:site"/><meta content="https://poromagia.com/en/search/" property="og:url"/><meta content="https://poromagia.com/static/favicon/android-chrome-256x256.png" property="og:image"/><link href="/favicon.ico" rel="shortcut icon"/><link href="/static/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/static/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/static/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/static/favicon/manifest.json" rel="manifest"/><link color="#5bbad5" href="/static/favicon/safari-pinned-tab.svg" rel="mask-icon"/><meta content="/static/favicon/browserconfig.xml" name="msapplication-config"/><meta content="Poromagia" name="apple-mobile-web-app-title"/><meta content="Poromagia" name="application-name"/><meta content="#ffffff" name="theme-color"/><link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/><link href="/static/CACHE/css/e6e9ca499d1c.css" rel="stylesheet" type="text/css"/><link href="/static/CACHE/css/459e38eedf98.css" rel="stylesheet" type="text/css"/><script type="application/ld+json">[{"image": "https://poromagia.com/static/poromagia-ulkoota.jpg", "telephone": "+358 50 355 2252", "openingHours": ["Mo 13:00-20:00", "Tu 13:00-20:00", "We-Fr 13:00-19:00", "Sa 10:00-17:00", "Su 12:00-16:00"], "address": {"addressCountry": "Finland", "addressLocality": "Helsinki", "streetAddress": "Opastinsilta 8B", "postalCode": "00520", "@type": "PostalAddress"}, "currenciesAccepted": "EUR", "logo": "https://poromagia.com/static/favicon/android-chrome-256x256.png", "contactPoint": [{"contactType": "customer support", "@type": "ContactPoint", "telephone": "+358 50 355 2252"}, {"contactType": "sales", "@type": "ContactPoint", "telephone": "+358 40 669 2227"}], "name": "Poromagia", "url": "https://poromagia.com", "email": "info@poromagia.com", "priceRange": "$$", "legalName": "Poromagia Oy", "@context": "http://schema.org", "paymentAccepted": ["Cash", "Card"], "@type": "Store"}]</script><meta content="BirotjqSMFzm9VRVom7HNrcLGV4f6tRaL45XvD36VmI" name="google-site-verification"/><!-- Google Analytics --><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

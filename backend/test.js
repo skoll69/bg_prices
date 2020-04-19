@@ -10,6 +10,7 @@ const lautapelit = require('./parsers/lautapelit');
 const fantasiapelit = require('./parsers/fantasiapelit');
 const puolenkuunpelit = require('./parsers/puolenkuunpelit');
 const poromagia = require('./parsers/poromagia');
+const pelipeikko = require('./parsers/pelipeikko');
 
 chai.use(chaiHttp);
 
@@ -21,13 +22,13 @@ describe("Handlers", function(){
             .get('/handlers/')
             .end((err, res) => {
                 res.should.have.status(200);
-                res.body.should.have.length(4);
+                res.body.should.have.length(5);
                 done();
             })
     })
 })
 
-describe("Intergration", function(){
+xdescribe("Intergration", function(){
     this.timeout(15000)
     this.slow(10000)
     before(function() {
@@ -37,7 +38,7 @@ describe("Intergration", function(){
     })
 
     describe("Lautapelit.fi", function(){
-        xit("should return a proper data structure", async()=>{
+        it("should return a proper data structure", async()=>{
             let res = await chai.request(server).get('/query/lautapelit/dungeon%20petz')
             res.should.have.status(200);
             res.body.shop.should.equal('lautapelit');
@@ -54,7 +55,7 @@ describe("Intergration", function(){
     })
 
     describe("Fantasiapelit", function(){
-        xit("should return a proper data structure", async()=>{
+        it("should return a proper data structure", async()=>{
             let res = await chai.request(server).get('/query/fantasiapelit/dungeon%20lords')
             res.should.have.status(200);
             res.body.shop.should.equal('fantasiapelit');
@@ -70,7 +71,7 @@ describe("Intergration", function(){
     })
 
     describe("Puolenkuunpelit", function(){
-        xit("should return a proper data structure", async()=>{
+        it("should return a proper data structure", async()=>{
             let res = await chai.request(server).get('/query/puolenkuunpelit/dungeon%20lords')
             res.should.have.status(200);
             res.body.shop.should.equal('puolenkuunpelit');
@@ -86,10 +87,26 @@ describe("Intergration", function(){
     })
 
     describe("Poromagia", function(){
-        xit("should return a proper data structure", async()=>{
+        it("should return a proper data structure", async()=>{
             let res = await chai.request(server).get('/query/poromagia/dungeon%20lords')
             res.should.have.status(200);
             res.body.shop.should.equal('poromagia');
+
+            let item = res.body.data[0]
+            item.should.have.property('name');
+            item.should.have.property('imageUrl');
+            item.should.have.property('price');
+            item.should.have.property('available');
+            item.should.have.property('itemUrl');
+            item.should.have.property('currency');
+        })
+    })
+
+    describe("Pelipeikko", function(){
+        it("should return a proper data structure", async()=>{
+            let res = await chai.request(server).get('/query/pelipeikko/spirit%20island')
+            res.should.have.status(200);
+            res.body.shop.should.equal('pelipeikko');
 
             let item = res.body.data[0]
             item.should.have.property('name');
@@ -195,6 +212,28 @@ describe("Unit", function(){
             item = res[1]
             item.should.have.property('price', 71.95);
             item.should.have.property('available', false);
+        })
+    })
+
+    describe("Pelipeikko", function(){
+        it("should process the reponse", async function(){
+            let qs = 'spirit%20island'
+            nock('https://pelipeikko.fi')
+            .get('/fi/search?s=' + qs)
+            .reply(200, mockResponses.RESPONSE_PELIPEIKKO)
+
+            res = await pelipeikko(qs)
+            item = res[0]
+            item.should.have.property('name', 'Spirit Island');
+            item.should.have.property('imageUrl', 'https://pelipeikko.fi/1394-medium_default/spirit-island.jpg');
+            item.should.have.property('price', 69.95);
+            item.should.have.property('available', false);
+            item.should.have.property('itemUrl', 'https://pelipeikko.fi/fi/home/110-spirit-island');
+            item.should.have.property('currency', '€');
+
+            item = res[1]
+            item.should.have.property('price', 27.95);
+            item.should.have.property('available', true);
         })
     })
 })
