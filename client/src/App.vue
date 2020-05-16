@@ -22,7 +22,7 @@
 </template>
 
 <script>
-const BASEURL = 'http://localhost:3000/'
+const BASEURL = '/'
 
 import axios from 'axios';
 

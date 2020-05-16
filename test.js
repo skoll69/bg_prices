@@ -59,6 +59,20 @@ describe("Intergration", function(){
         item.should.have.property('currency');
     })
 
+    it("Lautapelit.fi 2", async()=>{
+        let res = await chai.request(server).get('/query/lautapelit/dungeon')
+        res.should.have.status(200);
+        res.body.shop.should.equal('lautapelit');
+
+        let item = res.body.data[0]
+        item.should.have.property('name');
+        item.should.have.property('imageUrl');
+        item.should.have.property('price');
+        item.should.have.property('available');
+        item.should.have.property('itemUrl');
+        item.should.have.property('currency');
+    })
+
     it("Fantasiapelit", async()=>{
         let res = await chai.request(server).get('/query/fantasiapelit/dungeon%20lords')
         res.should.have.status(200);

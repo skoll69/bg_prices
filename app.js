@@ -2,12 +2,12 @@ const express = require('express');
 const cors = require('cors')
 
 const HANDLERS = {
-    lautapelit: './parsers/lautapelit.js',
-    fantasiapelit: './parsers/fantasiapelit.js',
-    puolenkuunpelit: './parsers/puolenkuunpelit.js',
-    poromagia: './parsers/poromagia.js',
-    pelipeikko: './parsers/pelipeikko.js',
-    philibertnet: './parsers/philibertnet.js',
+    lautapelit: require('./parsers/lautapelit.js'),
+    fantasiapelit: require('./parsers/fantasiapelit.js'),
+    puolenkuunpelit: require('./parsers/puolenkuunpelit.js'),
+    poromagia: require('./parsers/poromagia.js'),
+    pelipeikko: require('./parsers/pelipeikko.js'),
+    philibertnet: require('./parsers/philibertnet.js'),
 }
 
 const app = express()
@@ -24,16 +24,13 @@ app.get('/query/:shop/:querystring', async (req, res) => {
     if (!(shop in HANDLERS)){
         return res.json({error: 'invalid_handler'})
     }
-    const handler = require(HANDLERS[shop])
+    const handler = HANDLERS[shop]
     res.json({
         shop: shop,
         data: await handler(req.params.querystring)
     })
 })
 
-app.use(express.static('public'))
+app.use(express.static('static'))
 
 module.exports = app
-
-// const server = app.listen(3000)
-

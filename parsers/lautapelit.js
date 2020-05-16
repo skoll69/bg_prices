@@ -10,7 +10,7 @@ async function query(querystring){
         let availabilityData = await rp(availabilityUrl, {json: true, gzip: true})
         out.push({
             name: el.Tuote,
-            imageUrl: 'https://lautapelit.fi/' + (el.Kuva.includes('tuotekuvat') ? '' : 'images/tuotekuvat/') + el.Kuva,
+            imageUrl: 'https://lautapelit.fi/' + (el.Kuva && el.Kuva.includes('tuotekuvat') ? '' : 'images/tuotekuvat/') + el.Kuva,
             price: el.Hinta,
             available: availabilityData.Mera[0].VarastoSaldo > 0,
             itemUrl: 'http://www.lautapelit.fi/product.asp?sua=1&lang=1&s=' + el.SivuID,
