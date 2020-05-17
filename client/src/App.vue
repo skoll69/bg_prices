@@ -5,8 +5,8 @@
     </div>
     <div class="search" id="query">
       <p>
-        Search for <input type="text" v-model="querystring" />
-        <button v-on:click="search">Search</button>
+        Search for <input type="text" v-model="querystring" @keypress.enter="search"/>
+        <button @click="search">Search</button>
       </p>
     </div>
     <hr>
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-const BASEURL = '/'
+const API_BASE_URL = process.env.VUE_APP_API_BASE_URL
 
 import axios from 'axios';
 
@@ -42,7 +42,7 @@ export default {
       this.shops.forEach(element => {
         element.searching = true
         element.data = []
-        axios.get(BASEURL + 'query/' + element.name + '/' + this.querystring).then(response => {
+        axios.get(API_BASE_URL + 'query/' + element.name + '/' + this.querystring).then(response => {
             let index = this.shopIndex[response.data.shop]
             let shop = this.shops[index]
             shop.data = response.data.data
@@ -50,7 +50,7 @@ export default {
             shop.searching = false
         })
       });
-      axios.get(BASEURL + 'query/' + 'lautapelit/' + this.querystring).then(response => {
+      axios.get(API_BASE_URL + 'query/' + 'lautapelit/' + this.querystring).then(response => {
           let index = this.shopIndex[response.data.shop]
           let shop = this.shops[index]
           shop.data = response.data.data
@@ -60,7 +60,7 @@ export default {
     } 
   },
   mounted: function(){
-    axios.get(BASEURL + 'handlers').then(response => {
+    axios.get(API_BASE_URL + 'handlers').then(response => {
       for (let i in response.data){
         let name = response.data[i]
         let index = this.shops.push({name, data: [], searching: false}) - 1

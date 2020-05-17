@@ -1,7 +1,7 @@
 <template>
   <div class="column is-3-desktop is-half-tablet">
     <img class="title_img" :src="title_img" />
-    <img class="searching_img" v-if="searching" src="/public/loading.gif"/>
+    <img class="searching_img" v-if="searching" src="/loading.gif"/>
     <resultcontainer v-for="item in results" :key="item.name" :data="item"></resultcontainer>
     <div v-if="no_results">No results</div>
   </div>
@@ -15,7 +15,7 @@ export default {
   components: { resultcontainer },
   data(){
     return{
-      title_img: `/public/${this.title}.png`,
+      title_img: `/${this.title}.png`,
     }
   },
   computed: {
