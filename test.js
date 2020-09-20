@@ -151,27 +151,25 @@ describe("Unit", function(){
     })
 
     it("Lautapelit.fi", async function(){
-        let qs = 'dungeon%20petz'
-        nock('https://www.lautapelit.fi')
-        .get('/sysNet/getProductsJSON/getProductsJSON.aspx?sua=1&lang=1&reID=1&sanaHaku=' + qs)
+        let qs = 'wingspan'
+        nock('https://lautapelit.fi')
+        .get('/search/?q=' + qs)
         .reply(200, mockResponses.RESPONSE_LAUTAPELIT)
-        .get('/getVarastosaldoJSON.asp?sua=1&lang=1&s=16588&tID=15613')
-        .reply(200, mockResponses.RESPONSE_LAUTAPELIT_AVAILABILITY_AVAILABLE)
-        .get('/getVarastosaldoJSON.asp?sua=1&lang=1&s=21297&tID=20227')
-        .reply(200, mockResponses.RESPONSE_LAUTAPELIT_AVAILABILITY_NOT_AVAILABLE)
 
         res = await lautapelit(qs)
         item = res[0]
-        item.should.have.property('name', 'Dungeon Petz (ENG)');
-        item.should.have.property('imageUrl', 'https://lautapelit.fi/images/tuotekuvat/kuva100/2014/dungeon-petz-14.jpg');
-        item.should.have.property('price', 45);
+        item.should.have.property('name', 'Wingspan');
+        item.should.have.property('imageUrl', 'https://lautapelit.fi/tuotekuvat/520x520/Wingspan_3D.jpg');
+        item.should.have.property('price', 55);
         item.should.have.property('available', true);
-        item.should.have.property('itemUrl', 'http://www.lautapelit.fi/product.asp?sua=1&lang=1&s=16588');
+        item.should.have.property('itemUrl', 'https://lautapelit.fi/searchproduct/36885/wingspan');
         item.should.have.property('currency', '€');
 
         item = res[1]
+        item.should.have.property('name', 'Wingspan European exp (ENG)');
+        item.should.have.property('imageUrl', 'https://lautapelit.fi/tuotekuvat/520x520/2014_eikuvaa3.jpg');
         item.should.have.property('available', false);
-        item.should.have.property('imageUrl', 'https://lautapelit.fi/images/tuotekuvat/kuva100/lautapelit/Dungeon-petz-dark-alleys.jpg');
+        item.should.have.property('itemUrl', 'https://lautapelit.fi/searchproduct/31999/wingspan');
     })
 
     it("Fantasiapelit", async function(){

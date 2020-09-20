@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="showUnavailable || data.available">
     <table class="table">
       <tr>
         <td class="image_td"><img class="thumbnail" :src="data.imageUrl || '/na.png'" /></td>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  props: ['data'],
+  props: ['data', 'showUnavailable'],
   data(){
     return {
       availability_icon: this.data.available ? "/yes.png" : "/no.png",

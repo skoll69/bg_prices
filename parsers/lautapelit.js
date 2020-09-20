@@ -1,31 +1,27 @@
 const rp = require('request-promise')
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
-const baseUrl = 'https://www.lautapelit.fi/sysNet/getProductsJSON/getProductsJSON.aspx?sua=1&lang=1&reID=1&sanaHaku='
+const baseUrl = 'https://lautapelit.fi/search/?q='
 
 async function query(querystring){
-    let data = await rp(baseUrl + querystring, {json: true, gzip: true})
+    let data = await rp(baseUrl + querystring, {gzip: false})
+    let { document } = (new JSDOM(data)).window
+    let items = document.querySelectorAll('.SearchResults .ContentSection .Grid .GridList .ListItem .Product')
     let out = [];
-    for (const el of data) {
-        let availabilityUrl = `https://www.lautapelit.fi/getVarastosaldoJSON.asp?sua=1&lang=1&s=${el.SivuID}&tID=${el.TuoteID}`
-        let availabilityData = await rp(availabilityUrl, {json: true, gzip: true})
+    for(const item of items) {
+        const { document } = (new JSDOM(item.innerHTML)).window;
         out.push({
-            name: el.Tuote,
-            imageUrl: _imageUrl(el),
-            price: el.Hinta,
-            available: availabilityData.Mera[0].VarastoSaldo > 0,
-            itemUrl: 'http://www.lautapelit.fi/product.asp?sua=1&lang=1&s=' + el.SivuID,
+            name: document.querySelector('.ProductName').textContent.trim(),
+            imageUrl: 'https://lautapelit.fi' + document.querySelector('.ProductImageContainer img').getAttribute('data-src'),
+            price: Number(document.querySelector('.ProductPrice').textContent.trim().slice(0, -5)),
+            available: item.className.includes('Available'),
+            itemUrl: 'https://lautapelit.fi' + document.querySelector('.ProductImage').getAttribute('href'),
             currency: '€',
         })
     }
 
     return out;
-}
-
-function _imageUrl(el) {
-    if (!el.Kuva) {
-        return null;
-    }
-    return 'https://lautapelit.fi/' + (el.Kuva.includes('tuotekuvat') ? '' : 'images/tuotekuvat/') + el.Kuva
 }
 
 module.exports = query
