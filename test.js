@@ -231,6 +231,20 @@ describe("Unit", function(){
         item.should.have.property('available', false);
     })
 
+    it("Poromagia Discount", async function(){
+        let qs = 'forgotten%20waters'
+        nock('https://poromagia.com')
+        .get('/en/search/?q=' + qs)
+        .reply(200, mockResponses.RESPONSE_POROMAGIA_2)
+
+        res = await poromagia(qs)
+        item = res[0]
+        item.should.have.property('name', 'Forgotten Waters');
+        item.should.have.property('price', 44.96);
+        item.should.have.property('available', true);
+        item.should.have.property('currency', '€');
+    })
+
     it("Pelipeikko", async function(){
         let qs = 'spirit%20island'
         nock('https://pelipeikko.fi')

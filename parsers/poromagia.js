@@ -28,7 +28,11 @@ async function query(querystring){
 }
 
 function getPrice(el){
-    return Number(getPriceContainer(el).firstChild.firstChild.textContent.replace('€', '').replace(',', '.'))
+    let priceCell = getPriceContainer(el).firstChild.firstChild;
+    if (priceCell.className.includes('strike')) {
+        priceCell = getPriceContainer(el).firstChild.childNodes[2];
+    }
+    return Number(priceCell.textContent.replace('€', '').replace(',', '.'))
 }
 
 function getAvailability(el){
