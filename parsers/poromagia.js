@@ -29,7 +29,7 @@ async function query(querystring){
 
 function getPrice(el){
     let priceCell = getPriceContainer(el).firstChild.firstChild;
-    if (priceCell.className.includes('strike')) {
+    if (priceCell.className && priceCell.className.includes('strike')) {
         priceCell = getPriceContainer(el).firstChild.childNodes[2];
     }
     return Number(priceCell.textContent.replace('€', '').replace(',', '.'))
