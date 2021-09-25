@@ -8446,144 +8446,183 @@ window._chatlio = window._chatlio||[];
 		`,
 
   RESPONSE_FANTASIAPELIT: `
-  <!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:image" content="https://www.fantasiapelit.com/site_images/fp-logo-3D-240.jpg"/><meta property="og:image:secure_url" content="https://www.fantasiapelit.com/site_images/fp-logo-3D-240.jpg"/><meta property="og:image:width" content="240"/><meta property="og:image:height" content="240"/><meta property="og:image:alt" content="Fantasiapelit logo"/><meta property="og:description" content="Tuotehaku"/><meta name="keywords" content="verkkokauppa, peli, miniatyyri, manga, sarjakuva" /><meta name="description" content="Tuotehaku" /><meta name="title" content="Fantasiapelit - verkkokauppa" /><link rel="image_src" href="https://www.fantasiapelit.com/site_images/fp-logo-3D-240.jpg" /><link rel="shortcut icon" href="favicon.ico"><link rel="stylesheet" href="jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script>
-        $(function() {
-                $("#haku_ac").autocomplete({
-                        source: "ennakoi.php",
-                        minLength: 2,
-			select: function(event, ui) {
-				$("#haku_ac").val(ui.item.label);
-				$("#haku_acForm").submit();
-			}
-                })
-		.autocomplete( "instance" )._renderMenu = function( ul, items ) {
-		  var that = this;
-		  $.each( items, function( index, item ) {
-		    that._renderItemData( ul, item );
-		  });
-		  $( ul ).find( "li:odd" ).addClass( "auto_odd" );
-		}
-        });
-	</script>
-	<link href="fantasiapelit19071101.css" rel="stylesheet" type="text/css" media="all">
-<title>Fantasiapelit - verkkokauppa</title>
+  <!DOCTYPE html><html lang='fi'><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:image" content="https://www.fantasiapelit.com/site_images/fp-logo-3D-240.jpg"/><meta property="og:image:secure_url" content="https://www.fantasiapelit.com/site_images/fp-logo-3D-240.jpg"/><meta property="og:image:width" content="240"/><meta property="og:image:height" content="240"/><meta property="og:image:alt" content="Fantasiapelit logo"/><meta property="og:description" content="Tuotehaku"/><meta name="keywords" content="verkkokauppa, peli, miniatyyri, manga, sarjakuva" /><meta name="description" content="Tuotehaku" /><meta name="title" content="Fantasiapelit - verkkokauppa" /><link rel="image_src" href="https://www.fantasiapelit.com/site_images/fp-logo-3D-240.jpg" /><link rel="shortcut icon" href="favicon.ico"><link rel="stylesheet" href="jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script><script>
+	  $(function() {
+			  $("#haku_ac").autocomplete({
+					  source: "ennakoi.php",
+					  minLength: 2,
+		  select: function(event, ui) {
+			  $("#haku_ac").val(ui.item.label);
+			  $("#haku_acForm").submit();
+		  }
+			  })
+	  .autocomplete( "instance" )._renderMenu = function( ul, items ) {
+		var that = this;
+		$.each( items, function( index, item ) {
+		  that._renderItemData( ul, item );
+		});
+		$( ul ).find( "li:odd" ).addClass( "auto_odd" );
+	  }
+	  });
+  </script>
+  <link href="fantasiapelit21090701.css" rel="stylesheet" type="text/css" media="all"><title>Fantasiapelit - verkkokauppa</title>
 </head>
 <body><script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-49481243-1']);
-  _gaq.push(['_trackPageview']);
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-49481243-1']);
+_gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
 </script>
-<div class="max"><span class="fontbase"><div class="row" style="background-color: #4C8942;"><div class="col-12">
-	<table border="0" cellpadding="0" cellspacing="0" width="100%">
-	<tr>
-	<td class="bardiv">
-	<div width="100%"><a href="index.php"><img src="site_images/fantasiapelit-ei-txt.jpg" class="barpic"></a></div>
-	</td>
-	<td class="o_palkki" align="left" valign="center"><a href="index.php?main=international&lc=EN&lang=en" title="International info + English on"><img src="kuvat/lippu-en.jpg" alt="English info" width="32" height="21"></a>
-	<a href="index.php?main=international&lc=RUS" title="Russian info"><img src="kuvat/lippu-ru.jpg" alt="Russian info" width="32" height="21"></a>
-	</td>
-	<td class="o_palkki" align="left" valign="center" width="100%"> &nbsp; <form name="qs" method="post" action="index.php" id="haku_acForm">
-	<input type="hidden" name="main" value="ai">
-	<input type="hidden" name="mista" value="*">
-	<input type="hidden" name="yhteen" value="eri">
-	<input type="hidden" name="alue" value="">
-	<div class="ui-widget"><input type="text" name="etsittava" value="dungeon lords" size="15" maxlength="100" class="search" id="haku_ac">
-		<input type="submit" name="hae" value="HAE" alt="hae"></div>
-	</form>
-	</td>
-	</tr>
-	</table>
-	</div></div><div class="row" style="background-color: #4C8942;"><div class="col-12"><ul>
-		<li class="dropdown">
-			<a href="#" class="dropbtn" aria-haspopup="true">Tuotteet</a>
-			<div class="dropdown-content">
-				<a href="index.php?main=kat">Tuotevalikoima</a>
-				<a href="index.php?main=kat&kat=uutuus">Uutuudet</a>
-				<a href="index.php?main=kat&kat=sekal">Pelit</a>
-				<a href="index.php?main=kat&kat=sekal&sel=noppa">Nopat</a>
-				<a href="index.php?main=kat&kat=sekal&sel=miniatyyri">Miniatyyrit</a>
-				<a href="index.php?main=kat&kat=kirja">Kirjat ja sarjakuvat</a>
-				<a href="index.php?main=lahjakortti">Lahjakortit</a>
-				<a href="index.php?main=selaa">Selaa valikoimaa</a>
-				<a href="index.php?main=tarjous">Tarjouksessa</a>
-			</div>
-		</li>
-		<li class="dropdown">
-			<a href="#" class="dropbtn" aria-haspopup="true">Ajankohtaista</a>
-			<div class="dropdown-content">
-				<a href="index.php?main=news">Uutiset</a>
-				<a href="index.php?main=kalenteri">Kalenteri</a>
-				<a href="index.php">Etusivu</a>
-			</div>
-		</li>
-		<li class="dropdown">
-			<a href="#" class="dropbtn" aria-haspopup="true">Info</a>
-			<div class="dropdown-content">
-				<a href="index.php?main=info">Yhteystiedot</a>
-				<a href="index.php?main=info&sub=tilaus">Tilaamisesta</a>
-				<a href="index.php?main=info&sub=FAQ">Usein kysytyt</a>
-				<a href="index.php?main=info&sub=histo">Fantasiapelit</a>
-				<a href="index.php?main=info&sub=sivut">Kotisivuista</a>
-				<a href="index.php?main=info&sub=policy">Tietoturva</a>
-			</div>
-		</li>
-		<li class="dropdown">
-			<a href="#" class="dropbtn" aria-haspopup="true">Omat tiedot</a>
-			<div class="dropdown-content"><a href="index.php?main=login&sub=login">Kirjaudu sivuille</a>
-				<a href="index.php?main=info&sub=omattiedot&op=yhteys" style="opacity:.2;">Yhteystiedot</a>
-				<a href="index.php?main=info&sub=omattiedot&op=tuotteet" style="opacity:.2;">Varaukset</a>
-				<a href="index.php?main=info&sub=omattiedot&op=tilaus" style="opacity:.2;">Tilaukset</a>
-				<a href="index.php?main=info&sub=omattiedot&op=muutasala" style="opacity:.2;">Salasana</a>
-				</div>
-		</li><li class="dropdown">
-			<a href="#" class="dropbtn" aria-haspopup="true">Palaute</a>
-			<div class="dropdown-content">
-			<a href="index.php?main=info&sub=palautelomake">Palautelomake</a>
-			</div>
-		</li>
-		</ul>
-	</div></div><div class="row"><div class="col-9"><div class="kontti">
-			<div width="100%" class="o2_palkki" height="25"><h1>Tuotehaku</h1></div>
-			<p>
-			Tuotteiden saatavuudessa lukee <i>heti</i> jos sit&auml; on Helsingin varastossa. P&auml;iv&auml;m&auml;&auml;r&auml; tarkoittaa arvioitua saapumista varastoon. Jos pvm meni jo, tuotteen ilmestyminen tai tilauksen saapuminen
+<div class="max"><span class="fontbase"><div class="navfix"><div class="top21">Ilmainen toimitus Suomeen alkaen 40&euro; ostoksesta</div>
+<div class="menurow">
+  <ul>
+  <div class="menu21big"><a href="index.php" alt="Fantasiapelit"><img class="barpic-oversize" src="/kuvat/kuva21/fantasiapelit-ei-txt-51.jpg" alt="Fantasiapelit"></a></div>
+  <div class="menu21">
+  <li class="dropdown">
+  <div class="tuotteet21">Selaa</div> <img class="barpic" src="/kuvat/kuva21/w_menu32.png" alt="Selaa">
+  <div class="dropdown-content">
+			  <p class="menuhdr">Ajankohtaista</p>
+							  <a href="index.php?main=news">Uutiset</a>
+							  <a href="index.php?main=kalenteri">Kalenteri</a>
+			  <p class="menuhdr">Tuotteet</p>
+							  <a href="index.php?main=kat&kat=uutuus">Uutuudet</a>
+							  <a href="index.php?main=kat&kat=sekal&sel=korttipeli">Korttipelit</a>
+							  <a href="index.php?main=kat&kat=sekal&sel=roolipeli">Roolipelit</a>
+							  <a href="index.php?main=kat&kat=sekal&sel=lautapeli">Lautapelit</a>
+							  <a href="index.php?main=kat&kat=sekal&sel=strategiapeli">Strategiapelit</a>
+							  <a href="index.php?main=kat&kat=sekal&sel=noppa">Nopat</a>
+							  <a href="index.php?main=kat&kat=sekal&sel=miniatyyri">Miniatyyrit</a>
+							  <a href="index.php?main=kat&kat=gw">Games Workshop</a>
+							  <a href="index.php?main=kat&kat=kirja&sel=manga">Manga</a>
+							  <a href="index.php?main=kat&kat=kirja&sel=sarja">Sarjakuvat</a>
+							  <a href="index.php?main=kat&kat=kirja&sel=kirja">Kirjat</a>
+							  <a href="index.php?main=kat&kat=kirja&sel=taidekirja">Taidekirjat</a>
+							  <a href="index.php?main=kat&kat=kirja&sel=lähdekirja">Lähdekirjat</a>
+							  <a href="index.php?main=kat&kat=sekal&sel=oheistuote">Oheistuotteet</a>
+							  <a href="index.php?main=lahjakortti">Lahjakortit</a>
+							  <a href="index.php?main=tarjous">Tarjouksessa</a>
+							  <a href="index.php?main=kat">Tuotevalikoima</a>
+			  <p class="menuhdr">Info</p>
+			  <a href="index.php?main=info&sub=tilaus">Tilaamisesta</a>
+			  <a href="index.php?main=info&sub=FAQ">Usein kysytyt</a>
+			  <a href="index.php?main=info&sub=histo">Fantasiapelit</a>
+			  <a href="index.php?main=info&sub=sivut">Sivustosta</a>
+			  <a href="index.php?main=info&sub=policy">Tietoturva</a>
+					  </div>
+  </li>
+  </div>
+  <div class="menu21">
+  <li class="dropdown">
+  <div class="omat21">Omat tiedot</div> <img class="barpic" src="/kuvat/kuva21/w_sign-in.png" alt="Omat tiedot">
+  <div class="dropdown-content"><a href="index.php?main=login&sub=login">Kirjaudu sivuille</a>
+							  <a href="index.php?main=info&sub=omattiedot&op=yhteys" style="opacity:.2;">Yhteystiedot</a>
+			  <a href="index.php?main=wish" style="opacity:.2;">Toivelistat</a>
+							  <a href="index.php?main=info&sub=omattiedot&op=tuotteet" style="opacity:.2;">Varaukset</a>
+							  <a href="index.php?main=info&sub=omattiedot&op=tilaus" style="opacity:.2;">Tilaukset</a>
+							  <a href="index.php?main=info&sub=omattiedot&op=muutasala" style="opacity:.2;">Salasana</a>
+							  </div>
+  </li>
+  </div>
+  <div class="menu21">
+  <li class="dropdown">
+  <div class="info21">Yhteystiedot</div> <img class="barpic" src="/kuvat/kuva21/w_map-locator.png" alt="Yhteystiedot">
+  <div class="dropdown-content">
+  <p class="menuhdr">Myym&auml;l&auml;t</p>
+  <a href="index.php?main=info&sub=helsinki">Helsinki</a>
+  <a href="index.php?main=info&sub=joensuu">Joensuu</a>
+  <a href="index.php?main=info&sub=jkl">Jyv&auml;skyl&auml;</a>
+  <a href="index.php?main=info&sub=kuopio">Kuopio</a>
+  <a href="index.php?main=info&sub=oulu">Oulu</a>
+  <a href="index.php?main=info&sub=tampere">Tampere</a>
+  <a href="index.php?main=info&sub=turku">Turku</a>
+  <p class="menuhdr">Ota yhteytt&auml;</p>
+  <a href="index.php?main=info&sub=postimyynti">Postimyynti</a>
+  <a href="index.php?main=info&sub=tukku">Tukkumyynti</a>
+  <a href="index.php?main=info&sub=johto">Hallinto</a>
+  <br>
+  <a href="index.php?main=info&sub=palautelomake">Viestilomake</a>
+  </div>
+  </li>
+  </div>
+  <div class="menu21">
+  <li class="dropdown" onclick="$('#hakuluukku').toggle();$('#haku_ac').focus();">
+  <div class="haku21">Tuotehaku</div> <img class="barpic" src="/kuvat/kuva21/w_magnifying-glass.png" alt="Tuotehaku">
+  </li>
+  </div>
+  <div class="menu21bigr">
+  <a href="index.php?main=kori" alt="Ostoskori"><img class="barpic" src="/kuvat/kuva21/w_shopping-basket.png" alt="Ostoskori"><div class="riddle" id="korisymboli"></div></a>
+  </div>
+  </ul>
+</div><div class="menurow2" id="hakuluukku">
+  <form name="qs" method="post" action="index.php" id="haku_acForm">
+	  <input type="hidden" name="main" value="ai">
+	  <input type="hidden" name="mista" value="*">
+	  <input type="hidden" name="yhteen" value="eri">
+	  <input type="hidden" name="alue" value="">
+  <div class="ui-widget"><input type="text" name="etsittava" value="dungeon lords" size="35" maxlength="100" class="search" id="haku_ac">
+			  <input type="submit" name="hae" value="HAE" alt="hae"></div>
+  </form>
+</div></div><div class="topspacer"> &nbsp; </div><div class="row"><div class="col-9"><div class="kontti">
+		  <div width="100%" class="o2_palkki" height="25"><h1>Tuotehaku</h1></div>
+		  <p>
+		  Tuotteiden saatavuudessa lukee <i>heti</i> jos sit&auml; on Helsingin varastossa. P&auml;iv&auml;m&auml;&auml;r&auml; tarkoittaa arvioitua saapumista varastoon. Jos pvm meni jo, tuotteen ilmestyminen tai tilauksen saapuminen
 on ilmeisestikin my&ouml;h&auml;ss&auml;.
 Tilap&auml;isesti lopussa olevan tuotteen arvioitu toimitusaika on ilmoitettu kuten <i>1-5 p&auml;iv&auml;&auml;</i> tai <i>2-3 viikkoa</i> jne.<p>
 Ruutun&auml;kym&auml;n liikennevaloissa vihre&auml; on heti saatavilla, punainen juuri nyt loppu varastosta, keltainen ei viel&auml; ilmestynyt tai
 huutomerkin kera ei hyllyvalikoimaa, eli me tilaamme sitten, kun sin&auml; olet tilannut meilt&auml;.
 <a href="index.php?main=info&sub=FAQ#saatavuus">Saatavuusinfossa</a> kerrotaan tarkemmin saatavuustiedoista.
 
-		<p><b><i>Haun tulokset 1 - 3 / 3</i></b><p><form action="index.php" method="get"><input type="radio" name="kuvariveja" title="sivukoko" value=24 checked>24<input type="radio" name="kuvariveja" title="sivukoko" value=60>60<input type="radio" name="kuvariveja" title="sivukoko" value=120>120 <select name="jarj" size="0" title="J&auml;rjestys hinnan mukaan / vain aakkostus"><option value="tuotteen_nimi" selected>abc</option><option value="halvin">halvin</option><option value="kallein">kallein</option></select>  <input type="radio" name="ruutukaava" value="1" checked> ruutu
-				<input type="radio" name="ruutukaava" value="0"> rivi <br><input type="checkbox" name="varastotuote" value="1" > heti saatavilla  <input type="submit" name="submit" value="muuta" alt="muuta">
-		<input type="hidden" name="main" value="ai">
-		<input type="hidden" name="yhteen" value=eri>
-        	<input type="hidden" name="etsittava" value="dungeon lords">
-        	<input type="hidden" name="offset" value=0>
-        	<input type="hidden" name="kat" value=kaikki>
-        	<input type="hidden" name="mista" value="*">
-		<input type="hidden" name="jamista" value="luokka">
-		<input type="hidden" name="jamika" value="lautapeli/seurapeli">
-		<input type="hidden" name="luokka" value="">
-		</form><p><div class="row"><div class="col-grid"><div style="padding-right: 5px;"> <div class="centruutu" ><a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_165665" class="ruutulink"><div class="ruutu"><div width="100%" class="o2_palkki" style="margin-bottom: 3px;" height="20">Dungeon Lords</div>
-			<img class="ruutuimg, himmeli" src="pikkukuva.php?xy=1&img=larg9/165665.jpg" alt="Dungeon Lords" title="Dungeon Lords">
-			<span  class="himmeli"><div class="ruutuinfo">Säännöt valmistajan sivuilta.
+	  <p><b><i>Haun tulokset 1 - 5 / 5</i></b><p><form action="index.php" method="get"><input type="radio" name="kuvariveja" title="sivukoko" value=24 id="radio-0" checked><label for="radio-0">24</label><input type="radio" name="kuvariveja" title="sivukoko" value=60 id="radio-1"><label for="radio-1">60</label><input type="radio" name="kuvariveja" title="sivukoko" value=120 id="radio-2"><label for="radio-2">120</label> <select name="jarj" size="0" title="J&auml;rjestys hinnan mukaan / vain aakkostus"><option value="tuotteen_nimi" selected>abc</option><option value="halvin">halvin</option><option value="kallein">kallein</option></select> <br><input type="checkbox" name="varastotuote" value="1" id="rux-1" > <label for="rux-1">heti saatavilla </label> <input type="submit" name="submit" value="muuta" alt="muuta">
+	  <input type="hidden" name="main" value="ai">
+	  <input type="hidden" name="yhteen" value=>
+		  <input type="hidden" name="etsittava" value="dungeon lords">
+		  <input type="hidden" name="offset" value=0>
+		  <input type="hidden" name="kat" value=kaikki>
+		  <input type="hidden" name="mista" value="*">
+	  <input type="hidden" name="jamista" value="">
+	  <input type="hidden" name="jamika" value="">
+	  <input type="hidden" name="luokka" value="">
+	  <input type="hidden" name="on_luokka" value="lautapeli/seurapeli"></form><p><script>$( "input[type='radio'],input[type='checkbox']" ).checkboxradio({icon:false});</script><button id="hakusuodin">suodata hakua</button>
+	  <div id="hakusuodinmodal" class="modal">
+	  <div class="modal-content">
+	  <span class="close">&times;</span><h1>Suodata hakua</h1><form name="suodinhaku" method="get" action="index.php">
+	  <input type="hidden" name="main" value="ai"><input type="hidden" name="on_luokka" value="lautapeli/seurapeli"><input type="hidden" name="etsittava" value="dungeon lords"><input type="hidden" name="mista" value="*"><p>Valitse ensin tuoteluokka: <b>lautapeli/seurapeli</b> <button type="button" name="pois_luokka" value="" onClick="this.form.on_luokka.value='*'; this.form.submit();">peru</button></p><p>valmistaja</p><select name="on_valmistaja" size="0">
+						  <option value="*">*</option><option value="czech games">Czech Games</option><option value="z-man games">Z-man Games</option></select><p><input type="submit" value="hae"></form></div></div><p><script>
+	  var modal = document.getElementById("hakusuodinmodal");
+	  var btn = document.getElementById("hakusuodin");
+	  var span = document.getElementsByClassName("close")[0];
+	  btn.onclick = function() {
+		modal.style.display = "block";
+	  }
+	  span.onclick = function() {
+		modal.style.display = "none";
+	  }
+	  window.onclick = function(event) {
+		if (event.target == modal) {
+		  modal.style.display = "none";
+		}
+	  }
+	  </script><script>$('#hakusuodinmodal').toggle(1);</script><div class="row"><div class="col-grid"><div style="padding-right: 5px;"> <div class="centruutu" ><a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_165665" class="ruutulink"><div class="ruutu">
+		  <img class="ruutuimg, himmeli" src="pikkukuva.php?xy=1&img=larg9/165665.jpg" alt="Dungeon Lords" title="Dungeon Lords">
+		  <div width="100%" class="selausruutunimi">Dungeon Lords</div>
+		  <span  class="himmeli"><div class="ruutuinfo"><p>Säännöt valmistajan sivuilta.
 <p>
-They meet in a tavern. The strong warrior, the wily wizard, the committed priest, and the sneaky thief. Several hours and many quaffed ales later, they form an inseparable party of adventurers, ready to rid the world of evil. And there is some, just within easy walking distance &#8211; a dark lord has filled a nearby hill with tunnels, traps, treasure and trolls. The heroes set out to attack the dungeon and to punish the wicked lord.
+They meet in a tavern. The strong warrior, the wily wizard, the committed priest, and the sneaky thief. Several hours and many quaffed ales later, they form an inseparable party of adventurers, ready to rid the world of evil. And there is some, just within easy walking distance – a dark lord has filled a nearby hill with tunnels, traps, treasure and trolls. The heroes set out to attack the dungeon and to punish the wicked lord.
 <p>
 Are you ready for heroic deeds that win you fame, wealth and the hearts of beautiful maidens?
 <p>
 Well, then go and play another game! This one is for people who want to know what it takes to build and run a dungeon. Where to get all those minions and monsters, and how to keep them satisfied. And how it feels when some band of do-gooders try to ruin all that work! Are you ready for this challenge?
 <p>
-Dungeon Lords is a game for 2 to 4 aspiring Dungeon Lords. You get to dig tunnels, mine gold, hire monsters, create traps and care about all the things a proper dungeon needs. It is not easy, as the competition for resources is stiff and sometimes you have to get a bit evil to get what you want &#8211; and the more evil you get, the stronger the adventurers your dungeon attracts.
+Dungeon Lords is a game for 2 to 4 aspiring Dungeon Lords. You get to dig tunnels, mine gold, hire monsters, create traps and care about all the things a proper dungeon needs. It is not easy, as the competition for resources is stiff and sometimes you have to get a bit evil to get what you want – and the more evil you get, the stronger the adventurers your dungeon attracts.
 <p>
 Twice a game, these adventurers set off to conquer your dungeon. Command your monsters and use your traps to stop them, before they do too much damage.
 <p>
@@ -8643,33 +8682,97 @@ Game components
 <br>
 *    rulebook
 <p>
-Players: 	2&#8211;4
+Players: 	2–4
 <br>
 Age: 	12+
 <br>
 Time: 	90 mins
 <p>
-Author: 	Vlaada Chvátil</div></span>
-			</div></a><div class="ruutuhinta"><div class="saapalat" valign="center"><form name="ostos" action="index.php" method="post">
-				<input type="hidden" name="main" value="kori">
-				<input type="hidden" name="sub" value="add">
-				<input type="hidden" name="add" value="_165665">
-				<input type="hidden" name="kat" value="kaikki">
-				<input type="submit" name="submit" class="korikori" value="&nbsp; &nbsp; &nbsp; &nbsp;" alt="tilattavissa" title="tilattavissa">
-				</form></div><div class="saapalat"><div class="saayellow"> &nbsp; &excl; &nbsp; <span class="tooltiptext">heti saatavilla</span></div></div><div class="saapalat">50.00 &euro;</div></div></div> </div></div><div class="col-grid"><div style="padding-right: 5px;"> <div class="centruutu" ><a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_165671" class="ruutulink"><div class="ruutu"><div width="100%" class="o2_palkki" style="margin-bottom: 3px;" height="20">Dungeon Lords: Happy Anniversary!</div>
-			<img class="ruutuimg, himmeli" src="pikkukuva.php?xy=1&img=larg9/165671.jpg" alt="Dungeon Lords: Happy Anniversary!" title="Dungeon Lords: Happy Anniversary!">
-			<span  class="himmeli"><div class="ruutuinfo">Dungeon Lords: Happy Anniversary includes the Dungeon Lords base game, the Festival Season expansion, stickers for food tokens, metal coins, a new "Dungeon Set-up" mini-expansion, and other items.</div></span>
-			</div></a><div class="ruutuhinta"><div class="saapalat" valign="center"><form name="ostos" action="index.php" method="post">
-				<input type="hidden" name="main" value="kori">
-				<input type="hidden" name="sub" value="add">
-				<input type="hidden" name="add" value="_165671">
-				<input type="hidden" name="kat" value="kaikki">
-				<input type="submit" name="submit" class="korikori" value="&nbsp; &nbsp; &nbsp; &nbsp;" alt="tilattavissa" title="tilattavissa">
-				</form></div><div class="saapalat"><div class="saayellow"> &nbsp; &excl; &nbsp; <span class="tooltiptext">tilattava tuote</span></div></div><div class="saapalat">120.00 &euro;</div></div></div> </div></div><div class="col-grid"><div style="padding-right: 5px;"> <div class="centruutu" ><a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_159172" class="ruutulink"><div class="ruutu"><div width="100%" class="o2_palkki" style="margin-bottom: 3px;" height="20">Dungeon Petz</div>
-			<img class="ruutuimg, himmeli" src="pikkukuva.php?xy=1&img=larga/159172.jpg" alt="Dungeon Petz" title="Dungeon Petz">
-			<span  class="himmeli"><div class="ruutuinfo">Säännöt valmistajan sivuilta.
+Author: 	Vlaada Chvátil &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></span>
+		  </div></a><div class="ruutuhinta"><div class="saapalatb" valign="center"><div class="row"><form name="ostos" action="index.php" method="post" class="rivilomake">
+			  <input type="hidden" name="main" value="kori">
+			  <input type="hidden" name="sub" value="add">
+			  <input type="hidden" name="add" value="_165665">
+			  <input type="hidden" name="kat" value="kaikki">
+			  <input type="image" src="/kuvat/kuva21/g_shopping-basket.png" name="submit" value="" class="korikori21" valign="center" alt="tilattavissa" title="tilattavissa">
+			  </form><div class="formpicspacer"> </div><img src="/kuvat/kuva21/g_heart.png" class="formpicr" valign="center" title="kirjaudu/rekisteröidy ensin lisätäksesi toivelistalle"></div></div><div class="saapalats"><div class="saagreen" title="heti saatavilla"><span class="erihuuto"> &nbsp; &excl; &nbsp; </span><span class="tooltiptext">heti saatavilla</span></div></div><div class="saapalatb">50.00 &euro;</div></div></div> </div></div><div class="col-grid"><div style="padding-right: 5px;"> <div class="centruutu" ><a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_165667" class="ruutulink"><div class="ruutu">
+		  <img class="ruutuimg, himmeli" src="pikkukuva.php?xy=1&img=larg9/165667.png" alt="Dungeon Lords: Festival Season Expansion" title="Dungeon Lords: Festival Season Expansion">
+		  <div width="100%" class="selausruutunimi">Dungeon Lords: Festival Season Expansion</div>
+		  <span  class="himmeli"><div class="ruutuinfo"><p>Säännöt valmistajan sivuilta.
 <p>
-&#8220;What this town needs is a pet store.&#8221; No one knows which imp said it, but every imp recognized the idea was pure genius: &#8220;A pet shop for dungeon lords? What a great idea! Yeah, and no one else is doing it! No competition! We&#8217;ll be rich!&#8221;
+Dungeon Lords: Festival Season is a big expansion that includes lots of Dungeon Lording goodness.
+<p>
+The game is still played over two years, but now each year has five rounds instead of four: winter, spring, summer, autumn and festival season. More time to build your dungeon, but also more time for adventurers to gather a larger party. There are new monsters, rooms, and traps to prepare your dungeon for the battle, but also new nasty spells for the adventurers and sneaky bards who encourage them to perform so-called "heroic" deeds – not to mention two paladins for each year, now ready to punish up to two evil players.
+<p>
+Also, your minions get new options - there are still eight actions on the main board, but each round, one of them is replaced by a unique opportunity. Would you like to push other players toward evil instead of moving yourself toward good when visiting the city? How about making an investment instead of traditional gold digging? Or how about repairing conquered tunnels or rooms instead of digging new ones? Take advantage of these special actions while you can; each one is available for only one round.And did we mention that it has recently become fashionable for Dungeon Lords to have their own personal pets?
+<p>
+And if you still don't have quite everything you need at the end of the year, you can pick up something extra at the Festival!
+<p>
+Game components:
+<br>
+*    Progress Board Extension (with a Building Side and a Combat Side)
+<br>
+*    Distant Lands Board Extension
+<br>
+*    4 Dungeon Board Extensions
+<br>
+*    6 Combat Cards
+<br>
+*    18 Trap Cards
+<br>
+*    9 Special Event Cards
+<br>
+*    20 Pet Cards
+<br>
+*    6 Monster Tiles
+<br>
+*    4 Room Tiles
+<br>
+*    8 Adventurer Tiles
+<br>
+*    4 Paladin Tiles
+<br>
+*    4 Event Tiles
+<br>
+*    4 Item Tiles
+<br>
+*    3 Monster Upgrade Tiles
+<br>
+*    5 Special Tunnel Tiles
+<br>
+*    8 Special Action Tiles
+<br>
+*    Rulebook
+<p>
+Players: 	2–4
+<br>
+Age: 	13+
+<br>
+Time: 	120 mins
+<p>
+Author: 	Vlaada Chvátil &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></span>
+		  </div></a><div class="ruutuhinta"><div class="saapalatb" valign="center"><div class="row"><form name="ostos" action="index.php" method="post" class="rivilomake">
+			  <input type="hidden" name="main" value="kori">
+			  <input type="hidden" name="sub" value="add">
+			  <input type="hidden" name="add" value="_165667">
+			  <input type="hidden" name="kat" value="kaikki">
+			  <input type="image" src="/kuvat/kuva21/g_shopping-basket.png" name="submit" value="" class="korikori21" valign="center" alt="tilattavissa" title="tilattavissa">
+			  </form><div class="formpicspacer"> </div><img src="/kuvat/kuva21/g_heart.png" class="formpicr" valign="center" title="kirjaudu/rekisteröidy ensin lisätäksesi toivelistalle"></div></div><div class="saapalats"><div class="saayellow" title="tilattava tuote"><span class="erihuuto"> &nbsp; &excl; &nbsp; </span><span class="tooltiptext">tilattava tuote</span></div></div><div class="saapalatb">30.00 &euro;</div></div></div> </div></div><div class="col-grid"><div style="padding-right: 5px;"> <div class="centruutu" ><a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_165671" class="ruutulink"><div class="ruutu">
+		  <img class="ruutuimg, himmeli" src="pikkukuva.php?xy=1&img=larg9/165671.jpg" alt="Dungeon Lords: Happy Anniversary!" title="Dungeon Lords: Happy Anniversary!">
+		  <div width="100%" class="selausruutunimi">Dungeon Lords: Happy Anniversary!</div>
+		  <span  class="himmeli"><div class="ruutuinfo"><p>Dungeon Lords: Happy Anniversary includes the Dungeon Lords base game, the Festival Season expansion, stickers for food tokens, metal coins, a new "Dungeon Set-up" mini-expansion, and other items. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></span>
+		  </div></a><div class="ruutuhinta"><div class="saapalatb" valign="center"><div class="row"><form name="ostos" action="index.php" method="post" class="rivilomake">
+			  <input type="hidden" name="main" value="kori">
+			  <input type="hidden" name="sub" value="add">
+			  <input type="hidden" name="add" value="_165671">
+			  <input type="hidden" name="kat" value="kaikki">
+			  <input type="image" src="/kuvat/kuva21/g_shopping-basket.png" name="submit" value="" class="korikori21" valign="center" alt="tilattavissa" title="tilattavissa">
+			  </form><div class="formpicspacer"> </div><img src="/kuvat/kuva21/g_heart.png" class="formpicr" valign="center" title="kirjaudu/rekisteröidy ensin lisätäksesi toivelistalle"></div></div><div class="saapalats"><div class="saayellow" title="tilattava tuote"><span class="erihuuto"> &nbsp; &excl; &nbsp; </span><span class="tooltiptext">tilattava tuote</span></div></div><div class="saapalatb">102.50 &euro;</div></div></div> </div></div><div class="col-grid"><div style="padding-right: 5px;"> <div class="centruutu" ><a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_159172" class="ruutulink"><div class="ruutu">
+		  <img class="ruutuimg, himmeli" src="pikkukuva.php?xy=1&img=larga/159172.jpg" alt="Dungeon Petz" title="Dungeon Petz">
+		  <div width="100%" class="selausruutunimi">Dungeon Petz</div>
+		  <span  class="himmeli"><div class="ruutuinfo"><p>Säännöt valmistajan sivuilta.
+<p>
+“What this town needs is a pet store.” No one knows which imp said it, but every imp recognized the idea was pure genius: “A pet shop for dungeon lords? What a great idea! Yeah, and no one else is doing it! No competition! We’ll be rich!”
 <p>
 And now you have just opened the first pet shop in town. Right next door to the other first pet shop in town. Across the street from two more.
 <p>
@@ -8737,89 +8840,144 @@ Age: 	13+
 <br>
 Time: 	90 mins
 <p>
-Author: 	Vlaada Chvátil</div></span>
-			</div></a><div class="ruutuhinta"><div class="saapalat" valign="center"><form name="ostos" action="index.php" method="post">
-				<input type="hidden" name="main" value="kori">
-				<input type="hidden" name="sub" value="add">
-				<input type="hidden" name="add" value="_159172">
-				<input type="hidden" name="kat" value="kaikki">
-				<input type="submit" name="submit" class="korikori" value="&nbsp; &nbsp; &nbsp; &nbsp;" alt="tilattavissa" title="tilattavissa">
-				</form></div><div class="saapalat"><div class="saayellow"> &nbsp; &excl; &nbsp; <span class="tooltiptext">tilattava tuote</span></div></div><div class="saapalat">50.00 &euro;</div></div></div> </div></div></div><p> Hakusivu: 1 <div class="center"><table width="100%"><tr><th width="25%">&nbsp;</th><th width="25%">&nbsp;</th><th width="25%">&nbsp;</th><th width="25%">&nbsp;</th></tr></table></div></div></div><div class="col-3"><div class="ittnok"><div class="o2_palkki"><h3>Rajaa hakua</h3></div>LUOKKA<br><a href="index.php?main=ai&jamista=luokka&jamika=lautapeli/seurapeli&mista=*&yhteen=eri&alue=&etsittava=dungeon lords">lautapeli/seurapeli</a><br><a href="index.php?main=ai&jamista=luokka&jamika=roolipeli&mista=*&yhteen=eri&alue=&etsittava=dungeon lords">roolipeli</a><br><br>VALMISTAJA<br><a href="index.php?main=ai&jamista=valmistaja&jamika=Czech Games&mista=*&yhteen=eri&alue=&etsittava=dungeon lords">Czech Games</a><br><a href="index.php?main=ai&jamista=valmistaja&jamika=Goodman Games&mista=*&yhteen=eri&alue=&etsittava=dungeon lords">Goodman Games</a><br><div class="o2_palkki"><h3>Uutuuksia</h3></div><div class="footer">Kingdomino: Age of Giants (suomeksi)<br>
-				<a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_200391">
-				<img class="uutuus" src="pikkukuva.php?xy=1&img=largm/200391.jpg" alt="Kingdomino: Age of Giants (suomeksi)" title="Kingdomino: Age of Giants (suomeksi)"></a>
-				</div><div class="footer">Rumble 6: Last Knight<br>
-				<a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_199516">
-				<img class="uutuus" src="pikkukuva.php?xy=1&img=largm/199516.jpg" alt="Rumble 6: Last Knight" title="Rumble 6: Last Knight"></a>
-				</div><div class="footer">World War III: Team Yankee Rulebook<br>
-				<a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_181436">
-				<img class="uutuus" src="pikkukuva.php?xy=1&img=largm/181436.jpg" alt="World War III: Team Yankee Rulebook" title="World War III: Team Yankee Rulebook"></a>
-				</div><div class="footer"><img border="0" src="kuvat/vihr_nuoli.gif" width="8" height="7">
-			<a href="index.php?main=kat&kat=uutuus">HAE UUTUUKSIA</a>
-		</div><div class="elder">
-		<form name="ostoskori" action="index.php" method="get">
-		<input type="hidden" name="main" value="kori">
-		<input type="submit" name="kori" value="Kori tyhj&auml;" alt="ostoskoriin">
-		</form>
-		</div></div
-		</div></div><div class="row"><div class="col-6"><table width="100%" margin="0" border="0" cellspacing="0"><tr>
-		<td width="60%" valign="top" class="o3_palkki">
-			<p><a href="index.php?main=info">LIIKKEET</a><p>
-			<table width="100%">
-			<tr><td width="50%" valign="top">
-			<a href="index.php?main=info&sub=helsinki">Helsinki</a><br>
-			<a href="index.php?main=info&sub=joensuu">Joensuu</a><br>
-			<a href="index.php?main=info&sub=jkl">Jyv&auml;skyl&auml;</a><br>
-			<a href="index.php?main=info&sub=kuopio">Kuopio</a><br>
-			</td><td width="50%" valign="top">
-			<a href="index.php?main=info&sub=oulu">Oulu</a><br>
-			<a href="index.php?main=info&sub=tampere">Tampere</a><br>
-			<a href="index.php?main=info&sub=turku">Turku</a><br>
-			</td></tr>
-			</table>
-		</td>
-		<td width="40%" valign="top" class="o3_palkki">
-			<p>TILAAMISESTA<p>
-			<a href="index.php?main=info&sub=tilaus">Maksu, toimitus ja yleist&auml;</a><br>
-			<a href="index.php?main=info&sub=FAQ">UKK</a><br>
-			<a href="index.php?main=info&sub=policy">Tietoturva</a><br>
-			<a href="index.php?main=kori">Ostoskoriin</a><br>
-			<a href="index.php?main=kat">Tuotevalikoima</a> 
-		</td>
-		</tr></table>
-		</div><div class="col-6">
-		<table width="100%" margin="0" border="0" cellspacing="0"><tr>
-		<td width="50%" valign="top" class="o3_palkki">
-			<p>INFO<br>
-			Y-tunnus: 0604011-8<br>
-			<a href="index.php?main=info&sub=yhteys">Yhteystiedot</a><br>
-			<a href="index.php?main=info&sub=omattiedot">Omat tiedot</a><br>
-			<a href="index.php?main=info&sub=histo">Yritys</a><br>
-			<a href="index.php?main=linkit">Linkit</a><br>
-			<a href="index.php?main=info&sub=palautelomake">Palautelomake</a>
-		</td>
-		<td width="50%" valign="center" class="o3_palkki">
-			<div class="center">
-			<a target="_blank" href="https://www.facebook.com/pages/Helsinki-Finland/Fantasiapelit/360696535367"><img src="kuvat/Facebook_badge.gif" height="44" width="144" title="Fantasiapelit on Facebookissa" border="0"></a>
-			</div>
-		</td>
-		</tr></table>
-		</div></div></span></div><script type="text/javascript">
-        var refreshSn = function ()
-        {
-            var time = 600000; // 10 mins
-            var timerId = setTimeout(
-                function ()
-                {
-                $.ajax({
-                   url: 'refresh_session.php',
-                   cache: false,
-                   complete: function () {refreshSn();}
-                });
-                },
-                time
-            );
-        };
-        refreshSn();
-        </script></body></html>
+Author: 	Vlaada Chvátil &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></span>
+		  </div></a><div class="ruutuhinta"><div class="saapalatb" valign="center"><div class="row"><form name="ostos" action="index.php" method="post" class="rivilomake">
+			  <input type="hidden" name="main" value="kori">
+			  <input type="hidden" name="sub" value="add">
+			  <input type="hidden" name="add" value="_159172">
+			  <input type="hidden" name="kat" value="kaikki">
+			  <input type="image" src="/kuvat/kuva21/g_shopping-basket.png" name="submit" value="" class="korikori21" valign="center" alt="tilattavissa" title="tilattavissa">
+			  </form><div class="formpicspacer"> </div><img src="/kuvat/kuva21/g_heart.png" class="formpicr" valign="center" title="kirjaudu/rekisteröidy ensin lisätäksesi toivelistalle"></div></div><div class="saapalats"><div class="saayellow" title="tilattava tuote"><span class="erihuuto"> &nbsp; &excl; &nbsp; </span><span class="tooltiptext">tilattava tuote</span></div></div><div class="saapalatb">49.40 &euro;</div></div></div> </div></div><div class="col-grid"><div style="padding-right: 5px;"> <div class="centruutu" ><a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_152188" class="ruutulink"><div class="ruutu">
+		  <img class="ruutuimg, himmeli" src="pikkukuva.php?xy=1&img=larg9/152188.jpg" alt="Dungeon Petz: Dark Alleys Expansion" title="Dungeon Petz: Dark Alleys Expansion">
+		  <div width="100%" class="selausruutunimi">Dungeon Petz: Dark Alleys Expansion</div>
+		  <span  class="himmeli"><div class="ruutuinfo"><p>Bringing you more than just new pets, cages and magic items, the Dungeon Petz: Dark Alleys has a whole new district in the town. This is the heart of the expansion. It’s kind of a back alley district in the Imp town where all the weird existences live and try to do their business. So would you like to hire an illegal worker or buy a pet on the black market? Maybe book a facility that produces food for active dogs, cats and dragons? And what about a fancy ribbon or a cool spiked collar for your pet? Taking care of your pets will never be the same.
+<p>
+Contents
+<br>
+*    1 two-sided Progress Board extension
+<br>
+*    1 two-sided Dark Alleys Board
+<br>
+*    9 pets with rotating wheels
+<br>
+*    10 plastic fasteners for assembling Pets
+<br>
+*    9 plastic imps (2 in each color and one black)
+<br>
+*    3 Cage tiles
+<br>
+*    2 Addon tiles
+<br>
+*    2 Customer tiles
+<br>
+*    2 Exhibition tiles
+<br>
+*    3 Artifact tiles
+<br>
+*    6 Facility tiles
+<br>
+*    8 Accessory tiles
+<br>
+*    4 Permission tiles (1 in each color)
+<br>
+*    Rulebook 
+<p>
+Nb of players: 	2 to 4
+<br>
+Game time: 	120 min.
+<br>
+Age group: 	12 years and + &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></span>
+		  </div></a><div class="ruutuhinta"><div class="saapalatb" valign="center"><div class="row"><form name="ostos" action="index.php" method="post" class="rivilomake">
+			  <input type="hidden" name="main" value="kori">
+			  <input type="hidden" name="sub" value="add">
+			  <input type="hidden" name="add" value="_152188">
+			  <input type="hidden" name="kat" value="kaikki">
+			  <input type="image" src="/kuvat/kuva21/g_shopping-basket.png" name="submit" value="" class="korikori21" valign="center" alt="tilattavissa" title="tilattavissa">
+			  </form><div class="formpicspacer"> </div><img src="/kuvat/kuva21/g_heart.png" class="formpicr" valign="center" title="kirjaudu/rekisteröidy ensin lisätäksesi toivelistalle"></div></div><div class="saapalats"><div class="saayellow" title="tilattava tuote"><span class="erihuuto"> &nbsp; &excl; &nbsp; </span><span class="tooltiptext">tilattava tuote</span></div></div><div class="saapalatb">30.00 &euro;</div></div></div> </div></div></div><p> Hakusivu: 1 <div class="center"><table width="100%"><tr><th width="25%">&nbsp;</th><th width="25%">&nbsp;</th><th width="25%">&nbsp;</th><th width="25%">&nbsp;</th></tr></table></div></div></div><div class="col-3"><div class="ittnok"><div class="center"><div class="o2_palkki"><h3>Uutuuksia</h3></div><div class="footer">
+			  <a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_206878">
+			  <img class="uutuus" src="pikkukuva.php?xy=1&img=largp/206878.png" alt="Life Siphon" title="Life Siphon"></a>
+			  <br>
+			  Life Siphon
+			  </div><div class="makeroom"> </div><div class="footer">
+			  <a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_212798">
+			  <img class="uutuus" src="pikkukuva.php?xy=1&img=largs/212798.jpg" alt="Dungeons & Dragons Ski Beanie Logo Laplander" title="Dungeons & Dragons Ski Beanie Logo Laplander"></a>
+			  <br>
+			  Dungeons & Dragons Ski Beanie Logo Laplander
+			  </div><div class="makeroom"> </div><div class="footer">
+			  <a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_210540">
+			  <img class="uutuus" src="pikkukuva.php?xy=1&img=largs/210540.jpg" alt="TMNT: Jennika 2" title="TMNT: Jennika 2"></a>
+			  <br>
+			  TMNT: Jennika 2
+			  </div><div class="makeroom"> </div><div class="footer">
+			  <a href="index.php?main=ai&kat=single&mista=indeksi&etsittava=_211477">
+			  <img class="uutuus" src="pikkukuva.php?xy=1&img=largs/211477.jpg" alt="D&D 5: Wild Beyond the Witchlight, A Feywild Adventure (HC)" title="D&D 5: Wild Beyond the Witchlight, A Feywild Adventure (HC)"></a>
+			  <br>
+			  D&D 5: Wild Beyond the Witchlight, A Feywild Adventure (HC)
+			  </div><div class="makeroom"> </div><div class="footer"><img border="0" src="kuvat/vihr_nuoli.gif" width="8" height="7">
+		  <a href="index.php?main=kat&kat=uutuus">LISÄÄ UUTUUKSIA</a>
+	  </div></div><script>
+		  $("#korisisus").html('<p>Kori tyhj&auml;</p>');
+		  document.getElementById("korisisus").style.display="block";
+	  </script></div>
+	  </div></div><div class="row"><div class="col-6"><table width="100%" margin="0" border="0" cellspacing="0"><tr>
+	  <td width="60%" valign="top" class="o3_palkki">
+		  <br><a href="index.php?main=info">LIIKKEET</a><br>
+		  <table width="100%">
+		  <tr><td width="50%" valign="top">
+		  <a href="index.php?main=info&sub=helsinki">Helsinki</a><br>
+		  <a href="index.php?main=info&sub=joensuu">Joensuu</a><br>
+		  <a href="index.php?main=info&sub=jkl">Jyv&auml;skyl&auml;</a><br>
+		  <a href="index.php?main=info&sub=kuopio">Kuopio</a><br>
+		  </td><td width="50%" valign="top">
+		  <a href="index.php?main=info&sub=oulu">Oulu</a><br>
+		  <a href="index.php?main=info&sub=tampere">Tampere</a><br>
+		  <a href="index.php?main=info&sub=turku">Turku</a><br>
+		  &nbsp; <br><a href="index.php?main=international&lc=EN&lang=en">English info <img class="formpicr" src="kuvat/lippu-en.jpg"></a><br><br></td></tr>
+		  </table>
+	  </td>
+	  <td width="40%" valign="top" class="o3_palkki">
+		  <p>TILAAMISESTA<br>
+		  <a href="index.php?main=info&sub=tilaus">Maksu, toimitus ja yleist&auml;</a><br>
+		  <a href="index.php?main=info&sub=FAQ">UKK</a><br>
+		  <a href="index.php?main=info&sub=policy">Tietoturva</a><br>
+		  <a href="index.php?main=kori">Ostoskoriin</a><br>
+		  <a href="index.php?main=kat">Tuotevalikoima</a> 
+	  </td>
+	  </tr></table>
+	  </div><div class="col-6">
+	  <table width="100%" margin="0" border="0" cellspacing="0"><tr>
+	  <td width="50%" valign="top" class="o3_palkki">
+		  <p>INFO<br>
+		  Y-tunnus: 0604011-8<br>
+		  <a href="index.php?main=info&sub=yhteys">Yhteystiedot</a><br>
+		  <a href="index.php?main=info&sub=omattiedot">Omat tiedot</a><br>
+		  <a href="index.php?main=info&sub=histo">Yritys</a><br>
+		  <a href="index.php?main=linkit">Linkit</a><br>
+		  <a href="index.php?main=info&sub=palautelomake">Viestilomake</a>
+	  </td>
+	  <td width="50%" valign="center" class="o3_palkki">
+		  <div class="center">
+		  <a target="_blank" href="https://www.facebook.com/pages/Helsinki-Finland/Fantasiapelit/360696535367"><img src="kuvat/Facebook_badge.gif" height="44" width="144" title="Fantasiapelit on Facebookissa" border="0"></a>
+		  </div>
+	  </td>
+	  </tr></table>
+	  </div></div></span></div><script type="text/javascript">
+	  var refreshSn = function ()
+	  {
+		  var time = 600000; // 10 mins
+		  var timerId = setTimeout(
+			  function ()
+			  {
+			  $.ajax({
+				 url: 'refresh_session.php',
+				 cache: false,
+				 complete: function () {refreshSn();}
+			  });
+			  },
+			  time
+		  );
+	  };
+	  refreshSn();
+	  </script></body></html>
   `
 }

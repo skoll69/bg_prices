@@ -175,7 +175,7 @@ describe("Unit", function(){
     it("Fantasiapelit", async function(){
         let qs = 'dungeon%20lords'
         nock('https://www.fantasiapelit.com')
-        .get('/index.php?main=ai&mista=*&jamista=luokka&jamika=lautapeli/seurapeli&yhteen=eri&alue=&etsittava=' + qs)
+        .get('/index.php?main=ai&mista=*&avaa_suodin=1&on_luokka=lautapeli%2Fseurapeli&etsittava=' + qs)
         .reply(200, mockResponses.RESPONSE_FANTASIAPELIT)
 
         res = await fantasiapelit(qs)

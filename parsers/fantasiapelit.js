@@ -2,7 +2,7 @@ const rp = require('request-promise')
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-const baseUrl = 'https://www.fantasiapelit.com/index.php?main=ai&mista=*&jamista=luokka&jamika=lautapeli/seurapeli&yhteen=eri&alue=&etsittava='
+const baseUrl = 'https://www.fantasiapelit.com/index.php?main=ai&mista=*&avaa_suodin=1&on_luokka=lautapeli%2Fseurapeli&etsittava='
 
 async function query(querystring){
     let data = await rp(baseUrl + querystring, {gzip: false})
@@ -11,8 +11,8 @@ async function query(querystring){
     let out = [];
     for (const el of items) {
         out.push({
-            name: el.firstChild.firstChild.firstChild.textContent,
-            imageUrl: 'https://fantasiapelit.com/' + el.firstChild.firstChild.childNodes[2].getAttribute('src'),
+            name: el.querySelector('.selausruutunimi').textContent,
+            imageUrl: 'https://fantasiapelit.com/' + el.querySelector('img').getAttribute('src'),
             price: getPrice(el),
             available: getAvailability(el),
             itemUrl: 'https://fantasiapelit.com/' + el.firstChild.getAttribute('href'),
@@ -33,7 +33,7 @@ function getPrice(el){
 }
 
 function getAvailability(el){
-    let text = el.childNodes[1].childNodes[1].firstChild.textContent
+    let text = el.querySelector('.ruutuhinta').textContent
     return text.includes('heti saatavilla')
 }
 
