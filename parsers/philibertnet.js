@@ -13,7 +13,7 @@ async function query(querystring){
         out.push({
             name: el.pname,
             imageUrl: document.querySelectorAll('#bigpic')[0].getAttribute('data-src'),
-            price: Number(document.querySelectorAll('#our_price_display')[0].getAttribute('content')),
+            price: _getPrice(document),
             available: document.querySelectorAll('#availability_value')[0].getAttribute('class').includes('label-success'),
             itemUrl: el.product_link,
             currency: '€',
@@ -24,3 +24,8 @@ async function query(querystring){
 }
 
 module.exports = query
+
+function _getPrice(document) {
+    const el = document.querySelectorAll('#our_price_display')[0];
+    return el ? Number(el.getAttribute('content')) : 0;
+}
