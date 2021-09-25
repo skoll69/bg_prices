@@ -2,7 +2,7 @@ const rp = require('request-promise')
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-const baseUrl = 'https://poromagia.com/en/search/?q='
+const baseUrl = 'https://lautapelit.poromagia.com/en/search/?q='
 
 async function query(querystring){
     let html = await rp(baseUrl + querystring)

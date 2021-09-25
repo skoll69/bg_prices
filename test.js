@@ -213,7 +213,7 @@ describe("Unit", function(){
 
     it("Poromagia", async function(){
         let qs = 'spirint%20island'
-        nock('https://poromagia.com')
+        nock('https://lautapelit.poromagia.com')
         .get('/en/search/?q=' + qs)
         .reply(200, mockResponses.RESPONSE_POROMAGIA)
 
@@ -233,7 +233,7 @@ describe("Unit", function(){
 
     it("Poromagia Discount", async function(){
         let qs = 'forgotten%20waters'
-        nock('https://poromagia.com')
+        nock('https://lautapelit.poromagia.com')
         .get('/en/search/?q=' + qs)
         .reply(200, mockResponses.RESPONSE_POROMAGIA_2)
 
