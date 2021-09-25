@@ -278,9 +278,9 @@ describe("Unit", function(){
         res = await philibertnet(qs)
         item = res[0]
         item.should.have.property('name', 'Spirit Island Core Game');
-        item.should.have.property('imageUrl', 'https://cdn1.philibertnet.com/377832-large_default/spirit-island-core-game.jpg');
-        item.should.have.property('price', 74.95);
-        item.should.have.property('available', true);
+        item.should.have.property('imageUrl', 'https://cdn3.philibertnet.com/404309-large_default/spirit-island.jpg');
+        item.should.have.property('price', 71.95);
+        item.should.have.property('available', false);
         item.should.have.property('itemUrl', 'https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html');
         item.should.have.property('currency', '€');
 

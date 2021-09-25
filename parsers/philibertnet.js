@@ -12,7 +12,7 @@ async function query(querystring){
         let { document } = (new JSDOM(html)).window
         out.push({
             name: el.pname,
-            imageUrl: document.querySelectorAll('#bigpic')[0].getAttribute('data-src'),
+            imageUrl: document.querySelector('#bigpic').getAttribute('data-cfsrc'),
             price: _getPrice(document),
             available: document.querySelectorAll('#availability_value')[0].getAttribute('class').includes('label-success'),
             itemUrl: el.product_link,

@@ -2835,7 +2835,7 @@ module.exports = {
 	<div class="pb-left-column">
 	<div id="image-block" class="clearfix">
 	<span id="view_full_size">
-	<img id="bigpic" class="lazyload" itemprop="image" data-src="https://cdn1.philibertnet.com/448434-large_default/spirit-island-insert.jpg" alt="Spirit Island Insert" width="372" height="372" />
+	<img id="bigpic" class="lazyload" itemprop="image" data-cfsrc="https://cdn1.philibertnet.com/448434-large_default/spirit-island-insert.jpg" alt="Spirit Island Insert" width="372" height="372" />
 	</span>
 	</div>
 	
@@ -4055,15 +4055,16 @@ module.exports = {
 	`,
 
 	RESPONSE_PHILIBERTNET_SPIRIT_ISLAND: `
-
 	<!doctype html>
 	<html lang="en">
 	<head>
-	<title>Buy Spirit Island Core Game - Board Game - Greater Than Games LLC</title>
-	<script data-keepinline="true" type="9996bc0462fe4ac2e530701a-text/javascript">
+	<title>Buy Spirit Island - Board Game - Intrafin</title>
+	<script data-keepinline="true" type="3b2ae364050342e6707c608a-text/javascript">
+		var ajaxGetProductUrl = '//www.philibertnet.com/en/module/cdc_googletagmanager/async?obj=cart-action';
+	
 	/* datalayer */
 	dataLayer = [];
-	dataLayer.push({"pageCategory":"product","ecommerce":{"currencyCode":"EUR","detail":{"products":[{"name":"Spirit Island Core Game","id":"53139","price":"74.95","brand":"Greater Than Games LLC","category":"Greater Than Games LLC","price_tax_exc":"62.46"}]}},"userId":"guest_131351682","userLogged":0,"filariane":"Board games","google_tag_params":{"ecomm_pagetype":"product","ecomm_prodid":"FR53139","ecomm_totalvalue":74.95,"ecomm_category":"Greater Than Games LLC","ecomm_totalvalue_tax_exc":62.46}});
+	dataLayer.push({"pageCategory":"product","ecommerce":{"currencyCode":"EUR","detail":{"products":[{"name":"Spirit Island  2e edition","id":"64223","reference":"INT-40173-FR","price":"71.95","brand":"Intrafin","category":"Intrafin","link":"spirit-island","price_tax_exc":"59.96","wholesale_price":"37.98"}]}},"filariane":"Board games","google_tag_params":{"ecomm_pagetype":"product","ecomm_prodid":"64223","ecomm_totalvalue":71.95,"ecomm_category":"Intrafin","ecomm_totalvalue_tax_exc":59.96},"hasConsent":true});
 	/* call to GTM Tag */
 	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -4072,15 +4073,34 @@ module.exports = {
 	})(window,document,'script','dataLayer','GTM-5653KHG');
 	
 	/* async call to avoid cache system for dynamic data */
-	dataLayer.push({
-	  'event': 'datalayer_ready'
-	});
+	var cdcgtmreq = new XMLHttpRequest();
+	cdcgtmreq.onreadystatechange = function() {
+		if (cdcgtmreq.readyState == XMLHttpRequest.DONE ) {
+			if (cdcgtmreq.status == 200) {
+				  var datalayerJs = cdcgtmreq.responseText;
+				try {
+					var datalayerObj = JSON.parse(datalayerJs);
+					dataLayer = dataLayer || [];
+					dataLayer.push(datalayerObj);
+				} catch(e) {
+				   console.log("[CDCGTM] error while parsing json");
+				}
+	
+						}
+			dataLayer.push({
+			  'event': 'datalayer_ready'
+			});
+		}
+	};
+	cdcgtmreq.open("GET", "//www.philibertnet.com/en/module/cdc_googletagmanager/async?obj=user" /*+ "?" + new Date().getTime()*/, true);
+	cdcgtmreq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+	cdcgtmreq.send();
 	</script>
-	<link rel="alternate" href="https://www.philibertnet.com/fr/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html" hreflang="fr" />
-	<link rel="alternate" href="https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html" hreflang="en" />
+	<link rel="alternate" href="https://www.philibertnet.com/fr/intrafin/64223-spirit-island-5425037740173.html" hreflang="fr" />
+	<link rel="alternate" href="https://www.philibertnet.com/en/intrafin/64223-spirit-island-5425037740173.html" hreflang="en" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="pIn the most distant reaches of the world, magic still exists, embodied by spirits of the land, of the sky, and of every natural thing.em br //em/p" />
-	<meta charset="utf-8"><script type="9996bc0462fe4ac2e530701a-text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"8df6e7f247",applicationID:"300230747"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+	<meta name="description" content="pIn the most distant reaches of the world, magic still exists, embodied by spirits of the land, of the sky, and of every natural thing./p" />
+	<meta charset="utf-8">
 	<meta name="robots" content="index,follow" />
 	<meta name="format-detection" content="telephone=no">
 	
@@ -4093,58 +4113,74 @@ module.exports = {
 	<meta name="msapplication-config" content="https://cdn1.philibertnet.com/themes/ukoostore/img/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	
-	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,700,700i" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn2.philibertnet.com/themes/ukoostore/cache/v_1669_8cb94e8f1cff46d745e8a9ae31491ed0_all.css" type="text/css" media="all" />
-	<meta property="og:type" content="product" />
-	<meta property="og:url" content="https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html" />
-	<meta property="og:title" content="Buy Spirit Island Core Game - Board Game - Greater Than Games LLC" />
-	<meta property="og:site_name" content="Philibert" />
-	<meta property="og:description" content="pIn the most distant reaches of the world, magic still exists, embodied by spirits of the land, of the sky, and of every natural thing.em br //em/p" />
-	<meta property="og:image" content="https://cdn1.philibertnet.com/377832-large_default/spirit-island-core-game.jpg" />
-	<meta property="product:pretax_price:amount" content="62.46" />
-	<meta property="product:pretax_price:currency" content="EUR" />
-	<meta property="product:price:amount" content="74.95" />
-	<meta property="product:price:currency" content="EUR" />
-	<link rel="alternate" type="application/rss+xml" title="Buy Spirit Island Core Game - Board Game - Greater Than Games LLC" href="https://www.philibertnet.com/modules/feeder/rss.php?id_category=8140&amp;orderby=date_add&amp;orderway=desc" /> 
 	
 	
-	<style type="text/css">
-	.df-classic .df-btn--plain {
-		background-color: orange;
-	}
-	</style>
+	<link rel="preload" href="/themes/ukoostore/fonts/riffic/riffic-medium-webfont.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="/themes/ukoostore/fonts/font-icons/fonts/icomoon.woff" as="font" crossorigin="anonymous">
+	<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="3b2ae364050342e6707c608a-|49"></script><link rel="preload" href="/themes/ukoostore/css/vendors/fonts/fonts.css" as="style" onload="this.rel='stylesheet'">
+	<noscript>
+			<link rel="stylesheet" href="/themes/ukoostore/css/vendors/fonts/fonts.css" />
+		</noscript>
 	
 	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,700,700i&display=swap" />
+	<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="3b2ae364050342e6707c608a-|49"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,700,700i&display=swap" media="print" onload="this.media='all'" />
+	<noscript>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,700,700i&display=swap" />
+		</noscript>
 	
-	<meta property="product:id" content="53139" />
-	<meta property="product:name" content="Spirit Island Core Game" />
-	<meta property="product:image" content="https://cdn3.philibertnet.com/377832-large_default/53139.jpg" />
-	<meta property="product:price" content="74,95 €" />
-	<meta property="product:price:amount" content="74.95" />
+	
+	<link rel="stylesheet" href="https://cdn2.philibertnet.com/themes/ukoostore/cache/v_1792_b8b349c65324838d9754f4e744f0c821_all.css" type="text/css" media="all" />
+	<link rel="alternate" type="application/rss+xml" title="Buy Spirit Island - Board Game - Intrafin" href="https://www.philibertnet.com/modules/feeder/rss.php?id_category=8467&amp;orderby=date_add&amp;orderway=desc" />
+	<meta property="product:id" content="64223" />
+	<meta property="product:name" content="Spirit Island  2e édition" />
+	<meta property="product:image" content="https://cdn2.philibertnet.com/404309-large_default/64223.jpg" />
+	<meta property="product:price" content="71,95 €" />
+	<meta property="product:price:amount" content="71.95" />
 	<meta property="product:price:currency" content="&euro;" />
-	<meta property="product:quantity" content="9" />
-	<link rel="canonical" href="https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html" />
+	<meta property="product:quantity" content="-2" />
+	<link rel="canonical" href="https://www.philibertnet.com/en/intrafin/64223-spirit-island-5425037740173.html" /> 
+	
+	
+	
+	<meta property="og:type" content="product" />
+	<meta property="og:url" content="https://www.philibertnet.com/en/intrafin/64223-spirit-island-5425037740173.html" />
+	<meta property="og:title" content="Buy Spirit Island - Board Game - Intrafin" />
+	<meta property="og:site_name" content="Philibert" />
+	<meta property="og:description" content="pIn the most distant reaches of the world, magic still exists, embodied by spirits of the land, of the sky, and of every natural thing./p" />
+	<meta property="product:pretax_price:currency" content="EUR" />
+	<meta property="product:price:currency" content="EUR" />
 	<meta name="google-site-verification" content="eOyJ7NyAZOoDK45PX0O9qnGLhUd3ebBikLzZOD7D-Ic" />
-	<script src="https://www.google.com/recaptcha/api.js" data-keepinline="true" async defer type="9996bc0462fe4ac2e530701a-text/javascript"></script>
+	<script src="https://www.google.com/recaptcha/api.js" data-keepinline="true" async defer type="3b2ae364050342e6707c608a-text/javascript"></script>
 	<link rel="dns-prefetch" href="https://cdn1.philibertnet.com">
 	<link rel="dns-prefetch" href="https://cdn2.philibertnet.com">
 	<link rel="dns-prefetch" href="https://cdn3.philibertnet.com">
-	<link rel="preconnect" href="https://cdn.doofinder.com/media/js/doofinder-classic.6.latest.min.js">
+	<link rel="preconnect" href="https://cdn.doofinder.com">
+	<link rel="dns-prefetch" href="https://cdn.doofinder.com">
 	<link rel="preconnect" href="https://eu1-search.doofinder.com">
+	<link rel="dns-prefetch" href="https://eu1-search.doofinder.com">
 	<link rel="preconnect" href="https://static.affilae.com">
+	<link rel="dns-prefetch" href="https://static.affilae.com">
 	<link rel="preconnect" href="https://connect.facebook.net">
+	<link rel="dns-prefetch" href="https://connect.facebook.net">
 	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 	<link rel="preconnect" href="https://www.googleadservices.com">
+	<link rel="dns-prefetch" href="https://www.googleadservices.com">
 	<link rel="preconnect" href="https://bam.nr-data.net">
+	<link rel="dns-prefetch" href="https://bam.nr-data.net">
 	<link rel="preconnect" href="https://www.gstatic.com">
+	<link rel="dns-prefetch" href="https://www.gstatic.com">
 	<link rel="preconnect" href="https://www.youtube.com">
+	<link rel="dns-prefetch" href="https://www.youtube.com">
 	</head>
-	<body id="product" class="en product-53139 product-spirit-island-core-game category-8140 category-greater-than-games-llc noel ">
+	<body id="product" class="en product-64223 product-spirit-island category-8467 category-intrafin">
 	
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5653KHG&nojscript=true"
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5653KHG"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
-	<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol viewBox="0 0 496.5 496.5" id="svg-flag_en"><title>flag_en</title><rect fill="#FFFFFF" width="496.5" height="496.5" /><polygon fill="#CF011B" points="496.5,297.9 496.5,198.6 284.25,198.6 284.25,0 212.25,0 212.25,198.6 0,198.6 0,297.9 
+	<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol viewBox="0 0 496.5 496.5" id="svg-flag_en"><title>flag_en</title><rect fill="#FFFFFF" width="496.5" height="496.5" /><polygon fill="#CF011B" points="496.5,297.9 496.5,198.6 284.25,198.6 284.25,0 212.25,0 212.25,198.6 0,198.6 0,297.9
 		212.25,297.9 212.25,496.5 284.25,496.5 284.25,297.9 " /><polygon fill="#CF011B" points="181.916,331 128.25,331 0,419.439 0,456.446 " /><polygon fill="#CF011B" points="128.25,165.5 0,77.061 0,114.068 74.584,165.5 " /><polygon fill="#CF011B" points="368.25,331 496.5,419.439 496.5,382.432 421.916,331 " /><polygon fill="#CF011B" points="314.584,165.5 368.25,165.5 496.5,77.061 496.5,40.054 " /><polygon fill="#00305B" points="496.5,21.551 496.5,0 308.25,0 308.25,151.365 " /><polygon fill="#00305B" points="47.752,331 0,331 0,363.929 " /><polygon fill="#00305B" points="308.25,345.136 308.25,496.5 496.5,496.5 496.5,474.949 " /><polygon fill="#00305B" points="188.25,151.365 188.25,0 0,0 0,21.551 " /><polygon fill="#00305B" points="0,474.949 0,496.5 188.25,496.5 188.25,345.136 " /><polygon fill="#00305B" points="47.752,165.5 0,132.571 0,165.5 " /><polygon fill="#00305B" points="448.748,331 496.5,363.929 496.5,331 " /><polygon fill="#00305B" points="448.748,165.5 496.5,165.5 496.5,132.571 " /></symbol><symbol viewBox="0 -80 640 640" id="svg-flag_fr"><title>flag_fr</title><rect x="1.054" y="-80" fill="#1E3187" width="212.826" height="640" /><rect x="426.714" y="-80" fill="#E2001A" width="212.825" height="640" /><rect x="213.88" y="-80" fill="#FFFFFF" width="212.833" height="640" /></symbol><symbol viewBox="0.198 -11.889 55.5 55.5" id="svg-icon_affiliation"><title>icon_affiliation</title><path d="M13.148,15.861c0,8.174,6.625,14.8,14.8,14.8c8.174,0,14.8-6.626,14.8-14.8c0-8.174-6.626-14.8-14.8-14.8
 		C19.773,1.061,13.148,7.687,13.148,15.861z M32.573,13.086c0,1.748-0.981,3.252-2.412,4.038c1.934,0.604,3.515,1.987,4.405,3.774
 		c-1.521,1.994-3.915,3.288-6.618,3.288s-5.097-1.294-6.618-3.288c0.89-1.787,2.472-3.17,4.405-3.774
@@ -4211,7 +4247,13 @@ module.exports = {
 		c-3.108,5.741-9.072,9.168-15.942,9.168c-0.504,0-1.032-0.019-1.578-0.061l-18.612-1.392l-8.094,16.806
 		c-3.15,6.559-9.36,10.626-16.176,10.626c-6.78,0-12.786-3.857-16.056-10.308l-10.638-21.024v133.152h362.837
 		c12.912,0,23.484-10.572,23.484-23.484V116.844H246.474C248.616,124.908,247.806,133.404,243.984,141.588z" /></symbol><symbol viewBox="0 0 21.992 18.999" id="svg-icon_coeur"><title>icon_coeur</title><path fill-rule="evenodd" clip-rule="evenodd" d="M11.063,3.296c1.449-4.221,10.061-4.757,10.878,2.229
-		c0.931,7.947-11.223,13.474-11.223,13.474S-1.184,13.044,0.096,5.137C1.221-1.815,9.802-0.973,11.063,3.296" /></symbol><symbol viewBox="108.247 114.468 587.908 376.032" id="svg-icon_dice"><title>icon_dice</title><g><path d="M667.438,201.78L459.4,141.702c-21.013-6.066-43.152,6.155-49.23,27.168l-60.3,208.823
+		c0.931,7.947-11.223,13.474-11.223,13.474S-1.184,13.044,0.096,5.137C1.221-1.815,9.802-0.973,11.063,3.296" /></symbol><symbol viewBox="0 0 18.2 20.6" id="svg-icon_compte"><title>icon_compte</title><path d="M18.1,16.2L18.1,16.2c-0.5-3-2.5-5.3-5.2-6.2c0.1-0.1,0.2-0.2,0.3-0.3c1.9-2.1,2.1-5.2,0.4-7.5c-0.8-1.2-2.1-2-3.5-2.2
+		C8.7-0.2,7.3,0.2,6.1,1c-0.5,0.4-1,0.9-1.4,1.4C3.2,4.6,3.4,7.6,5.2,9.7l0,0c0.1,0.1,0.2,0.2,0.3,0.3c-2.8,0.8-5,3.3-5.4,6.3
+		c-0.2,1,0,2,0.6,2.8c0.6,0.8,1.4,1.4,2.4,1.5c0.2,0,0.4,0.1,0.6,0.1l11,0c2-0.1,3.7-1.8,3.6-3.9C18.2,16.6,18.2,16.4,18.1,16.2z
+		 M6.4,3.5c0.2-0.3,0.5-0.6,0.9-0.9C7.8,2.2,8.5,2,9.2,2c0.2,0,0.4,0,0.6,0c0.9,0.2,1.7,0.6,2.2,1.4c1.1,1.5,1,3.6-0.3,5
+		c-0.1,0.1-0.2,0.2-0.3,0.3c-1.4,1.2-3.5,1-4.7-0.3l0,0C5.5,7,5.4,5,6.4,3.5z M14.6,18.6l-10.9,0c-0.1,0-0.2,0-0.3,0
+		c-0.4-0.1-0.8-0.3-1.1-0.7C2,17.5,1.9,17.1,2,16.6c0.4-2.8,2.7-4.9,5.4-4.9h3.2c2.7,0.1,5,2.1,5.4,4.8l0,0.1c0,0.1,0,0.2,0,0.3
+		C16.2,17.8,15.5,18.6,14.6,18.6z" /></symbol><symbol viewBox="108.247 114.468 587.908 376.032" id="svg-icon_dice"><title>icon_dice</title><g><path d="M667.438,201.78L459.4,141.702c-21.013-6.066-43.152,6.155-49.23,27.168l-60.3,208.823
 			c-6.066,21.019,6.15,43.158,27.162,49.236l208.025,60.078c21.007,6.06,43.158-6.15,49.236-27.162L694.6,251.01
 			C700.666,229.998,688.444,207.846,667.438,201.78 M430.258,387.18c-15.443-4.452-24.354-20.599-19.884-36.054
 			c4.464-15.433,20.61-24.349,36.036-19.872c15.443,4.464,24.366,20.604,19.89,36.042C461.842,382.74,445.708,391.638,430.258,387.18
@@ -4264,7 +4306,15 @@ module.exports = {
 		c3.66-27.82,7.18-55.771,11.12-83.311c-0.17-1.279-2.58-0.319-2.18-2.18c2.7-20.19,12.35-32.41,20.15-46.83
 		c5.42-10.01,10.53-20.09,15.79-30.49c0.09-0.96,0-4.49,1.09-5.99c4.68,5.27,17.27,2.94,20.15-0.55c1.59,1.64,0.78,4.43,0,6.54
 		c5.92,10.02,10.851,20.339,16.339,30.49c8.121,15.05,17.881,27.74,20.691,47.38c-0.34,1.11-2.75,0.15-2.18,2.181
-		c3.51,27.699,7.469,54.96,10.859,82.779C229.289,390.839,210.44,390.459,190.97,390.459z" /></symbol><symbol viewBox="0 0 150.245 209.887" id="svg-icon_gift"><title>icon_gift</title><path d="M0,59.718l0.001,68.831l68.831-0.001l-0.001-68.831L0,59.718z" /><path d="M81.339,59.719l-0.004,68.833l68.905-0.006l-0.005-68.825L81.339,59.719z" /><path d="M0,141.062l0,68.826l68.83-0.006v-68.826L0,141.062z" /><path d="M81.333,141.059l0.005,68.825l68.907,0.003l-0.007-68.834L81.333,141.059z" /><path d="M46.435,0.011C39.298,0.236,33.147,4.29,30.198,10.236c-2.948,5.945-2.46,13.766,2.628,20.592
+		c3.51,27.699,7.469,54.96,10.859,82.779C229.289,390.839,210.44,390.459,190.97,390.459z" /></symbol><symbol viewBox="0 0 16 15.9" id="svg-icon_filter"><title>icon_filter</title><path id="icon_filter-Tracé_429" d="M0.6,2.8h2.9C3.8,4,5.1,4.8,6.3,4.4c0.8-0.2,1.4-0.8,1.6-1.6h7.5c0.3,0,0.6-0.3,0.6-0.6
+		c0-0.3-0.3-0.6-0.6-0.6H7.9C7.6,0.5,6.3-0.3,5.1,0.1C4.3,0.3,3.7,0.9,3.5,1.7H0.6C0.3,1.7,0,1.9,0,2.3C0,2.6,0.3,2.8,0.6,2.8z
+		 M5.7,1.1c0.6,0,1.1,0.5,1.1,1.1S6.3,3.4,5.7,3.4S4.6,2.9,4.6,2.3S5.1,1.1,5.7,1.1L5.7,1.1z M15.4,13.1H7.9
+		c-0.3-1.2-1.6-1.9-2.8-1.6c-0.8,0.2-1.4,0.8-1.6,1.6H0.6c-0.3,0-0.6,0.3-0.6,0.6s0.3,0.6,0.6,0.6h2.9c0.3,1.2,1.6,1.9,2.8,1.6
+		c0.8-0.2,1.4-0.8,1.6-1.6h7.5c0.3,0,0.6-0.3,0.6-0.6S15.7,13.1,15.4,13.1L15.4,13.1z M5.7,14.8c-0.6,0-1.1-0.5-1.1-1.1
+		c0-0.6,0.5-1.1,1.1-1.1s1.1,0.5,1.1,1.1l0,0C6.9,14.3,6.3,14.8,5.7,14.8z M15.4,7.4h-2.9c-0.3-1.2-1.6-1.9-2.8-1.6
+		C8.9,6,8.3,6.6,8.1,7.4H0.6C0.3,7.4,0,7.7,0,8s0.3,0.6,0.6,0.6h7.5c0.3,1.2,1.6,1.9,2.8,1.6c0.8-0.2,1.4-0.8,1.6-1.6h2.9
+		C15.7,8.5,16,8.3,16,8S15.7,7.4,15.4,7.4L15.4,7.4z M10.3,9.1C9.7,9.1,9.1,8.6,9.1,8s0.5-1.1,1.1-1.1c0.6,0,1.1,0.5,1.1,1.1v0
+		C11.4,8.6,10.9,9.1,10.3,9.1C10.3,9.1,10.3,9.1,10.3,9.1z" /></symbol><symbol viewBox="0 0 150.245 209.887" id="svg-icon_gift"><title>icon_gift</title><path d="M0,59.718l0.001,68.831l68.831-0.001l-0.001-68.831L0,59.718z" /><path d="M81.339,59.719l-0.004,68.833l68.905-0.006l-0.005-68.825L81.339,59.719z" /><path d="M0,141.062l0,68.826l68.83-0.006v-68.826L0,141.062z" /><path d="M81.333,141.059l0.005,68.825l68.907,0.003l-0.007-68.834L81.333,141.059z" /><path d="M46.435,0.011C39.298,0.236,33.147,4.29,30.198,10.236c-2.948,5.945-2.46,13.766,2.628,20.592
 		c4.43,5.95,12.023,9.984,19.489,13.275l-38.012,0.413l-0.065-0.002l0.067,3.939l0.002,3.938l0.07,0.001l59.498-0.001l2.426-0.001
 		l59.494,0.005l0.068-0.003l0.004-3.939l0.073-3.937l-0.08,0.001l-38.004-0.418c7.483-3.288,15.12-7.311,19.554-13.265
 		c6.261-8.411,5.391-18.294,0.071-24.395c-5.319-6.106-14.811-8.524-23.918-4.217c-7.388,3.501-12.007,11.258-15.473,19.074
@@ -4343,7 +4393,10 @@ module.exports = {
 		C377.5,397.498,375,412.5,365,419.998z M427.5,307.5c-30,27.5-85,20-120-20c-37.5-40-40-92.5-10-122.5c30-27.5,85-20,120,20
 		S457.5,277.5,427.5,307.5z M150,200c-13.807,0-25,11.192-25,25c0,13.807,11.193,25,25,25s25-11.193,25-25
 		C175,211.193,163.807,200,150,200z M350,200c-13.807,0-25,11.192-25,25c0,13.807,11.193,25,25,25s25-11.193,25-25
-		C375,211.193,363.807,200,350,200z" /></symbol><symbol viewBox="104.805 4.805 590.508 590.63" id="svg-icon_pen-brush"><title>icon_pen-brush</title><g><path d="M579.531,194.531c9.844-0.469,19.688-0.938,28.594-4.688c9.375-4.219,16.875-12.188,23.906-19.688
+		C375,211.193,363.807,200,350,200z" /></symbol><symbol viewBox="0 0 19.4 22.7" id="svg-icon_panier"><title>icon_panier</title><g><path d="M18.7,9.9c0-2.6-2-4.8-4.5-5.1V4.5c0-2.4-2-4.4-4.5-4.5C7.2,0,5.2,2,5.1,4.5v0.4c-2.5,0.4-4.4,2.5-4.4,5L0,17.5
+			c0,2.8,2.3,5.2,5.2,5.2h9.1h0c2.8,0,5.2-2.3,5.2-5.3L18.7,9.9z M9.7,2c1.4,0,2.5,1.1,2.5,2.5v0.3h-5V4.5C7.2,3.1,8.3,2,9.7,2z
+			 M14.2,20.7H5.2c-1.7,0-3.2-1.4-3.2-3.1l0.7-7.7c0-1.5,1-2.7,2.4-3.1v2.3c0,0.6,0.4,1,1,1s1-0.4,1-1V6.8h5v2.4c0,0.6,0.4,1,1,1
+			s1-0.4,1-1V6.8c1.4,0.3,2.5,1.6,2.5,3.2l0.7,7.5C17.4,19.3,16,20.7,14.2,20.7z" /><path d="M12,11.4H6.9c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1H12c0.6,0,1-0.4,1-1C13,11.8,12.6,11.4,12,11.4z" /></g></symbol><symbol viewBox="104.805 4.805 590.508 590.63" id="svg-icon_pen-brush"><title>icon_pen-brush</title><g><path d="M579.531,194.531c9.844-0.469,19.688-0.938,28.594-4.688c9.375-4.219,16.875-12.188,23.906-19.688
 			c18.281-19.688,36.563-40.313,43.594-65.625c2.344-8.906,3.281-18.281,3.75-27.656c0.938-13.125,0.938-26.25,0.469-39.375
 			c-0.469-8.438,0-18.75-1.875-27.656c-1.406-6.563-10.313-6.563-12.188-0.469c-5.156,18.281-16.875,34.688-31.406,46.875
 			c-19.219,15.938-44.063,24.844-68.906,27.188c-8.906,0.938-18.281,2.344-26.719,5.625c-28.594,11.719-21.094,41.25-15.938,45
@@ -4354,7 +4407,8 @@ module.exports = {
 		c-1.014,0-1.908-0.801-1.908-1.743c0-0.919,0.824-1.696,1.813-1.696c0.966,0,1.743,0.802,1.743,1.768
 		C5.96,4.853,5.229,5.606,4.312,5.606z M14.347,18.021c2.355,0,4.24-1.744,4.24-3.958c0-2.262-1.979-4.193-4.312-4.193
 		c-2.309,0-4.075,1.861-4.075,4.146C10.2,16.324,12.085,18.021,14.347,18.021z M14.229,15.83c-1.083,0-1.767-0.801-1.767-1.743
-		c0-1.06,0.707-1.813,1.838-1.813c1.083,0,1.86,0.754,1.86,1.766C16.16,15.123,15.335,15.83,14.229,15.83z" /></symbol><symbol viewBox="0 0 275.536 394.547" id="svg-icon_postman"><title>icon_postman</title><g><path d="M254.142,213.578c-7.707-23.041-15.385-45.607-32.888-63.443c-11.631-11.864-26.313-20.567-42.512-24.429
+		c0-1.06,0.707-1.813,1.838-1.813c1.083,0,1.86,0.754,1.86,1.766C16.16,15.123,15.335,15.83,14.229,15.83z" /></symbol><symbol viewBox="0 0 8 9" id="svg-icon_play"><title>icon_play</title><path id="icon_play-Tracé_428" d="M7.6,5.1L1.1,8.9C0.8,9.1,0.3,9,0.1,8.6C0,8.5,0,8.4,0,8.2V0.7C0,0.3,0.3,0,0.7,0C0.9,0,1,0,1.1,0.1
+		l6.5,3.7C8,4,8.1,4.5,7.9,4.8C7.8,5,7.7,5.1,7.6,5.1z" /></symbol><symbol viewBox="0 0 275.536 394.547" id="svg-icon_postman"><title>icon_postman</title><g><path d="M254.142,213.578c-7.707-23.041-15.385-45.607-32.888-63.443c-11.631-11.864-26.313-20.567-42.512-24.429
 			c-12.335-2.939-24.951-2.388-37.522-2.388c-25.125,0-49.013-0.259-70.969,14.178c-35.882,23.585-45.214,67.167-57.96,105.296
 			c-4.942,14.785-13.156,31.896-12.216,47.606c0.992,16.614,12.327,38.233,30.022,42.246v11.875l108.339,50.027l107.673-50.034
 			v-11.868c27.239-6.212,34.872-43.904,25.772-65.997C271.881,266.648,260.05,231.265,254.142,213.578z M138.421,166.042
@@ -4363,8 +4417,8 @@ module.exports = {
 			l87.49,40.402V376.045L131.483,376.045z M138.421,242.889l-34.398-15.881l80.753-40.118l37.678,16.951L138.421,242.889
 			L138.421,242.889z M145.365,376.008V254.979c28.949-13.452,57.883-26.927,86.847-40.351v57.839
 			c-5.331,3.99-11.024,7.596-15.452,12.594c-10.047,11.343-9.603,29.037,0.955,39.892c4.095,4.213,9.174,6.729,14.497,7.899v2.799
-			L145.365,376.008L145.365,376.008z" /><polygon points="117.876,352.909 117.876,327.136 122.122,329.017 114.409,313.484 106.801,321.791 110.876,323.665 
-			110.876,349.429 97.876,343.569 97.876,317.792 102.115,319.673 94.396,304.148 86.787,312.455 90.876,314.328 90.876,340.097 
+			L145.365,376.008L145.365,376.008z" /><polygon points="117.876,352.909 117.876,327.136 122.122,329.017 114.409,313.484 106.801,321.791 110.876,323.665
+			110.876,349.429 97.876,343.569 97.876,317.792 102.115,319.673 94.396,304.148 86.787,312.455 90.876,314.328 90.876,340.097
 			85.876,337.96 85.876,341.973 122.876,359.061 122.876,355.048 	" /><path d="M199.599,5.887c1.488-3.694-0.541-6.323-4.494-5.827L93.606,12.747c-3.954,0.492-7.189,4.157-7.189,8.14v14.482h101.395
 			L199.599,5.887z" /><path d="M137.118,114.022c27.735,0,50.243-22.137,50.953-49.69h28.697c3.983,0,6.138-1.192,6.619-2.547
 			c0.511-1.41-3.568-3.942-7.167-5.656l-28.416-13.52H86.417V68.53C89.156,94.103,110.805,114.022,137.118,114.022z" /></g></symbol><symbol viewBox="0 0 41.897 61.325" id="svg-icon_ribbon"><title>icon_ribbon</title><g><path d="M41.897,19.129l-3.253-2.91l1.369-4.151l-4.065-1.583L35.82,6.119l-4.365-0.128l-1.626-4.066l-4.151,1.37L22.768,0
@@ -4410,7 +4464,14 @@ module.exports = {
 		s9.646-4.319,9.646-9.646S14.974,0,9.646,0z M6.772,4.717c1.083,0,1.961,0.878,1.961,1.961c0,1.084-0.878,1.962-1.961,1.962
 		S4.811,7.762,4.811,6.678C4.811,5.595,5.688,4.717,6.772,4.717z M9.653,16.501c-2.964,0-5.367-1.854-5.367-4.854h10.735
 		C15.021,14.646,12.618,16.501,9.653,16.501z M13.131,8.854c-1.109,0-2.01-0.9-2.01-2.011s0.9-2.011,2.01-2.011
-		c1.111,0,2.012,0.9,2.012,2.011S14.242,8.854,13.131,8.854z" /></symbol><symbol viewBox="0 0 30.08 28.609" id="svg-icon_star"><title>icon_star</title><g><path d="M15.04,0l4.646,9.418l10.394,1.511l-7.521,7.329l1.775,10.353l-9.296-4.888L5.744,28.61L7.52,18.258L0,10.928l10.393-1.511
+		c1.111,0,2.012,0.9,2.012,2.011S14.242,8.854,13.131,8.854z" /></symbol><symbol viewBox="0 0 18 11.1" id="svg-icon_sort"><title>icon_sort</title><path d="M10.9,0.5L10.9,0.5c0,0.3-0.2,0.5-0.5,0.5H0.5C0.2,1.1,0,0.8,0,0.5l0,0C0,0.2,0.2,0,0.5,0h9.8C10.7,0,10.9,0.2,10.9,0.5z
+		 M9.8,3.8L9.8,3.8c0,0.3-0.2,0.5-0.5,0.5H0.5C0.2,4.4,0,4.1,0,3.8l0,0c0-0.3,0.2-0.5,0.5-0.5h8.7C9.6,3.3,9.8,3.5,9.8,3.8z M8.2,7.1
+		L8.2,7.1c0,0.3-0.2,0.5-0.5,0.5H0.5C0.2,7.6,0,7.4,0,7.1l0,0c0-0.3,0.2-0.5,0.5-0.5h7.1C7.9,6.6,8.2,6.8,8.2,7.1z M6.6,10.4
+		L6.6,10.4c0,0.3-0.2,0.5-0.5,0.5H0.5c-0.3,0-0.5-0.2-0.5-0.5l0,0c0-0.3,0.2-0.5,0.5-0.5H6C6.3,9.8,6.6,10.1,6.6,10.4z M12.2,7.7
+		L12.2,7.7c0.2-0.2,0.6-0.2,0.8,0l2.3,2.3c0.2,0.2,0.2,0.6,0,0.8l0,0c-0.2,0.2-0.6,0.2-0.8,0l-2.3-2.3C12,8.2,12,7.9,12.2,7.7z
+		 M17.6,7.7L17.6,7.7c0.2,0.2,0.2,0.6,0,0.8l-2.3,2.3c-0.2,0.2-0.6,0.2-0.8,0l0,0c-0.2-0.2-0.2-0.6,0-0.8l2.3-2.3
+		C17.1,7.5,17.4,7.5,17.6,7.7z M14.9,0L14.9,0c0.3,0,0.5,0.2,0.5,0.5v9.8c0,0.3-0.2,0.5-0.5,0.5l0,0c-0.3,0-0.5-0.2-0.5-0.5V0.5
+		C14.4,0.2,14.6,0,14.9,0z" /></symbol><symbol viewBox="0 0 30.08 28.609" id="svg-icon_star"><title>icon_star</title><g><path d="M15.04,0l4.646,9.418l10.394,1.511l-7.521,7.329l1.775,10.353l-9.296-4.888L5.744,28.61L7.52,18.258L0,10.928l10.393-1.511
 			L15.04,0z" /></g></symbol><symbol viewBox="0 0 450.252 442.037" id="svg-icon_swords"><title>icon_swords</title><path d="M424.356,100.794l25.896-97.086l-94.519,28.445l-111.75,111.738l68.629,68.628L424.356,100.794z M141.949,245.936
 		l-34.935,34.935l-36.599-36.604l-32.628,32.628l53.76,53.764l-80.431,80.408l30.962,30.973l80.436-80.411l54.479,54.483
 		l32.622-32.622l-33.978-33.982l34.939-34.941L141.949,245.936z M412.464,273.203l-32.634-32.64l-36.593,36.597l-34.957-34.951
@@ -4473,7 +4534,7 @@ module.exports = {
 					c0.543,13.16,0.846,26.332,0.904,39.504c0.097,20.359-0.397,40.719-1.447,61.051C468.854,411.041,468.669,414.871,467.581,430.85
 					z" /></g></g><path d="M242.169,182.904c0.338,7.449,2.108,15.112,10.359,15.66c6.28-0.543,8.149-7.167,8.649-12.658
 			c0.886-9.751,0.292-19.746,0.292-29.528v-32.365c0-7.333,1.871-23.257-8.477-24.683c-10.875-1.499-10.883,13.179-10.914,20.26
-			c-0.049,10.647,0.004,21.297,0.004,31.945C242.083,161.965,241.695,172.482,242.169,182.904z" /><path d="M253.469,198.616c-0.33,0-0.63-0.033-0.94-0.053c-0.273,0.023-0.542,0.053-0.83,0.053H253.469z" /><polygon points="101.519,291.789 127.657,291.789 127.657,438.696 155.03,438.696 155.03,291.789 181.186,291.789 181.186,263.942 
+			c-0.049,10.647,0.004,21.297,0.004,31.945C242.083,161.965,241.695,172.482,242.169,182.904z" /><path d="M253.469,198.616c-0.33,0-0.63-0.033-0.94-0.053c-0.273,0.023-0.542,0.053-0.83,0.053H253.469z" /><polygon points="101.519,291.789 127.657,291.789 127.657,438.696 155.03,438.696 155.03,291.789 181.186,291.789 181.186,263.942
 			101.519,263.942 	" /><path d="M230.855,388.614c0,4.777-0.019,9.561-0.183,14.338c-0.131,3.748,0.076,8.029-2.698,10.949
 			c-5.315,5.592-14.487,2.029-15.573-5.182c-1.419-9.424-0.586-19.471-0.586-28.975V306.1c-0.385-0.334-2.554,0-3.035,0h-23.009
 			v90.926c0,15.389-2.923,45.303,20.261,44.402c8.268-0.318,12.52-5.498,16.644-11.869c0.315-0.488,5.788,1.313,6.565,1.512
@@ -4597,7 +4658,315 @@ module.exports = {
 		C7.94,5.283,6.627,5.278,3.266,7.887c-3.36,2.609-4.81,6.645-1.002,7.961c3.808,1.315,7.679-0.079,18.242,6.114
 		c10.565,6.193,13.308,9.327,15.246,11.228c1.939,1.899,4.394-0.325,5.133-5.692c0.055-0.396,0.038-0.822-0.033-1.27
 		c0.812,0.391,1.718,0.616,2.679,0.616c3.419,0,6.189-2.771,6.189-6.189S46.949,14.464,43.53,14.464z" /><path fill="#D31217" d="M11.973,6.435c12.033,3.435,20.821,8.919,25.387,13.829c0.193-3.079,2.631-5.544,5.698-5.777
-		c-1.19-3.426-4.212-8.048-11.702-12.113C21.045-3.221,12.698,2.389,8.995,5.756C9.834,5.859,10.783,6.095,11.973,6.435z" /></symbol><symbol viewBox="0 0 799.855 336.271" id="svg-logo_philibert"><title>logo_philibert</title><path fill="#F39223" d="M591.633,0c-49.366,0-95.976,26.988-120.622,69.756c-28.062,48.694-23.446,111.352,11.396,155.475
+		c-1.19-3.426-4.212-8.048-11.702-12.113C21.045-3.221,12.698,2.389,8.995,5.756C9.834,5.859,10.783,6.095,11.973,6.435z" /></symbol><symbol viewBox="0 0 163.354 83.987" id="svg-logo_philibert_noel_tablet"><title>logo_philibert_noel_tablet</title><g><path fill="#F19500" d="M139.402,38.938c0.192-4.575-10.761-6.804-11.235-7.325c-0.236-0.26,0.549-6.988-5.393-6.983
+			c-5.939-0.004-5.154,6.724-5.392,6.983c-0.476,0.521-11.428,2.75-11.235,7.325c0.191,4.576,6.004,2.226,7.244,3.573
+			c1.084,1.178-5.081,8.723-5.771,13.514c-0.226,1.562,0.213,1.865,1.731,1.865c2.753,0,5.38-0.001,7.8-0.001
+			c1.094,0,1.482-0.628,2.047-1.494c1.248-1.916,2.756-4.997,3.576-4.997s2.33,3.081,3.577,4.997
+			c0.563,0.866,0.954,1.494,2.048,1.494c2.418,0,5.047,0.001,7.799,0.001c1.518,0,1.958-0.303,1.732-1.865
+			c-0.69-4.791-6.855-12.336-5.771-13.515C133.398,41.163,139.211,43.514,139.402,38.938z" /><g><g><path fill="#F19500" d="M120.272,15.206c-15.488,0-28.042,12.556-28.042,28.043s12.554,28.043,28.042,28.043
+					s28.045-12.556,28.045-28.043S135.76,15.206,120.272,15.206z M122.774,57.89c-10.688,0-19.35-8.663-19.35-19.35
+					s8.662-19.35,19.35-19.35s19.352,8.663,19.352,19.35S133.461,57.89,122.774,57.89z" /></g></g></g><g><g><g><path fill="#FFFFFF" d="M1.324,83.013L0.509,54.713l0.283-0.144c3.64-1.848,7.044-2.784,10.117-2.784
+					c2.385,0,4.654,0.509,6.745,1.513c2.099,1.008,3.806,2.42,5.077,4.195c1.283,1.793,1.933,3.835,1.933,6.067
+					c0,2.117-0.572,4.097-1.7,5.885c-1.123,1.781-2.684,3.21-4.639,4.25c-1.95,1.037-4.112,1.563-6.427,1.563
+					c-0.57,0-1.193-0.041-1.859-0.123l0.196,7.877H1.324z M9.859,66.964c0.448,0.141,0.907,0.212,1.367,0.212
+					c0.766,0,1.512-0.17,2.219-0.506c0.701-0.333,1.271-0.788,1.693-1.352c0.412-0.549,0.612-1.124,0.612-1.757
+					c0-1.155-0.412-2.088-1.259-2.854c-0.863-0.779-1.84-1.157-2.988-1.157c-0.609,0-1.209,0.134-1.789,0.4L9.859,66.964z" /><path fill="#FFFFFF" d="M10.909,52.286c2.321,0,4.497,0.488,6.528,1.464c2.031,0.976,3.66,2.321,4.886,4.036
+					c1.227,1.715,1.84,3.64,1.84,5.776c0,2.031-0.541,3.904-1.623,5.618c-1.082,1.715-2.565,3.073-4.451,4.075
+					c-1.886,1.003-3.95,1.504-6.192,1.504c-0.712,0-1.503-0.066-2.374-0.198l0.198,7.953H1.81L1.018,55.016
+					C4.605,53.195,7.902,52.286,10.909,52.286 M11.226,67.676c0.844,0,1.655-0.185,2.434-0.554c0.777-0.369,1.404-0.87,1.879-1.503
+					c0.475-0.633,0.712-1.318,0.712-2.057c0-1.292-0.475-2.367-1.424-3.225c-0.95-0.857-2.057-1.286-3.323-1.286
+					c-0.792,0-1.557,0.198-2.295,0.594l0.158,7.675C9.973,67.557,10.593,67.676,11.226,67.676 M10.909,51.286
+					c-3.152,0-6.633,0.955-10.344,2.838L0,54.411l0.019,0.634L0.81,82.542l0.028,0.971H1.81h7.913h1.025l-0.026-1.025l-0.169-6.794
+					c0.474,0.043,0.923,0.065,1.346,0.065c2.397,0,4.639-0.545,6.661-1.621c2.033-1.08,3.657-2.569,4.827-4.424
+					c1.179-1.869,1.777-3.938,1.777-6.152c0-2.339-0.682-4.478-2.026-6.358c-1.32-1.845-3.092-3.31-5.267-4.355
+					C15.712,51.812,13.37,51.286,10.909,51.286L10.909,51.286z M10.221,60.281c0.419-0.155,0.842-0.23,1.282-0.23
+					c1.019,0,1.886,0.336,2.653,1.029c0.736,0.665,1.094,1.477,1.094,2.482c0,0.521-0.167,0.998-0.512,1.457
+					c-0.379,0.506-0.873,0.899-1.508,1.201c-0.648,0.308-1.304,0.458-2.004,0.458c-0.293,0-0.585-0.033-0.875-0.098L10.221,60.281
+					L10.221,60.281z" /></g><g><path fill="#FFFFFF" d="M39.766,83.013V71.435c0-0.974-0.273-1.71-0.835-2.251c-0.568-0.544-1.334-0.81-2.344-0.81
+					c-1.628,0-2.733,0.823-3.376,2.515l0.164,12.093l-8.437-0.135l-0.571-32.723h8.519l0.188,12.587
+					c0.686-0.576,1.49-1.068,2.403-1.468c1.324-0.579,2.683-0.873,4.039-0.873c2.572,0,4.653,0.954,6.184,2.835
+					c1.504,1.849,2.281,4.363,2.308,7.472l0.083,12.334H39.766z" /><path fill="#FFFFFF" d="M32.393,50.624l0.198,13.254c0.791-0.896,1.82-1.622,3.086-2.176c1.266-0.554,2.545-0.831,3.838-0.831
+					c2.426,0,4.358,0.884,5.796,2.651c1.438,1.767,2.169,4.154,2.196,7.161l0.079,11.83h-7.319V71.435
+					c0-1.108-0.33-1.978-0.989-2.611c-0.659-0.633-1.557-0.949-2.69-0.949c-1.874,0-3.166,0.976-3.877,2.928l0.158,11.671
+					l-7.438-0.119l-0.554-31.73H32.393 M33.378,49.624h-0.985h-7.518h-1.018l0.018,1.018l0.554,31.73l0.017,0.967l0.967,0.016
+					l7.438,0.119l1.03,0.016l-0.014-1.03l-0.156-11.48c0.57-1.435,1.488-2.105,2.875-2.105c0.874,0,1.527,0.219,1.998,0.67
+					c0.458,0.441,0.682,1.059,0.682,1.89v11.078v1h1h7.319h1.007l-0.007-1.007l-0.079-11.83c-0.028-3.228-0.843-5.846-2.42-7.785
+					c-1.631-2.004-3.842-3.02-6.572-3.02c-1.425,0-2.851,0.308-4.239,0.915c-0.621,0.271-1.194,0.584-1.717,0.936l-0.166-11.113
+					L33.378,49.624L33.378,49.624z" /></g><g><path fill="#FFFFFF" d="M48.327,82.894l-0.663-21.969h9.284v21.969H48.327z M52.492,60.421c-0.849,0-1.684-0.228-2.481-0.678
+					c-0.793-0.447-1.451-1.067-1.954-1.845c-0.513-0.79-0.773-1.654-0.773-2.566c0-1.411,0.543-2.602,1.615-3.541
+					c1.051-0.922,2.327-1.39,3.792-1.39c1.396,0,2.545,0.434,3.417,1.291c0.874,0.859,1.317,2.004,1.317,3.403
+					c0,1.521-0.471,2.8-1.399,3.802C55.084,59.909,53.896,60.421,52.492,60.421z" /><path fill="#FFFFFF" d="M52.689,50.901c1.266,0,2.288,0.382,3.066,1.147c0.778,0.765,1.167,1.78,1.167,3.046
+					c0,1.398-0.422,2.552-1.266,3.462c-0.845,0.91-1.899,1.365-3.165,1.365c-0.766,0-1.51-0.204-2.236-0.613
+					c-0.726-0.409-1.319-0.969-1.78-1.682c-0.462-0.712-0.692-1.477-0.692-2.294c0-1.266,0.481-2.321,1.444-3.165
+					C50.19,51.323,51.344,50.901,52.689,50.901 M56.448,61.425v20.969h-7.636l-0.633-20.969H56.448 M52.689,49.901
+					c-1.589,0-2.976,0.509-4.122,1.514c-1.184,1.038-1.785,2.356-1.785,3.917c0,1.011,0.287,1.966,0.854,2.839
+					c0.548,0.846,1.264,1.521,2.128,2.008c0.159,0.09,0.32,0.172,0.482,0.246h-2.068h-1.031l0.031,1.03l0.633,20.969l0.029,0.97h0.97
+					h7.636h1v-1V61.425v-1h-1h-1.653c0.587-0.279,1.12-0.676,1.595-1.188c1.018-1.098,1.533-2.491,1.533-4.143
+					c0-1.538-0.493-2.802-1.466-3.759C55.488,50.383,54.221,49.901,52.689,49.901L52.689,49.901z" /></g><g><path fill="#FFFFFF" d="M65.626,83.329c-2.533,0-4.611-0.838-6.179-2.49c-1.563-1.646-2.341-3.973-2.313-6.917l0.081-19.835
+					l8.475-2.511l0.041,20.134c0,0.941,0.229,1.602,0.702,2.021c0.49,0.434,1.042,0.646,1.687,0.646c0.447,0,0.804-0.09,1.061-0.268
+					l0.595-0.412l2.017,8.114l-0.386,0.169C69.374,82.875,67.429,83.329,65.626,83.329z" /><path fill="#FFFFFF" d="M65.191,52.246l0.04,19.465c0,1.082,0.29,1.879,0.87,2.394c0.58,0.514,1.252,0.771,2.018,0.771
+					c0.554,0,1.002-0.119,1.345-0.356l1.741,7.003c-1.979,0.871-3.838,1.306-5.579,1.306c-2.4,0-4.339-0.777-5.816-2.334
+					c-1.478-1.556-2.203-3.745-2.176-6.568l0.079-19.466L65.191,52.246 M66.188,50.908l-1.281,0.379l-7.478,2.215l-0.713,0.211
+					l-0.003,0.744l-0.079,19.466c-0.029,3.073,0.796,5.517,2.451,7.26c1.665,1.755,3.866,2.646,6.541,2.646
+					c1.873,0,3.885-0.468,5.981-1.39l0.771-0.339l-0.203-0.817l-1.741-7.003l-0.35-1.406l-1.19,0.825
+					c-0.171,0.119-0.432,0.179-0.776,0.179c-0.524,0-0.955-0.165-1.355-0.52c-0.354-0.313-0.533-0.867-0.533-1.646l-0.04-19.467
+					L66.188,50.908L66.188,50.908z" /></g><g><path fill="#FFFFFF" d="M71.511,82.894l-0.663-21.969h9.284v21.969H71.511z M75.676,60.421c-0.849,0-1.684-0.228-2.481-0.678
+					c-0.793-0.447-1.451-1.067-1.954-1.845c-0.513-0.79-0.773-1.654-0.773-2.566c0-1.411,0.543-2.602,1.615-3.541
+					c1.051-0.922,2.327-1.39,3.792-1.39c1.396,0,2.545,0.434,3.417,1.291c0.874,0.859,1.317,2.004,1.317,3.403
+					c0,1.521-0.471,2.8-1.399,3.802C78.269,59.909,77.08,60.421,75.676,60.421z" /><path fill="#FFFFFF" d="M75.874,50.901c1.266,0,2.288,0.382,3.066,1.147c0.778,0.765,1.167,1.78,1.167,3.046
+					c0,1.398-0.422,2.552-1.266,3.462c-0.845,0.91-1.899,1.365-3.165,1.365c-0.766,0-1.51-0.204-2.236-0.613
+					c-0.726-0.409-1.319-0.969-1.78-1.682c-0.462-0.712-0.692-1.477-0.692-2.294c0-1.266,0.481-2.321,1.444-3.165
+					C73.375,51.323,74.529,50.901,75.874,50.901 M79.632,61.425v20.969h-7.636l-0.633-20.969H79.632 M75.874,49.901
+					c-1.589,0-2.976,0.509-4.122,1.514c-1.184,1.038-1.785,2.356-1.785,3.917c0,1.011,0.287,1.966,0.854,2.839
+					c0.548,0.846,1.264,1.521,2.128,2.008c0.159,0.09,0.32,0.172,0.482,0.246h-2.068h-1.031l0.031,1.03l0.633,20.969l0.029,0.97h0.97
+					h7.636h1v-1V61.425v-1h-1h-1.653c0.587-0.279,1.12-0.676,1.595-1.188c1.018-1.098,1.533-2.491,1.533-4.143
+					c0-1.538-0.493-2.802-1.466-3.759C78.673,50.383,77.405,49.901,75.874,49.901L75.874,49.901z" /></g><g><path fill="#FFFFFF" d="M95.379,83.29c-1.319,0-2.641-0.236-3.929-0.702c-0.908-0.328-1.717-0.73-2.416-1.201v1.705h-8.715
+					V50.795l8.917-0.713l-0.077,11.867c1.633-0.973,3.607-1.466,5.882-1.466c0.156,0,0.313,0.002,0.471,0.007
+					c1.549,0.028,3.054,0.603,4.468,1.708c1.386,1.085,2.519,2.508,3.365,4.229c0.848,1.724,1.278,3.542,1.278,5.403
+					c0,2.017-0.415,3.926-1.234,5.672c-0.824,1.757-1.956,3.173-3.361,4.207C98.601,82.758,97.037,83.29,95.379,83.29z
+					 M92.886,68.097c-1.009,0-1.872,0.362-2.639,1.105c-0.763,0.739-1.134,1.573-1.134,2.549c0,0.617,0.182,1.228,0.541,1.817
+					c0.366,0.603,0.85,1.093,1.438,1.458c0.583,0.362,1.17,0.538,1.794,0.538c0.595,0,1.161-0.175,1.731-0.535
+					c0.574-0.363,1.037-0.844,1.377-1.431c0.336-0.58,0.507-1.188,0.507-1.807c0-1.005-0.36-1.854-1.101-2.594
+					C94.661,68.457,93.839,68.097,92.886,68.097z" /><path fill="#FFFFFF" d="M88.732,50.624l-0.079,12.265c1.694-1.271,3.823-1.905,6.388-1.906c0.151,0,0.303,0.002,0.457,0.007
+					c1.45,0.026,2.842,0.561,4.174,1.602c1.332,1.042,2.407,2.394,3.225,4.056s1.227,3.39,1.227,5.183
+					c0,1.953-0.396,3.772-1.187,5.46c-0.792,1.688-1.859,3.027-3.205,4.016c-1.345,0.989-2.796,1.483-4.352,1.483
+					c-1.267,0-2.52-0.224-3.759-0.672c-1.24-0.448-2.269-1.029-3.086-1.741v2.216h-7.715V51.257L88.732,50.624 M92.886,76.063
+					c0.686,0,1.351-0.204,1.998-0.613c0.646-0.409,1.16-0.943,1.543-1.603c0.382-0.659,0.574-1.345,0.574-2.058
+					c0-1.134-0.416-2.117-1.247-2.947c-0.83-0.831-1.787-1.247-2.868-1.247c-1.134,0-2.13,0.416-2.987,1.247
+					c-0.857,0.831-1.286,1.8-1.286,2.908c0,0.712,0.204,1.405,0.613,2.077c0.409,0.673,0.942,1.214,1.602,1.623
+					C91.488,75.86,92.174,76.063,92.886,76.063 M89.739,49.541l-1.086,0.087l-7.913,0.633l-0.92,0.073v0.923v31.335v1h1h7.715h1v-1
+					v-0.316c0.536,0.294,1.119,0.556,1.746,0.782c1.343,0.486,2.722,0.732,4.099,0.732c1.767,0,3.43-0.564,4.944-1.678
+					c1.474-1.083,2.658-2.563,3.518-4.397c0.85-1.814,1.281-3.793,1.281-5.885c0-1.939-0.447-3.831-1.329-5.624
+					c-0.88-1.789-2.06-3.27-3.506-4.402c-1.501-1.174-3.106-1.784-4.772-1.814c-0.153-0.004-0.314-0.007-0.474-0.007
+					c-2.027,0-3.828,0.378-5.377,1.126l0.067-10.479L89.739,49.541L89.739,49.541z M92.886,75.063c-0.528,0-1.029-0.151-1.53-0.462
+					c-0.529-0.328-0.945-0.75-1.275-1.292c-0.315-0.518-0.468-1.027-0.468-1.558c0-0.833,0.321-1.55,0.981-2.189
+					c0.669-0.649,1.419-0.965,2.292-0.965c0.813,0,1.52,0.312,2.161,0.953c0.643,0.642,0.955,1.375,0.955,2.241
+					c0,0.537-0.144,1.046-0.439,1.556c-0.304,0.523-0.7,0.935-1.212,1.259C93.862,74.914,93.384,75.063,92.886,75.063L92.886,75.063z
+					" /></g><g><path fill="#FFFFFF" d="M115.557,83.29c-0.374,0-0.661-0.016-0.861-0.044c-1.869-0.135-3.648-0.763-5.257-1.863
+					c-1.603-1.096-2.895-2.553-3.839-4.333c-0.945-1.779-1.424-3.749-1.424-5.853c0-0.422,0.016-0.746,0.044-0.972
+					c0.108-1.796,0.677-3.453,1.689-4.894c1.006-1.434,2.348-2.567,3.988-3.366c1.632-0.795,3.456-1.198,5.422-1.198
+					c3.424,0,6.128,1.024,8.038,3.045c1.902,2.013,2.867,4.777,2.867,8.217c0,0.574-0.015,1.011-0.042,1.311l-0.041,0.449
+					l-13.71,0.156c0.253,0.509,0.563,0.948,0.926,1.311c0.483,0.484,1.032,0.74,1.679,0.785c0.205,0.016,0.401,0.023,0.591,0.023
+					c1.628,0,2.789-0.544,3.55-1.665l0.203-0.3l6.483,1.859l-0.132,0.478c-0.365,1.317-1.073,2.515-2.104,3.56
+					c-1.02,1.033-2.254,1.85-3.669,2.427C118.546,82.998,117.065,83.29,115.557,83.29z M117.774,68.161
+					c-0.13-0.364-0.333-0.658-0.615-0.89c-0.438-0.358-0.923-0.555-1.483-0.6c-0.145-0.012-0.286-0.018-0.422-0.018
+					c-1.234,0-2.135,0.484-2.735,1.477L117.774,68.161z" /><path fill="#FFFFFF" d="M115.32,61.267c3.297,0,5.855,0.963,7.675,2.888c1.82,1.926,2.73,4.55,2.73,7.874
+					c0,0.554-0.014,0.976-0.04,1.266l-14.006,0.159c0.316,0.87,0.758,1.589,1.326,2.156c0.566,0.567,1.232,0.877,1.998,0.93
+					c0.214,0.016,0.423,0.024,0.625,0.024c1.789,0,3.111-0.627,3.963-1.884l5.658,1.623c-0.344,1.24-1.003,2.354-1.979,3.343
+					c-0.977,0.989-2.144,1.761-3.502,2.315c-1.358,0.554-2.763,0.831-4.213,0.831c-0.344,0-0.607-0.014-0.792-0.04
+					c-1.819-0.132-3.501-0.725-5.044-1.78c-1.543-1.055-2.77-2.439-3.68-4.154c-0.91-1.714-1.365-3.587-1.365-5.618
+					c0-0.396,0.014-0.699,0.04-0.91c0.105-1.741,0.639-3.297,1.603-4.668c0.962-1.371,2.229-2.439,3.798-3.205
+					C111.686,61.649,113.42,61.267,115.32,61.267 M118.406,68.665c-0.106-0.765-0.416-1.358-0.93-1.78
+					c-0.515-0.421-1.102-0.659-1.761-0.712c-0.158-0.013-0.313-0.019-0.462-0.019c-1.702,0-2.879,0.824-3.534,2.472L118.406,68.665
+					 M115.32,60.267c-2.043,0-3.941,0.42-5.641,1.249c-1.717,0.837-3.123,2.024-4.179,3.529c-1.06,1.509-1.659,3.242-1.78,5.152
+					c-0.03,0.253-0.044,0.582-0.044,1.001c0,2.187,0.499,4.235,1.482,6.087c0.982,1.852,2.328,3.369,3.999,4.511
+					c1.674,1.145,3.526,1.8,5.505,1.95c0.231,0.03,0.524,0.044,0.896,0.044c1.573,0,3.118-0.304,4.59-0.904
+					c1.478-0.603,2.769-1.457,3.836-2.539c1.092-1.106,1.842-2.378,2.231-3.778l0.265-0.955l-0.953-0.273l-3.503-1.004l3.673-0.042
+					l0.903-0.01l0.082-0.899c0.029-0.327,0.044-0.77,0.044-1.356c0-3.572-1.011-6.452-3.004-8.561
+					C121.713,61.344,118.887,60.267,115.32,60.267L115.32,60.267z M113.599,67.637c0.436-0.329,0.978-0.483,1.654-0.483
+					c0.124,0,0.251,0.005,0.382,0.016c0.454,0.037,0.848,0.196,1.205,0.487L113.599,67.637L113.599,67.637z M113.312,74.434
+					l5.26-0.06c-0.661,0.799-1.627,1.188-2.943,1.188c-0.178,0-0.362-0.007-0.551-0.021c-0.527-0.037-0.972-0.245-1.365-0.639
+					C113.57,74.76,113.436,74.604,113.312,74.434L113.312,74.434z" /></g><g><path fill="#FFFFFF" d="M126.134,83.013V60.925h8.358v1.295c0.541-0.371,1.127-0.681,1.752-0.925
+					c0.964-0.377,1.938-0.568,2.892-0.568c0.998,0,1.994,0.251,2.959,0.748c0.954,0.492,1.806,1.194,2.533,2.088l0.194,0.238
+					l-3.208,7.205l-0.509-0.701c-0.673-0.926-1.563-1.376-2.721-1.376c-1.262,0-2.169,0.427-2.773,1.307
+					c-0.643,0.933-1.02,2.516-1.12,4.705l0.001,8.073H126.134z" /><path fill="#FFFFFF" d="M139.136,61.227c0.923,0,1.833,0.231,2.73,0.692c0.896,0.462,1.688,1.115,2.374,1.958l-2.73,6.132
+					c-0.766-1.055-1.807-1.583-3.125-1.583c-1.425,0-2.487,0.508-3.186,1.523c-0.699,1.016-1.102,2.67-1.207,4.965v7.596h-7.358
+					V61.425h7.358v1.82c0.713-0.633,1.523-1.127,2.434-1.483S138.24,61.227,139.136,61.227 M139.136,60.227
+					c-1.017,0-2.052,0.203-3.074,0.603c-0.369,0.145-0.727,0.311-1.069,0.498v-0.903h-1h-7.358h-1v1v21.088v1h1h7.358h1v-1v-7.596
+					c0.095-2.048,0.442-3.543,1.03-4.398c0.513-0.744,1.263-1.09,2.362-1.09c1,0,1.736,0.372,2.315,1.17L141.719,72l0.704-1.583
+					l2.73-6.132l0.25-0.562l-0.388-0.477c-0.771-0.947-1.677-1.693-2.691-2.216C141.288,60.497,140.215,60.227,139.136,60.227
+					L139.136,60.227z" /></g><g><path fill="#FFFFFF" d="M154.488,83.487c-2.53,0-4.461-0.67-5.74-1.992c-1.274-1.318-1.921-3.425-1.921-6.263
+					c0-0.782,0.067-1.812,0.2-3.06l0.487-3.997h-3.04l-0.321-7.242l4.272-0.081l0.552-4.615l8.053-0.407l-0.558,4.925l4.315-0.077
+					l0.869,7.457h-6.049l-0.347,3.116c-0.05,0.449-0.076,0.774-0.076,0.974c0,0.951,0.173,1.698,0.513,2.22
+					c0.304,0.466,0.674,0.683,1.164,0.683c0.567,0,1.068-0.124,1.489-0.368c0.447-0.258,0.96-0.739,1.527-1.428l0.56-0.682
+					l2.36,6.608l-0.141,0.209c-0.917,1.36-2.054,2.382-3.379,3.037C157.961,83.157,156.35,83.487,154.488,83.487z" /><path fill="#FFFFFF" d="M156.466,56.361l-0.555,4.906l4.432-0.079l0.752,6.449h-5.935l-0.396,3.561
+					c-0.053,0.475-0.079,0.818-0.079,1.029c0,1.055,0.198,1.886,0.594,2.493s0.923,0.91,1.583,0.91c0.658,0,1.239-0.145,1.74-0.435
+					c0.501-0.29,1.055-0.804,1.662-1.543l1.979,5.539c-0.871,1.292-1.933,2.249-3.186,2.868c-1.253,0.62-2.776,0.93-4.569,0.93
+					c-2.4,0-4.194-0.613-5.381-1.839c-1.187-1.227-1.78-3.198-1.78-5.915c0-0.765,0.065-1.767,0.197-3.007l0.555-4.55h-3.126
+					l-0.277-6.251l4.194-0.079l0.554-4.629L156.466,56.361 M157.592,55.303l-1.177,0.06l-7.043,0.356l-0.842,0.042l-0.101,0.837
+					l-0.45,3.764l-3.323,0.063l-1.026,0.02l0.046,1.025l0.277,6.251l0.042,0.956h0.957h1.997l-0.418,3.429
+					c-0.137,1.281-0.205,2.329-0.205,3.128c0,2.972,0.693,5.196,2.062,6.61c1.377,1.423,3.429,2.144,6.1,2.144
+					c1.939,0,3.626-0.348,5.013-1.033c1.403-0.694,2.605-1.772,3.571-3.206l0.282-0.419l-0.17-0.476l-1.979-5.539l-0.593-1.662
+					l-1.121,1.363c-0.658,0.801-1.119,1.156-1.391,1.313c-0.349,0.202-0.754,0.3-1.239,0.3c-0.232,0-0.484-0.055-0.745-0.456
+					c-0.286-0.439-0.432-1.094-0.432-1.947c0-0.119,0.013-0.375,0.073-0.918l0.297-2.671h5.04h1.123l-0.13-1.116l-0.752-6.449
+					l-0.104-0.9l-0.906,0.016l-3.292,0.059l0.427-3.773L157.592,55.303L157.592,55.303z" /></g></g></g><g><g><path fill="#D31217" d="M117.481,8.495c0,0,10.404-13.133,24.431-5.521c14.028,7.612,12.387,17.182,12.387,17.182
+				s-0.71,2.456-5.602,1.586c0,0,0.396,3.063,0.015,5.06S117.481,8.495,117.481,8.495z" /><g display="none"><path display="inline" fill="#3E3936" d="M144.278,25.769c-6.696-3.485-19.017-11.425-27.131-16.766
+					c-0.143-0.094-0.239-0.244-0.267-0.412c-0.027-0.169,0.018-0.341,0.124-0.475c0.108-0.135,10.92-13.461,25.2-5.677
+					c14.247,7.731,12.766,17.412,12.695,17.82c-0.048,0.178-0.849,2.751-5.515,2.201c0.095,1.072,0.203,3.007-0.074,4.457
+					c-0.048,0.253-0.214,0.457-0.455,0.56C148.347,27.691,146.671,27.014,144.278,25.769z M118.397,8.368
+					c10.458,6.867,26.852,17.193,29.78,17.923c0.246-1.869-0.08-4.443-0.083-4.471c-0.025-0.192,0.043-0.385,0.183-0.519
+					c0.142-0.134,0.336-0.192,0.527-0.159c4.218,0.75,4.888-1.09,4.913-1.168c0.043-0.294,1.339-9.176-12.095-16.466
+					C129.757-2.974,120.484,6.08,118.397,8.368z" /></g></g><g><path fill="#F6F6F7" d="M122.53,7.034c-4.033-1.151-5.346-1.156-8.707,1.453c-3.361,2.609-4.81,6.644-1.002,7.96
+				c3.807,1.316,7.678-0.079,18.242,6.115c10.565,6.193,13.307,9.327,15.246,11.227c1.939,1.9,4.393-0.325,5.133-5.692
+				C152.18,22.729,141.288,12.389,122.53,7.034z" /><g display="none"><path display="inline" fill="#3E3936" d="M111.874,16.703c-1.313-0.684-1.752-1.679-1.879-2.447
+					c-0.317-1.922,1.039-4.375,3.456-6.251c3.488-2.707,5.017-2.764,9.247-1.557c18.337,5.236,30.185,15.655,29.347,21.731
+					c-0.502,3.645-1.828,6.171-3.546,6.759c-0.901,0.309-1.829,0.054-2.615-0.715l-0.51-0.507
+					c-1.871-1.867-5.002-4.993-14.618-10.629c-7.397-4.338-11.52-4.908-14.528-5.325c-1.312-0.182-2.445-0.338-3.605-0.74
+					C112.345,16.926,112.097,16.819,111.874,16.703z M122.53,7.034l-0.167,0.585c-3.87-1.104-4.999-1.11-8.167,1.349
+					c-2.036,1.581-3.242,3.627-3,5.091c0.138,0.833,0.75,1.441,1.824,1.813c1.047,0.362,2.125,0.512,3.374,0.684
+					c3.111,0.432,7.373,1.024,14.978,5.481c9.75,5.715,12.95,8.91,14.861,10.819l0.503,0.498c0.457,0.449,0.905,0.591,1.368,0.433
+					c0.938-0.321,2.218-2.025,2.734-5.772c0.679-4.928-9.825-15.069-28.475-20.395L122.53,7.034z" /></g></g><g><circle fill="#F6F6F7" cx="154.087" cy="21.254" r="6.19" /><g display="none"><path display="inline" fill="#3E3936" d="M150.956,27.29c-0.104-0.054-0.205-0.11-0.307-0.17
+					c-3.234-1.896-4.323-6.069-2.428-9.304s6.088-4.332,9.305-2.428c3.234,1.897,4.323,6.071,2.427,9.305
+					c-0.919,1.567-2.392,2.682-4.149,3.14C154.16,28.262,152.452,28.068,150.956,27.29z M156.662,16.302
+					c-2.617-1.362-5.881-0.443-7.39,2.13c-0.754,1.286-0.962,2.789-0.585,4.231c0.376,1.442,1.292,2.652,2.577,3.406
+					c1.283,0.754,2.79,0.962,4.232,0.586s2.651-1.292,3.405-2.578c0,0,0,0,0,0c0.755-1.286,0.963-2.789,0.586-4.231
+					c-0.376-1.443-1.292-2.653-2.578-3.407C156.829,16.391,156.745,16.345,156.662,16.302z" /></g></g><path display="none" fill="#F6F6F7" d="M147.665,21.02c-0.18-0.094-0.309-0.275-0.326-0.492c-0.003-0.043-0.374-4.417-2.514-8.156
+			c-0.167-0.291-0.065-0.663,0.227-0.83c0.292-0.167,0.663-0.067,0.83,0.226c2.278,3.981,2.656,8.474,2.671,8.664
+			c0.026,0.335-0.224,0.628-0.559,0.655C147.875,21.095,147.763,21.071,147.665,21.02z" /></g></symbol><symbol viewBox="0 0 163.354 83.987" id="svg-logo_philibert_noel"><title>logo_philibert_noel</title><g><path fill="#F19500" d="M139.402,38.938c0.192-4.575-10.761-6.804-11.235-7.325c-0.236-0.26,0.549-6.988-5.393-6.983
+			c-5.939-0.004-5.154,6.724-5.392,6.983c-0.476,0.521-11.428,2.75-11.235,7.325c0.191,4.576,6.004,2.226,7.244,3.573
+			c1.084,1.178-5.081,8.723-5.771,13.514c-0.226,1.562,0.213,1.865,1.731,1.865c2.753,0,5.38-0.001,7.8-0.001
+			c1.094,0,1.482-0.628,2.047-1.494c1.248-1.916,2.756-4.997,3.576-4.997s2.33,3.081,3.577,4.997
+			c0.563,0.866,0.954,1.494,2.048,1.494c2.418,0,5.047,0.001,7.799,0.001c1.518,0,1.958-0.303,1.732-1.865
+			c-0.69-4.791-6.855-12.336-5.771-13.515C133.398,41.163,139.211,43.514,139.402,38.938z" /><g><g><path fill="#F19500" d="M120.272,15.206c-15.488,0-28.042,12.556-28.042,28.043s12.554,28.043,28.042,28.043
+					s28.045-12.556,28.045-28.043S135.76,15.206,120.272,15.206z M122.774,57.89c-10.688,0-19.35-8.663-19.35-19.35
+					s8.662-19.35,19.35-19.35s19.352,8.663,19.352,19.35S133.461,57.89,122.774,57.89z" /></g></g></g><g><g><g><path fill="#3D3836" d="M1.324,83.013L0.509,54.713l0.283-0.144c3.64-1.848,7.044-2.784,10.117-2.784
+					c2.385,0,4.654,0.509,6.745,1.513c2.099,1.008,3.806,2.42,5.077,4.195c1.283,1.793,1.933,3.835,1.933,6.067
+					c0,2.117-0.572,4.097-1.7,5.885c-1.123,1.781-2.684,3.21-4.639,4.25c-1.95,1.037-4.112,1.563-6.427,1.563
+					c-0.57,0-1.193-0.041-1.859-0.123l0.196,7.877H1.324z M9.859,66.964c0.448,0.141,0.907,0.212,1.367,0.212
+					c0.766,0,1.512-0.17,2.219-0.506c0.701-0.333,1.271-0.788,1.693-1.352c0.412-0.549,0.612-1.124,0.612-1.757
+					c0-1.155-0.412-2.088-1.259-2.854c-0.863-0.779-1.84-1.157-2.988-1.157c-0.609,0-1.209,0.134-1.789,0.4L9.859,66.964z" /><path fill="#FFFFFF" d="M10.909,52.286c2.321,0,4.497,0.488,6.528,1.464c2.031,0.976,3.66,2.321,4.886,4.036
+					c1.227,1.715,1.84,3.64,1.84,5.776c0,2.031-0.541,3.904-1.623,5.618c-1.082,1.715-2.565,3.073-4.451,4.075
+					c-1.886,1.003-3.95,1.504-6.192,1.504c-0.712,0-1.503-0.066-2.374-0.198l0.198,7.953H1.81L1.018,55.016
+					C4.605,53.195,7.902,52.286,10.909,52.286 M11.226,67.676c0.844,0,1.655-0.185,2.434-0.554c0.777-0.369,1.404-0.87,1.879-1.503
+					c0.475-0.633,0.712-1.318,0.712-2.057c0-1.292-0.475-2.367-1.424-3.225c-0.95-0.857-2.057-1.286-3.323-1.286
+					c-0.792,0-1.557,0.198-2.295,0.594l0.158,7.675C9.973,67.557,10.593,67.676,11.226,67.676 M10.909,51.286
+					c-3.152,0-6.633,0.955-10.344,2.838L0,54.411l0.019,0.634L0.81,82.542l0.028,0.971H1.81h7.913h1.025l-0.026-1.025l-0.169-6.794
+					c0.474,0.043,0.923,0.065,1.346,0.065c2.397,0,4.639-0.545,6.661-1.621c2.033-1.08,3.657-2.569,4.827-4.424
+					c1.179-1.869,1.777-3.938,1.777-6.152c0-2.339-0.682-4.478-2.026-6.358c-1.32-1.845-3.092-3.31-5.267-4.355
+					C15.712,51.812,13.37,51.286,10.909,51.286L10.909,51.286z M10.221,60.281c0.419-0.155,0.842-0.23,1.282-0.23
+					c1.019,0,1.886,0.336,2.653,1.029c0.736,0.665,1.094,1.477,1.094,2.482c0,0.521-0.167,0.998-0.512,1.457
+					c-0.379,0.506-0.873,0.899-1.508,1.201c-0.648,0.308-1.304,0.458-2.004,0.458c-0.293,0-0.585-0.033-0.875-0.098L10.221,60.281
+					L10.221,60.281z" /></g><g><path fill="#3D3836" d="M39.766,83.013V71.435c0-0.974-0.273-1.71-0.835-2.251c-0.568-0.544-1.334-0.81-2.344-0.81
+					c-1.628,0-2.733,0.823-3.376,2.515l0.164,12.093l-8.437-0.135l-0.571-32.723h8.519l0.188,12.587
+					c0.686-0.576,1.49-1.068,2.403-1.468c1.324-0.579,2.683-0.873,4.039-0.873c2.572,0,4.653,0.954,6.184,2.835
+					c1.504,1.849,2.281,4.363,2.308,7.472l0.083,12.334H39.766z" /><path fill="#FFFFFF" d="M32.393,50.624l0.198,13.254c0.791-0.896,1.82-1.622,3.086-2.176c1.266-0.554,2.545-0.831,3.838-0.831
+					c2.426,0,4.358,0.884,5.796,2.651c1.438,1.767,2.169,4.154,2.196,7.161l0.079,11.83h-7.319V71.435
+					c0-1.108-0.33-1.978-0.989-2.611c-0.659-0.633-1.557-0.949-2.69-0.949c-1.874,0-3.166,0.976-3.877,2.928l0.158,11.671
+					l-7.438-0.119l-0.554-31.73H32.393 M33.378,49.624h-0.985h-7.518h-1.018l0.018,1.018l0.554,31.73l0.017,0.967l0.967,0.016
+					l7.438,0.119l1.03,0.016l-0.014-1.03l-0.156-11.48c0.57-1.435,1.488-2.105,2.875-2.105c0.874,0,1.527,0.219,1.998,0.67
+					c0.458,0.441,0.682,1.059,0.682,1.89v11.078v1h1h7.319h1.007l-0.007-1.007l-0.079-11.83c-0.028-3.228-0.843-5.846-2.42-7.785
+					c-1.631-2.004-3.842-3.02-6.572-3.02c-1.425,0-2.851,0.308-4.239,0.915c-0.621,0.271-1.194,0.584-1.717,0.936l-0.166-11.113
+					L33.378,49.624L33.378,49.624z" /></g><g><path fill="#3D3836" d="M48.327,82.894l-0.663-21.969h9.284v21.969H48.327z M52.492,60.421c-0.849,0-1.684-0.228-2.481-0.678
+					c-0.793-0.447-1.451-1.067-1.954-1.845c-0.513-0.79-0.773-1.654-0.773-2.566c0-1.411,0.543-2.602,1.615-3.541
+					c1.051-0.922,2.327-1.39,3.792-1.39c1.396,0,2.545,0.434,3.417,1.291c0.874,0.859,1.317,2.004,1.317,3.403
+					c0,1.521-0.471,2.8-1.399,3.802C55.084,59.909,53.896,60.421,52.492,60.421z" /><path fill="#FFFFFF" d="M52.689,50.901c1.266,0,2.288,0.382,3.066,1.147c0.778,0.765,1.167,1.78,1.167,3.046
+					c0,1.398-0.422,2.552-1.266,3.462c-0.845,0.91-1.899,1.365-3.165,1.365c-0.766,0-1.51-0.204-2.236-0.613
+					c-0.726-0.409-1.319-0.969-1.78-1.682c-0.462-0.712-0.692-1.477-0.692-2.294c0-1.266,0.481-2.321,1.444-3.165
+					C50.19,51.323,51.344,50.901,52.689,50.901 M56.448,61.425v20.969h-7.636l-0.633-20.969H56.448 M52.689,49.901
+					c-1.589,0-2.976,0.509-4.122,1.514c-1.184,1.038-1.785,2.356-1.785,3.917c0,1.011,0.287,1.966,0.854,2.839
+					c0.548,0.846,1.264,1.521,2.128,2.008c0.159,0.09,0.32,0.172,0.482,0.246h-2.068h-1.031l0.031,1.03l0.633,20.969l0.029,0.97h0.97
+					h7.636h1v-1V61.425v-1h-1h-1.653c0.587-0.279,1.12-0.676,1.595-1.188c1.018-1.098,1.533-2.491,1.533-4.143
+					c0-1.538-0.493-2.802-1.466-3.759C55.488,50.383,54.221,49.901,52.689,49.901L52.689,49.901z" /></g><g><path fill="#3D3836" d="M65.626,83.329c-2.533,0-4.611-0.838-6.179-2.49c-1.563-1.646-2.341-3.973-2.313-6.917l0.081-19.835
+					l8.475-2.511l0.041,20.134c0,0.941,0.229,1.602,0.702,2.021c0.49,0.434,1.042,0.646,1.687,0.646c0.447,0,0.804-0.09,1.061-0.268
+					l0.595-0.412l2.017,8.114l-0.386,0.169C69.374,82.875,67.429,83.329,65.626,83.329z" /><path fill="#FFFFFF" d="M65.191,52.246l0.04,19.465c0,1.082,0.29,1.879,0.87,2.394c0.58,0.514,1.252,0.771,2.018,0.771
+					c0.554,0,1.002-0.119,1.345-0.356l1.741,7.003c-1.979,0.871-3.838,1.306-5.579,1.306c-2.4,0-4.339-0.777-5.816-2.334
+					c-1.478-1.556-2.203-3.745-2.176-6.568l0.079-19.466L65.191,52.246 M66.188,50.908l-1.281,0.379l-7.478,2.215l-0.713,0.211
+					l-0.003,0.744l-0.079,19.466c-0.029,3.073,0.796,5.517,2.451,7.26c1.665,1.755,3.866,2.646,6.541,2.646
+					c1.873,0,3.885-0.468,5.981-1.39l0.771-0.339l-0.203-0.817l-1.741-7.003l-0.35-1.406l-1.19,0.825
+					c-0.171,0.119-0.432,0.179-0.776,0.179c-0.524,0-0.955-0.165-1.355-0.52c-0.354-0.313-0.533-0.867-0.533-1.646l-0.04-19.467
+					L66.188,50.908L66.188,50.908z" /></g><g><path fill="#3D3836" d="M71.511,82.894l-0.663-21.969h9.284v21.969H71.511z M75.676,60.421c-0.849,0-1.684-0.228-2.481-0.678
+					c-0.793-0.447-1.451-1.067-1.954-1.845c-0.513-0.79-0.773-1.654-0.773-2.566c0-1.411,0.543-2.602,1.615-3.541
+					c1.051-0.922,2.327-1.39,3.792-1.39c1.396,0,2.545,0.434,3.417,1.291c0.874,0.859,1.317,2.004,1.317,3.403
+					c0,1.521-0.471,2.8-1.399,3.802C78.269,59.909,77.08,60.421,75.676,60.421z" /><path fill="#FFFFFF" d="M75.874,50.901c1.266,0,2.288,0.382,3.066,1.147c0.778,0.765,1.167,1.78,1.167,3.046
+					c0,1.398-0.422,2.552-1.266,3.462c-0.845,0.91-1.899,1.365-3.165,1.365c-0.766,0-1.51-0.204-2.236-0.613
+					c-0.726-0.409-1.319-0.969-1.78-1.682c-0.462-0.712-0.692-1.477-0.692-2.294c0-1.266,0.481-2.321,1.444-3.165
+					C73.375,51.323,74.529,50.901,75.874,50.901 M79.632,61.425v20.969h-7.636l-0.633-20.969H79.632 M75.874,49.901
+					c-1.589,0-2.976,0.509-4.122,1.514c-1.184,1.038-1.785,2.356-1.785,3.917c0,1.011,0.287,1.966,0.854,2.839
+					c0.548,0.846,1.264,1.521,2.128,2.008c0.159,0.09,0.32,0.172,0.482,0.246h-2.068h-1.031l0.031,1.03l0.633,20.969l0.029,0.97h0.97
+					h7.636h1v-1V61.425v-1h-1h-1.653c0.587-0.279,1.12-0.676,1.595-1.188c1.018-1.098,1.533-2.491,1.533-4.143
+					c0-1.538-0.493-2.802-1.466-3.759C78.673,50.383,77.405,49.901,75.874,49.901L75.874,49.901z" /></g><g><path fill="#3D3836" d="M95.379,83.29c-1.319,0-2.641-0.236-3.929-0.702c-0.908-0.328-1.717-0.73-2.416-1.201v1.705h-8.715
+					V50.795l8.917-0.713l-0.077,11.867c1.633-0.973,3.607-1.466,5.882-1.466c0.156,0,0.313,0.002,0.471,0.007
+					c1.549,0.028,3.054,0.603,4.468,1.708c1.386,1.085,2.519,2.508,3.365,4.229c0.848,1.724,1.278,3.542,1.278,5.403
+					c0,2.017-0.415,3.926-1.234,5.672c-0.824,1.757-1.956,3.173-3.361,4.207C98.601,82.758,97.037,83.29,95.379,83.29z
+					 M92.886,68.097c-1.009,0-1.872,0.362-2.639,1.105c-0.763,0.739-1.134,1.573-1.134,2.549c0,0.617,0.182,1.228,0.541,1.817
+					c0.366,0.603,0.85,1.093,1.438,1.458c0.583,0.362,1.17,0.538,1.794,0.538c0.595,0,1.161-0.175,1.731-0.535
+					c0.574-0.363,1.037-0.844,1.377-1.431c0.336-0.58,0.507-1.188,0.507-1.807c0-1.005-0.36-1.854-1.101-2.594
+					C94.661,68.457,93.839,68.097,92.886,68.097z" /><path fill="#FFFFFF" d="M88.732,50.624l-0.079,12.265c1.694-1.271,3.823-1.905,6.388-1.906c0.151,0,0.303,0.002,0.457,0.007
+					c1.45,0.026,2.842,0.561,4.174,1.602c1.332,1.042,2.407,2.394,3.225,4.056s1.227,3.39,1.227,5.183
+					c0,1.953-0.396,3.772-1.187,5.46c-0.792,1.688-1.859,3.027-3.205,4.016c-1.345,0.989-2.796,1.483-4.352,1.483
+					c-1.267,0-2.52-0.224-3.759-0.672c-1.24-0.448-2.269-1.029-3.086-1.741v2.216h-7.715V51.257L88.732,50.624 M92.886,76.063
+					c0.686,0,1.351-0.204,1.998-0.613c0.646-0.409,1.16-0.943,1.543-1.603c0.382-0.659,0.574-1.345,0.574-2.058
+					c0-1.134-0.416-2.117-1.247-2.947c-0.83-0.831-1.787-1.247-2.868-1.247c-1.134,0-2.13,0.416-2.987,1.247
+					c-0.857,0.831-1.286,1.8-1.286,2.908c0,0.712,0.204,1.405,0.613,2.077c0.409,0.673,0.942,1.214,1.602,1.623
+					C91.488,75.86,92.174,76.063,92.886,76.063 M89.739,49.541l-1.086,0.087l-7.913,0.633l-0.92,0.073v0.923v31.335v1h1h7.715h1v-1
+					v-0.316c0.536,0.294,1.119,0.556,1.746,0.782c1.343,0.486,2.722,0.732,4.099,0.732c1.767,0,3.43-0.564,4.944-1.678
+					c1.474-1.083,2.658-2.563,3.518-4.397c0.85-1.814,1.281-3.793,1.281-5.885c0-1.939-0.447-3.831-1.329-5.624
+					c-0.88-1.789-2.06-3.27-3.506-4.402c-1.501-1.174-3.106-1.784-4.772-1.814c-0.153-0.004-0.314-0.007-0.474-0.007
+					c-2.027,0-3.828,0.378-5.377,1.126l0.067-10.479L89.739,49.541L89.739,49.541z M92.886,75.063c-0.528,0-1.029-0.151-1.53-0.462
+					c-0.529-0.328-0.945-0.75-1.275-1.292c-0.315-0.518-0.468-1.027-0.468-1.558c0-0.833,0.321-1.55,0.981-2.189
+					c0.669-0.649,1.419-0.965,2.292-0.965c0.813,0,1.52,0.312,2.161,0.953c0.643,0.642,0.955,1.375,0.955,2.241
+					c0,0.537-0.144,1.046-0.439,1.556c-0.304,0.523-0.7,0.935-1.212,1.259C93.862,74.914,93.384,75.063,92.886,75.063L92.886,75.063z
+					" /></g><g><path fill="#3D3836" d="M115.557,83.29c-0.374,0-0.661-0.016-0.861-0.044c-1.869-0.135-3.648-0.763-5.257-1.863
+					c-1.603-1.096-2.895-2.553-3.839-4.333c-0.945-1.779-1.424-3.749-1.424-5.853c0-0.422,0.016-0.746,0.044-0.972
+					c0.108-1.796,0.677-3.453,1.689-4.894c1.006-1.434,2.348-2.567,3.988-3.366c1.632-0.795,3.456-1.198,5.422-1.198
+					c3.424,0,6.128,1.024,8.038,3.045c1.902,2.013,2.867,4.777,2.867,8.217c0,0.574-0.015,1.011-0.042,1.311l-0.041,0.449
+					l-13.71,0.156c0.253,0.509,0.563,0.948,0.926,1.311c0.483,0.484,1.032,0.74,1.679,0.785c0.205,0.016,0.401,0.023,0.591,0.023
+					c1.628,0,2.789-0.544,3.55-1.665l0.203-0.3l6.483,1.859l-0.132,0.478c-0.365,1.317-1.073,2.515-2.104,3.56
+					c-1.02,1.033-2.254,1.85-3.669,2.427C118.546,82.998,117.065,83.29,115.557,83.29z M117.774,68.161
+					c-0.13-0.364-0.333-0.658-0.615-0.89c-0.438-0.358-0.923-0.555-1.483-0.6c-0.145-0.012-0.286-0.018-0.422-0.018
+					c-1.234,0-2.135,0.484-2.735,1.477L117.774,68.161z" /><path fill="#FFFFFF" d="M115.32,61.267c3.297,0,5.855,0.963,7.675,2.888c1.82,1.926,2.73,4.55,2.73,7.874
+					c0,0.554-0.014,0.976-0.04,1.266l-14.006,0.159c0.316,0.87,0.758,1.589,1.326,2.156c0.566,0.567,1.232,0.877,1.998,0.93
+					c0.214,0.016,0.423,0.024,0.625,0.024c1.789,0,3.111-0.627,3.963-1.884l5.658,1.623c-0.344,1.24-1.003,2.354-1.979,3.343
+					c-0.977,0.989-2.144,1.761-3.502,2.315c-1.358,0.554-2.763,0.831-4.213,0.831c-0.344,0-0.607-0.014-0.792-0.04
+					c-1.819-0.132-3.501-0.725-5.044-1.78c-1.543-1.055-2.77-2.439-3.68-4.154c-0.91-1.714-1.365-3.587-1.365-5.618
+					c0-0.396,0.014-0.699,0.04-0.91c0.105-1.741,0.639-3.297,1.603-4.668c0.962-1.371,2.229-2.439,3.798-3.205
+					C111.686,61.649,113.42,61.267,115.32,61.267 M118.406,68.665c-0.106-0.765-0.416-1.358-0.93-1.78
+					c-0.515-0.421-1.102-0.659-1.761-0.712c-0.158-0.013-0.313-0.019-0.462-0.019c-1.702,0-2.879,0.824-3.534,2.472L118.406,68.665
+					 M115.32,60.267c-2.043,0-3.941,0.42-5.641,1.249c-1.717,0.837-3.123,2.024-4.179,3.529c-1.06,1.509-1.659,3.242-1.78,5.152
+					c-0.03,0.253-0.044,0.582-0.044,1.001c0,2.187,0.499,4.235,1.482,6.087c0.982,1.852,2.328,3.369,3.999,4.511
+					c1.674,1.145,3.526,1.8,5.505,1.95c0.231,0.03,0.524,0.044,0.896,0.044c1.573,0,3.118-0.304,4.59-0.904
+					c1.478-0.603,2.769-1.457,3.836-2.539c1.092-1.106,1.842-2.378,2.231-3.778l0.265-0.955l-0.953-0.273l-3.503-1.004l3.673-0.042
+					l0.903-0.01l0.082-0.899c0.029-0.327,0.044-0.77,0.044-1.356c0-3.572-1.011-6.452-3.004-8.561
+					C121.713,61.344,118.887,60.267,115.32,60.267L115.32,60.267z M113.599,67.637c0.436-0.329,0.978-0.483,1.654-0.483
+					c0.124,0,0.251,0.005,0.382,0.016c0.454,0.037,0.848,0.196,1.205,0.487L113.599,67.637L113.599,67.637z M113.312,74.434
+					l5.26-0.06c-0.661,0.799-1.627,1.188-2.943,1.188c-0.178,0-0.362-0.007-0.551-0.021c-0.527-0.037-0.972-0.245-1.365-0.639
+					C113.57,74.76,113.436,74.604,113.312,74.434L113.312,74.434z" /></g><g><path fill="#3D3836" d="M126.134,83.013V60.925h8.358v1.295c0.541-0.371,1.127-0.681,1.752-0.925
+					c0.964-0.377,1.938-0.568,2.892-0.568c0.998,0,1.994,0.251,2.959,0.748c0.954,0.492,1.806,1.194,2.533,2.088l0.194,0.238
+					l-3.208,7.205l-0.509-0.701c-0.673-0.926-1.563-1.376-2.721-1.376c-1.262,0-2.169,0.427-2.773,1.307
+					c-0.643,0.933-1.02,2.516-1.12,4.705l0.001,8.073H126.134z" /><path fill="#FFFFFF" d="M139.136,61.227c0.923,0,1.833,0.231,2.73,0.692c0.896,0.462,1.688,1.115,2.374,1.958l-2.73,6.132
+					c-0.766-1.055-1.807-1.583-3.125-1.583c-1.425,0-2.487,0.508-3.186,1.523c-0.699,1.016-1.102,2.67-1.207,4.965v7.596h-7.358
+					V61.425h7.358v1.82c0.713-0.633,1.523-1.127,2.434-1.483S138.24,61.227,139.136,61.227 M139.136,60.227
+					c-1.017,0-2.052,0.203-3.074,0.603c-0.369,0.145-0.727,0.311-1.069,0.498v-0.903h-1h-7.358h-1v1v21.088v1h1h7.358h1v-1v-7.596
+					c0.095-2.048,0.442-3.543,1.03-4.398c0.513-0.744,1.263-1.09,2.362-1.09c1,0,1.736,0.372,2.315,1.17L141.719,72l0.704-1.583
+					l2.73-6.132l0.25-0.562l-0.388-0.477c-0.771-0.947-1.677-1.693-2.691-2.216C141.288,60.497,140.215,60.227,139.136,60.227
+					L139.136,60.227z" /></g><g><path fill="#3D3836" d="M154.488,83.487c-2.53,0-4.461-0.67-5.74-1.992c-1.274-1.318-1.921-3.425-1.921-6.263
+					c0-0.782,0.067-1.812,0.2-3.06l0.487-3.997h-3.04l-0.321-7.242l4.272-0.081l0.552-4.615l8.053-0.407l-0.558,4.925l4.315-0.077
+					l0.869,7.457h-6.049l-0.347,3.116c-0.05,0.449-0.076,0.774-0.076,0.974c0,0.951,0.173,1.698,0.513,2.22
+					c0.304,0.466,0.674,0.683,1.164,0.683c0.567,0,1.068-0.124,1.489-0.368c0.447-0.258,0.96-0.739,1.527-1.428l0.56-0.682
+					l2.36,6.608l-0.141,0.209c-0.917,1.36-2.054,2.382-3.379,3.037C157.961,83.157,156.35,83.487,154.488,83.487z" /><path fill="#FFFFFF" d="M156.466,56.361l-0.555,4.906l4.432-0.079l0.752,6.449h-5.935l-0.396,3.561
+					c-0.053,0.475-0.079,0.818-0.079,1.029c0,1.055,0.198,1.886,0.594,2.493s0.923,0.91,1.583,0.91c0.658,0,1.239-0.145,1.74-0.435
+					c0.501-0.29,1.055-0.804,1.662-1.543l1.979,5.539c-0.871,1.292-1.933,2.249-3.186,2.868c-1.253,0.62-2.776,0.93-4.569,0.93
+					c-2.4,0-4.194-0.613-5.381-1.839c-1.187-1.227-1.78-3.198-1.78-5.915c0-0.765,0.065-1.767,0.197-3.007l0.555-4.55h-3.126
+					l-0.277-6.251l4.194-0.079l0.554-4.629L156.466,56.361 M157.592,55.303l-1.177,0.06l-7.043,0.356l-0.842,0.042l-0.101,0.837
+					l-0.45,3.764l-3.323,0.063l-1.026,0.02l0.046,1.025l0.277,6.251l0.042,0.956h0.957h1.997l-0.418,3.429
+					c-0.137,1.281-0.205,2.329-0.205,3.128c0,2.972,0.693,5.196,2.062,6.61c1.377,1.423,3.429,2.144,6.1,2.144
+					c1.939,0,3.626-0.348,5.013-1.033c1.403-0.694,2.605-1.772,3.571-3.206l0.282-0.419l-0.17-0.476l-1.979-5.539l-0.593-1.662
+					l-1.121,1.363c-0.658,0.801-1.119,1.156-1.391,1.313c-0.349,0.202-0.754,0.3-1.239,0.3c-0.232,0-0.484-0.055-0.745-0.456
+					c-0.286-0.439-0.432-1.094-0.432-1.947c0-0.119,0.013-0.375,0.073-0.918l0.297-2.671h5.04h1.123l-0.13-1.116l-0.752-6.449
+					l-0.104-0.9l-0.906,0.016l-3.292,0.059l0.427-3.773L157.592,55.303L157.592,55.303z" /></g></g></g><g><g><path fill="#D31217" d="M117.481,8.495c0,0,10.404-13.133,24.431-5.521c14.028,7.612,12.387,17.182,12.387,17.182
+				s-0.71,2.456-5.602,1.586c0,0,0.396,3.063,0.015,5.06S117.481,8.495,117.481,8.495z" /><g display="none"><path display="inline" fill="#3E3936" d="M144.278,25.769c-6.696-3.485-19.017-11.425-27.131-16.766
+					c-0.143-0.094-0.239-0.244-0.267-0.412c-0.027-0.169,0.018-0.341,0.124-0.475c0.108-0.135,10.92-13.461,25.2-5.677
+					c14.247,7.731,12.766,17.412,12.695,17.82c-0.048,0.178-0.849,2.751-5.515,2.201c0.095,1.072,0.203,3.007-0.074,4.457
+					c-0.048,0.253-0.214,0.457-0.455,0.56C148.347,27.691,146.671,27.014,144.278,25.769z M118.397,8.368
+					c10.458,6.867,26.852,17.193,29.78,17.923c0.246-1.869-0.08-4.443-0.083-4.471c-0.025-0.192,0.043-0.385,0.183-0.519
+					c0.142-0.134,0.336-0.192,0.527-0.159c4.218,0.75,4.888-1.09,4.913-1.168c0.043-0.294,1.339-9.176-12.095-16.466
+					C129.757-2.974,120.484,6.08,118.397,8.368z" /></g></g><g><path fill="#F6F6F7" d="M122.53,7.034c-4.033-1.151-5.346-1.156-8.707,1.453c-3.361,2.609-4.81,6.644-1.002,7.96
+				c3.807,1.316,7.678-0.079,18.242,6.115c10.565,6.193,13.307,9.327,15.246,11.227c1.939,1.9,4.393-0.325,5.133-5.692
+				C152.18,22.729,141.288,12.389,122.53,7.034z" /><g display="none"><path display="inline" fill="#3E3936" d="M111.874,16.703c-1.313-0.684-1.752-1.679-1.879-2.447
+					c-0.317-1.922,1.039-4.375,3.456-6.251c3.488-2.707,5.017-2.764,9.247-1.557c18.337,5.236,30.185,15.655,29.347,21.731
+					c-0.502,3.645-1.828,6.171-3.546,6.759c-0.901,0.309-1.829,0.054-2.615-0.715l-0.51-0.507
+					c-1.871-1.867-5.002-4.993-14.618-10.629c-7.397-4.338-11.52-4.908-14.528-5.325c-1.312-0.182-2.445-0.338-3.605-0.74
+					C112.345,16.926,112.097,16.819,111.874,16.703z M122.53,7.034l-0.167,0.585c-3.87-1.104-4.999-1.11-8.167,1.349
+					c-2.036,1.581-3.242,3.627-3,5.091c0.138,0.833,0.75,1.441,1.824,1.813c1.047,0.362,2.125,0.512,3.374,0.684
+					c3.111,0.432,7.373,1.024,14.978,5.481c9.75,5.715,12.95,8.91,14.861,10.819l0.503,0.498c0.457,0.449,0.905,0.591,1.368,0.433
+					c0.938-0.321,2.218-2.025,2.734-5.772c0.679-4.928-9.825-15.069-28.475-20.395L122.53,7.034z" /></g></g><g><circle fill="#F6F6F7" cx="154.087" cy="21.254" r="6.19" /><g display="none"><path display="inline" fill="#3E3936" d="M150.956,27.29c-0.104-0.054-0.205-0.11-0.307-0.17
+					c-3.234-1.896-4.323-6.069-2.428-9.304s6.088-4.332,9.305-2.428c3.234,1.897,4.323,6.071,2.427,9.305
+					c-0.919,1.567-2.392,2.682-4.149,3.14C154.16,28.262,152.452,28.068,150.956,27.29z M156.662,16.302
+					c-2.617-1.362-5.881-0.443-7.39,2.13c-0.754,1.286-0.962,2.789-0.585,4.231c0.376,1.442,1.292,2.652,2.577,3.406
+					c1.283,0.754,2.79,0.962,4.232,0.586s2.651-1.292,3.405-2.578c0,0,0,0,0,0c0.755-1.286,0.963-2.789,0.586-4.231
+					c-0.376-1.443-1.292-2.653-2.578-3.407C156.829,16.391,156.745,16.345,156.662,16.302z" /></g></g><path display="none" fill="#F6F6F7" d="M147.665,21.02c-0.18-0.094-0.309-0.275-0.326-0.492c-0.003-0.043-0.374-4.417-2.514-8.156
+			c-0.167-0.291-0.065-0.663,0.227-0.83c0.292-0.167,0.663-0.067,0.83,0.226c2.278,3.981,2.656,8.474,2.671,8.664
+			c0.026,0.335-0.224,0.628-0.559,0.655C147.875,21.095,147.763,21.071,147.665,21.02z" /></g></symbol><symbol viewBox="0 0 799.855 336.271" id="svg-logo_philibert"><title>logo_philibert</title><path fill="#F39223" d="M591.633,0c-49.366,0-95.976,26.988-120.622,69.756c-28.062,48.694-23.446,111.352,11.396,155.475
 		c11.554,4.953,20.383,14.636,26.252,25.563c1.813,1.354,3.664,2.656,5.543,3.919c9.529-20.377,31.226-31.17,53.134-31.17
 		c11.276,0,22.796,2.211,32.53,8.126c9.622,5.847,11.555,15.786,19.842,22.175V224.12h44v4.688c0-1.903,12.514-4.498,13.634-4.709
 		c7.646-1.438,15.245-0.672,22.318,2.631c35.207-43.363,40.886-105.445,14.037-154.405C689.468,28.14,642.029,0,591.633,0
@@ -4698,48 +5067,22 @@ module.exports = {
 		c-0.041-0.039-0.07-0.121-0.059-0.174c-0.061-0.011-0.113-0.062-0.148-0.102c-0.06-0.066-0.074-0.02-0.129-0.044
 		c-0.076-0.022-0.812-0.552-1.165-0.834c-0.036,0.096-0.014,0.065-0.1,0.16l0.005-0.017c0.217,0.211,0.51,0.313,0.744,0.457
 		c0.026,0.021,0.226,0.328,0.33,0.418c0.195,0.16,0.357,0.221,0.515,0.33" /></symbol></svg>
-	<div id="noel-wrapper" class="-habillage-wrapper">
-	<a href="https://www.philibertnet.com/en/content/21-selection-de-noel">❄️ Looking for a gift? Don&#039;t have time or don&#039;t know anything about it? <span class="-link">This selection was made for you!</span></a>
-	</div>
 	<div id="page">
 	<div id="overlay-shadow"></div>
 	
 	<header id="header">
-	<div id="header_top_wrapper" class="hide-tablet hide-desktop">
-	<div id="header_top">
-	<div class="header_logo">
-	<a href="https://www.philibertnet.com/" title="Back to homepage">
-	<div style="position: relative">
-	<svg class="icon svg-logo_philibert">
-	<use xlink:href="#svg-logo_philibert"></use>
-	</svg>
-	<svg class="icon svg-logo_philibert_noel_bonnet">
-	<use xlink:href="#svg-logo_philibert_noel_bonnet"></use>
-	</svg>
-	</div>
-	</a> <span class="baseline">
-	The game in all its forms<b>More than 35.000 references</b>
-	</span>
-	</div>
-	</div>
-	</div>
-	<div id="header_bottom_wrapper">
+	<div id="header_bottom_wrapper" class="hide-smartphone hide-tablet">
 	<div id="header_bottom">
-	<div class="header_logo hide-smartphone">
-	<a href="https://www.philibertnet.com/" title="Back to homepage" class="tooltips">
+	<div class="header_logo">
+	<a href="https://www.philibertnet.com/" aria-label="Back to homepage" title="Back to homepage" class="tooltips">
 	<div style="position: relative; float:left">
 	<svg class="icon svg-logo_philibert">
 	<use xlink:href="#svg-logo_philibert"></use>
 	</svg>
-	<svg class="icon svg-logo_philibert_noel_bonnet">
-	<use xlink:href="#svg-logo_philibert_noel_bonnet"></use>
-	 </svg>
 	</div>
-	<span class="baseline hide-tablet">The game in all its forms</span>
-	<span class="baseline hide-smartphone hide-desktop">
-	The game in all its forms<b>More than 35.000 references</b>
-	</span> </a>
-	<p class="hide-tablet">
+	<span class="baseline">The board game specialist</span>
+	</a>
+	 <p>
 	<svg class="icon svg-illus_bubble">
 	<use xlink:href="#svg-illus_bubble"></use>
 	</svg>
@@ -4749,19 +5092,46 @@ module.exports = {
 	</p>
 	</div>
 	<div id="header_right" class="not-logged">
-	<p id="tel_mobile" class="hide-desktop"><a href="https://www.philibertnet.com/en/contact-us"><span class="label">Contact</span></a></p>
 	<div id="header_right_left">
-	<p id="header_contact" class="hide-mobile">
-	<a href="tel:+33388327324">
-	+33 (0)3 88 32 73 24
-	</a>
-	<a href="https://www.philibertnet.com/en/contact-us">Contact us by e-mail</a>
+	<p id="header_contact">
+	<span class="button-like mail" data-siloing="https://www.philibertnet.com/en/contact-us">Contact us</span>
 	</p>
+	<div id="_desktop_socialnetwork-list"> <ul class="socialnetwork-list socialnetwork-list--small socialnetwork-list--light socialnetwork-list--header">
+	<li>
+	<span data-siloing="https://twitter.com/PhilibertJeux" aria-label="Follow us on Twitter" title="Follow us on Twitter" target="_blank" rel="noreferrer noopener">
+	<svg class="icon svg-icon_twitter">
+	<use xlink:href="#svg-icon_twitter"></use>
+	</svg>
+	</span>
+	</li>
+	<li>
+	<span data-siloing="https://www.facebook.com/PhilibertJeux/" aria-label="Follow us on Facebook" title="Follow us on Facebook" target="_blank" rel="noreferrer noopener">
+	<svg class="icon svg-icon_facebook">
+	<use xlink:href="#svg-icon_facebook"></use>
+	</svg>
+	</span>
+	</li>
+	<li>
+	<span data-siloing="https://www.instagram.com/philibertjeux/" aria-label="Follow us on Instagram" title="Follow us on Instagram" target="_blank" rel="noreferrer noopener">
+	<svg class="icon svg-icon_instagram">
+	<use xlink:href="#svg-icon_instagram"></use>
+	</svg>
+	</span>
+	</li>
+	<li>
+	<span data-siloing="https://www.youtube.com/user/PhilibertJeux" aria-label="Follow us on Youtube" title="Follow us on Youtube" target="_blank" rel="noreferrer noopener">
+	<svg class="icon svg-icon_youtube">
+	<use xlink:href="#svg-icon_youtube"></use>
+	</svg>
+	</span>
+	</li>
+	</ul>
+	</div>
 	
 	<div id="languages-block-top" class="languages-block">
 	<ul id="first-languages" class="languages-block_ul toogle_content">
 	<li class="fr ">
-	<a href="https://www.philibertnet.com/fr/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html" title="Français (French)">
+	<a href="https://www.philibertnet.com/fr/intrafin/64223-spirit-island-5425037740173.html" aria-label="Français (French)" title="Français (French)">
 	<svg class="icon svg-flag_fr"><use xlink:href="#svg-flag_fr"></use></svg>
 	</a>
 	</li>
@@ -4772,17 +5142,19 @@ module.exports = {
 	</div>
 	
 	
+	<div id="_desktop_ph-mobile__search">
 	
 	<div id="search_block_top">
-	<span class="label hide-desktop">Search</span><form method="get" action="https://www.philibertnet.com/en/search" id="searchbox"><p><label for="search_query_top"></label><input type="hidden" name="controller" value="search" /><input type="hidden" name="orderby" value="position" /><input type="hidden" name="orderway" value="desc" /><input class="search_query" type="text" id="search_query_top" name="search_query" value="" placeholder="Search a product..." /><button type="submit" name="submit_search">Search</button></p></form>
+	<form method="get" action="https://www.philibertnet.com/en/search" id="searchbox"><p><label for="search_query_top"></label><input type="hidden" name="controller" value="search" /><input type="hidden" name="orderby" value="position" /><input type="hidden" name="orderway" value="desc" /><input class="search_query" type="text" id="search_query_top" name="search_query" value="" placeholder="Search a game..." /><button type="submit" name="submit_search">Search</button></p></form>
+	</div>
 	</div>
 	
 	</div>
-	<div id="header_user"><p id="header_user_info"><a href="https://www.philibertnet.com/en/my-account" class="account tooltips" rel="nofollow" title="See my account, follow my orders, see invoices etc."><span class="hide-mobile">My account</span><span class="label">Account</span></a></p></div>
+	<div id="header_user" class="h-user"><p><a href="https://www.philibertnet.com/en/my-account" class="h-user__account tooltips" rel="nofollow" aria-label="My account" title="See my account, follow my orders, see invoices etc."><svg class="icon svg-icon_compte hide-desktop"><use xlink:href="#svg-icon_compte"></use></svg><span class="hide-mobile">My account</span></a><a href="https://www.philibertnet.com/en/my-account" class="h-user__tracking hide-mobile" rel="nofollow">Order tracking</a></p></div>
 	
-	<div id="cart_block" class="block exclusive">
-	<p class="title_block">
-	<a href="/en/order" title="View my shopping cart" rel="nofollow" class="tooltips"><span class="label">Cart</span><span id="cart_block_summary"><span class="ajax_cart_quantity" style="display:none;">0</span>
+	<div id="cart_block" class="block exclusive uk-blockcart">
+	<p id="_desktop_cart" class="title_block uk-blockcart__title">
+	<a href="/en/order" aria-label="View my shopping cart" title="View my shopping cart" rel="nofollow" class="tooltips uk-blockcart__link"><svg class="icon svg-icon_panier hide-desktop"><use xlink:href="#svg-icon_panier"></use></svg><span id="cart_block_summary" class="uk-blockcart__summary"><span class="ajax_cart_quantity" style="display:none;">0</span>
 	<span class="ajax_cart_product_txt_s" style="display:none">Products </span>
 	<span class="ajax_cart_product_txt" style="display:none">Product </span>
 	<span class="ajax_cart_no_product">Your cart is empty</span>
@@ -4790,11 +5162,11 @@ module.exports = {
 	</a>
 	</p>
 	</div>
-	<div id="ukoo_popcart_overlay" onclick="if (!window.__cfRLUnblockHandlers) return false; ajaxCart.closePopCart();" style="background-color: rgba(0, 0, 0, 0.5); display: none;" data-cf-modified-9996bc0462fe4ac2e530701a-="">
+	<div id="ukoo_popcart_overlay" onclick="if (!window.__cfRLUnblockHandlers) return false; ajaxCart.closePopCart();" style="background-color: rgba(0, 0, 0, 0.5); display: none;" data-cf-modified-3b2ae364050342e6707c608a-="">
 	<div id="ukoo_popcart_position">
 	<div>
-	<div id="ukoo_popcart" onclick="if (!window.__cfRLUnblockHandlers) return false; event.stopPropagation();" data-cf-modified-9996bc0462fe4ac2e530701a-="">
-	<span id="ukoo_popcart_close" onclick="if (!window.__cfRLUnblockHandlers) return false; ajaxCart.closePopCart();" title="Fermer" data-cf-modified-9996bc0462fe4ac2e530701a-=""></span>
+	<div id="ukoo_popcart" onclick="if (!window.__cfRLUnblockHandlers) return false; event.stopPropagation();" data-cf-modified-3b2ae364050342e6707c608a-="">
+	<span id="ukoo_popcart_close" onclick="if (!window.__cfRLUnblockHandlers) return false; ajaxCart.closePopCart();" title="Fermer" data-cf-modified-3b2ae364050342e6707c608a-=""></span>
 	<p class="ukoo_popcart_title">This product has been added to your cart :</p>
 	<p>
 	<span class="qty_wanted"></span>
@@ -4803,26 +5175,53 @@ module.exports = {
 	<p class="ukoo_popcart_img"></p>
 	<div class="price"></div>
 	<div class="clear"></div>
-	<span id="ukoo_popcart_button_continue" class="button" onclick="if (!window.__cfRLUnblockHandlers) return false; ajaxCart.closePopCart();" data-cf-modified-9996bc0462fe4ac2e530701a-="">Continue shopping</span>
+	<span id="ukoo_popcart_button_continue" class="button" onclick="if (!window.__cfRLUnblockHandlers) return false; ajaxCart.closePopCart();" data-cf-modified-3b2ae364050342e6707c608a-="">Continue shopping</span>
 	<a href="/en/order" id="ukoo_popcart_button_order" class="button exclusive" rel="nofollow">See my cart</a>
 	</div>
 	</div>
 	</div>
 	</div>
 	
-	
-	<div id="cookiebanner" class="left right bottom ">
-	<div class="cb-wrapper">
-	<p class="text-content">Come to the dark side, we have cookies. By continuing the navigation you accept their use.</p>
-	<a class="btn more_link" href="https://www.philibertnet.com/en/module/cookiebanner/settings" title="Learn more" rel="nofollow">Learn more</a>
-	<a id="allow_all" class="btn exclusive" href="https://www.philibertnet.com/en/module/cookiebanner/settings" title="Allow all" rel="nofollow">
-	<span>Allow all</span> </a>
+	<div style="display:none">
+	<div id="quickpass">
+	<p class="page-subheading">Forgot your password</p>
+	<form method="POST">
+	<label for="qp_email">To recover a new password, please enter your e-mail address:</label>
+	<div class="input-group">
+	<input type="email" class="form-control qp_email" name="qp_email" id="qp_email" value="" placeholder="" />
+	<span class="input-group-btn">
+	<a href="javascript:void(0);" id="qp_passreco" class="btn btn-primary exclusive">Recover</a>
+	</span>
+	</div>
+	<label id="resltmsg"></label>
+	</form>
+	<div class="overlay forcehide"><img src="/modules/quickpass/views/img/indicator_bar.gif" alt="Processing" title="Processing" /></div>
 	</div>
 	</div>
-	 <a href="#main_menu_mobile" id="open-close_responsive_menu" class="hide-desktop"><span class="label">Menu</span></span>
+	</div>
+	</div>
+	</div>
+	<div class="ph-mobile hide-desktop">
+	<div class="ph-mobile__search" id="_mobile_ph-mobile__search" style="display:none;"></div>
+	</div>
+	<div class="h-mobile hide-desktop">
+	<div class="h-mobile__logo">
+	<a href="https://www.philibertnet.com/" aria-label="Back to homepage" title="Back to homepage">
+	<svg class="icon svg-icon_meeple_circle"><use xlink:href="#svg-icon_meeple_circle"></use></svg>
+	 </a>
+	</div>
+	<div class="h-mobile__menu">
+	<a href="#main_menu_mobile" id="open-close_responsive_menu" aria-label="Menu" title="Menu"></a>
+	</div>
+	<div class="h-mobile__search">
+	<a class="h-mobile__search__link" href="javascript:void(0);" aria-label="Search" title="Search"></a>
+	</div>
+	<div class="h-mobile__cart" id="_mobile_cart">
+	<a href="/en/order" aria-label="View my shopping cart" title="View my shopping cart" rel="nofollow" class="tooltips uk-blockcart__link">
+	<svg class="icon svg-icon_panier hide-desktop"><use xlink:href="#svg-icon_panier"></use></svg>
 	</a>
 	</div>
-	</div>
+	<div class="h-mobile__account"><a href="https://www.philibertnet.com/en/my-account" class="h-user__account tooltips" rel="nofollow" aria-label="My account" title="See my account, follow my orders, see invoices etc."><svg class="icon svg-icon_compte"><use xlink:href="#svg-icon_compte"></use></svg></a></div>
 	</div>
 	</header>
 	<div id="nav_wrapper">
@@ -4844,26 +5243,24 @@ module.exports = {
 	<td class="products_selections_links">
 	<ul>
 	<li>
-	<a class="best-sales hide-desktop" href="https://www.philibertnet.com/en/best-sales">Bestsellers</a><a class="best-sales hide-mobile" href="/en/s-3/best-sales/category-board_games">Bestsellers</a> </li>
+	<span class="best-sales hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/best-sales">Bestsellers</span><span class="best-sales hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/best-sales/category-board_games">Bestsellers</span> </li>
 	<li>
-	<a class="new-products hide-desktop" href="https://www.philibertnet.com/en/new-products">News</a><a class="new-products hide-mobile" href="/en/s-3/new-products/category-board_games">News</a> </li>
+	<span class="new-products hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/new-products">News</span><span class="new-products hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/new-products/category-board_games">News</span> </li>
 	<li>
-	<a class="preorders hide-desktop" href="https://www.philibertnet.com/en/578-precommandes">Preorders</a><a class="preorders hide-mobile" href="/en/578-precommandes/s-3/category-board_games">Preorders</a> </li>
-	 <li>
-	<a class="coming-soon" href="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</a>
+	<span class="preorders hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes">Preorders</span><span class="preorders hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes/s-3/category-board_games">Preorders</span> </li>
+	<li>
+	<span class="coming-soon" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</span>
 	</li>
 	<li>
 	<a class="damaged" href="https://www.philibertnet.com/en/214-occasions">Damaged</a>
 	</li>
 	<li>
+	
 	<a class="prices-drop" href="https://www.philibertnet.com/en/content/38-special-offers">On sale</a>
 	</li>
 	<li>
 	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
 	Flash sales</a>
-	</li>
-	<li>
-	<a class="noel" href="https://www.philibertnet.com/en/content/21-selection-de-noel">The Christmas Selection</a>
 	</li>
 	</ul>
 	</td>
@@ -4871,31 +5268,30 @@ module.exports = {
 	<div class="adtm_column_wrap advtm_column_wrap_19">
 	<div class="adtm_column adtm_column_55">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/50-jeux-de-societe" title="Board games" class="">Board games</a></span></span> </div>
-	<div class="adtm_column adtm_column_231">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13353-essen-2019" title="Essen 2019" class="">Essen 2019</a></span></span> </div>
-	<div class="adtm_column adtm_column_31">
-	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/469-par-ages" title="By Ages" class="">By Ages</a></span></span> <ul class="adtm_elements adtm_elements_31">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/470-deux-ans-et-plus" title="From 2 years old" class="">From 2 years old</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/471-trois-ans-et-plus" title="From 3 years old" class="">From 3 years old</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/472-quatre-ans-et-plus" title="From 4 years old" class="">From 4 years old</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/473-cinq-ans-et-plus" title="From 5 years old" class="">From 5 years old</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/474-six-ans-et-plus" title="From 6 years old" class="">From 6 years old</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/476-sept-ans-et-plus" title="From 7 years old" class="">From 7 years old</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/477-huit-ans-et-plus" title="From 8 years old" class="">From 8 years old</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/478-neuf-ans-et-plus" title="From 9 years old" class="">From 9 years old</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_33">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/awards" title="The awarded games" class="">The awarded games</a></span></span> <ul class="adtm_elements adtm_elements_33">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/awards/3-as-d-or" title="L'as d'or" class="">L'as d'or</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/awards/5-spiel-des-jahres" title="The Spiel des Jahres" class="">The Spiel des Jahres</a></span></li>
-	</ul>
-	</div>
+	<div class="adtm_column adtm_column_256">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14503-party-games" title="Party games" class="">Party games</a></span></span> </div>
+	<div class="adtm_column adtm_column_257">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14504-family-games" title="Family games" class="">Family games</a></span></span> </div>
+	
+	<div class="adtm_column adtm_column_258">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14505-expert-games" title="Expert games" class="">Expert games</a></span></span> </div>
+	<div class="adtm_column adtm_column_259">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14506-cooperative-games" title="Cooperative games" class="">Cooperative games</a></span></span> </div>
+	<div class="adtm_column adtm_column_260">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14507-escape-games" title="Escape games" class="">Escape games</a></span></span> </div>
+	<div class="adtm_column adtm_column_261">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14508-two-player-games" title="Two-player games" class="">Two-player games</a></span></span>  </div>
+	<div class="adtm_column adtm_column_262">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14509-single-player-games" title="Single-player games" class="">Single-player games</a></span></span> </div>
+	<div class="adtm_column adtm_column_263">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14524-english-games-others-languages" title="English games &amp; others languages" class="">English games &amp; others languages</a></span></span> </div>
+	<div class="adtm_column adtm_column_248">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_20">
 	<div class="adtm_column_wrap advtm_column_wrap_20">
-	 <div class="adtm_column adtm_column_32">
+	<div class="adtm_column adtm_column_32">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/161-par-editeurs" title="By Publishers" class="">By Publishers</a></span></span> <ul class="adtm_elements adtm_elements_32">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1250-0-9---a---b---c" title="0-9 , A , B , C" class="">0-9 , A , B , C</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1251-d---e---f" title="D , E , F" class="">D , E , F</a></span></li>
@@ -4903,59 +5299,71 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1253-j---k---l" title="J , K , L" class="">J , K , L</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1254-m---n---o" title="M , N , O" class="">M , N , O</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1255-p---q---r" title="P , Q , R" class="">P , Q , R</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1256-s---t---u" title="S , T , U" class="">S , T , U</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1257-v---w---x---y---z" title="V , W , X , Y , Z" class="">V , W , X , Y , Z</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1256-s---t---u" title="S , T , U" class="">S , T , U</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1257-v---w---x---y---z" title="V , W , X , Y , Z" class="">V , W , X , Y , Z</a></span></li>
 	</ul>
 	</div>
-	<div class="adtm_column adtm_column_195">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11087-game-book" title="Game Book" class="">Game Book</a></span></span> </div>
-	<div class="adtm_column adtm_column_213">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12141-game-literature-and-artbook" title="Game Literature and Artbook" class="">Game Literature and Artbook</a></span></span> </div>
-	<div class="adtm_column adtm_column_29">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/203-presse" title="Press" class="">Press</a></span></span> <ul class="adtm_elements adtm_elements_29">
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11088-plato" title="Plato" class="">Plato</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11089-ravage" title="Ravage" class="">Ravage</a></span></li>
+	<div class="adtm_column adtm_column_33">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/awards" title="The awarded games" class="">The awarded games</a></span></span> <ul class="adtm_elements adtm_elements_33">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/awards/3-as-d-or" title="L'as d'or" class="">L'as d'or</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/awards/5-spiel-des-jahres" title="The Spiel des Jahres" class="">The Spiel des Jahres</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/awards/6-tric-trac-d-or" title="The Tric Trac d'Or" class="">The Tric Trac d'Or</a></span></li>
 	</ul>
-	</div>
+	 </div>
+	<div class="adtm_column adtm_column_34">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9115-little-selection-from-the-philiboyz-amp-girlz" title="Little selection from the Philiboyz &amp; Girlz" class="">Little selection from the Philiboyz &amp; Girlz</a></span></span> </div>
+	<div class="adtm_column adtm_column_78">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="/en/reviews/2-bloggers" title="Les Blogueurs" class="">Les Blogueurs</a></span></span> </div>
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_24">
 	<div class="adtm_column_wrap advtm_column_wrap_24">
-	<div class="adtm_column adtm_column_34">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9115-ptite-selection-des-philiboyz" title="Little selection from the Philiboyz" class="">Little selection from the Philiboyz</a></span></span> <ul class="adtm_elements adtm_elements_34">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9549-pour-jouer-avec-les-m" title="to play with the kids" class="">to play with the kids</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9550-pour-jouer-en-famille" title="to play with family" class="">to play with family</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9551-pour-jouer-entre-amis" title="to play with friends" class="">to play with friends</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9552-pour-s-initier-aux-jeux-modernes" title="to learn about the modern games" class="">to learn about the modern games</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9553-pour-les-joueurs-experts" title="for expert players" class="">for expert players</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9554-pour-jouer-a-deux" title="to play in pairs" class="">to play in pairs</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9555-pour-jouer-a-l-apero" title="to play at the aperitif" class="">to play at the aperitif</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9556-pour-un-bon-moment-de-rigolade" title="for a great time of fun" class="">for a great time of fun</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_78">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="/en/reviews/2-blogueurs" title="Les Blogueurs" class="">Les Blogueurs</a></span></span> </div>
-	<div class="adtm_column adtm_column_28">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/214-occasions" title="Damaged" class="">Damaged</a></span></span> </div>
+	<div class="adtm_column adtm_column_264">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8739-blue-orange" title="Blue Orange" class="">Blue Orange</a></span></span> </div>
+	
+	<div class="adtm_column adtm_column_265">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/208-cocktail-games" title="Cocktail Games" class="">Cocktail Games</a></span></span> </div>
+	<div class="adtm_column adtm_column_266">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/169-days-of-wonder" title="Days of Wonder" class="">Days of Wonder</a></span></span> </div>
+	<div class="adtm_column adtm_column_267">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/64-fantasy-flight-games" title="Fantasy Flight Games" class="">Fantasy Flight Games</a></span></span> </div>
+	<div class="adtm_column adtm_column_268">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/66-gigamic" title="Gigamic" class="">Gigamic</a></span></span> </div>
+	<div class="adtm_column adtm_column_269">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/930-iello" title="Iello" class="">Iello</a></span></span> </div>
+	<div class="adtm_column adtm_column_270">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/638-matagot" title="Matagot" class="">Matagot</a></span></span> </div>
+	<div class="adtm_column adtm_column_271">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/79-ravensburger" title="Ravensburger" class="">Ravensburger</a></span></span> </div>
+	<div class="adtm_column adtm_column_272">
+	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/633-repos-productions" title="Repos Productions" class="">Repos Productions</a></span></span> </div>
+	<div class="adtm_column adtm_column_273">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8886-space-cowboys" title="Space Cowboys" class="">Space Cowboys</a></span></span> </div>
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_37">
 	<div class="adtm_column_wrap advtm_column_wrap_37">
+	<div class="adtm_column adtm_column_274">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/content/58-big-selections" title="Big S&eacute;lections" class="">Big S&eacute;lections</a></span></span> </div>
+	<div class="adtm_column adtm_column_275">
+	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/content/59-les-jeux-a-licence" title="Licensed Games" class="">Licensed Games</a></span></span> </div>
 	<div class="adtm_column adtm_column_30">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1047-quelques-gammes" title="A Few Ranges" class="">A Few Ranges</a></span></span> <ul class="adtm_elements adtm_elements_30">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8803-7-wonders" title="7 Wonders" class="">7 Wonders</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1275-ticket-to-ride" title="Ticket to ride" class="">Ticket to ride</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1268-carcassonne" title="Carcassonne" class="">Carcassonne</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1268-carcassonne" title="Carcassonne" class="">Carcassonne</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1267-catan" title="Catan" class="">Catan</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8801-dixit" title="Dixit" class="">Dixit</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1271-dominion" title="Dominion" class="">Dominion</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10868-eldritch-horror" title="Eldritch Horror" class="">Eldritch Horror</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13848-marvel-champions" title="Marvel Champions" class="">Marvel Champions</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1269-munchkin" title="Munchkin" class="">Munchkin</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10887-star-wars-assaut-sur-l-empire" title="Star Wars : Assaut sur l'Empire" class="">Star Wars : Assaut sur l'Empire</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13849-pandemic" title="Pandemic" class="">Pandemic</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13847-time-stories" title="Time Stories" class="">Time Stories</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8799-time-s-up" title="Time's Up" class="">Time's Up</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8798-timeline" title="Timeline" class="">Timeline</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10871-zombicide" title="Zombicide" class="">Zombicide</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13846-unlock" title="Unlock" class="">Unlock</a></span></li>
 	</ul>
 	</div>
+	<div class="adtm_column adtm_column_249">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13841-jargons-ludiques" title="Jargons Ludiques" class="">Jargons Ludiques</a></span></span>  </div>
 	</div>
 	</td>
 	</tr>
@@ -4964,7 +5372,7 @@ module.exports = {
 	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 	</li>
 	<li class="li-niveau1 advtm_menu_11 sub">
-	<span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10780-kids-games" title="Kids games" class=" a-niveau1"><span class="advtm_menu_span advtm_menu_span_11">Kids games</span><!--[if gte IE 7]><!--></a></span><!--<![endif]-->
+	<span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10780-kid-games" title="Kid games" class=" a-niveau1"><span class="advtm_menu_span advtm_menu_span_11">Kid games</span><!--[if gte IE 7]><!--></a></span><!--<![endif]-->
 	<!--[if lte IE 6]>
 							<table>
 								<tr>
@@ -4975,13 +5383,13 @@ module.exports = {
 	<td class="products_selections_links">
 	<ul>
 	<li>
-	<a class="best-sales hide-desktop" href="https://www.philibertnet.com/en/best-sales">Bestsellers</a><a class="best-sales hide-mobile" href="/en/s-3/best-sales/category-kids_games">Bestsellers</a> </li>
+	<span class="best-sales hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/best-sales">Bestsellers</span><span class="best-sales hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/best-sales/category-kids_games">Bestsellers</span> </li>
 	<li>
-	<a class="new-products hide-desktop" href="https://www.philibertnet.com/en/new-products">News</a><a class="new-products hide-mobile" href="/en/s-3/new-products/category-kids_games">News</a> </li>
+	<span class="new-products hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/new-products">News</span><span class="new-products hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/new-products/category-kids_games">News</span> </li>
 	<li>
-	<a class="preorders hide-desktop" href="https://www.philibertnet.com/en/578-precommandes">Preorders</a><a class="preorders hide-mobile" href="/en/578-precommandes/s-3/category-kids_games">Preorders</a> </li>
+	<span class="preorders hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes">Preorders</span><span class="preorders hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes/s-3/category-kids_games">Preorders</span> </li>
 	<li>
-	<a class="coming-soon" href="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</a>
+	<span class="coming-soon" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</span>
 	</li>
 	<li>
 	</li>
@@ -4992,14 +5400,11 @@ module.exports = {
 	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
 	Flash sales</a>
 	</li>
-	<li>
-	<a class="noel" href="https://www.philibertnet.com/en/content/21-selection-de-noel">The Christmas Selection</a>
-	</li>
 	</ul>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_86">
 	<div class="adtm_column_wrap advtm_column_wrap_86">
-	<div class="adtm_column adtm_column_240">
+	 <div class="adtm_column adtm_column_240">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
 	<div class="adtm_column adtm_column_232">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13426-boardgames" title="Boardgames" class="">Boardgames</a></span></span> <ul class="adtm_elements adtm_elements_232">
@@ -5007,7 +5412,7 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13429-cooperative-games" title="Cooperative games" class="">Cooperative games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13428-memory-games" title="Memory games" class="">Memory games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13427-observation-and-rapidity-games" title="Observation and rapidity games" class="">Observation and rapidity games</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13432-travel-games" title="Travel games" class="">Travel games</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13432-travel-games" title="Travel games" class="">Travel games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13430-timeless-classics" title="Timeless classics" class="">Timeless classics</a></span></li>
 	</ul>
 	</div>
@@ -5019,8 +5424,7 @@ module.exports = {
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
 	<div class="adtm_column adtm_column_238">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
-	
-	<div class="adtm_column adtm_column_239">
+	 <div class="adtm_column adtm_column_239">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
 	<div class="adtm_column adtm_column_201">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11049-solo-games" title="Solo Games" class="">Solo Games</a></span></span> <ul class="adtm_elements adtm_elements_201">
@@ -5029,7 +5433,7 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11051-jigsaw-puzzles" title="Jigsaw puzzles" class="">Jigsaw puzzles</a></span></li>
 	</ul>
 	</div>
-	 </div>
+	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_88">
 	<div class="adtm_column_wrap advtm_column_wrap_88">
@@ -5039,8 +5443,8 @@ module.exports = {
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13424-early-learning-games" title="Early learning games" class="">Early learning games</a></span></span> </div>
 	<div class="adtm_column adtm_column_235">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13434-building-games" title="Building games" class="">Building games</a></span></span> </div>
-	 <div class="adtm_column adtm_column_236">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11053-learn-with-fun" title="Learn with fun" class="">Learn with fun</a></span></span> <ul class="adtm_elements adtm_elements_236">
+	<div class="adtm_column adtm_column_236">
+	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11053-learn-with-fun" title="Learn with fun" class="">Learn with fun</a></span></span> <ul class="adtm_elements adtm_elements_236">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13443-numbers" title="Numbers" class="">Numbers</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13441-colors-and-shapes" title="Colors and shapes" class="">Colors and shapes</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13446-knowledge" title="Knowledge" class="">Knowledge</a></span></li>
@@ -5049,9 +5453,9 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13442-letters" title="Letters" class="">Letters</a></span></li>
 	</ul>
 	</div>
-	 </div>
+	</div>
 	</td>
-	<td class="adtm_column_wrap_td advtm_column_wrap_td_91">
+	 <td class="adtm_column_wrap_td advtm_column_wrap_td_91">
 	<div class="adtm_column_wrap advtm_column_wrap_91">
 	<div class="adtm_column adtm_column_241">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
@@ -5060,10 +5464,16 @@ module.exports = {
 	<div class="adtm_column adtm_column_243">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
 	<div class="adtm_column adtm_column_244">
-	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
 	<div class="adtm_column adtm_column_245">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
 	<div class="adtm_column adtm_column_246">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
+	<div class="adtm_column adtm_column_276">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
+	<div class="adtm_column adtm_column_277">
+	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
+	<div class="adtm_column adtm_column_278">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></span> </div>
 	</div>
 	</td>
@@ -5073,129 +5483,7 @@ module.exports = {
 	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 	</li>
 	<li class="li-niveau1 advtm_menu_5 sub">
-	<span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/119-jeux-de-cartes" title="Cards games" class=" a-niveau1"><span class="advtm_menu_span advtm_menu_span_5">Cards games</span><!--[if gte IE 7]><!--></a></span><!--<![endif]-->
-	<!--[if lte IE 6]>
-							<table>
-								<tr>
-									<td><![endif]-->
-	<div class="adtm_sub">
-	 <table class="columnWrapTable">
-	<tr>
-	<td class="products_selections_links">
-	<ul>
-	<li>
-	<a class="best-sales hide-desktop" href="https://www.philibertnet.com/en/best-sales">Bestsellers</a><a class="best-sales hide-mobile" href="/en/s-3/best-sales/category-card_games">Bestsellers</a> </li>
-	<li>
-	<a class="new-products hide-desktop" href="https://www.philibertnet.com/en/new-products">News</a><a class="new-products hide-mobile" href="/en/s-3/new-products/category-card_games">News</a> </li>
-	<li>
-	<a class="preorders hide-desktop" href="https://www.philibertnet.com/en/578-precommandes">Preorders</a><a class="preorders hide-mobile" href="/en/578-precommandes/s-3/category-card_games">Preorders</a> </li>
-	<li>
-	<a class="coming-soon" href="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</a>
-	</li>
-	<li>
-	</li>
-	<li>
-	<a class="prices-drop" href="https://www.philibertnet.com/en/content/38-special-offers">On sale</a>
-	</li>
-	<li>
-	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
-	Flash sales</a>
-	</li>
-	<li>
-	<a class="noel" href="https://www.philibertnet.com/en/content/21-selection-de-noel">The Christmas Selection</a>
-	</li>
-	</ul>
-	</td>
-	<td class="adtm_column_wrap_td advtm_column_wrap_td_38">
-	<div class="adtm_column_wrap advtm_column_wrap_38">
-	<div class="adtm_column adtm_column_56">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8444-android-netrunner" title="Android - Netrunner" class="">Android - Netrunner</a></span></span> <ul class="adtm_elements adtm_elements_56">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8564-android-netrunner-fr" title="Android Netrunner - FR" class="">Android Netrunner - FR</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8565-android-netrunner-en" title="Android - Netrunner EN" class="">Android - Netrunner EN</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_59">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12031-cowboy-bebop-ccg" title="Cowboy Bebop CCG" class="">Cowboy Bebop CCG</a></span></span> </div>
-	<div class="adtm_column adtm_column_210">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12042-dragon-ball" title="Dragon Ball" class="">Dragon Ball</a></span></span> </div>
-	<div class="adtm_column adtm_column_224">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12547-keyforge" title="Keyforge" class="">Keyforge</a></span></span> <ul class="adtm_elements adtm_elements_224">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13626-keyforge-fr" title="Keyforge - FR" class="">Keyforge - FR</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13627-keyforge-en" title="Keyforge - EN" class="">Keyforge - EN</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_212">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11005-legende-des-cinq-anneaux" title="L&eacute;gende des Cinq Anneaux" class="">L&eacute;gende des Cinq Anneaux</a></span></span> </div>
-	<div class="adtm_column adtm_column_62">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10149-horreur-a-arkham-jce" title="Arkham Horror LCG" class="">Arkham Horror LCG</a></span></span> <ul class="adtm_elements adtm_elements_62">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10150-horreur-a-arkham-jce" title="Horreur &agrave; Arkham JCE" class="">Horreur &agrave; Arkham JCE</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10151-arkham-horror-lcg" title="Arkham horror LCG" class="">Arkham horror LCG</a></span></li>
-	</ul>
-	</div>
-	</div>
-	</td>
-	<td class="adtm_column_wrap_td advtm_column_wrap_td_43">
-	<div class="adtm_column_wrap advtm_column_wrap_43">
-	<div class="adtm_column adtm_column_63">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/120-magic-assemblee" title="Magic The Gathering" class="">Magic The Gathering</a></span></span> <ul class="adtm_elements adtm_elements_63">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10284-magic-french" title="Magic - French" class="">Magic - French</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10289-magic-english" title="Magic - English" class="">Magic - English</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_211">
-	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10893-malkyrs-les-arenes-de-l-eternite" title="Malkyrs - Les Ar&egrave;nes de l'Eternit&eacute;" class="">Malkyrs - Les Ar&egrave;nes de l'Eternit&eacute;</a></span></span> </div>
-	<div class="adtm_column adtm_column_230">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13195-naruto-boruto-card-game" title="Naruto Boruto: Card Game" class="">Naruto Boruto: Card Game</a></span></span> </div>
-	<div class="adtm_column adtm_column_64">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8765-pathfinder-eveil-du-seigneur-des-runes-jce" title="Pathfinder - Adventure Card Game" class="">Pathfinder - Adventure Card Game</a></span></span> </div>
-	<div class="adtm_column adtm_column_65">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/212-pokemon" title="Pokemon" class="">Pokemon</a></span></span> <ul class="adtm_elements adtm_elements_65">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10296-pokemon-french" title="Pokemon - French" class="">Pokemon - French</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10297-pokemon-english" title="Pok&eacute;mon - English" class="">Pok&eacute;mon - English</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_66">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1224-seigneur-des-anneaux-jce" title="Lords Of The Rings LCG" class="">Lords Of The Rings LCG</a></span></span> <ul class="adtm_elements adtm_elements_66">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1279-le-seigneur-des-anneaux-jce" title="Le Seigneur des Anneaux JCE" class="">Le Seigneur des Anneaux JCE</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1278-the-lord-of-the-rings-lcg" title="The Lord of the Rings - LCG" class="">The Lord of the Rings - LCG</a></span></li>
-	</ul>
-	</div>
-	 </div>
-	</td>
-	<td class="adtm_column_wrap_td advtm_column_wrap_td_47">
-	<div class="adtm_column_wrap advtm_column_wrap_47">
-	<div class="adtm_column adtm_column_67">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8425-star-wars-jce" title="Star Wars LCG" class="">Star Wars LCG</a></span></span> <ul class="adtm_elements adtm_elements_67">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8907-star-wars-jce" title="Star Wars JCE" class="">Star Wars JCE</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8908-star-wars-lcg" title="Star Wars LCG" class="">Star Wars LCG</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_68">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/511-game-of-thrones-the-card-game" title="Game of Thrones - The Card Game" class="">Game of Thrones - The Card Game</a></span></span> <ul class="adtm_elements adtm_elements_68">
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10309-le-trone-de-fer-jce" title="Le Tr&ocirc;ne de Fer JCE" class="">Le Tr&ocirc;ne de Fer JCE</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1236-game-of-thrones-cg" title="Game of Thrones CG" class="">Game of Thrones CG</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_69">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12518-warhammer-age-of-sigmar-champions" title="Warhammer Age of Sigmar : Champions" class="">Warhammer Age of Sigmar : Champions</a></span></span> </div>
-	<div class="adtm_column adtm_column_70">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/216-yu-gi-oh" title="Yu-Gi-Oh" class="">Yu-Gi-Oh</a></span></span> <ul class="adtm_elements adtm_elements_70">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9057-boosters-starters-packs-speciaux" title="Boosters" class="">Boosters</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10302-decks" title="Decks" class="">Decks</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10303-special" title="Special" class="">Special</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_58">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10283-others" title="Others" class="">Others</a></span></span> </div>
-	</div>
-	</td>
-	</tr>
-	</table>
-	</div>
-	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
-	</li>
-	<li class="li-niveau1 advtm_menu_8 sub">
-	<span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/392-role-playing-games" title="Role-playing games" class=" a-niveau1"><span class="advtm_menu_span advtm_menu_span_8">Role-playing games</span><!--[if gte IE 7]><!--></a></span><!--<![endif]-->
+	<span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/119-card-games" title="Card games" class=" a-niveau1"><span class="advtm_menu_span advtm_menu_span_5">Card games</span><!--[if gte IE 7]><!--></a></span><!--<![endif]-->
 	<!--[if lte IE 6]>
 							<table>
 								<tr>
@@ -5206,13 +5494,112 @@ module.exports = {
 	<td class="products_selections_links">
 	<ul>
 	<li>
-	<a class="best-sales hide-desktop" href="https://www.philibertnet.com/en/best-sales">Bestsellers</a><a class="best-sales hide-mobile" href="/en/s-3/best-sales/category-role_playing_games">Bestsellers</a> </li>
+	<span class="best-sales hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/best-sales">Bestsellers</span><span class="best-sales hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/best-sales/category-card_games">Bestsellers</span> </li>
 	<li>
-	<a class="new-products hide-desktop" href="https://www.philibertnet.com/en/new-products">News</a><a class="new-products hide-mobile" href="/en/s-3/new-products/category-role_playing_games">News</a> </li>
+	<span class="new-products hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/new-products">News</span><span class="new-products hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/new-products/category-card_games">News</span> </li>
 	<li>
-	<a class="preorders hide-desktop" href="https://www.philibertnet.com/en/578-precommandes">Preorders</a><a class="preorders hide-mobile" href="/en/578-precommandes/s-3/category-role_playing_games">Preorders</a> </li>
+	<span class="preorders hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes">Preorders</span><span class="preorders hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes/s-3/category-card_games">Preorders</span> </li>
 	<li>
-	<a class="coming-soon" href="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</a>
+	<span class="coming-soon" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</span>
+	</li>
+	<li>
+	</li>
+	<li>
+	<a class="prices-drop" href="https://www.philibertnet.com/en/content/38-special-offers">On sale</a>
+	</li>
+	<li>
+	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
+	Flash sales</a>
+	</li>
+	</ul>
+	</td>
+	<td class="adtm_column_wrap_td advtm_column_wrap_td_38">
+	<div class="adtm_column_wrap advtm_column_wrap_38">
+	<div class="adtm_column adtm_column_59">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13954-clash-of-deck" title="Clash of Deck" class="">Clash of Deck</a></span></span> </div>
+	<div class="adtm_column adtm_column_62">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10149-horreur-a-arkham-jce" title="Arkham Horror LCG" class="">Arkham Horror LCG</a></span></span> <ul class="adtm_elements adtm_elements_62">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10150-horreur-a-arkham-jce" title="Horreur &agrave; Arkham JCE" class="">Horreur &agrave; Arkham JCE</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10151-arkham-horror-lcg" title="Arkham horror LCG" class="">Arkham horror LCG</a></span></li>
+	</ul>
+	</div>
+	<div class="adtm_column adtm_column_255">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13630-invictus" title="Invictus" class="">Invictus</a></span></span> </div>
+	<div class="adtm_column adtm_column_224">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12547-keyforge" title="Keyforge" class="">Keyforge</a></span></span> <ul class="adtm_elements adtm_elements_224">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13626-keyforge-fr" title="Keyforge - FR" class="">Keyforge - FR</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13627-keyforge-en" title="Keyforge - EN" class="">Keyforge - EN</a></span></li>
+	</ul>
+	</div>
+	
+	<div class="adtm_column adtm_column_212">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11005-legende-des-cinq-anneaux" title="L&eacute;gende des Cinq Anneaux" class="">L&eacute;gende des Cinq Anneaux</a></span></span> </div>
+	</div>
+	</td>
+	<td class="adtm_column_wrap_td advtm_column_wrap_td_43">
+	<div class="adtm_column_wrap advtm_column_wrap_43">
+	<div class="adtm_column adtm_column_66">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1224-seigneur-des-anneaux-jce" title="Lords Of The Rings LCG" class="">Lords Of The Rings LCG</a></span></span> <ul class="adtm_elements adtm_elements_66">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1279-le-seigneur-des-anneaux-jce" title="Le Seigneur des Anneaux JCE" class="">Le Seigneur des Anneaux JCE</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1278-the-lord-of-the-rings-lcg" title="The Lord of the Rings - LCG" class="">The Lord of the Rings - LCG</a></span></li>
+	</ul>
+	</div>
+	<div class="adtm_column adtm_column_250">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/511-game-of-thrones-the-card-game" title="Game of Thrones - The Card Game" class="">Game of Thrones - The Card Game</a></span></span> <ul class="adtm_elements adtm_elements_250">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10309-le-trone-de-fer-jce" title="Le Tr&ocirc;ne de Fer JCE" class="">Le Tr&ocirc;ne de Fer JCE</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1236-game-of-thrones-cg" title="Game of Thrones CG" class="">Game of Thrones CG</a></span></li>
+	</ul>
+	</div>
+	<div class="adtm_column adtm_column_63">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/120-magic-assemblee" title="Magic The Gathering" class="">Magic The Gathering</a></span></span> <ul class="adtm_elements adtm_elements_63">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10284-magic-french" title="Magic - French" class="">Magic - French</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10289-magic-english" title="Magic - English" class="">Magic - English</a></span></li>
+	</ul>
+	</div>
+	</div>
+	</td>
+	<td class="adtm_column_wrap_td advtm_column_wrap_td_92">
+	<div class="adtm_column_wrap advtm_column_wrap_92">
+	<div class="adtm_column adtm_column_64">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13271-marvel-champions" title="Marvel Champions" class="">Marvel Champions</a></span></span> </div>
+	<div class="adtm_column adtm_column_65">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/212-pokemon" title="Pokemon" class="">Pokemon</a></span></span> </div>
+	 <div class="adtm_column adtm_column_251">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13302-vampire-the-eternal-struggle" title="Vampire: The Eternal Struggle" class="">Vampire: The Eternal Struggle</a></span></span> </div>
+	<div class="adtm_column adtm_column_252">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13123-vs-system-2pcg" title="VS System 2PCG" class="">VS System 2PCG</a></span></span> </div>
+	<div class="adtm_column adtm_column_254">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/216-yu-gi-oh" title="Yu-Gi-Oh" class="">Yu-Gi-Oh</a></span></span> <ul class="adtm_elements adtm_elements_254">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9057-boosters-starters-packs-speciaux" title="Boosters" class="">Boosters</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10302-decks" title="Decks" class="">Decks</a></span></li>
+	 </ul>
+	</div>
+	</div>
+	</td>
+	</tr>
+	</table>
+	</div>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="li-niveau1 advtm_menu_8 sub">
+	<span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/392-roleplaying-games" title="Roleplaying games" class=" a-niveau1"><span class="advtm_menu_span advtm_menu_span_8">Roleplaying games</span><!--[if gte IE 7]><!--></a></span><!--<![endif]-->
+	<!--[if lte IE 6]>
+							<table>
+								<tr>
+									<td><![endif]-->
+	<div class="adtm_sub">
+	<table class="columnWrapTable">
+	<tr>
+	<td class="products_selections_links">
+	<ul>
+	<li>
+	<span class="best-sales hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/best-sales">Bestsellers</span><span class="best-sales hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/best-sales/category-role_playing_games">Bestsellers</span> </li>
+	<li>
+	<span class="new-products hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/new-products">News</span><span class="new-products hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/new-products/category-role_playing_games">News</span> </li>
+	<li>
+	<span class="preorders hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes">Preorders</span><span class="preorders hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes/s-3/category-role_playing_games">Preorders</span> </li>
+	<li>
+	<span class="coming-soon" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</span>
 	</li>
 	<li>
 	<a class="damaged" href="https://www.philibertnet.com/en/538-occasions-jdr">Damaged</a>
@@ -5224,19 +5611,18 @@ module.exports = {
 	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
 	Flash sales</a>
 	</li>
-	<li>
-	<a class="noel" href="https://www.philibertnet.com/en/content/21-selection-de-noel">The Christmas Selection</a>
-	</li>
 	</ul>
 	</td>
-	<td class="adtm_column_wrap_td advtm_column_wrap_td_51">
+	 <td class="adtm_column_wrap_td advtm_column_wrap_td_51">
 	<div class="adtm_column_wrap advtm_column_wrap_51">
+	<div class="adtm_column adtm_column_77">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/987-initiation-au-jeu-de-role" title="Introduction to Rpg" class="">Introduction to Rpg</a></span></span> </div>
 	<div class="adtm_column adtm_column_71">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8963-univers" title="Setting" class="">Setting</a></span></span> <ul class="adtm_elements adtm_elements_71">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8518-antiquity-and-prehistory" title="Antiquity and Prehistory" class="">Antiquity and Prehistory</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1288-medieval-et-fantastique" title="Medieval and Fantastic" class="">Medieval and Fantastic</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1294-cloak-and-dagger" title="Cloak and Dagger" class="">Cloak and Dagger</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1295-victorien-et-contemporain" title="Victorian and Contemporary" class="">Victorian and Contemporary</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1294-cloak-and-dagger" title="Cloak and Dagger" class="">Cloak and Dagger</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1295-victorien-et-contemporain" title="Victorian and Contemporary" class="">Victorian and Contemporary</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1296-anticipation-et-cyberpunk" title="Anticipation and Cyberpunk" class="">Anticipation and Cyberpunk</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1297-futuriste-et-space-opera" title="Futurist and Space Opera" class="">Futurist and Space Opera</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/600-jdr-divers" title="Unclassifiable" class="">Unclassifiable</a></span></li>
@@ -5244,45 +5630,47 @@ module.exports = {
 	</div>
 	<div class="adtm_column adtm_column_187">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8509-livres-et-bd-dont-vous-etes-le-heros" title="Gamebooks" class="">Gamebooks</a></span></span> </div>
-	 <div class="adtm_column adtm_column_77">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/987-initiation-au-jeu-de-role" title="Introduction to Rpg" class="">Introduction to Rpg</a></span></span> </div>
-	<div class="adtm_column adtm_column_225">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13311-destockage-jdr" title="Destockage Jdr" class="">Destockage Jdr</a></span></span> </div>
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_52">
 	<div class="adtm_column_wrap advtm_column_wrap_52">
-	<div class="adtm_column adtm_column_188">
+	 <div class="adtm_column adtm_column_188">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10831-roleplaying-game-pdf-version" title="Roleplaying Game - PDF version" class="">Roleplaying Game - PDF version</a></span></span> </div>
-	 <div class="adtm_column adtm_column_186">
+	<div class="adtm_column adtm_column_186">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9453-jeu-de-role-vo" title="Roleplaying Game - Original Version" class="">Roleplaying Game - Original Version</a></span></span> <ul class="adtm_elements adtm_elements_186">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10241-7th-sea-2nd-edition" title="7th Sea 2nd Edition" class="">7th Sea 2nd Edition</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10950-adventures-in-middle-earth" title="Adventures in Middle-Earth" class="">Adventures in Middle-Earth</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13660-alien-the-roleplaying-game" title="Alien: The Roleplaying Game" class="">Alien: The Roleplaying Game</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10687-call-of-cthulhu" title="Call of Cthulhu" class="">Call of Cthulhu</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11267-conan-rpg" title="Conan" class="">Conan</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9458-dungeonsdragons" title="Dungeons&amp;Dragons" class="">Dungeons&amp;Dragons</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9984-fate-rpg" title="FATE" class="">FATE</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14634-deadlands-the-weird-west" title="Deadlands The Weird West" class="">Deadlands The Weird West</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10314-delta-green-rpg" title="Delta Green" class="">Delta Green</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9458-dungeons-dragons-5" title="Dungeons &amp; Dragons 5" class="">Dungeons &amp; Dragons 5</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12500-legend-of-the-five-rings-roleplaying" title="Legend of the Five Rings Roleplaying" class="">Legend of the Five Rings Roleplaying</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12602-vampire-the-masquerade" title="Vampire The Masquerade" class="">Vampire The Masquerade</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10945-starfinder" title="Starfinder" class="">Starfinder</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13293-pathfinder-second-edition" title="Pathfinder Second Edition" class="">Pathfinder Second Edition</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12470-runequest" title="RuneQuest" class="">RuneQuest</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12795-warhammer" title="Warhammer" class="">Warhammer</a></span></li>
 	</ul>
 	</div>
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_53">
 	<div class="adtm_column_wrap advtm_column_wrap_53">
+	<div class="adtm_column adtm_column_247">
+	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="#" title="RPG's Awards" class="adtm_unclickable">RPG's Awards</a></span></span> <ul class="adtm_elements adtm_elements_247">
+	<li><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="#" title="" class="adtm_unclickable"></a></span></li>
+	</ul>
+	</div>
 	<div class="adtm_column adtm_column_73">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8177-presse" title="Specialized Press" class="">Specialized Press</a></span></span> <ul class="adtm_elements adtm_elements_73">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8895-casus-belli" title="Casus Belli" class="">Casus Belli</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9479-jeux-de-role-magazine" title="Jeux de R&ocirc;le Magazine" class="">Jeux de R&ocirc;le Magazine</a></span></li>
 	</ul>
-	 </div>
+	</div>
 	<div class="adtm_column adtm_column_72">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/597-romans" title="Books" class="">Books</a></span></span> <ul class="adtm_elements adtm_elements_72">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/871-cthulhu" title="Cthulhu" class="">Cthulhu</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/871-cthulhu-mythos" title="Cthulhu Mythos" class="">Cthulhu Mythos</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8481-nephilim" title="Nephilim" class="">Nephilim</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1031-polaris" title="Polaris" class="">Polaris</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1170-shadowrun" title="Shadowrun" class="">Shadowrun</a></span></li>
 	</ul>
 	</div>
 	</div>
@@ -5292,7 +5680,7 @@ module.exports = {
 	 <div class="adtm_column adtm_column_76">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/538-occasions-jdr" title="Damaged" class="">Damaged</a></span></span> </div>
 	<div class="adtm_column adtm_column_74">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1298-oldies" title="Oldies" class="">Oldies</a></span></span> </div>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13747-oldies-et-destockage" title="Oldies" class="">Oldies</a></span></span> </div>
 	<div class="adtm_column adtm_column_75">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1098-pour-le-mj" title="Accessories" class="">Accessories</a></span></span> <ul class="adtm_elements adtm_elements_75">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8902-tours-et-pistes-a-des" title="Dice Tower and Dice Tray" class="">Dice Tower and Dice Tray</a></span></li>
@@ -5322,13 +5710,13 @@ module.exports = {
 	<td class="products_selections_links">
 	<ul>
 	<li>
-	<a class="best-sales hide-desktop" href="https://www.philibertnet.com/en/best-sales">Bestsellers</a><a class="best-sales hide-mobile" href="/en/s-3/best-sales/category-wargames">Bestsellers</a> </li>
+	<span class="best-sales hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/best-sales">Bestsellers</span><span class="best-sales hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/best-sales/category-wargames">Bestsellers</span> </li>
 	<li>
-	<a class="new-products hide-desktop" href="https://www.philibertnet.com/en/new-products">News</a><a class="new-products hide-mobile" href="/en/s-3/new-products/category-wargames">News</a> </li>
+	<span class="new-products hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/new-products">News</span><span class="new-products hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/new-products/category-wargames">News</span> </li>
 	<li>
-	<a class="preorders hide-desktop" href="https://www.philibertnet.com/en/578-precommandes">Preorders</a><a class="preorders hide-mobile" href="/en/578-precommandes/s-3/category-wargames">Preorders</a> </li>
+	<span class="preorders hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes">Preorders</span><span class="preorders hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes/s-3/category-wargames">Preorders</span> </li>
 	<li>
-	<a class="coming-soon" href="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</a>
+	<span class="coming-soon" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</span>
 	</li>
 	<li>
 	</li>
@@ -5339,9 +5727,6 @@ module.exports = {
 	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
 	Flash sales</a>
 	</li>
-	<li>
-	<a class="noel" href="https://www.philibertnet.com/en/content/21-selection-de-noel">The Christmas Selection</a>
-	</li>
 	</ul>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_56">
@@ -5349,8 +5734,8 @@ module.exports = {
 	<div class="adtm_column adtm_column_79">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10521-wargames-for-beginners" title="Wargames for beginners" class="">Wargames for beginners</a></span></span> </div>
 	<div class="adtm_column adtm_column_216">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12396-by-periods" title="By Periods" class="">By Periods</a></span></span> <ul class="adtm_elements adtm_elements_216">
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10496-antiquite" title="Ancient history" class="">Ancient history</a></span></li>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12396-by-periods" title="By Periods" class="">By Periods</a></span></span>  <ul class="adtm_elements adtm_elements_216">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10496-antiquite" title="Ancient history" class="">Ancient history</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10497-middle-ages" title="Middle Ages" class="">Middle Ages</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10498-renaissance" title="Renaissance" class="">Renaissance</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10499-the-age-of-reason" title="The age of reason" class="">The age of reason</a></span></li>
@@ -5358,7 +5743,7 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10501-world-war-i" title="World War I" class="">World War I</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10504-world-war-ii" title="World War II" class="">World War II</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10515-modern-war" title="Modern warfare" class="">Modern warfare</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10516-science-fiction" title="Science fiction" class="">Science fiction</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10516-science-fiction" title="Science fiction" class="">Science fiction</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10590-fantasy" title="Fantasy" class="">Fantasy</a></span></li>
 	</ul>
 	</div>
@@ -5371,7 +5756,7 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/885-academy-games" title="Academy Games" class="">Academy Games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9583-asyncron" title="Asyncron" class="">Asyncron</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/886-columbia-games" title="Columbia Games" class="">Columbia Games</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/934-dan-verssen-games" title="Dan Verssen Games" class="">Dan Verssen Games</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/934-dan-verssen-games" title="Dan Verssen Games" class="">Dan Verssen Games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/899-decision-games" title="Decision Games" class="">Decision Games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8911-devil-pig-games" title="Devil Pig Games" class="">Devil Pig Games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/884-gmt" title="GMT" class="">GMT</a></span></li>
@@ -5391,7 +5776,7 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10524-birth-of-america" title="Birth of America" class="">Birth of America</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12004-coin" title="COIN" class="">COIN</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12655-commands-colors" title="Commands &amp; Colors" class="">Commands &amp; Colors</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10523-conflict-of-heroes" title="Conflict of Heroes" class="">Conflict of Heroes</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10523-conflict-of-heroes" title="Conflict of Heroes" class="">Conflict of Heroes</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10606-field-commander" title="Field Commander" class="">Field Commander</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10704-grand-tactical-series" title="Grand Tactical Series" class="">Grand Tactical Series</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12025-heroes-system" title="Heroes System" class="">Heroes System</a></span></li>
@@ -5400,7 +5785,7 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12047-lock-n-load-tactical" title="Lock &lsquo;n Load Tactical" class="">Lock &lsquo;n Load Tactical</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10676-memoir-44" title="Memoir '44" class="">Memoir '44</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10538-panzer-grenadier" title="Panzer Grenadier" class="">Panzer Grenadier</a></span></li>
-	 </ul>
+	</ul>
 	</div>
 	</div>
 	</td>
@@ -5411,7 +5796,7 @@ module.exports = {
 	<div class="adtm_column adtm_column_219">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10518-aerial-warfare" title="Aerial warfare" class="">Aerial warfare</a></span></span> </div>
 	<div class="adtm_column adtm_column_220">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10520-solo" title="Solo" class="">Solo</a></span></span>  </div>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10520-solo" title="Solo" class="">Solo</a></span></span> </div>
 	<div class="adtm_column adtm_column_221">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10577-magazines" title="Magazines" class="">Magazines</a></span></span> <ul class="adtm_elements adtm_elements_221">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10718-against-the-odds" title="Against the Odds" class="">Against the Odds</a></span></li>
@@ -5420,7 +5805,7 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10602-paper-wars" title="Paper Wars" class="">Paper Wars</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10578-strategy-tactics" title="Strategy &amp; Tactics" class="">Strategy &amp; Tactics</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10756-world-at-war" title="World at War" class="">World at War</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10925-counterfact" title="CounterFact" class="">CounterFact</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10925-counterfact" title="CounterFact" class="">CounterFact</a></span></li>
 	</ul>
 	</div>
 	</div>
@@ -5442,13 +5827,13 @@ module.exports = {
 	<td class="products_selections_links">
 	<ul>
 	<li>
-	<a class="best-sales hide-desktop" href="https://www.philibertnet.com/en/best-sales">Bestsellers</a><a class="best-sales hide-mobile" href="/en/s-3/best-sales/category-miniatures_games">Bestsellers</a> </li>
+	<span class="best-sales hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/best-sales">Bestsellers</span><span class="best-sales hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/best-sales/category-miniatures_games">Bestsellers</span> </li>
 	<li>
-	<a class="new-products hide-desktop" href="https://www.philibertnet.com/en/new-products">News</a><a class="new-products hide-mobile" href="/en/s-3/new-products/category-miniatures_games">News</a> </li>
+	<span class="new-products hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/new-products">News</span><span class="new-products hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/new-products/category-miniatures_games">News</span> </li>
 	<li>
-	<a class="preorders hide-desktop" href="https://www.philibertnet.com/en/578-precommandes">Preorders</a><a class="preorders hide-mobile" href="/en/578-precommandes/s-3/category-miniatures_games">Preorders</a> </li>
+	<span class="preorders hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes">Preorders</span><span class="preorders hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes/s-3/category-miniatures_games">Preorders</span> </li>
 	<li>
-	<a class="coming-soon" href="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</a>
+	<span class="coming-soon" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</span>
 	</li>
 	<li>
 	<a class="damaged" href="https://www.philibertnet.com/en/10618-damaged">Damaged</a>
@@ -5460,10 +5845,6 @@ module.exports = {
 	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
 	Flash sales</a>
 	</li>
-	
-	<li>
-	<a class="noel" href="https://www.philibertnet.com/en/content/21-selection-de-noel">The Christmas Selection</a>
-	</li>
 	</ul>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_59">
@@ -5474,8 +5855,8 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10451-fantasy" title="Fantasy" class="">Fantasy</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10455-post-apocalyptic" title="Post-Apocalyptic" class="">Post-Apocalyptic</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10449-science-fiction" title="Science Fiction" class="">Science Fiction</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10453-steampunk" title="Steampunk" class="">Steampunk</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10456-others" title="Others" class="">Others</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10453-steampunk" title="Steampunk" class="">Steampunk</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10456-others" title="Others" class="">Others</a></span></li>
 	</ul>
 	</div>
 	<div class="adtm_column adtm_column_134">
@@ -5485,7 +5866,7 @@ module.exports = {
 	</ul>
 	</div>
 	<div class="adtm_column adtm_column_131">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1287-accessoires" title="Accessories" class="">Accessories</a></span></span>  <ul class="adtm_elements adtm_elements_131">
+	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1287-accessoires" title="Accessories" class="">Accessories</a></span></span> <ul class="adtm_elements adtm_elements_131">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8284-accessoires-de-jeu-" title="Gaming Accessories" class="">Gaming Accessories</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10952-sceneries" title="Sceneries" class="">Sceneries</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10963-playmats" title="Playmats" class="">Playmats</a></span></li>
@@ -5497,8 +5878,8 @@ module.exports = {
 	<div class="adtm_column_wrap advtm_column_wrap_62">
 	<div class="adtm_column adtm_column_209">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11251-historical-miniatures" title="Historical Miniatures" class="">Historical Miniatures</a></span></span> <ul class="adtm_elements adtm_elements_209">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11252-15mm-miniatures" title="15mm Miniatures" class="">15mm Miniatures</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11514-28mm-miniatures" title="28mm Miniatures" class="">28mm Miniatures</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11252-15mm-miniatures" title="15mm Miniatures" class="">15mm Miniatures</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11514-28mm-miniatures" title="28mm Miniatures" class="">28mm Miniatures</a></span></li>
 	</ul>
 	</div>
 	<div class="adtm_column adtm_column_132">
@@ -5519,24 +5900,20 @@ module.exports = {
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_60">
-	<div class="adtm_column_wrap advtm_column_wrap_60">
-	 <div class="adtm_column adtm_column_137">
+	 <div class="adtm_column_wrap advtm_column_wrap_60">
+	<div class="adtm_column adtm_column_137">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/content/36-debuter-dans-le-monde-de-la-figurine" title="Nos conseils pour d&eacute;buter" class="">Nos conseils pour d&eacute;buter</a></span></span> </div>
 	<div class="adtm_column adtm_column_130">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10546-boardgames-with-miniatures" title="Boardgames with Miniatures" class="">Boardgames with Miniatures</a></span></span> <ul class="adtm_elements adtm_elements_130">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11114-aristeia-" title="Arist&eacute;ia !" class="">Arist&eacute;ia !</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10549-arcadia-quest" title="Arcadia Quest" class="">Arcadia Quest</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10376-blood-bowl" title="Blood Bowl" class="">Blood Bowl</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10551-descent-voyages-dans-les-tenebres" title="Descent : Voyages dans les T&eacute;n&egrave;bres" class="">Descent : Voyages dans les T&eacute;n&egrave;bres</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8423-drea" title="Dreadball" class="">Dreadball</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11206-dungeon-saga" title="Dungeon Saga" class="">Dungeon Saga</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12377-gnomes-et-associes" title="Gnomes et Associ&eacute;s" class="">Gnomes et Associ&eacute;s</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11206-dungeon-saga" title="Dungeon Saga" class="">Dungeon Saga</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12152-harry-potter-miniatures-adventure-game" title="Harry Potter, Miniatures Adventure Game" class="">Harry Potter, Miniatures Adventure Game</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11207-massive-darkness" title="Massive Darkness" class="">Massive Darkness</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12560-rum-bones" title="Rum &amp; Bones" class="">Rum &amp; Bones</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10552-shadows-of-brimstone" title="Shadows of Brimstone" class="">Shadows of Brimstone</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11274-star-saga" title="Star Saga" class="">Star Saga</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10548-star-wars-assaut-sur-l-empire" title="Star Wars : Assaut sur l'Empire" class="">Star Wars : Assaut sur l'Empire</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10548-star-wars-assaut-sur-l-empire" title="Star Wars : Assaut sur l'Empire" class="">Star Wars : Assaut sur l'Empire</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10554-zombicide" title="Zombicide" class="">Zombicide</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10555-zombicide-black-plague" title="Zombicide : Black Plague" class="">Zombicide : Black Plague</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11180-warhammer-underworld-shadespire" title="Warhammer Underworld - Shadespire" class="">Warhammer Underworld - Shadespire</a></span></li>
@@ -5548,24 +5925,25 @@ module.exports = {
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_61">
 	<div class="adtm_column_wrap advtm_column_wrap_61">
-	 <div class="adtm_column adtm_column_138">
+	<div class="adtm_column adtm_column_138">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9904-age-of-sigmar" title="Age of Sigmar" class="">Age of Sigmar</a></span></span> </div>
 	<div class="adtm_column adtm_column_189">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11114-aristeia-" title="Arist&eacute;ia !" class="">Arist&eacute;ia !</a></span></span> </div>
 	<div class="adtm_column adtm_column_139">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9564-batman-miniature-game" title="Batman Miniature Game" class="">Batman Miniature Game</a></span></span> </div>
 	<div class="adtm_column adtm_column_140">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1032-eden" title="Eden" class="">Eden</a></span></span>  </div>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1032-eden" title="Eden" class="">Eden</a></span></span> </div>
 	<div class="adtm_column adtm_column_141">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12318-frostgrave-ghost-archipelago" title="Frostgrave : Ghost Archipelago" class="">Frostgrave : Ghost Archipelago</a></span></span> </div>
-	<div class="adtm_column adtm_column_142">
+	 <div class="adtm_column adtm_column_142">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1012-infinity" title="Infinity" class="">Infinity</a></span></span> </div>
 	<div class="adtm_column adtm_column_143">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1226-saga" title="Saga" class="">Saga</a></span></span> </div>
 	<div class="adtm_column adtm_column_146">
-	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8469-malifaux" title="Malifaux" class="">Malifaux</a></span></span> </div>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8469-malifaux" title="Malifaux" class="">Malifaux</a></span></span> </div>
 	<div class="adtm_column adtm_column_144">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9905-warhammer-40000" title="Warhammer 40.000" class="">Warhammer 40.000</a></span></span> </div>
+	
 	<div class="adtm_column adtm_column_145">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8383-x-wing-le-jeu-de-figurines" title="X-Wing - Miniature Game" class="">X-Wing - Miniature Game</a></span></span> </div>
 	</div>
@@ -5587,13 +5965,13 @@ module.exports = {
 	<td class="products_selections_links">
 	<ul>
 	<li>
-	<a class="best-sales hide-desktop" href="https://www.philibertnet.com/en/best-sales">Bestsellers</a><a class="best-sales hide-mobile" href="/en/s-3/best-sales/category-classic_games">Bestsellers</a> </li>
+	<span class="best-sales hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/best-sales">Bestsellers</span><span class="best-sales hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/best-sales/category-classic_games">Bestsellers</span> </li>
 	<li>
-	<a class="new-products hide-desktop" href="https://www.philibertnet.com/en/new-products">News</a><a class="new-products hide-mobile" href="/en/s-3/new-products/category-classic_games">News</a> </li>
+	<span class="new-products hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/new-products">News</span><span class="new-products hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/new-products/category-classic_games">News</span> </li>
 	<li>
-	<a class="preorders hide-desktop" href="https://www.philibertnet.com/en/578-precommandes">Preorders</a><a class="preorders hide-mobile" href="/en/578-precommandes/s-3/category-classic_games">Preorders</a> </li>
+	<span class="preorders hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes">Preorders</span><span class="preorders hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes/s-3/category-classic_games">Preorders</span> </li>
 	<li>
-	<a class="coming-soon" href="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</a>
+	<span class="coming-soon" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</span>
 	</li>
 	<li>
 	</li>
@@ -5603,9 +5981,6 @@ module.exports = {
 	<li>
 	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
 	Flash sales</a>
-	</li>
-	<li>
-	<a class="noel" href="https://www.philibertnet.com/en/content/21-selection-de-noel">The Christmas Selection</a>
 	</li>
 	</ul>
 	</td>
@@ -5624,10 +5999,10 @@ module.exports = {
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12703-jeux-classiques" title="Jeux Classiques" class="">Jeux Classiques</a></span></span> <ul class="adtm_elements adtm_elements_226">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12704-jeux-traditionnels" title="Jeux Traditionnels" class="">Jeux Traditionnels</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12951-jeux-antiques-et-medievaux" title="Jeux Antiques et M&eacute;di&eacute;vaux" class="">Jeux Antiques et M&eacute;di&eacute;vaux</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12952-jeux-de-loto" title="Jeux de Loto" class="">Jeux de Loto</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12952-jeux-de-loto" title="Jeux de Loto" class="">Jeux de Loto</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12953-jeux-abstraits" title="Jeux Abstraits" class="">Jeux Abstraits</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12954-jeux-d-agilites" title="Jeux d'Agilit&eacute;s" class="">Jeux d'Agilit&eacute;s</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12958-jeux-de-voyage" title="Jeux de Voyage" class="">Jeux de Voyage</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12958-jeux-de-voyage" title="Jeux de Voyage" class="">Jeux de Voyage</a></span></li>
 	</ul>
 	</div>
 	<div class="adtm_column adtm_column_229">
@@ -5636,7 +6011,6 @@ module.exports = {
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_71">
 	<div class="adtm_column_wrap advtm_column_wrap_71">
-	
 	<div class="adtm_column adtm_column_228">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12687-casino-poker-cartes-des-magie" title="Casino, Poker, Cartes, D&eacute;s, Magie" class="">Casino, Poker, Cartes, D&eacute;s, Magie</a></span></span> <ul class="adtm_elements adtm_elements_228">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12712-casino" title="Casino" class="">Casino</a></span></li>
@@ -5646,14 +6020,14 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12717-tapis" title="Tapis" class="">Tapis</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12718-magie" title="Magie" class="">Magie</a></span></li>
 	</ul>
-	 </div>
+	</div>
 	<div class="adtm_column adtm_column_181">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/192-jeux-en-bois" title="Wooden Games" class="">Wooden Games</a></span></span> </div>
-	<div class="adtm_column adtm_column_183">
+	 <div class="adtm_column adtm_column_183">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1332-puzzles" title="Jigsaw Puzzles" class="">Jigsaw Puzzles</a></span></span> <ul class="adtm_elements adtm_elements_183">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/576-accessoires" title="Accessories" class="">Accessories</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1333-puzzles-bois" title="Wooden Jigsaw Puzzles" class="">Wooden Jigsaw Puzzles</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1334-puzzle-traditionnels" title="Paper Jigsaw Puzzles" class="">Paper Jigsaw Puzzles</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1334-cardboard-jigsaw-puzzles" title="Cardboard Jigsaw Puzzles" class="">Cardboard Jigsaw Puzzles</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8137-puzzles-pour-enfants" title="Kids Puzzles" class="">Kids Puzzles</a></span></li>
 	</ul>
 	</div>
@@ -5661,17 +6035,17 @@ module.exports = {
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_73">
 	<div class="adtm_column_wrap advtm_column_wrap_73">
-	<div class="adtm_column adtm_column_149">
+	 <div class="adtm_column adtm_column_149">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1338-jeux-du-monde" title="Around the World" class="">Around the World</a></span></span> <ul class="adtm_elements adtm_elements_149">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1314-jeux-asie" title="Traditionnal Asian Games" class="">Traditionnal Asian Games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11082-african-games" title="African Games" class="">African Games</a></span></li>
 	</ul>
 	</div>
 	<div class="adtm_column adtm_column_154">
-	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/182-jeux-echecs" title="Chess Games" class="">Chess Games</a></span></span> <ul class="adtm_elements adtm_elements_154">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/182-jeux-echecs" title="Chess Games" class="">Chess Games</a></span></span> <ul class="adtm_elements adtm_elements_154">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1303-ensembles" title="Sets" class="">Sets</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1302-pieces" title="Pieces" class="">Pieces</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1301-plateaux" title="Boards" class="">Boards</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1301-plateaux" title="Boards" class="">Boards</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1305-pendules" title="Clocks" class="">Clocks</a></span></li>
 	</ul>
 	</div>
@@ -5683,16 +6057,17 @@ module.exports = {
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8195-jeux-d-adresse" title="Dexterity Games" class="">Dexterity Games</a></span></span> <ul class="adtm_elements adtm_elements_148">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8496-bilboquets" title="Bilboquets" class="">Bilboquets</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8702-billard" title="Pool" class="">Pool</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8312-carrom" title="Carrom" class="">Carrom</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8312-carrom" title="Carrom" class="">Carrom</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8503-cibles-flechettes" title="Dart Games" class="">Dart Games</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8313-crokinole" title="Crokinole" class="">Crokinole</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9116-moelkky" title="M&ouml;lkky" class="">M&ouml;lkky</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8314-palets-bretons" title="Shuffleboard" class="">Shuffleboard</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8385-jeux-de-quilles" title="Skittle games" class="">Skittle games</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12959-construction" title="Construction" class="">Construction</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/12959-construction" title="Construction" class="">Construction</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8261-weykick" title="Weykick" class="">Weykick</a></span></li>
 	</ul>
 	</div>
+	
 	<div class="adtm_column adtm_column_194">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8686-jeux-de-voyages" title="Travel Games" class="">Travel Games</a></span></span> </div>
 	</div>
@@ -5714,25 +6089,23 @@ module.exports = {
 	<td class="products_selections_links">
 	<ul>
 	<li>
-	<a class="best-sales hide-desktop" href="https://www.philibertnet.com/en/best-sales">Bestsellers</a><a class="best-sales hide-mobile" href="/en/s-3/best-sales/category-accessories">Bestsellers</a> </li>
+	<span class="best-sales hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/best-sales">Bestsellers</span><span class="best-sales hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/best-sales/category-accessories">Bestsellers</span> </li>
 	<li>
-	<a class="new-products hide-desktop" href="https://www.philibertnet.com/en/new-products">News</a><a class="new-products hide-mobile" href="/en/s-3/new-products/category-accessories">News</a> </li>
+	<span class="new-products hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/new-products">News</span><span class="new-products hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/s-3/new-products/category-accessories">News</span> </li>
 	<li>
-	<a class="preorders hide-desktop" href="https://www.philibertnet.com/en/578-precommandes">Preorders</a><a class="preorders hide-mobile" href="/en/578-precommandes/s-3/category-accessories">Preorders</a> </li>
+	<span class="preorders hide-desktop" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes">Preorders</span><span class="preorders hide-mobile" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes/s-3/category-accessories">Preorders</span> </li>
 	<li>
-	<a class="coming-soon" href="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</a>
+	<span class="coming-soon" role="button" tabindex="0" data-siloing="https://www.philibertnet.com/en/578-precommandes?coming_soon">Coming soon</span>
 	</li>
 	<li>
 	</li>
 	<li>
+	
 	<a class="prices-drop" href="https://www.philibertnet.com/en/content/38-special-offers">On sale</a>
 	</li>
 	<li>
 	<a class="flash-sales" href="https://www.philibertnet.com/en/flash-sales">
 	Flash sales</a>
-	</li>
-	<li>
-	<a class="noel" href="https://www.philibertnet.com/en/content/21-selection-de-noel">The Christmas Selection</a>
 	</li>
 	</ul>
 	</td>
@@ -5742,46 +6115,30 @@ module.exports = {
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1181-des" title="Dice" class="">Dice</a></span></span> <ul class="adtm_elements adtm_elements_160">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8572-d6-dice" title="D6 Dice" class="">D6 Dice</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1107-des-originaux" title="Original Dice" class="">Original Dice</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1160-des-jeux-de-societe" title="Boardgame Dice" class="">Boardgame Dice</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1160-des-jeux-de-societe" title="Boardgame Dice" class="">Boardgame Dice</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1093-set-de-des-jdr" title="Rpg Dice Set" class="">Rpg Dice Set</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1105-set-de-36-des-6" title="36 D6 Dice Set" class="">36 D6 Dice Set</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8309-set-de-10-des-10-faces-" title="10 D10 Dice Set" class="">10 D10 Dice Set</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1105-set-de-36-des-6" title="36 D6 Dice Set" class="">36 D6 Dice Set</a></span></li>
 	</ul>
 	</div>
 	<div class="adtm_column adtm_column_164">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1179-pions" title="Pawns" class="">Pawns</a></span></span> <ul class="adtm_elements adtm_elements_164">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8465-animaux" title="Animals" class="">Animals</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8453-batiments" title="Buildings" class="">Buildings</a></span></li>
-	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8445-meeples" title="Meeples" class="">Meeples</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8458-transports" title="Vehicles" class="">Vehicles</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11446-twinples" title="Twinples" class="">Twinples</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8927-pieces-et-monnaie" title="Coins" class="">Coins</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8437-pions-classiques" title="Classic Pawns" class="">Classic Pawns</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8445-meeples" title="Meeples" class="">Meeples</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/13065-metal-coins" title="Metal Coins" class="">Metal Coins</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8438-cubes-et-octogones" title="Geometric Pawns" class="">Geometric Pawns</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10013-specific-tokens" title="Specific tokens" class="">Specific tokens</a></span></li>
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10014-resources-pawns" title="Resources Tokens" class="">Resources Tokens</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8458-transports" title="Vehicles" class="">Vehicles</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/11446-twinples" title="Twinples" class="">Twinples</a></span></li>
 	</ul>
-	 </div>
+	</div>
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_81">
 	<div class="adtm_column_wrap advtm_column_wrap_81">
-	<div class="adtm_column adtm_column_169">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1192-protections-jeux-de-societe" title="Board Game Sleeves" class="">Board Game Sleeves</a></span></span> <ul class="adtm_elements adtm_elements_169">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9024-pochettes-arcane-tinmen" title="Arcane Tinmen Sleeves" class="">Arcane Tinmen Sleeves</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1138-pochettes-fantasy-flight" title="Fantasy Flight Sleeves" class="">Fantasy Flight Sleeves</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1137-pochettes-mayday" title="Mayday Sleeves" class="">Mayday Sleeves</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9025-pochettes-ultimate-guard" title="Ultimate Guard Sleeves" class="">Ultimate Guard Sleeves</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1237-pochettes-ultra-pro" title="Ultra Pro Sleeves" class="">Ultra Pro Sleeves</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8436-pochettes-divers" title="Others" class="">Others</a></span></li>
-	</ul>
-	</div>
-	<div class="adtm_column adtm_column_168">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/688-protections-jeux-de-cartes" title="Card Sleeves" class="">Card Sleeves</a></span></span> <ul class="adtm_elements adtm_elements_168">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8142-protections-jeux-de-cartes-formas-magic" title="Card Sleeves &quot;Magic&quot; Format" class="">Card Sleeves &quot;Magic&quot; Format</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8143-protections-jeux-de-cartes-format-japannais" title="Card Sleeves Japonese Format" class="">Card Sleeves Japonese Format</a></span></li>
-	</ul>
-	</div>
 	<div class="adtm_column adtm_column_165">
 	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1344-playmat" title="Playmat" class="">Playmat</a></span></span> <ul class="adtm_elements adtm_elements_165">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10560-for-card-game" title="For Card Game" class="">For Card Game</a></span></li>
@@ -5790,12 +6147,36 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10575-generic" title="Generic" class="">Generic</a></span></li>
 	</ul>
 	</div>
+	<div class="adtm_column adtm_column_168">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/688-protections-jeux-de-cartes" title="Card Sleeves" class="">Card Sleeves</a></span></span> <ul class="adtm_elements adtm_elements_168">
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8142-protections-jeux-de-cartes-formas-magic" title="Card Sleeves &quot;Magic&quot; Format" class="">Card Sleeves &quot;Magic&quot; Format</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8143-protections-jeux-de-cartes-format-japannais" title="Card Sleeves Japonese Format" class="">Card Sleeves Japonese Format</a></span></li>
+	</ul>
+	</div>
+	<div class="adtm_column adtm_column_169">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1192-protections-jeux-de-societe" title="Board Game Sleeves" class="">Board Game Sleeves</a></span></span> <ul class="adtm_elements adtm_elements_169">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9024-pochettes-arcane-tinmen" title="Arcane Tinmen Sleeves" class="">Arcane Tinmen Sleeves</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1138-pochettes-fantasy-flight" title="Fantasy Flight Sleeves" class="">Fantasy Flight Sleeves</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1137-pochettes-mayday" title="Mayday Sleeves" class="">Mayday Sleeves</a></span></li>
+	 <li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14536-sleeves-paladin" title="Sleeves Paladin" class="">Sleeves Paladin</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9025-pochettes-ultimate-guard" title="Ultimate Guard Sleeves" class="">Ultimate Guard Sleeves</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/14654-sleeves-kings" title="Sleeves Kings" class="">Sleeves Kings</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8436-pochettes-divers" title="Others" class="">Others</a></span></li>
+	</ul>
+	</div>
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_83">
 	<div class="adtm_column_wrap advtm_column_wrap_83">
 	<div class="adtm_column adtm_column_204">
-	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/689-deck-box" title="Deck Box" class="">Deck Box</a></span></span> </div>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/689-deck-box" title="Deck Box" class="">Deck Box</a></span></span> </div>
+	 <div class="adtm_column adtm_column_159">
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1130-bourse" title="Dice Bags and Dice Cups" class="">Dice Bags and Dice Cups</a></span></span> <ul class="adtm_elements adtm_elements_159">
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10665-dice-cups" title="Dice Cups" class="">Dice Cups</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10666-generic-dicebags" title="Generic Dicebags" class="">Generic Dicebags</a></span></li>
+	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10667-themed-dicebags" title="Themed Dicebags" class="">Themed Dicebags</a></span></li>
+	</ul>
+	</div>
 	<div class="adtm_column adtm_column_176">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9105-rangement-jeux-de-societe" title="Box Organizer" class="">Box Organizer</a></span></span> <ul class="adtm_elements adtm_elements_176">
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10621-box-organizer" title="Box Organizer" class="">Box Organizer</a></span></li>
@@ -5804,37 +6185,27 @@ module.exports = {
 	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10624-extra-dividers" title="Accesories" class="">Accesories</a></span></li>
 	</ul>
 	</div>
-	 <div class="adtm_column adtm_column_159">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1130-bourse" title="Dice Bags and Dice Cups" class="">Dice Bags and Dice Cups</a></span></span> <ul class="adtm_elements adtm_elements_159">
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10666-generic-dicebags" title="Generic Dicebags" class="">Generic Dicebags</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10667-themed-dicebags" title="Themed Dicebags" class="">Themed Dicebags</a></span></li>
-	<li><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10665-dice-cups" title="Dice Cups" class="">Dice Cups</a></span></li>
-	</ul>
-	</div>
-	</div>
-	</td>
-	<td class="adtm_column_wrap_td advtm_column_wrap_td_85">
-	<div class="adtm_column_wrap advtm_column_wrap_85">
 	</div>
 	</td>
 	<td class="adtm_column_wrap_td advtm_column_wrap_td_77">
 	<div class="adtm_column_wrap advtm_column_wrap_77">
-	 <div class="adtm_column adtm_column_178">
+	<div class="adtm_column adtm_column_178">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10664-blank-accessories" title="Blank Accessories" class="">Blank Accessories</a></span></span> </div>
-	<div class="adtm_column adtm_column_162">
+	 <div class="adtm_column adtm_column_162">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1163-figurines" title="Figurines" class="">Figurines</a></span></span> </div>
 	<div class="adtm_column adtm_column_175">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/9058-gabarits-et-pions" title="Template and Token" class="">Template and Token</a></span></span> </div>
 	<div class="adtm_column adtm_column_177">
-	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10172-notes-and-scores" title="Notes and scores" class="">Notes and scores</a></span></span>  </div>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/10172-notes-and-scores" title="Notes and scores" class="">Notes and scores</a></span></span> </div>
 	<div class="adtm_column adtm_column_174">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8850-pistes-et-tours-a-des" title="Dice Tray and Dice Tower" class="">Dice Tray and Dice Tower</a></span></span> </div>
+	
 	<div class="adtm_column adtm_column_166">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/8201-porte-cartes" title="Playing Card Holders" class="">Playing Card Holders</a></span></span> </div>
 	<div class="adtm_column adtm_column_167">
 	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/687-portfolio-et-classeurs" title="Portfolio and Pro Binder" class="">Portfolio and Pro Binder</a></span></span> </div>
 	<div class="adtm_column adtm_column_171">
-	 <span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1161-sabliers-et-timers" title="Timers and Hour-glass" class="">Timers and Hour-glass</a></span></span> </div>
+	<span class="column_wrap_title"><span class="advtm_menu_wrapper"><a href="https://www.philibertnet.com/en/1161-sabliers-et-timers" title="Timers and Hour-glass" class="">Timers and Hour-glass</a></span></span> </div>
 	</div>
 	</td>
 	</tr>
@@ -5853,7 +6224,7 @@ module.exports = {
 	<div id="columns">
 	
 	<div class="breadcrumb">
-	<a href="https://www.philibertnet.com/" title="Back to Home">Home</a><span class="navigation-pipe">&gt;</span><a href="https://www.philibertnet.com/en/50-jeux-de-societe" title="Board games" data-gg="">Board games</a><span class="navigation-pipe">></span><a href="https://www.philibertnet.com/en/161-par-editeurs" title="By Publishers" data-gg="">By Publishers</a><span class="navigation-pipe">></span><a href="https://www.philibertnet.com/en/1252-g---h---i" title="G , H , I" data-gg="">G , H , I</a><span class="navigation-pipe">></span><a href="https://www.philibertnet.com/en/8140-greater-than-games-llc" title="Greater Than Games LLC" data-gg="">Greater Than Games LLC</a><span class="navigation-pipe">></span>Spirit Island Core Game	</div>
+	<a href="https://www.philibertnet.com/" title="Back to Home">Home</a><span class="navigation-pipe">&gt;</span><a href="https://www.philibertnet.com/en/50-jeux-de-societe" title="Board games" data-gg="">Board games</a><span class="navigation-pipe">></span><a href="https://www.philibertnet.com/en/161-par-editeurs" title="By Publishers" data-gg="">By Publishers</a><span class="navigation-pipe">></span><a href="https://www.philibertnet.com/en/1252-g---h---i" title="G , H , I" data-gg="">G , H , I</a><span class="navigation-pipe">></span><a href="https://www.philibertnet.com/en/8467-intrafin" title="Intrafin" data-gg="">Intrafin</a><span class="navigation-pipe">></span>Spirit Island 2e édition	</div>
 	
 	
 	
@@ -5861,26 +6232,37 @@ module.exports = {
 	<div itemscope itemtype="http://schema.org/Product">
 	<div class="primary_block row">
 	<div class="pb-left-column">
-	<div id="image-block" class="clearfix">
+	<div id="image-block" class="clearfix hide-mobile">
 	<span id="view_full_size">
-	<img id="bigpic" class="lazyload" itemprop="image" data-src="https://cdn1.philibertnet.com/377832-large_default/spirit-island-core-game.jpg" alt="Spirit Island Core Game" width="372" height="372" />
+	<span class="ratio-container" style="max-width:372px">
+	<img loading="lazy" id="bigpic" itemprop="image" data-cfsrc="https://cdn3.philibertnet.com/404309-large_default/spirit-island.jpg" alt="Spirit Island" width="372" height="372" />
+	</span>
 	</span>
 	</div>
 	
 	<div id="views_block" class="clearfix ">
 	<div id="thumbs_list">
 	<ul id="thumbs_list_frame" class="owl-carousel">
-	<li id="thumbnail_377832">
-	<a href="https://cdn3.philibertnet.com/377832-thickbox_default/spirit-island-core-game.jpg" data-fancybox-group="other-views" class="fancybox shown">
-	<img class="img-responsive owl-lazy" id="thumb_377832" data-src="https://cdn3.philibertnet.com/377832-small_default/spirit-island-core-game.jpg" alt="Spirit Island Core Game 0" height="120" width="120" itemprop="image" /> </a>
+	<li id="thumbnail_404309" class="">
+	<a href="https://cdn1.philibertnet.com/404309-thickbox_default/spirit-island.jpg" data-fancybox-group="other-views" class="fancybox shown">
+	<span class="ratio-container" style="max-width: 120px;">
+	<img loading="lazy" class="img-responsive" id="thumb_404309" src="https://cdn2.philibertnet.com/404309-small_default/spirit-island.jpg" alt="Spirit Island 0" height="120" width="120" itemprop="image" />
+	</span>
+	</a>
 	</li>
-	<li id="thumbnail_377833">
-	<a href="https://cdn3.philibertnet.com/377833-thickbox_default/spirit-island-core-game.jpg" data-fancybox-group="other-views" class="fancybox">
-	<img class="img-responsive owl-lazy" id="thumb_377833" data-src="https://cdn1.philibertnet.com/377833-small_default/spirit-island-core-game.jpg" alt="Spirit Island Core Game 1" height="120" width="120" itemprop="image" /> </a>
+	<li id="thumbnail_404307" class="">
+	<a href="https://cdn2.philibertnet.com/404307-thickbox_default/spirit-island.jpg" data-fancybox-group="other-views" class="fancybox">
+	<span class="ratio-container" style="max-width: 120px;">
+	<img loading="lazy" class="img-responsive" id="thumb_404307" src="https://cdn3.philibertnet.com/404307-small_default/spirit-island.jpg" alt="Spirit Island 1" height="120" width="120" itemprop="image" />
+	</span>
+	</a>
 	</li>
-	<li id="thumbnail_377834" class="last">
-	<a href="https://cdn3.philibertnet.com/377834-thickbox_default/spirit-island-core-game.jpg" data-fancybox-group="other-views" class="fancybox">
-	<img class="img-responsive owl-lazy" id="thumb_377834" data-src="https://cdn2.philibertnet.com/377834-small_default/spirit-island-core-game.jpg" alt="Spirit Island Core Game 2" height="120" width="120" itemprop="image" /> </a>
+	<li id="thumbnail_404308" class="last">
+	<a href="https://cdn2.philibertnet.com/404308-thickbox_default/spirit-island.jpg" data-fancybox-group="other-views" class="fancybox">
+	<span class="ratio-container" style="max-width: 120px;">
+	<img loading="lazy" class="img-responsive" id="thumb_404308" src="https://cdn2.philibertnet.com/404308-small_default/spirit-island.jpg" alt="Spirit Island 2" height="120" width="120" itemprop="image" />
+	</span>
+	</a>
 	</li>
 	</ul>
 	</div>
@@ -5889,27 +6271,33 @@ module.exports = {
 	
 	
 	<p class="resetimg no-print" id="wrapResetImages" style="display: none;">
-	<a href="https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html" name="resetImages">
+	<a href="https://www.philibertnet.com/en/intrafin/64223-spirit-island-5425037740173.html" name="resetImages">
 	Display all pictures
+	</a>
+	</p>
+	<p class="text-center hide-desktop">
+	<a id="uk-light-btn--videos" href="#product-videos" class="uk-light-btn" style="display: none;">
+	<svg class="icon svg-icon_play">
+	<use xlink:href="#svg-icon_play"></use>
+	 </svg>Discover in video
 	</a>
 	</p>
 	</div>
 	<div class="pb-center-column">
-	<h1 itemprop="name" id="product_name">Spirit Island Core Game</h1>
+	<h1 itemprop="name" id="product_name">Spirit Island 2e édition</h1>
 	<p id="product_reference">
 	<label>Reference :</label>
-	<span class="editable" itemprop="sku">GTGSISLCORE-EN</span>
+	<span class="editable" itemprop="sku">INT-40173-FR</span>
 	</p>
-	<div id="short_description_block">
-	<div id="short_description_content" class="rte align_justify" itemprop="description"><p>In the most distant reaches of the world, magic still exists, embodied by spirits of the land, of the sky, and of every natural thing.<em> <br /></em></p></div>
-	<div class="buttons_bottom_block no-print"><p class="hide-desktop"><a href="#more_info_block" class="smoothscroll">More details</a></p></div>
+	<div class="labels"><span class="redprice-label">Red price</span></div>
+	<div id="_smartphone_ukooreviews_product_extra_left_column" class="block hide-tablet hide-desktop">
 	</div>
-	<ul class="illustrated_features"> <li class="langue tooltips" title="Language(s)">English </li>
+	<ul class="illustrated_features"> <li class="langue tooltips" title="Language(s)">French </li>
 	<li class="age tooltips" title="Age">
 	<span>from 13 years</span>
 	</li>
 	<li class="duree_partie tooltips" title="Playing time">
-	 <span>2 to 3h</span>
+	<span>2 to 3h</span>
 	</li>
 	<li class="nb_joueurs tooltips" title="Number of players">
 	<span>
@@ -5918,36 +6306,8 @@ module.exports = {
 	</li>
 	</ul>
 	
-	<div id="loyalty" class="align_justify">
-	<div class="star">
-	<span>
-	<svg class="icon svg-icon_star"><use xlink:href="#svg-icon_star"></use></svg>
-	<span>44</span>
-	</span>
-	</div>
-	<div class="infos">
-	<div>
-	<p>
-	By buying this product you can collect up to
-	<br />
-	<b>
-	<span id="loyalty_points">44</span> phib'z </b>
-	</p>
-	</div>
-	<div>
-	<p class="details">
-	Products <span>44</span>,
-	Total cart bonus
-	<span>0</span>, and
-	Pre-order bonus <span>0</span>
-	</p>
-	<p class="link">
-	<a href="https://www.philibertnet.com/en/content/16-loyalty-points?content_only=1" class="fancybox_iframe">How works our reward points ?</a>
-	</p>
-	</div>
-	</div>
-	</div>
-	<div id="blockukooreviews-product-extra-left" class="block">
+	<div id="_tablet_ukooreviews_product_extra_left_column" class="block hide-smartphone">
+	<div id="blockukooreviews-product-extra-left">
 	<p class="title">Playful reviews about this game</p>
 	<ul class="container">
 	<li class="ukooreviews_globale_average">
@@ -5957,68 +6317,18 @@ module.exports = {
 	<svg class="icon svg-illus_rating">
 	<use xlink:href="#svg-illus_rating-stars"></use>
 	</svg>
-	<span style="width: 98%"></span>
-	</span><span>
-	4.9/5<span class="ukooreviews-balance-rating-asterisk">*</span>
+	<span style="width: 92%"></span>
 	</span>
-	<meta itemprop="ratingValue" content="4.9" />
-	<meta itemprop="ratingCount" content="7" />
+	<span>4.6/5</span>
+	<meta itemprop="ratingValue" content="4.6" />
+	<meta itemprop="ratingCount" content="20" />
 	</div>
 	</li>
-	<li class="ukooreviews_group_2"><span><a href="#ukooreviews_group_2" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#ukooreview_link_tab').click(); $.scrollTo('#more_info_block', 1200);" data-cf-modified-9996bc0462fe4ac2e530701a-="">Bloggers</a>&nbsp;<small>(1)</small></span><div class="rating-stars"><span><svg class="icon svg-illus_rating"><use xlink:href="#svg-illus_rating-stars"></use></svg><span style="width: 100%"></span></span><span>5/5</span></div></li>
-	<li class="ukooreviews_group_0"><span><a href="#ukooreviews_group_0" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#ukooreview_link_tab').click(); $.scrollTo('#more_info_block', 1200);" data-cf-modified-9996bc0462fe4ac2e530701a-="">Customers</a>&nbsp;<small>(6)</small></span><div class="rating-stars"><span><svg class="icon svg-illus_rating"><use xlink:href="#svg-illus_rating-stars"></use></svg><span style="width: 96%"></span></span><span>4.8/5</span></div></li>
+	<li class="ukooreviews_group_2"><span><a href="#ukooreviews_group_2" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#ukooreview_link_tab').click(); $.scrollTo('#more_info_block', 1200);" data-cf-modified-3b2ae364050342e6707c608a-="">Bloggers</a>&nbsp;<small>(3)</small></span><div class="rating-stars"><span><svg class="icon svg-illus_rating"><use xlink:href="#svg-illus_rating-stars"></use></svg><span style="width: 100%"></span></span><span>5/5</span></div></li>
+	<li class="ukooreviews_group_0"><span><a href="#ukooreviews_group_0" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#ukooreview_link_tab').click(); $.scrollTo('#more_info_block', 1200);" data-cf-modified-3b2ae364050342e6707c608a-="">Customers</a>&nbsp;<small>(17)</small></span><div class="rating-stars"><span><svg class="icon svg-illus_rating"><use xlink:href="#svg-illus_rating-stars"></use></svg><span style="width: 90%"></span></span><span>4.5/5</span></div></li>
 	</ul>
 	</div>
-	<a class="fancybox_question" href="https://www.philibertnet.com/en/module/ukooformpro/form?id_form=1&product=Spirit+Island+Core+Game+%28ref.+GTGSISLCORE-EN+-+ID.53139%29&content_only=1">Ask a question about this product</a>
-	<ul id="usefull_link_block" class="clearfix no-print">
-	<li class="sendtofriend">
-	<a id="send_friend_button" href="#send_friend_form">Send by e-mail</a>
-	</li>
-	<li style="display: none;">
-	<div id="send_friend_form">
-	<h2 class="title">Send this product by e-mail</h2>
-	<div class="send_friend_form_content" id="send_friend_form_content">
-	<div id="send_friend_form_error"></div>
-	<div id="send_friend_form_success"></div>
-	<div class="form_container">
-	<p class="text">
-	<label for="friend_name">Name of recipient <sup class="required">*</sup> :</label>
-	<input id="friend_name" name="friend_name" type="text" value="" />
-	</p>
-	<p class="text">
-	<label for="friend_email">E-mail of recipient <sup class="required">*</sup> :</label>
-	<input id="friend_email" name="friend_email" type="text" value="" />
-	</p>
-	<p class="txt_required"><sup class="required">*</sup> Required fields</p>
-	<small>The data in this form will not be stored in our database.</small>
 	</div>
-	<p class="submit">
-	<input id="id_product_comment_send" name="id_product" type="hidden" value="53139" />
-	<a href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; $.fancybox.close();" class="button" data-cf-modified-9996bc0462fe4ac2e530701a-="">Cancel</a>
-	<input id="sendEmail" class="button exclusive" name="sendEmail" type="submit" value="Send" />
-	</p>
-	</div>
-	</div>
-	</li>
-	<li class="print"><a href="javascript:print();">Print</a></li> <li class="socialsharing_product list-inline no-print">
-	<ul>
-	<li class="twitter">
-	<button data-type="twitter" type="button" class="social-sharing tooltip" title="Share on Tweeter">
-	<svg class="icon svg-icon_twitter">
-	<use xlink:href="#svg-icon_twitter"></use>
-	</svg>
-	</button>
-	</li>
-	<li class="facebook">
-	<button data-type="facebook" type="button" class="social-sharing tooltip" title="Share on Facebook">
-	<svg class="icon svg-icon_facebook">
-	<use xlink:href="#svg-icon_facebook"></use>
-	</svg>
-	</button>
-	</li>
-	</ul>
-	</li>
-	</ul>
 	</div>
 	</div>
 	<div class="pb-right-column">
@@ -6027,35 +6337,33 @@ module.exports = {
 	
 	<p class="hidden">
 	<input type="hidden" name="token" value="bca22ff6b9609dad1a8de3313fc48838" />
-	<input type="hidden" name="id_product" value="53139" id="product_page_product_id" /> <input type="hidden" name="add" value="1" />
+	<input type="hidden" name="id_product" value="64223" id="product_page_product_id" /> <input type="hidden" name="add" value="1" />
 	<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
 	</p>
 	<div class="box-info-product">
 	<div class="left">
 	<div class="content_prices clearfix">
 	
-	<div class="price"><p class="our_price_display" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><link itemprop="availability" href="http://schema.org/InStock" /><span id="our_price_display" itemprop="price" content="74.95">74,95 €</span><meta itemprop="priceCurrency" content="EUR" /></p><p id="old_price" class="hidden"><span id="old_price_display"></span></p><p id="reduction_percent" style="display:none;"><span id="reduction_percent_display"></span></p><p id="reduction_amount" style="display:none"><span id="reduction_amount_display"></span></p></div>
+	<div class="price"><p class="our_price_display" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span id="our_price_display" itemprop="price" content="71.95">71,95 €</span><meta itemprop="priceCurrency" content="EUR" /></p><p id="old_price" class="hidden"><span id="old_price_display"></span></p><p id="reduction_percent" style="display:none;"><span id="reduction_percent_display"></span></p><p id="reduction_amount" style="display:none"><span id="reduction_amount_display"></span></p></div>
 	
 	<div class="clear"></div>
 	</div>
 	
 	
 	<p id="availability_statut">
-	<span id="availability_value" class="label label-success" data-instock="In stock" data-outofstock="Out of stock">
-	Available </span>
+	<span id="availability_value" class="label label-danger" data-instock="In stock" data-outofstock="Out of stock">
+	This product is no longer in stock </span>
 	</p>
 	<p class="warning_inline" id="last_quantities" style="display: none">Warning: Last items in stock!</p>
 	<p id="availability_date" style="display: none;">
 	<span id="availability_date_label">Availability date:</span>
 	<span id="availability_date_value"></span>
 	</p>
-	<p class="free-shipping">Free Shipping from 60&euro;
+	<p class="free-shipping">Shipping from 1.95&euro; - Free from 60&euro;
 	<small>(metropolitan France)</small>
 	</p>
 	</div>
 	<div class="right">
-	<div class="product_attributes">
-	</div>
 	
 	
 	<p id="minimal_quantity_wanted_p" style="display: none;">
@@ -6063,24 +6371,24 @@ module.exports = {
 	</p>
 	<div class="box-cart-bottom no-print">
 	<div>
-	<p id="quantity_wanted_p"><label>Qty</label><input type="text" name="qty" id="quantity_wanted" class="text" value="1" /><span class="product_quantity"><a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up"><span><i class="icon-plus"></i></span> </a><a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down"><span><i class="icon-minus"></i></span> </a></span></p><p id="add_to_cart" class="buttons_bottom_block no-print"><button type="submit" name="Submit" class="exclusive"><span>Add to cart</span></button></p>
+	<p id="quantity_wanted_p" style="display: none;"><label>Qty</label><input type="text" name="qty" id="quantity_wanted" class="text" value="1" /><span class="product_quantity"><a href="#" data-field-qty="qty" class="btn btn-default button-plus product_quantity_up"><span><i class="icon-plus"></i></span> </a><a href="#" data-field-qty="qty" class="btn btn-default button-minus product_quantity_down"><span><i class="icon-minus"></i></span> </a></span></p><p id="add_to_cart" class="buttons_bottom_block no-print" style="display: none;"><button type="submit" name="Submit" class="exclusive"><span>Add to cart</span></button></p>
 	</div>
 	</div>
 	
 	
-	<div id="oosHook" style="display: none;">
+	<div id="oosHook">
 	
 	<p id="mailalert">
-	<input type="text" id="oos_customer_email" name="customer_email" size="20" value="your@email.com" class="mailalerts_oos_email" onclick="if (!window.__cfRLUnblockHandlers) return false; clearText();" data-cf-modified-9996bc0462fe4ac2e530701a-="" />
-	<a href="#" title="Notify me when available" onclick="if (!window.__cfRLUnblockHandlers) return false; return addNotification();" id="mailalert_link" rel="nofollow" data-cf-modified-9996bc0462fe4ac2e530701a-="">Notify me when available</a>
+	<input type="text" id="oos_customer_email" name="customer_email" size="20" value="your@email.com" class="mailalerts_oos_email" onclick="if (!window.__cfRLUnblockHandlers) return false; clearText();" data-cf-modified-3b2ae364050342e6707c608a-="" />
+	<a href="#" title="Notify me when available" onclick="if (!window.__cfRLUnblockHandlers) return false; return addNotification();" id="mailalert_link" rel="nofollow" data-cf-modified-3b2ae364050342e6707c608a-="">Notify me when available</a>
 	<span id="oos_customer_email_result" style="display:none;"></span>
 	</p>
 	
 	</div>
 	
-	<p><b>Add to a list:</b></p>
+	<p class="hide-mobile"><b>Add to a list:</b></p>
 	<div id="blockwishlist_add_block" class="no-print">
-	<p><a id="blockwishlist_button" onclick="if (!window.__cfRLUnblockHandlers) return false; openWishListModal(53139, $('#idCombination').val(), document.getElementById('quantity_wanted').value)" class="btn" href="javascript:;" data-cf-modified-9996bc0462fe4ac2e530701a-=""><svg class="icon svg-icon_wishlist"><use xlink:href="#svg-icon_wishlist"></use></svg><span>Wishlists</span></a></p>
+	<p><a id="blockwishlist_button" onclick="if (!window.__cfRLUnblockHandlers) return false; openWishListModal(64223, $('#idCombination').val(), document.getElementById('quantity_wanted').value)" class="btn" href="javascript:;" data-cf-modified-3b2ae364050342e6707c608a-=""><svg class="icon svg-icon_wishlist"><use xlink:href="#svg-icon_wishlist"></use></svg><span>Wishlists</span></a></p>
 	<div id="blockwishlist_desc" class="hidden">
 	<p>
 	Compose as many lists as you want and put games aside for later.
@@ -6093,6 +6401,7 @@ module.exports = {
 	
 	</form>
 	
+	<div id="loyalty-product-block"></div>
 	
 	<div id="ukoomediego_block_products" class="block ukoomediego_block_products mediego mediego.id.en mediego.source.product mediego.count.12" data-display="vertical"></div>
 	
@@ -6100,26 +6409,29 @@ module.exports = {
 	<div id="more_info_block">
 	<div class="responsiveTabs">
 	<ul>
-	<li><a href="#tab-description">Description</a></li>
-	
-	<li><a href="#tab-features">Characteristics</a></li>
-	<li><a href="#product-videos">Videos</a></li>
-	<li><a id="ukooreview_link_tab" href="#blockukooreviews-product-tab-content">Opinion</a></li>
+	<li><a href="#tab-features">Technical sheet</a></li>
+	<li><a href="#product-videos">Videos</a>
+	<script defer type="3b2ae364050342e6707c608a-text/javascript">
+			$(document).ready(function(){
+			   $('#uk-light-btn--videos').show();
+			});
+		</script>
+	</li>
+	<li><a id="ukooreview_link_tab" href="#blockukooreviews-product-tab-content">Reviews</a></li>
 	
 	<li>
-	<a href="#tab-associated-1" class="ukoosummary_tab_link" data-id-tab="1">
+	<a href="#tab-associated-1" class="ukoosummary_tab_link tab-associated-1" data-id-tab="1">
 	Associated products
+	</a>
+	</li>
+	<li>
+	<a href="#tab-associated-3" class="ukoosummary_tab_link tab-associated-3" data-id-tab="3">
+	Accessories
 	</a>
 	</li>
 	
 	</ul>
 	
-	
-	
-	<section id="tab-description" class="page-product-box">
-	<div class="rte"><p>In the most distant reaches of the world, magic still exists, embodied by spirits of the land, of the sky, and of every natural thing. As the great powers of Europe stretch their colonial empires further and further, they will inevitably lay claim to a place where spirits still hold power - and when they do, the land itself will fight back alongside the islanders who live there.</p>
-	<p><em><strong>Spirit Island</strong></em> is a complex and thematic cooperative game about defending your island home from colonizing Invaders. Players are different spirits of the land, each with its own unique elemental powers. Every turn, players simultaneously choose which of their power cards to play, paying energy to do so.</p></div>
-	</section>
 	
 	
 	<section id="tab-features" class="page-product-box">
@@ -6128,90 +6440,117 @@ module.exports = {
 	<td>Theme(s)</td>
 	<td class="separator"></td>
 	<td>
-	<a title="Discover all this games" href="https://www.philibertnet.com/en/search?feature=35&feature_value=Fantastic">Fantastic</a>,&nbsp;<a title="See all games" href="https://www.philibertnet.com/en/search?feature=35&feature_value=Mythology">Mythology</a> </td>
+	<span title="Discover all this games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=35&feature_value=Mythology">Mythology</span>,&nbsp;<span title="See all games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=35&feature_value=Fantastic">Fantastic</span> </td>
 	</tr>
 	<tr class="even">
 	<td>Language(s)</td>
 	<td class="separator"></td>
 	<td>
-	<a title="Discover all this games" href="https://www.philibertnet.com/en/search?feature=32&feature_value=English">English</a> </td>
+	<span title="Discover all this games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=32&feature_value=French">French</span> </td>
 	</tr>
-	 <tr class="odd">
+	<tr class="odd">
 	<td>Mechanism(s)</td>
 	<td class="separator"></td>
 	<td>
-	<a title="Discover all this games" href="https://www.philibertnet.com/en/search?feature=36&feature_value=Draft">Draft</a>,&nbsp;<a title="See all games" href="https://www.philibertnet.com/en/search?feature=36&feature_value=Confrontation">Confrontation</a>,&nbsp;<a title="See all games" href="https://www.philibertnet.com/en/search?feature=36&feature_value=Co-operative ">Co-operative </a>,&nbsp;<a title="See all games" href="https://www.philibertnet.com/en/search?feature=36&feature_value=Cards">Cards</a> </td>
+	<span title="Discover all this games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=36&feature_value=Confrontation">Confrontation</span>,&nbsp;<span title="See all games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=36&feature_value=Co-operative ">Co-operative </span>,&nbsp;<span title="See all games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=36&feature_value=Cards">Cards</span>,&nbsp;<span title="See all games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=36&feature_value=Draft">Draft</span> </td>
 	</tr>
 	<tr class="even">
 	<td>Author(s)</td>
 	<td class="separator"></td>
 	<td>
-	<a title="Discover all this games" href="https://www.philibertnet.com/en/search?feature=31&feature_value=R. Eric Reuss">R. Eric Reuss</a> </td>
+	<span title="Discover all this games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=31&feature_value=R. Eric Reuss">R. Eric Reuss</span> </td>
 	</tr>
 	<tr class="odd">
 	<td>Artist</td>
 	<td class="separator"></td>
 	<td>
-	<a title="Discover all this games" href="https://www.philibertnet.com/en/search?feature=41&feature_value=Cari Corene">Cari Corene</a> </td>
+	<span title="Discover all this games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=41&feature_value=Cari Corene">Cari Corene</span> </td>
 	</tr>
 	<tr class="even">
 	<td>Note globale</td>
 	<td class="separator"></td>
 	<td>
-	<a title="Discover all this games" href="https://www.philibertnet.com/en/search?feature=45&feature_value=4.9">4.9</a> </td>
+	<span title="Discover all this games" class="data-siloing" data-siloing="https://www.philibertnet.com/en/search?feature=45&feature_value=4.6">4.6</span> </td>
 	</tr>
 	<tr class="editor">
 	<td>Editor</td>
 	<td class="separator"></td>
 	<td>
-	<a href="
+	<span class="data-siloing" data-siloing="
 								
-																https://www.philibertnet.com/en/646_greater-than-games-llc
+																https://www.philibertnet.com/en/396_intrafin
 															
 								">
-	Greater Than Games LLC
-	</a>
+	Intrafin
+	</span>
 	</td>
 	</tr>
 	</table>
 	</section>
 	<section id="product-videos" class="page-product-box">
-	<div class="product-videos-wrapper solo">
-	<p class="video-name">Three Minutes Board Games</p>
-	<a class="fancybox_iframe" href="https://www.youtube.com/embed/aEpGN6jswPw" style="display: block; position: relative; z-index: 1">
+	<div class="product-videos-wrapper ">
+	<p class="video-name">Life of a Board Gamer</p>
+	<a class="fancybox_iframe" href="https://www.youtube.com/embed/-0HOwMbtEyo" style="display: block; position: relative; z-index: 1">
 	<div class="videowrapper">
-	<iframe src="https://www.youtube.com/embed/aEpGN6jswPw?enablejsapi=1&version=3&html5=1&controls=1&autoplay=&autohide=0&disablekb=&fs=1&iv_load_policy=3&loop=&showinfo=1&theme=dark" frameborder="0" style="z-index: -1;"></iframe>
+	<iframe src="https://www.youtube.com/embed/-0HOwMbtEyo?enablejsapi=1&version=3&html5=1&controls=1&autoplay=&autohide=0&disablekb=&fs=1&iv_load_policy=3&loop=&showinfo=1&theme=dark" frameborder="0" style="z-index: -1;"></iframe>
+	</div>
+	</a>
+	</div>
+	<div class="product-videos-wrapper ">
+	<p class="video-name">Les Jeux de Chaps</p>
+	<a class="fancybox_iframe" href="https://www.youtube.com/embed/aK9DrshP5jc" style="display: block; position: relative; z-index: 1">
+	<div class="videowrapper">
+	<iframe src="https://www.youtube.com/embed/aK9DrshP5jc?enablejsapi=1&version=3&html5=1&controls=1&autoplay=&autohide=0&disablekb=&fs=1&iv_load_policy=3&loop=&showinfo=1&theme=dark" frameborder="0" style="z-index: -1;"></iframe>
 	</div>
 	</a>
 	</div>
 	</section>
 	
 	<section id="tab-associated-1" class="page-product-box display_vertical">
-	 <div id="ukoosummary_bloc_summary_group_1_tab_1" data-id-tab="1" data-id-group="1" class="ukoosummary_group block">
+	<div id="ukoosummary_bloc_summary_group_1_tab_1" data-id-tab="1" data-id-group="1" class="ukoosummary_group block">
 	<p class="page-product-heading">Expansions</p>
+	</div>
+	<div id="ukoosummary_bloc_summary_group_93_tab_1" data-id-tab="1" data-id-group="93" class="ukoosummary_group block">
+	<p class="page-product-heading">is an accessory for</p>
 	</div>
 	<div id="ukoosummary_bloc_summary_group_57_tab_1" data-id-tab="1" data-id-group="57" class="ukoosummary_group block">
 	<p class="page-product-heading">Other language</p>
 	</div>
-	<div id="ukoosummary_bloc_summary_group_8_tab_1" data-id-tab="1" data-id-group="8" class="ukoosummary_group block">
-	<p class="page-product-heading">Accessories</p>
+	</section>
+	<section id="tab-associated-3" class="page-product-box display_vertical">
+	<div id="ukoosummary_bloc_summary_group_8_tab_3" data-id-tab="3" data-id-group="8" class="ukoosummary_group block">
 	</div>
 	</section>
 	
 	<section id="blockukooreviews-product-tab-content" class="page-product-box">
 	<div class="container">
-	<div id="ukooreviews_group_2">
-	<p class="ukooreviews_group_title page-product-heading">This game is recommended by 1 of our Bloggers</p>
-	<div id="ukooreviews_group_reviews_2">
+	<div id="ukooreviews_group_2" class="block">
+	<p class="ukooreviews_group_title title_block title_block--yellow">This game is recommended by 3 of our Bloggers</p>
+	<div class="box -small">
+	<b>The Bloggers have given a rate of 5/5 on this product</b>
+	<div class="rating-stars" style="margin-top:.3rem;">
+	<span>
+	<svg class="icon svg-illus_rating" style="color:#ededed;">
+	<use xlink:href="#svg-illus_rating-stars"></use>
+	</svg>
+	<span style="width: 100%"></span>
+	</span>
+	<span>
+	5/5
+	</span>
+	</div>
+	</div>
+	<div id="uk-toggle-2" class="uk-toggle">
+	<div class="uk-toggle__content uk-toggle__content--show">
 	<ul id="ukooreviews-product-tab-content-group-reviews-2">
-	<li class="ukooreviews_review_62672">
+	<li class="ukooreviews_review_80660">
 	<p class="review_image">
-	<a href="https://www.philibertnet.com/en/public-profile/62-vin-d-jeu">
-	<img class="lazyload" data-src="/modules/ukooreviews/views/img/2_42.jpg" width="60" height="60" />
+	<a href="https://www.philibertnet.com/en/public-profile/354-vonguru">
+	<img loading="lazy" src="/modules/ukooreviews/views/img/2_139.jpg" width="60" height="60" />
 	</a>
 	</p>
 	<div class="review_details">
-	<p class="review_by">This game was played and recommanded by <a href="https://www.philibertnet.com/en/public-profile/62-vin-d-jeu">Vin d&#039;Jeu</a>, here its opinion:
+	<p class="review_by">This game was played and recommanded by <a href="https://www.philibertnet.com/en/public-profile/354-vonguru">Vonguru</a>, here its opinion:
 	</p>
 	<div class="review_note">
 	<div class="rating-stars">
@@ -6226,36 +6565,33 @@ module.exports = {
 	</div>
 	</div>
 	<div class="review_text">
-	Spirit Island est un jeu dynamique et séduisant. Même si les huttes autochtones en forme de champignon étonnent un peu et contrastent par rapport au reste, le matériel et les illustrations sont splendides. Le jeu étonne vu la faible place laissée au hasard ce qui est plutôt rare pour un jeu collaboratif. Le danger d’un jeu collaboratif avec peu de hasard réside en la variété des parties qui, de fait, pèche un peu ici dans sa version non kickstartée. Pour vous assurer une belle rejouabilité, vous aurez besoin de l’extension qui apporte pas mal de nouveaux scénarii ainsi que des nouvelles cartes indispensables. Bien que la mécanique de deckbuilding est assez classique, les autres mécaniques plus automatiques déconcertent: l’arrivée des envahisseurs, leur manière de construire des villes, de polluer la terre et d’attaquer les aborigènes sont uniques. La cerise sur le gâteau revient aux conditions de victoire évolutives! Le jeu est assez difficile et il vous faudra quelques parties pour bien sentir le jeu et vaincre ces envahisseurs toujours trop nombreux. Les actions assez bourrines vont un peu limiter vos choix mais, au final, grâce à votre bonne gestion stratégiques des différents éléments, à l’optimisation de vos pouvoirs et à une bonne coordination au sein de votre équipe, vous passerez un excellent moment sur l’île aux esprits.
+	<p>L’idée de Spirit Island serait venue à R. Eric Reuss en constatant dans un autre jeu qu’une action « coloniser » n’était pas du tout envisagée du point de vue de son impact sur les populations locales, seulement comme une extension positive. Peu agréablement surpris par la quantité de jeux faisant, l’air de rien, l’apologie de la colonisation ou du capitalisme, il a ainsi eu l’idée de ce jeu original où l’on ne lutterait pas tant à la place des colonisés que pour la nature, hostile non aux hommes en soi mais aux forces de destruction, doublant son anti-colonialisme d’un message écologique. Pour cela, il s’agissait déjà d’impliquer le joueur dans l’univers créé, avec des backgrounds des esprits, des fiches pédagogiques sur les différents Royaumes, deux pages entière de lore, et surtout avec le fantastique travail d’illustration d’une équipe nombreuse, dont TricTrac ne retient que Jason Behnke, alors que le livret lui associe Loic Belliau, Kat G. Birmelin, Cari Corene, Lucas Durham, Rocky Hammer, Sydni Kruger, Nolan N. Nasser, Jorge Ramos, Moro Rogers, Graham Stermberg, Shane Tyree, Joshua Wright. Comme leurs noms n’apparaissent qu’au bas de la dernière page des règles, les citer ici est la moindre des choses. Seuls les jetons Présence sont un peu tristounets, mais largement compensés par l’abondance de figurines pour les explorateurs, villages et villes ! (oui, cela trahit le KickStarter)</p>
+	<p>Il s’agissait donc de proposer une expérience politique et immersive aux joueurs, tout en répondant à l’exigence de l’auteur d’un jeu profondément tactique au gameplay fort, plutôt qu’une « simple » expérience narrative. Et il est indéniable qu’il y est merveilleusement parvenu, Spirit Island étant parsemé d’idées lumineuses, la puissance croissante des esprits et leur individualité, l’invasion et sa visualisation, l’absence de toute ressource durable, les deux vitesses des pouvoirs… Même dans une configuration identique, chaque partie est différente de la précédente et de la suivante, et pourtant, l’auteur multiplie les variations, complexifications et approfondissements, pour l’une des expériences ludo-narratives les plus inépuisables que je connaisse, et l’une des expériences coopératives asymétriques les plus équilibrées, faisant le mieux la part belle à la communication.</p>
+	<p>Et surtout… Spirit Island n’est pas si difficile. Il y a des jeux dont j’ai renoncé à décrire l’ensemble des règles, parce que je n’ai pas l’ambition de concurrencer un livret plus illustré, plus synthétique et plus clair, seulement de donner une bonne vision des subtilités du jeu et, quand l’occasion s’en présente, de légers décorticages. Or Spirit Island est extraordinairement clair compte tenu de sa richesse, ses mécaniques tout à fait accessibles, ses pictogrammes évidents et très peu nombreux, grâce à sa bonne conception, et au fait que, persuadé de réaliser un jeu difficile, l’auteur ait multiplié les aides, récapitulatifs, sommaire, glossaire, pour l’une des règles les plus exemplairement pédagogiques que je connaisse. Un jeu simplement bluffant à tous points de vue, mon plus gros coup de cœur depuis Betrayal Legacy au moins.</p>
+	<p></p>
+	<p>L'intégralité de ma critique est lisible sur le site VonGuru : https://vonguru.fr/2019/04/12/spirit-island-le-jeu-de-decolonisation-dans-un-monde-de-fantasy/</p>
 	</div>
 	<div class="review_usefulness">
-	<span>1 person found this review was helpful</span>
+	<span>6 people found this review was helpful</span>
 	</div>
 	<p class="review_links">
-	<a href="https://www.vindjeu.eu/" target="_blank">https://www.vindjeu.eu/</a>
-	<a href="https://www.philibertnet.com/en/reviews/2-blogueurs">View all Bloggers reviews</a>
+	<a href="https://vonguru.fr/lifestyle/jeux-societe/" target="_blank">https://vonguru.fr/lifestyle/jeux-societe/</a>
 	</p>
 	</div>
 	</li>
 	</ul>
 	</div>
-	<a href="#ukooreviews_group_2" id="pagination_smoothscroll_2" class="smoothscroll" style="display:none;"></a>
-	</div>
-	<div id="ukooreviews_group_0">
-	<p class="ukooreviews_group_title page-product-heading">This game is recommended by 6 of our Customers</p>
-	<div id="split_reviews">
-	<div id="positive_review">
-	<p class="title">
-	<svg class="icon svg-icon_smiley-positive">
-	<use xlink:href="#svg-icon_smiley-positive"></use>
-	</svg>They liked...</p>
-	 <p class="review_by">
-	Kenrick F.
-	<span class="review_date">
-	on 03/26/18 </span>
-	<span class="review_verified">
-	Verified purchase
-	</span>
+	<div class="uk-toggle__content">
+	<div id="ukooreviews_group_reviews_2">
+	<ul id="ukooreviews-product-tab-content-group-reviews-2">
+	<li class="ukooreviews_review_84485">
+	<p class="review_image">
+	<a href="https://www.philibertnet.com/en/public-profile/116-trukmuch-s-spot">
+	<img loading="lazy" src="/modules/ukooreviews/views/img/2_131.jpg" width="60" height="60" />
+	</a>
+	</p>
+	 <div class="review_details">
+	<p class="review_by">This game was played and recommanded by <a href="https://www.philibertnet.com/en/public-profile/116-trukmuch-s-spot">Trukmuch&#039;s Spot</a>, here its opinion:
 	</p>
 	<div class="review_note">
 	<div class="rating-stars">
@@ -6270,23 +6606,184 @@ module.exports = {
 	</div>
 	</div>
 	<div class="review_text">
-	Highly recommended one of the best games I have ever played in 35 years of gaming ...plays well, both solitaire and multiplayer ...awesome !
+	<p>Spirit Island est rapidement passé dans le haut du top de mes jeux de société ! Un jeu très compliqué réservé à un public expert avec une difficulté configurable à souhait et de nombreuses possibilités de parties... </p>
+	<p>Vous pouvez retrouver un article complet sur mon blog :<br /><a href="http://www.trukmuchspot.fr/regles-et-critiques/spirit-island">http://www.trukmuchspot.fr/regles-et-critiques/spirit-island</a></p>
 	</div>
 	<div class="review_usefulness">
-	<span>1 person found this review was helpful</span>
+	</div>
+	<p class="review_links">
+	<a href="https://www.trukmuchspot.fr/" target="_blank">https://www.trukmuchspot.fr/</a>
+	</p>
+	</div>
+	</li>
+	<li class="ukooreviews_review_80804">
+	<p class="review_image">
+	<a href="https://www.philibertnet.com/en/public-profile/593-gameinblue">
+	<img loading="lazy" src="/modules/ukooreviews/views/img/2_186.jpg" width="60" height="60" />
+	</a>
+	</p>
+	<div class="review_details">
+	<p class="review_by">This game was played and recommanded by <a href="https://www.philibertnet.com/en/public-profile/593-gameinblue">gameinblue</a>, here its opinion:
+	</p>
+	<div class="review_note">
+	<div class="rating-stars">
+	<span>
+	<svg class="icon svg-illus_rating">
+	<use xlink:href="#svg-illus_rating-stars"></use>
+	</svg>
+	<span style="width: 100%"></span>
+	</span><span>
+	5/5
+	</span>
+	</div>
+	</div>
+	<div class="review_text">
+	<p>Je dois avouer que j'ai acheté ce jeu à la base pour le jouer majoritairement en solo et je suis pas déçu.</p>
+	<p>Il est tendu, difficile, tout ce qu'il faut pour en faire un très bon jeu.</p>
+	</div>
+	<div class="review_usefulness">
+	</div>
+	 <p class="review_links">
+	<a href="https://www.instagram.com/gameinblue/" target="_blank">https://www.instagram.com/gameinblue/</a>
+	</p>
+	</div>
+	</li>
+	<li class="ukooreviews_review_80660">
+	<p class="review_image">
+	<a href="https://www.philibertnet.com/en/public-profile/354-vonguru">
+	<img loading="lazy" src="/modules/ukooreviews/views/img/2_139.jpg" width="60" height="60" />
+	</a>
+	</p>
+	<div class="review_details">
+	<p class="review_by">This game was played and recommanded by <a href="https://www.philibertnet.com/en/public-profile/354-vonguru">Vonguru</a>, here its opinion:
+	</p>
+	<div class="review_note">
+	<div class="rating-stars">
+	<span>
+	<svg class="icon svg-illus_rating">
+	<use xlink:href="#svg-illus_rating-stars"></use>
+	</svg>
+	<span style="width: 100%"></span>
+	</span><span>
+	5/5
+	</span>
+	</div>
+	</div>
+	<div class="review_text">
+	<p>L’idée de Spirit Island serait venue à R. Eric Reuss en constatant dans un autre jeu qu’une action « coloniser » n’était pas du tout envisagée du point de vue de son impact sur les populations locales, seulement comme une extension positive. Peu agréablement surpris par la quantité de jeux faisant, l’air de rien, l’apologie de la colonisation ou du capitalisme, il a ainsi eu l’idée de ce jeu original où l’on ne lutterait pas tant à la place des colonisés que pour la nature, hostile non aux hommes en soi mais aux forces de destruction, doublant son anti-colonialisme d’un message écologique. Pour cela, il s’agissait déjà d’impliquer le joueur dans l’univers créé, avec des backgrounds des esprits, des fiches pédagogiques sur les différents Royaumes, deux pages entière de lore, et surtout avec le fantastique travail d’illustration d’une équipe nombreuse, dont TricTrac ne retient que Jason Behnke, alors que le livret lui associe Loic Belliau, Kat G. Birmelin, Cari Corene, Lucas Durham, Rocky Hammer, Sydni Kruger, Nolan N. Nasser, Jorge Ramos, Moro Rogers, Graham Stermberg, Shane Tyree, Joshua Wright. Comme leurs noms n’apparaissent qu’au bas de la dernière page des règles, les citer ici est la moindre des choses. Seuls les jetons Présence sont un peu tristounets, mais largement compensés par l’abondance de figurines pour les explorateurs, villages et villes ! (oui, cela trahit le KickStarter)</p>
+	<p>Il s’agissait donc de proposer une expérience politique et immersive aux joueurs, tout en répondant à l’exigence de l’auteur d’un jeu profondément tactique au gameplay fort, plutôt qu’une « simple » expérience narrative. Et il est indéniable qu’il y est merveilleusement parvenu, Spirit Island étant parsemé d’idées lumineuses, la puissance croissante des esprits et leur individualité, l’invasion et sa visualisation, l’absence de toute ressource durable, les deux vitesses des pouvoirs… Même dans une configuration identique, chaque partie est différente de la précédente et de la suivante, et pourtant, l’auteur multiplie les variations, complexifications et approfondissements, pour l’une des expériences ludo-narratives les plus inépuisables que je connaisse, et l’une des expériences coopératives asymétriques les plus équilibrées, faisant le mieux la part belle à la communication.</p>
+	<p>Et surtout… Spirit Island n’est pas si difficile. Il y a des jeux dont j’ai renoncé à décrire l’ensemble des règles, parce que je n’ai pas l’ambition de concurrencer un livret plus illustré, plus synthétique et plus clair, seulement de donner une bonne vision des subtilités du jeu et, quand l’occasion s’en présente, de légers décorticages. Or Spirit Island est extraordinairement clair compte tenu de sa richesse, ses mécaniques tout à fait accessibles, ses pictogrammes évidents et très peu nombreux, grâce à sa bonne conception, et au fait que, persuadé de réaliser un jeu difficile, l’auteur ait multiplié les aides, récapitulatifs, sommaire, glossaire, pour l’une des règles les plus exemplairement pédagogiques que je connaisse. Un jeu simplement bluffant à tous points de vue, mon plus gros coup de cœur depuis Betrayal Legacy au moins.</p>
+	<p></p>
+	<p>L'intégralité de ma critique est lisible sur le site VonGuru : https://vonguru.fr/2019/04/12/spirit-island-le-jeu-de-decolonisation-dans-un-monde-de-fantasy/</p>
+	</div>
+	<div class="review_usefulness">
+	<span>6 people found this review was helpful</span>
+	</div>
+	<p class="review_links">
+	<a href="https://vonguru.fr/lifestyle/jeux-societe/" target="_blank">https://vonguru.fr/lifestyle/jeux-societe/</a>
+	</p>
+	</div>
+	</li>
+	</ul>
+	</div>
+	<a href="#ukooreviews_group_reviews_2" id="pagination_smoothscroll_2" class="smoothscroll" style="display:none;"></a>
+	</div>
+	<p><a class="uk-toggle__link uk-toggle__link--no-icon btn" href="javascript:void(0);" data-show="See more reviews" data-hide="See less reviews" data-scrollto="#uk-toggle-2">See more reviews</a></p>
+	</div>
+	</div>
+	<hr />
+	<div id="ukooreviews_group_0" class="block">
+	<p class="ukooreviews_group_title title_block title_block--blue">This game is recommended by 17 of our Customers</p>
+	<div class="box -small">
+	<b>The Customers have given a rate of 4.5/5 on this product</b>
+	<div class="rating-stars" style="margin-top:.3rem;">
+	<span>
+	<svg class="icon svg-illus_rating" style="color:#ededed;">
+	<use xlink:href="#svg-illus_rating-stars"></use>
+	</svg>
+	<span style="width: 90%"></span>
+	</span>
+	<span>
+	4.5/5
+	</span>
+	</div>
+	</div>
+	<div id="split_reviews">
+	<div id="positive_review">
+	<p class="title">
+	 <svg class="icon svg-icon_smiley-positive">
+	<use xlink:href="#svg-icon_smiley-positive"></use>
+	</svg>They liked...</p>
+	<p class="review_by">
+	Justin M.
+	<span class="review_date">
+	on 11/29/18 </span>
+	</p>
+	<div class="review_note">
+	<div class="rating-stars">
+	<span>
+	<svg class="icon svg-illus_rating">
+	<use xlink:href="#svg-illus_rating-stars"></use>
+	</svg>
+	<span style="width: 100%"></span>
+	</span><span>
+	5/5
+	</span>
+	</div>
+	</div>
+	<div class="review_text">
+	<p>Excellent jeu, malheureusement la VF est bourrée d'erreurs de traductions...<br /><br />Dont certaines impactes réellement le jeu...<br /><br />Faudrait p-e penser a engager des gens compétant de ce coté... On paie 70€ pour çà sinon a quoi bon attendre la vf... ?<br /><br />Bref, je repasserai sur une VO dés que re-disponnible...<br /><br />C'est quand même malheureux d'en arriver là, et qu'en plus ca coutera 10€ de plus (ca doit être ca la différence de prix ? On paie pour un jeu traduit par un mec qui fait ca sur ses chiottes un lendemain de beuverie... ?)<br /><br /></p>
+	</div>
+	<div class="review_usefulness">
+	<span>31 people found this review was helpful</span>
+	</div>
+	</div>
+	<div id="negative_review">
+	<p class="title">
+	<svg class="icon svg-icon_smiley-negative">
+	<use xlink:href="#svg-icon_smiley-negative"></use>
+	</svg>They liked least ...</p>
+	<p class="review_by">
+	Albin C.
+	<span class="review_date">
+	on 02/06/19 </span>
+	</p>
+	<div class="review_note">
+	<div class="rating-stars">
+	<span>
+	<svg class="icon svg-illus_rating">
+	<use xlink:href="#svg-illus_rating-stars"></use>
+	</svg>
+	<span style="width: 20%"></span>
+	</span><span>
+	1/5
+	</span>
+	</div>
+	</div>
+	<div class="review_text">
+	<p>Abominablement laid, aux graphismes datés, surproduit et donc très onéreux, j'ai trouvé ce jeu extrêmement ennuyeux.</p>
+	<p>En mode solo, contrôler un seul esprit est d'un ennui mortel. En contrôler est cependant trop complexe. Le jeu est clairement pensé pour deux joueurs. Au-delà, la durée sera beaucoup trop longue.</p>
+	<p>Tout se joue dans la prise de décision, et l'on passe donc beaucoup de temps à se creuser les méninges, puis à déplacer des petits bouts de plastique à droite à gauche.</p>
+	<p>Les effets des cartes sont trop peu variés.</p>
+	<p>Les manières d'augmenter la difficulté consistent à rajouter toujours plus de règles, et pas franchement fun pour le coup : perdre un pouvoir ou une présence à chaque tour, ne pas pouvoir infliger de terreur...</p>
+	<p>Bref, un <em>dry Euro</em> comme on n'en fait plus et dont la popularité m'étonnera toujours. Un gros raté pour moi.</p>
+	</div>
+	<div class="review_usefulness">
+	<span>17 people found this review was helpful</span>
 	</div>
 	</div>
 	</div>
+	<p><span class="section-label section-label--blue">All customer's reviews:</span></p>
 	<div id="ukooreviews_group_reviews_0">
 	<ul id="ukooreviews-product-tab-content-group-reviews-0">
-	<li class="ukooreviews_review_81527">
+	<li class="ukooreviews_review_106320">
 	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
 	<p class="review_by">
 	<span itemprop="author">
-	Julien R.
+	Célia B.
 	</span>
 	<span class="review_date">
-	on 05/22/19 </span>
+	on 05/18/21 </span>
 	</p>
 	<div class="review_note">
 	<div class="rating-stars" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
@@ -6301,26 +6798,23 @@ module.exports = {
 	</div>
 	</div>
 	<div class="review_text" itemprop="reviewBody">
-	<p>Chef d'oeuvre. Un jeu a la fois "euro" (peu de chance, beaucoup de profondeur) et thematique.</p>
-	<p>Tres grande rejouabilite, les esprits se jouent tres differemment les uns des autres. Immense contenu. 2 differentes cartes, 8 esprits, 3 ennemis avec 6 niveaux de difficulte, tout cela ensemble donne beaucoup de possibilites, surtout en jouant a 2 esprits.</p>
+	<p>Enorme coup de coeur. Plus de 200 parties, moitié solo, moitié duo. Marche très bien dans ces 2 configurations. Un des meilleurs coops de ces dernières années !!</p>
 	</div>
 	<div class="review_usefulness">
 	</div>
 	</div>
 	</li>
-	<li class="ukooreviews_review_70854">
+	<li class="ukooreviews_review_101334">
 	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
 	<p class="review_by">
 	<span itemprop="author">
-	Jerko K.
+	Dominique B.
 	</span>
 	<span class="review_date">
-	on 08/02/18 </span>
-	<span class="review_verified">
-	Verified purchase
-	</span>
+	on 12/13/20 </span>
 	</p>
 	<div class="review_note">
+	
 	<div class="rating-stars" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
 	<span>
 	<svg class="icon svg-illus_rating">
@@ -6333,80 +6827,31 @@ module.exports = {
 	</div>
 	</div>
 	<div class="review_text" itemprop="reviewBody">
-	All good!!
-	</div>
-	<div class="review_usefulness">
-	</div>
-	</div>
-	</li>
-	<li class="ukooreviews_review_68682">
-	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
-	<p class="review_by">
-	<span itemprop="author">
-	Timour C.
-	</span>
-	<span class="review_date">
-	on 06/04/18 </span>
-	</p>
-	<div class="review_note">
-	<div class="rating-stars" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-	<span>
-	<svg class="icon svg-illus_rating">
-	<use xlink:href="#svg-illus_rating-stars"></use>
-	</svg>
-	<span style="width: 100%"></span>
-	</span><span itemprop="ratingValue" content="5">
-	5/5
-	</span>
-	</div>
-	</div>
-	<div class="review_text" itemprop="reviewBody">
-	Chef d’œuvre! Spirit Island est un jeu exceptionnel et exigeant. Vous incarnez un esprit avec des pouvoirs particuliers, votre île est envahie par des colons et il va falloir vous battre avec le peuple local appelé "DAHAN" contre eux, et cela ne va pas être simple! Car ils sont méticuleux et organisés les colons! Les esprits vont devoir coopérer comme ils peuvent et chacun joue en même temps contre le jeu. Mécanisme de jeu brillant, difficulté croissante (colons différents avec niveau de difficulté de 1 à 6, scénario prévus, l'extension est un must have qui ajoute en plus les maladies, les conflits et les animaux sauvages, ..), les pouvoirs et les sorts sont très nombreux et variés... Bref, jeu à la fois prodigieux par sa richesse, sa rejouabilité, et la profondeur de son gameplay qui change radicalement d'un esprit à l'autre (8 esprits dans la boite de base, +2 dans l'extension, +2 esprits kickstarter disponible à l'impression sur BGG). Foncez dessus ou attendez la VF qui arrive mais ne manquez pas ce jeu étourdissant!
+	<p>Spirit Island. Le genre de prise de tête que j'aime !</p>
+	<p>Jeu coopératif jouable en solo. Jeu avec un objectif, ce que je préfère aux machines à point en solo.</p>
+	<p>RICHE. C'est un mot que j'ai vu sur les avis à propos de nombreux jeu. Spirit Island est un jeu pour lequel ce mot selon moi a tout à fait sa place. Riche, complexe, brainy... Attention ! Je suis de ceux qui jouent à SPIRIT ISLAND en solo et ne pourront probablement jamais y jouer avec des complices parce que j'y joue très... très... très... très... len.te.ment...</p>
+	<p>Ce que j'aime avec Spirit island ?</p>
+	<p>1) Le thème. Hum... sourire niais...Jouer des divinités écolos, je trouve ça assez flatteur.</p>
+	<p>2 ) Le hasard et du temps. SPIRIT island offre une part d'aléatoire dans ce que les méchants envahisseurs vont faire tout en vous laissant les moyens de vous organiser pour lutter contre la menace avec des actions rapides (empêcher les méchants de vous embêter) ou lentes (contrecarrer ce que les méchants ont fait à votre île).</p>
+	<p>3 ) L'asymétrie. Vous pouvez choisir d'incarner des esprits qui offrent chacun des possibilités d'intervenir si diversement interressantes... N'étant toujours pas experte, je n'ai encore pas réussi à me passer de l'esprit du feu, spécialisé dans les actions rapides...</p>
+	<p>4 )  Pour ceux qui ne l'auraient pas deviné encore... je trouve ce jeux remarquablement immersif. Même avec des interruptions entre deux tours de jeux, en mettant en place les systèmes de marquage qui me permmetent d'intrrompre et reprendre mes parties, je peux réfléchir tous mes coups et... foutre autant que possible une patée mémorable à ces méchants conquistadores !</p>
+	<p>Spirit island. Un jeu complexe et RICHE parfaitement adapté à des parties solo multi personnage.</p>
+	<p>...à jouer dans la durée pour ceux qui comme moi, ont un peu perdu de leur vivacité...  ;-) + emoji sourrire crispé ?</p>
+	<p></p>
 	</div>
 	<div class="review_usefulness">
 	<span>1 person found this review was helpful</span>
 	</div>
 	</div>
 	</li>
-	<li class="ukooreviews_review_64047">
+	<li class="ukooreviews_review_93303">
 	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
 	<p class="review_by">
 	<span itemprop="author">
-	Sylvie c.
+	guillaume t.
 	</span>
 	<span class="review_date">
-	on 04/20/18 </span>
-	<span class="review_verified">
-	Verified purchase
-	</span>
-	</p>
-	<div class="review_note">
-	<div class="rating-stars" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-	<span>
-	<svg class="icon svg-illus_rating">
-	<use xlink:href="#svg-illus_rating-stars"></use>
-	</svg>
-	<span style="width: 100%"></span>
-	</span><span itemprop="ratingValue" content="5">
-	5/5
-	</span>
-	</div>
-	</div>
-	<div class="review_text" itemprop="reviewBody">
-	Excellent coopératif. D'une richesse inouïe. Très très bon en solo également, bien que je recommande de jouer au moins deux esprits. On s'y fait vite.
-	</div>
-	<div class="review_usefulness">
-	</div>
-	</div>
-	</li>
-	<li class="ukooreviews_review_62884">
-	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
-	<p class="review_by">
-	<span itemprop="author">
-	Cyriac B.
-	</span>
-	<span class="review_date">
-	on 03/27/18 </span>
+	on 05/04/20 </span>
 	<span class="review_verified">
 	Verified purchase
 	</span>
@@ -6418,33 +6863,27 @@ module.exports = {
 	<svg class="icon svg-illus_rating">
 	<use xlink:href="#svg-illus_rating-stars"></use>
 	</svg>
-	<span style="width: 80%"></span>
-	</span><span itemprop="ratingValue" content="4">
-	4/5
+	<span style="width: 100%"></span>
+	</span><span itemprop="ratingValue" content="5">
+	5/5
 	</span>
 	</div>
 	</div>
 	<div class="review_text" itemprop="reviewBody">
-	Un jeu coopératif dur. Vraiment dur : les envahisseurs ne font pas dans la dentelle et la pression se fait sentir à chaque tour.
-	Pas évident à prendre en main, mais plaisant à jouer, si ce n'est un bon nombre de petites manipulations avec des petites pièces (je vous regarde petits soldats blancs)...
-	La planification et la maîtrise de chaque esprit sera nécessaire pour espérer gagner une seule partie.
-	Belle édition, et beau matériel.
+	excellent jeu
 	</div>
 	<div class="review_usefulness">
 	</div>
 	</div>
 	</li>
-	<li class="ukooreviews_review_62806">
+	<li class="ukooreviews_review_91498">
 	<div itemprop="review" itemscope itemtype="http://schema.org/Review">
 	<p class="review_by">
 	<span itemprop="author">
-	Kenrick F.
+	Alain R.
 	</span>
 	<span class="review_date">
-	on 03/26/18 </span>
-	<span class="review_verified">
-	Verified purchase
-	</span>
+	on 03/18/20 </span>
 	</p>
 	<div class="review_note">
 	<div class="rating-stars" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
@@ -6459,7 +6898,8 @@ module.exports = {
 	</div>
 	</div>
 	<div class="review_text" itemprop="reviewBody">
-	Highly recommended one of the best games I have ever played in 35 years of gaming ...plays well, both solitaire and multiplayer ...awesome !
+	<p>GROS coup de coeur pour ce brise-neurones aux indéniables qualités: immersif, novateur, intelligent et addictif, disposant d'une excellente re-jouabilité. Comme d'autres, j'ai été longtemps rebuté par l'aspect graphique des tuiles, mais passé ce cap, j'ai découvert un titre extraordinaire. Autre atout: Spirit Island est incroyablement bon en solo. L'extension n'est pas indispensable car le jeu de base se suffit largement à lui-même, mais elle ajoute encore en stratégie. Matériel de très bonne qualité et une règle superbement illustrée. </p>
+	<p>Figure désormais dans mon top aux côtés de Mage Knight, Le Havre et Anachrony.</p>
 	</div>
 	<div class="review_usefulness">
 	<span>1 person found this review was helpful</span>
@@ -6467,15 +6907,51 @@ module.exports = {
 	</div>
 	</li>
 	</ul>
+	<div id="pagination" class="ukooreviews_pagination" data-id_product="64223" data-order_way="DESC" data-order_by="date_add" data-id_group="0" data-total_reviews="17" data-reviews_per_page="4" data-pages_nb="5" data-p="1" data-n="4" data-range="2" data-start="1" data-stop="3">
+	<ul id="ukooreviews-group-0-pagination" class="pagination clearfix">
+	<li id="pagination_previous_0" class="disabled pagination_previous">
+	<span class="btn btn-default">
+	<i class="icon-chevron-left"></i> Previous
+	</span>
+	</li>
+	<li class="active current">
+	<span class="btn btn-default">
+	<span>1</span>
+	</span>
+	</li>
+	<li>
+	<a href="javascript:void(0);" class="btn btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; ukooreviewsGoPage($(this), 2);" data-cf-modified-3b2ae364050342e6707c608a-="">
+	<span>2</span>
+	</a>
+	</li>
+	<li>
+	<a href="javascript:void(0);" class="btn btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; ukooreviewsGoPage($(this), 3);" data-cf-modified-3b2ae364050342e6707c608a-="">
+	<span>3</span>
+	</a>
+	</li>
+	<li>
+	<a href="javascript:void(0);" class="btn btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; ukooreviewsGoPage($(this), 4);" data-cf-modified-3b2ae364050342e6707c608a-="">
+	<span>4</span>
+	</a>
+	</li>
+	<li>
+	<a href="javascript:void(0);" class="btn btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; ukooreviewsGoPage($(this), 5);" data-cf-modified-3b2ae364050342e6707c608a-="">
+	<span>5</span>
+	</a>
+	</li>
+	<li id="pagination_next_0" class="pagination_next">
+	<a href="javascript:void(0);" class="btn btn-default" onclick="if (!window.__cfRLUnblockHandlers) return false; ukooreviewsGoPage($(this), 2);" rel="next" data-cf-modified-3b2ae364050342e6707c608a-="">
+	Next <i class="icon-chevron-right"></i>
+	</a>
+	</li>
+	</ul>
 	</div>
-	<a href="#ukooreviews_group_0" id="pagination_smoothscroll_0" class="smoothscroll" style="display:none;"></a>
+	</div>
+	<a href="#ukooreviews_group_reviews_0" id="pagination_smoothscroll_0" class="smoothscroll" style="display:none;"></a>
 	</div>
 	</div>
 	<p class="ukooreviews_product_page_form_not_logged box_icon-infos">You have to be logged to submit reviews.</p>
 	</section>
-	
-	<div id="viewed-products_block_left" data-module="blockviewed" data-id_product="53139" class="block ajax_module_block">
-	</div>
 	<div id="ukoopubliclist-product_lists" class="block collapse-smartphone-tablet">
 	<p class="title_block">
 	This game appears in the Tops Games of our players
@@ -6485,56 +6961,62 @@ module.exports = {
 	<li>
 	<div>
 	<div class="ukoopubliclist-product_list-content">
-	<p class="s_title_block -ukoopubliclist-no-height"><a href="https://www.philibertnet.com/en/public-list/1221-des-gros-jeux-" title="View the Top Games « Des Gros Jeux ! »">Des Gros Jeux !</a></p>
+	<p class="s_title_block -ukoopubliclist-no-height"><span data-siloing="https://www.philibertnet.com/en/public-list/1679-top-jeux-solo" title="View the Top Games « Top Jeux Solo »">Top Jeux Solo</span></p>
 	<span>
 	by
-	<a href="https://www.philibertnet.com/en/public-profile/682-tananka" title="See Tananka's profile" class="product_list-creator">
-	Tananka
-	</a>
+	<span data-siloing="https://www.philibertnet.com/en/public-profile/654-zalexx" title="See zalexx's profile" class="product_list-creator">
+	zalexx
+	</span>
 	</span>
 	<p class="product_list-rating">
-	(1 positive rating)
+	(87 positive ratings)
 	</p>
 	</div>
-	<p class="ukoopubliclist-product_list-first"><span class="ukoopubliclist_ribbon" data-product-position="1">
+	<p class="ukoopubliclist-product_list-first">
+	<span class="ukoopubliclist_ribbon" data-product-position="1">
 	<svg class="icon svg-icon_ribbon"><use xlink:href="#svg-icon_ribbon"></use></svg>
-	</span><img class="lazyload" data-src="https://cdn2.philibertnet.com/338278-small_default/fief.jpg" /></p>
+	</span>
+	<img loading="lazy" src="https://cdn1.philibertnet.com/431464-small_default/mage-knight-ultimate-edition.jpg" /></p>
 	</div>
 	</li>
 	<li>
 	<div>
 	<div class="ukoopubliclist-product_list-content">
-	<p class="s_title_block -ukoopubliclist-no-height"><a href="https://www.philibertnet.com/en/public-list/2448-gov-s-top-10" title="View the Top Games « Gov's top 10 »">Gov&#039;s top 10</a></p>
+	<p class="s_title_block -ukoopubliclist-no-height"><span data-siloing="https://www.philibertnet.com/en/public-list/1645-top-12-de-mes-jeux-profonds-et-ou-difficiles" title="View the Top Games « Top 12 de mes jeux profonds et/ou difficiles »">Top 12 de mes jeux profonds et/ou difficiles</span></p>
 	<span>
 	by
-	<a href="https://www.philibertnet.com/en/public-profile/1378-grave" title="See Grave's profile" class="product_list-creator">
-	Grave
-	</a>
+	<span data-siloing="https://www.philibertnet.com/en/public-profile/131-meaulnes" title="See Meaulnes's profile" class="product_list-creator">
+	Meaulnes
 	</span>
+	</span>
+	<p class="product_list-rating">
+	(38 positive ratings)
+	</p>
 	</div>
-	<p class="ukoopubliclist-product_list-first"><span class="ukoopubliclist_ribbon" data-product-position="1">
-	<svg class="icon svg-icon_ribbon"><use xlink:href="#svg-icon_ribbon"></use></svg>
-	</span><img class="lazyload" data-src="https://cdn2.philibertnet.com/327679-small_default/concordia.jpg" /></p>
+	<p class="ukoopubliclist-product_list-first">
+	<img loading="lazy" src="https://cdn2.philibertnet.com/378064-small_default/anachrony.jpg" /></p>
 	</div>
 	</li>
 	<li>
 	<div>
 	<div class="ukoopubliclist-product_list-content">
-	<p class="s_title_block -ukoopubliclist-no-height"><a href="https://www.philibertnet.com/en/public-list/2375-aorakis-favorite-games" title="View the Top Games « Aorakis Favorite games  »">Aorakis Favorite games </a></p>
+	<p class="s_title_block -ukoopubliclist-no-height"><span data-siloing="https://www.philibertnet.com/en/public-list/3370-tops-heavy-game" title="View the Top Games « Tops Heavy Game  »">Tops Heavy Game </span></p>
 	<span>
 	</span>
+	<p class="product_list-rating">
+	(11 positive ratings)
+	</p>
 	</div>
-	<p class="ukoopubliclist-product_list-first"><span class="ukoopubliclist_ribbon" data-product-position="1">
-	<svg class="icon svg-icon_ribbon"><use xlink:href="#svg-icon_ribbon"></use></svg>
-	</span><img class="lazyload" data-src="https://cdn2.philibertnet.com/365523-small_default/aeon-s-end.jpg" /></p>
+	<p class="ukoopubliclist-product_list-first">
+	<img loading="lazy" src="https://cdn3.philibertnet.com/466961-small_default/res-arcana.jpg" /></p>
 	</div>
 	</li>
 	</ul>
 	<p id="link-more" class="text-center -link">
-	<a class="btn exclusive" href="https://www.philibertnet.com/en/public-list/product/53139-spirit-island-core-game" data-id_product="53139">View more Tops Games</a>
+	<button class="btn exclusive" data-id_product="64223">View more Tops Games</button>
 	</p>
 	<p id="link-all" class="text-center -link hidden">
-	<a class="btn exclusive" href="https://www.philibertnet.com/en/public-list/product/53139-spirit-island-core-game">View all Tops Games</a>
+	<span class="btn exclusive" data-siloing="https://www.philibertnet.com/en/public-list/product/64223-spirit-island">View all Tops Games</span>
 	</p>
 	</div>
 	</div>
@@ -6546,13 +7028,37 @@ module.exports = {
 	</div>
 	</div>
 	
+	<div id="block_reinsurance" class="block horizontal light hide-smartphone hide-tablet">
+	<ul>
+	<li class="payment">
+	<span role="link" tabindex="0" data-siloing="https://www.philibertnet.com/en/content/5-secure-payment" title="Click for more informations">
+	<span class="iconwrapper"><span><svg class="icon svg-icon_sheriff"><use xlink:href="#svg-icon_sheriff"></use></svg></span></span><span class="text"><b>Secure payments</b> <span>with CIC and Paypal</span></span>
+	</span>
+	</li>
+	<li class="team">
+	<span data-siloing="https://www.philibertnet.com/en/content/4-about-us" title="Click for more informations">
+	<span class="iconwrapper"><span><svg class="icon svg-icon_meeples"><use xlink:href="#svg-icon_meeples"></use></svg></span></span><span class="text"><b>A team of game enthusiasts</b> <span>at your service since 1978</span></span></span>
+	</li>
+	<li class="shipping">
+	<span role="link" tabindex="0" data-siloing="https://www.philibertnet.com/en/content/9-shipping-and-deadlines" title="Click for more informations">
+	<span class="iconwrapper"><span><svg class="icon svg-icon_postman"><use xlink:href="#svg-icon_postman"></use></svg></span></span>
+	<span class="text"><b>Shipping from 1.95&euro;*</b> <span>Offered from 60&euro;</span></span></span>
+	</li>
+	<li class="expedition">
+	<span role="link" tabindex="0" data-siloing="https://www.philibertnet.com/en/content/9-shipping-and-deadlines" title="Click for more informations">
+	<span class="iconwrapper"><span><svg class="icon svg-icon_rocket"><use xlink:href="#svg-icon_rocket"></use></svg></span></span><span class="text"><b>Your order
+	<br>shipped within 24h*</b></span></span>
+	</li>
+	</ul>
+	<p><span class="data-siloing" data-siloing="https://www.philibertnet.com/en/content/9-shipping-and-deadlines">*See our Shipping Conditions</span></p>
+	</div>
 	<div id="ukoomailing_left_form" class="block">
 	<div class="meeple-container">
 	<svg class="icon svg-icon_meeple_circle">
 	<use xlink:href="#svg-icon_meeple_circle"></use>
 	</svg>
 	</div>
-	<form action="/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html#ukoomailing_left_form" method="post" data-ajax="0">
+	<form action="/en/intrafin/64223-spirit-island-5425037740173.html#ukoomailing_left_form" method="post" data-ajax="0">
 	<p class="title_block">
 	<svg class="icon svg-icon_megaphone">
 	<use xlink:href="#svg-icon_megaphone"></use>
@@ -6560,7 +7066,7 @@ module.exports = {
 	<b>
 	Newsletters
 	</b>
-	Do not miss the fun news !
+	<span>Do not miss the fun news !</span>
 	</p>
 	<div>
 	<div>
@@ -6573,7 +7079,7 @@ module.exports = {
 	<label for="um_left_list_3">
 	<input type="checkbox" name="um_left_lists[]" id="um_left_list_3" value="3" />
 	The Newsletter
-	<span>Every month, all the fun news not to be missed.
+	<span>Every month, fun news, our offers, our promotions and a few surprises.
 	</span> </label>
 	</li>
 	<li>
@@ -6589,14 +7095,14 @@ module.exports = {
 	Wargames + Miniatures Games
 	<span>Every month, get all the news about Wargames and Miniatures Games.
 	</span> </label>
-	</li>
+	 </li>
 	<li>
 	<label for="um_left_list_10">
 	<input type="checkbox" name="um_left_lists[]" id="um_left_list_10" value="10" />
 	Role-playing Games
 	<span>Every month, get all the news about Role-playing games.</span> </label>
 	</li>
-	 </ul>
+	</ul>
 	</div>
 	</div>
 	<input type="hidden" name="um_left_lang" value="en" />
@@ -6608,6 +7114,30 @@ module.exports = {
 	<input type="text" name="um_left_delta" id="um_left_delta" value="" style="display:none !important;" />
 	</form>
 	</div>
+	<div id="block_reinsurance" class="block footer light hide-desktop">
+	<ul>
+	<li class="payment">
+	<span role="link" tabindex="0" data-siloing="https://www.philibertnet.com/en/content/5-secure-payment" title="Click for more informations">
+	<span class="iconwrapper"><span><svg class="icon svg-icon_sheriff"><use xlink:href="#svg-icon_sheriff"></use></svg></span></span><span class="text"><b>Secure payments</b> <span>with CIC and Paypal</span></span>
+	</span>
+	</li>
+	<li class="team">
+	<span data-siloing="https://www.philibertnet.com/en/content/4-about-us" title="Click for more informations">
+	<span class="iconwrapper"><span><svg class="icon svg-icon_meeples"><use xlink:href="#svg-icon_meeples"></use></svg></span></span><span class="text"><b>A team of game enthusiasts</b> <span>at your service since 1978</span></span></span>
+	</li>
+	<li class="shipping">
+	<span role="link" tabindex="0" data-siloing="https://www.philibertnet.com/en/content/9-shipping-and-deadlines" title="Click for more informations">
+	<span class="iconwrapper"><span><svg class="icon svg-icon_postman"><use xlink:href="#svg-icon_postman"></use></svg></span></span>
+	<span class="text"><b>Shipping from 1.95&euro;*</b> <span>Offered from 60&euro;</span></span></span>
+	</li>
+	<li class="expedition">
+	<span role="link" tabindex="0" data-siloing="https://www.philibertnet.com/en/content/9-shipping-and-deadlines" title="Click for more informations">
+	<span class="iconwrapper"><span><svg class="icon svg-icon_rocket"><use xlink:href="#svg-icon_rocket"></use></svg></span></span><span class="text"><b>Your order
+	<br>shipped within 24h*</b></span></span>
+	</li>
+	</ul>
+	<p><span class="data-siloing" data-siloing="https://www.philibertnet.com/en/content/9-shipping-and-deadlines">*See our Shipping Conditions</span></p>
+	</div>
 	<div id="footer_wrapper">
 	<footer>
 	<p id="rs-link">
@@ -6617,22 +7147,22 @@ module.exports = {
 	<p class="title_block">Information</p>
 	<ul>
 	<li class="item">
-	<a href="/en/contact-us">Contact us</a>
+	<span class="data-siloing" role="link" tabindex="0" data-siloing="/en/contact-us">Contact us</span>
 	</li>
 	<li class="item">
-	<a href="/en/content/9-shipping-and-deadlines">Shipping</a>
+	<span class="data-siloing" role="link" tabindex="0" data-siloing="/en/content/9-shipping-and-deadlines">Shipping</span>
 	</li>
 	<li class="item">
-	<a href="/en/content/4-about-us">About us</a>
+	<span data-siloing="/en/content/4-about-us">About us</span>
 	</li>
 	<li class="item">
-	<a href="/en/content/3-terms-of-sale">Terms of sale</a>
+	<span class="data-siloing" role="link" tabindex="0" data-siloing="/en/content/3-terms-of-sale">Terms of sale</span>
 	</li>
 	<li class="item">
-	<a href="/en/content/15-frequently-asked-questions">Frequently Asked Questions</a>
+	<span data-siloing="/en/content/15-frequently-asked-questions">Frequently Asked Questions</span>
 	</li>
 	<li class="item">
-	<a href="/en/content/3-terms-of-sale#article_7">Exchange and refund</a>
+	<span class="data-siloing" role="link" tabindex="0" data-siloing="/en/content/3-terms-of-sale#article_7">Exchange and refund</span>
 	</li>
 	</ul>
 	</div>
@@ -6648,7 +7178,7 @@ module.exports = {
 	<p class="title">Gift cards</p>
 	<p class="text">Be sure to please with a choice of more than 35.000 references.</p>
 	<p class="link">
-	<a href="/en/content/7-gift-vouchers">How does it work ?</a>
+	<span role="link" tabindex="0" data-siloing="/en/content/7-gift-vouchers">How does it work ?</span>
 	</p>
 	</div>
 	</li>
@@ -6662,7 +7192,7 @@ module.exports = {
 	<p class="title">Philibert affiliation</p>
 	<p class="text">Want to learn more about affiliation and how it works?</p>
 	<p class="link">
-	<a href="/en/content/51-programme-d-affiliation">Become affiliate!</a>
+	<span role="link" tabindex="0" data-siloing="/en/content/51-programme-d-affiliation">Become affiliate!</span>
 	</p>
 	</div>
 	</li>
@@ -6676,22 +7206,22 @@ module.exports = {
 	<p class="title">Game Libraries and associations</p>
 	<p class="text">We offer you conditions and offers adapted to your needs.</p>
 	<p class="link">
-	<a href="/en/module/ukooformpro/form?id_form=2">Associations, discover our offers</a>
+	<span data-siloing="/en/module/ukooformpro/form?id_form=2">Associations, discover our offers</span>
 	</p>
 	<p class="link">
-	<a href="/en/contact-us">Game Libraries, it&#039;s here!</a>
+	<span role="link" tabindex="0" data-siloing="/en/contact-us">Game Libraries, it&#039;s here!</span>
 	</p>
 	</div>
 	</li>
 	<li>
 	<div>
-	<span class="illus_vidberg"><img data-src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/illus_vidberg.png" data-srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/illus_vidberg_at2x.png 2x" alt="Illustration of Martin Vidberg" class="lazyload">
+	<span class="illus_vidberg"><img loading="lazy" src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/illus_vidberg.png" srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/illus_vidberg_at2x.png 2x" alt="Illustration of Martin Vidberg">
 	</span>
 	</div>
 	<div>
 	<p class="title">Martin Vidberg&#039;s Drawings</p>
 	<p class="link">
-	<a href="/en/module/ukooadvent/displaylist">Discover his illustrations</a>
+	<span data-siloing="/en/module/ukooadvent/displaylist">Discover his illustrations</span>
 	</p>
 	</div>
 	</li>
@@ -6702,13 +7232,13 @@ module.exports = {
 	<p class="title_block">Our shops</p>
 	<div>
 	<p>
-	<img data-src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/illus_shops.png" data-srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/illus_shops_at2x.png 2x" alt="Map of France with Strasbourg pointer" class="lazyload">
+	<img loading="lazy" src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/illus_shops.png" srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/illus_shops_at2x.png 2x" alt="Map of France with Strasbourg pointer">
 	</p>
 	<div>
 	<p class="title"><b>Philibert is also a shop in Strasbourg.</b></p>
 	<p>A team of game enthusiasts opens its doors for you.</p>
 	<p class="link">
-	<a href="/en/content/4-about-us">Discover the shop and the team</a>
+	<span data-siloing="/en/content/4-about-us">Discover the shop and the team</span>
 	</p>
 	</div>
 	</div>
@@ -6716,27 +7246,35 @@ module.exports = {
 	<div id="footer-social" class="block">
 	<div class="follow">
 	<p class="title_block">Follow us</p>
-	<ul>
-	<li><a href="https://twitter.com/PhilibertJeux" title="Follow us on Twitter" target="_blank" rel="noopener">
+	<ul class="socialnetwork-list">
+	<li>
+	<span data-siloing="https://twitter.com/PhilibertJeux" aria-label="Follow us on Twitter" title="Follow us on Twitter" target="_blank" rel="noreferrer noopener">
 	<svg class="icon svg-icon_twitter">
 	<use xlink:href="#svg-icon_twitter"></use>
 	</svg>
-	</a></li>
-	<li><a href="https://www.facebook.com/PhilibertJeux/" title="Follow us on Facebook" target="_blank" rel="noopener">
+	</span>
+	</li>
+	<li>
+	<span data-siloing="https://www.facebook.com/PhilibertJeux/" aria-label="Follow us on Facebook" title="Follow us on Facebook" target="_blank" rel="noreferrer noopener">
 	<svg class="icon svg-icon_facebook">
 	<use xlink:href="#svg-icon_facebook"></use>
 	</svg>
-	</a></li>
-	<li><a href="https://www.instagram.com/philibertjeux/" title="Follow us on Instagram" target="_blank" rel="noopener">
+	</span>
+	</li>
+	<li>
+	<span data-siloing="https://www.instagram.com/philibertjeux/" aria-label="Follow us on Instagram" title="Follow us on Instagram" target="_blank" rel="noreferrer noopener">
 	<svg class="icon svg-icon_instagram">
 	<use xlink:href="#svg-icon_instagram"></use>
 	</svg>
-	</a></li>
-	 <li><a href="https://www.youtube.com/user/PhilibertJeux" title="Follow us on Youtube" target="_blank" rel="noopener">
+	</span>
+	</li>
+	<li>
+	<span data-siloing="https://www.youtube.com/user/PhilibertJeux" aria-label="Follow us on Youtube" title="Follow us on Youtube" target="_blank" rel="noreferrer noopener">
 	<svg class="icon svg-icon_youtube">
 	<use xlink:href="#svg-icon_youtube"></use>
 	</svg>
-	</a></li>
+	</span>
+	</li>
 	</ul>
 	</div>
 	</div>
@@ -6748,35 +7286,55 @@ module.exports = {
 	<div>
 	<div id="footer-logos">
 	<div>
-	<img class="lazyload" data-src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/logos_payment.png" data-srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/logos_payment@2x.png 2x" alt="Payment logos">
+	<img loading="lazy" src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/logos_payment.png" srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/logos_payment@2x.png 2x" alt="Payment logos">
 	<p>Payment by credit card and administrative order</p>
 	</div>
 	<div>
-	<img class="lazyload" data-src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/logos_carriers.png" data-srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/logos_carriers@2x.png 2x" alt="Carrier logos">
+	<img loading="lazy" src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/logos_carriers.png" srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/logos_carriers@2x.png 2x" alt="Carrier logos">
+	</div>
+	<div>
+	<img class="footer-logos--lspace tooltips" loading="lazy" src="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/badges/badge-capital-jeux-jouets-2021.png?v=3" srcset="https://cdn1.philibertnet.com/themes/ukoostore/img/customer_specific/badges/badge-capital-jeux-jouets-2021@2x.png?v=3 2x" alt="Capital Awards - Best &quot;Generalist games and toys&quot; e-commerce site" title="Capital Awards - Best &quot;Generalist games and toys&quot; e-commerce site" width="160" height="55">
 	</div>
 	</div>
 	<p id="copyright">
-	<span>Copyright © 2018 www.philibertnet.com</span>
-	<a href="/en/content/2-legal-notice">Legals</a>
+	<span>Copyright © 2021 www.philibertnet.com</span>
+	<span class="data-siloing" role="link" tabindex="0" data-siloing="/en/content/2-legal-notice">Legals</span>
 	-
-	<a href="/en/content/52-privacy-policy">Privacy Policy</a>
+	<span class="data-siloing" data-siloing="/en/content/52-privacy-policy">Privacy Policy</span>
 	-
-	<a href="/en/sitemap">Sitemap</a>
+	<span class="data-siloing" role="link" tabindex="0" data-siloing="/en/sitemap">Sitemap</span>
 	</p>
 	<p id="ukoo">Creation
-	<a href="https://www.ukoo.fr" title="" target="_blank" rel="noopener">
+	<span data-siloing="https://www.ukoo.fr" aria-label="See Agence Ukoo Website" title="See Agence Ukoo Website" target="_blank" rel="noopener">
 	<svg class="icon svg-logo_ukoo">
 	<use xlink:href="#svg-logo_ukoo"></use>
 	</svg>
-	</a>
+	</span>
 	</p>
+	</div>
+	</div>
+	<div id="uk-searchFilterModal" class="uk-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="uk-modal-dialog uk-modal-dialog-centered uk-modal-dialog-scrollable" role="document">
+	<div class="uk-modal-content">
+	<div class="uk-modal-header">
+	<div id="_smartphone_searchfilter_title" class="uk-modal-title h2">
+	</div>
+	<a href="javascript:void(0);" data-dismiss="uk-modal" class="icon-delete uk-modal-header--close"></a>
+	</div>
+	<div class="uk-modal-body">
+	<div id="_smartphone_searchfilter"></div>
+	</div>
+	<div class="uk-modal-footer">
+	<a href="javascript:void(0);" data-submit-form data-dismiss="uk-modal" class="btn exclusive icon-check uk-modal-button--full">Apply my filters</a>
+	</div>
+	</div>
 	</div>
 	</div>
 	</div>
 	<noscript id="noscript_alert">
 		Our site requires Javascript to work correctly, now it seems to be deactivated on your browser. Please contact your IT manager.
 	</noscript>
-	<script type="9996bc0462fe4ac2e530701a-text/javascript">
+	<script type="3b2ae364050342e6707c608a-text/javascript">
 	var FancyboxI18nClose = 'Close';
 	var FancyboxI18nNext = 'Next';
 	var FancyboxI18nPrev = 'Previous';
@@ -6798,7 +7356,7 @@ module.exports = {
 	var currencyFormat = 2;
 	var currencyRate = 1;
 	var currencySign = '€';
-	var currentDate = '2019-12-15 08:39:53';
+	var currentDate = '2021-09-25 15:41:50';
 	var customerGroupWithoutTax = false;
 	var customizationFields = false;
 	var customizationId = null;
@@ -6811,11 +7369,10 @@ module.exports = {
 	var ecotaxTax_rate = 0;
 	var fieldRequired = 'Please fill in all the required fields before saving your customization.';
 	var groupReduction = 0;
-	var hasDeliveryAddress = false;
 	var highDPI = false;
-	var idDefaultImage = 377832;
+	var idDefaultImage = 404309;
 	var id_lang = 2;
-	var id_product = 53139;
+	var id_product = 64223;
 	var img_prod_dir = 'https://cdn2.philibertnet.com/img/p/';
 	var img_ps_dir = 'https://cdn2.philibertnet.com/img/';
 	var instantsearch = false;
@@ -6845,6 +7402,10 @@ module.exports = {
 	var loggin_required = 'You must be logged in to manage your wishlist.';
 	var loginUrl = 'https://www.philibertnet.com/en/my-account';
 	var maxQuantityToAllowDisplayOfLastQuantityMessage = 0;
+	var menu_contact_link = 'https://www.philibertnet.com/en/contact-us';
+	var menu_contact_title = 'Contact';
+	var menu_tracking_link = 'https://www.philibertnet.com/en/my-account';
+	var menu_tracking_title = 'Order tracking';
 	var minimalQuantity = 1;
 	var mmenu_noResults = 'No category found';
 	var mmenu_placeholder = 'Search a product';
@@ -6857,32 +7418,30 @@ module.exports = {
 	var priceDisplayMethod = 0;
 	var priceDisplayPrecision = 2;
 	var productAvailableForOrder = true;
-	var productBasePriceTaxExcl = 62.458333;
-	var productBasePriceTaxExcluded = 62.458333;
-	var productBasePriceTaxIncl = 74.95;
+	var productBasePriceTaxExcl = 59.958333;
+	var productBasePriceTaxExcluded = 59.958333;
+	var productBasePriceTaxIncl = 71.95;
 	var productHasAttributes = false;
-	var productPrice = 74.95;
-	var productPriceTaxExcluded = 62.458333;
-	var productPriceTaxIncluded = 74.95;
-	var productPriceWithoutReduction = 74.95;
-	var productReference = 'GTGSISLCORE-EN';
+	var productPrice = 71.95;
+	var productPriceTaxExcluded = 59.958333;
+	var productPriceTaxIncluded = 71.95;
+	var productPriceWithoutReduction = 71.95;
+	var productReference = 'INT-40173-FR';
 	var productShowPrice = true;
 	var productUnitPriceRatio = 0;
 	var product_fileButtonHtml = 'Choose File';
 	var product_fileDefaultHtml = 'No file selected';
 	var product_specific_price = [];
 	var publiclists = [];
+	var qp_ajax = '/modules/quickpass/ajax.php';
 	var quantitiesDisplayAllowed = false;
 	var quantityAvailable = 0;
-	var quickView = true;
+	var quickView = false;
 	var reduction_percent = 0;
 	var reduction_price = 0;
 	var responsiveSwitchBreakpoint = '1024';
 	var roundMode = 2;
 	var search_url = 'https://www.philibertnet.com/en/search';
-	var sharing_img = 'https://cdn3.philibertnet.com/377832/spirit-island-core-game.jpg';
-	var sharing_name = 'Spirit Island Core Game';
-	var sharing_url = 'https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html';
 	var specific_currency = false;
 	var specific_price = 0;
 	var static_token = 'bca22ff6b9609dad1a8de3313fc48838';
@@ -6892,7 +7451,7 @@ module.exports = {
 	var ukoo_mediego_count = 12;
 	var ukoo_mediego_engine = 'en';
 	var ukoo_mediego_format = 'prestashop';
-	var ukoo_mediego_referer = 'https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html';
+	var ukoo_mediego_referer = 'https://www.philibertnet.com/en/intrafin/64223-spirit-island-5425037740173.html';
 	var ukoo_mediego_source = 'client_product';
 	var ukoo_txt_readmore_close = 'Reduce';
 	var ukoo_txt_readmore_open = 'Read more';
@@ -6902,85 +7461,14 @@ module.exports = {
 	var wishlistProductsIds = false;
 	var wishlists = false;
 	</script>
-	<script type="9996bc0462fe4ac2e530701a-text/javascript" src="https://cdn1.philibertnet.com/themes/ukoostore/cache/v_1895_dfd6b83abfa7dfe0522ed263f122d940.js"></script>
-	<script type="9996bc0462fe4ac2e530701a-text/javascript" src="https://mediego.philibertnet.com/agent.js"></script>
-	<script type="9996bc0462fe4ac2e530701a-text/javascript">
-	var doofinder_script ='//cdn.doofinder.com/media/js/doofinder-classic.6.latest.min.js';
-	(function(d,t){var f=d.createElement(t),s=d.getElementsByTagName(t)[0];f.async=1;
-		f.src=('https:'==location.protocol?'https:':'http:')+doofinder_script;
-		f.setAttribute('charset','utf-8');
-		s.parentNode.insertBefore(f,s)}(document,'script'));
-	
-	var dfClassicLayers = [{
-		"hashid": "f449cb434a44c266d349556844fbe0a8",
-		"lang": "en",
-		"zone": "eu1",
-		"queryInput": "#search_query_top",
-		"display": {
-			"width": "80%",
-			"align": "center",
-			"facets": {
-			  "attached": "left"
-			}
-		},
-		//LANGUAGE PART:
-		callbacks: {
-			resultsReceived: function(res){
-				res.results.forEach(function(result){
-					var id = result.id;
-					var dfdom = doofinder.core.util.dfdom;
-					var httpClient = new doofinder.core.util.http(ssl=true);
-					var options = {
-						host: "www.philibertnet.com",
-						path: "/scripts_ukoo/getProductLanguage.php?token=BvXems33pk&id_product=" + id
-					};
-					httpClient.request(options,
-						function(err, lang_res){
-							if (typeof(lang_res) != "undefined" && lang_res != null) {
-								var language = lang_res["language"];
-								if (language) {
-									var link = $("a[data-df-hitcounter='" + result.dfid + "']");
-									if (!(link.find(".df-languages_old").length)) {
-										var languageWrapper = document.createElement("div");
-										$(languageWrapper).addClass("df-languages_old");
-										languageWrapper.innerHTML = language;
-										link.append(languageWrapper);
-									}
-								}
-							}
-						}
-					);
-				});
-			}
-		}
-	}];
+	<script type="3b2ae364050342e6707c608a-text/javascript" src="https://cdn2.philibertnet.com/themes/ukoostore/cache/v_2013_38951a826370fae48dce7f7f7c403c12.js"></script>
+	<script type="3b2ae364050342e6707c608a-text/javascript" src="https://mediego.philibertnet.com/agent.js"></script>
+	<script type="3b2ae364050342e6707c608a-text/javascript" src="https://eu1-search.doofinder.com/5/script/f449cb434a44c266d349556844fbe0a8.js"></script>
+	<script type="3b2ae364050342e6707c608a-text/javascript">
 	var dfProductLinks = [];
 	  var dfLinks = Object.keys(dfProductLinks);
-	  if(dfLinks.length){
-		  $(document).on('ready', function(){
-			  $('a').click(function(){
-				  var link = $(this);
-				  var href = $(this).attr('href');
-				  var dfLayer;
-				  if(typeof(dfClassicLayers)!='undefined'){
-					  dfLayer = dfClassicLayers[0];
-				  }
-				  else if (typeof(dfFullscreenLayers)!='undefined'){
-					  dfLayer = dfFullscreenLayers[0];
-				  }
-				  dfLinks.forEach(function(item){
-					  if(href.indexOf(item) > -1 && typeof(dfLayer) != 'undefined'){
-						  var hashid = dfLayer.layerOptions.hashid;
-						var cookie = Cookies.getJSON('doofhit' + hashid);
-						var query = cookie.query;
-						  dfLayer.controller.registerClick(dfProductLinks[item], {
-							  "query": query
-						  });
-					  }
-				  });
-			  });
-		  });
-	  }
+	  var doofinderAppendAfterBanner = "none";
+	  var doofinderQuerySelector = "#search_query_top";
 	// <![CDATA[
 	$('document').ready(function() {
 	
@@ -7016,38 +7504,14 @@ module.exports = {
 	});
 	// ]]>
 	var img_dir = 'https://cdn1.philibertnet.com/themes/ukoostore/img/';
-	var generated_date = 1576395593;
+	var generated_date = 1632577310;
 		var img_dir = 'https://cdn1.philibertnet.com/themes/ukoostore/img/';
 		var freeShippingTranslation = 'Free shipping !';
-	$('document').ready(function () {
-			$('#send_friend_button').fancybox({
-				'hideOnContentClick': false
-			});
-	
-			$('#sendEmail').click(function () {
-	
-				var name = $('#friend_name').val();
-				var email = $('#friend_email').val();
-				var id_product = $('#id_product_comment_send').val();
-				if (name && email && !isNaN(id_product)) {
-					$.ajax({
-						url: "/modules/sendtoafriend/sendtoafriend_ajax.php", 
-						type: "POST",
-						headers: {"cache-control": "no-cache"},
-						data: {action: 'sendToMyFriend', secure_key: '4aee3d6bad3f7f484c8cd5047656417a', name: name, email: email, id_product: id_product}, 
-						dataType: "json",
-						success: function (result) {
-							$.fancybox.close();
-							var msg = result ? "Your e-mail has been sent successfully" : "Your e-mail could not be sent. Please check the e-mail address and try again.";
-							var title = "Send to a friend";
-							fancyMsgBox(msg, title);
-						}
-					});
-				}
-				else
-					$('#send_friend_form_error').text("You did not fill required fields");
-			});
-		});
+		var freeShippingTranslation2 = 'Free';
+		var ajax_cart_quantity_txt = 'product';
+		var ajax_cart_quantity_txt_plural = 'products';
+		var ajax_cart_quantity_txt_null = 'Empty cart';
+	var hasDeliveryAddress = 0;
 	// <![CDATA[
 	oosHookJsCodeFunctions.push('oosHookJsCodeMailAlert');
 	
@@ -7060,7 +7524,7 @@ module.exports = {
 		$.ajax({
 			type: 'POST',
 			url: "https://www.philibertnet.com/en/module/mailalerts/actions?process=check",
-			data: 'id_product=53139&id_product_attribute='+$('#idCombination').val(),
+			data: 'id_product=64223&id_product_attribute='+$('#idCombination').val(),
 			success: function (msg) {
 				if ($.trim(msg) == '0') {
 					$('#mailalert_link').show();
@@ -7078,7 +7542,7 @@ module.exports = {
 		$.ajax({
 			type: 'POST',
 			url: "https://www.philibertnet.com/en/module/mailalerts/actions?process=add",
-			data: 'id_product=53139&id_product_attribute='+$('#idCombination').val()+'&customer_email='+$('#oos_customer_email').val()+'',
+			data: 'id_product=64223&id_product_attribute='+$('#idCombination').val()+'&customer_email='+$('#oos_customer_email').val()+'',
 			success: function (msg) {
 				if ($.trim(msg) == '1') {
 					$('#mailalert_link').hide();
@@ -7113,36 +7577,52 @@ module.exports = {
 	$(document).ready(function () {
 			// [ukoo_gilles] [2019-04-03 14:45] -> on récupère directement l'onglet occasion suite au chargement de la page
 			// afin d'injecter le bloc "Disponible en occasion à partir de ..." dans le bloc d'ajout au panier
-			let id_tab = 2;
+			var id_tab = 2;
 			if (!$(document).find('.ukoosummary_group[data-id-tab="' + id_tab + '"]').hasClass('loaded')) {
 				$(document).find('.ukoosummary_group[data-id-tab="' + id_tab + '"]').addClass('loaded')
 				$(document).find('.ukoosummary_group[data-id-tab="' + id_tab + '"]').each(function () {
-					loadGroupProducts($(this));
+					loadGroupProducts($(this), 0);
+				});
+			}
+			if (!$(document).find('.ukoosummary_category[data-id-tab="' + id_tab + '"]').hasClass('loaded')) {
+				$(document).find('.ukoosummary_category[data-id-tab="' + id_tab + '"]').addClass('loaded')
+				$(document).find('.ukoosummary_category[data-id-tab="' + id_tab + '"]').each(function () {
+					loadGroupProducts($(this), 1);
 				});
 			}
 	
-			// on ne charge les blocs de produits associés d'un onglet qu'à l'affichage de ce dernier (au clic)
+			// on ne charge les blocs de produits associés des autres onglets qu'à l'affichage de ces derniers (au clic)
 			$(document).on('click', '.responsiveTabs a[href*=#tab-associated-]', function () {
-				let id_tab = $(this).attr('href').toString().slice(-1);
+				var id_tab = $(this).attr('href').toString().slice(-1);
 				if (!$(document).find('.ukoosummary_group[data-id-tab="' + id_tab + '"]').hasClass('loaded') && id_tab !== '2') {
 					$(document).find('.ukoosummary_group[data-id-tab="' + id_tab + '"]').addClass('loaded')
 					$(document).find('.ukoosummary_group[data-id-tab="' + id_tab + '"]').each(function () {
-						loadGroupProducts($(this));
+						loadGroupProducts($(this), 0);
+					});
+				}
+				if (!$(document).find('.ukoosummary_category[data-id-tab="' + id_tab + '"]').hasClass('loaded') && id_tab !== '2') {
+					$(document).find('.ukoosummary_category[data-id-tab="' + id_tab + '"]').addClass('loaded')
+					$(document).find('.ukoosummary_category[data-id-tab="' + id_tab + '"]').each(function () {
+						loadGroupProducts($(this), 1);
 					});
 				}
 			});
 		});
 	
-		function loadGroupProducts(elt) {
+		function loadGroupProducts(elt, is_category_group) {
 			var datas = null;
 			$.ajax({
 				type: 'POST',
 				url: baseDir + 'modules/ukoosummary/ajax.php?task=ajax_process_load_products',
 				data: {
 					id_tab: $(elt).data('id-tab'),
+					is_category_group: parseInt(is_category_group),
 					id_group: $(elt).data('id-group'),
+					id_category: $(elt).data('id-category'),
 					// [ukoo_damien] [2019-05-14 16:35] -> Ajout de l'id produit pour utiliser cette variable dans l'ajax de recherche des produits associés et éviter le problème du module mailalert #18755
-					id_product: 53139
+					id_product: 64223,
+					// [ukoo_damien] [2020-10-02 15:10] -> #17097 - On récupère le data pour pouvoir récupérer uniquement les produits en stock
+					display_instock: $(elt).data('display_instock'),
 				},
 				dataType: 'json',
 				error: function (jqXHR, textStatus, errorThrown) {
@@ -7151,40 +7631,40 @@ module.exports = {
 				success: function (data) {
 					if (data.status === 'ok') {
 						datas = data;
+						var group_type_id_prefix = (is_category_group ?
+								'#ukoosummary_bloc_summary_category_' + $(elt).data('id-category')
+									: '#ukoosummary_bloc_summary_group_' + $(elt).data('id-group'));
 						// [ukoo_sebastien.f] [2018-09-06 15:20] -> si il existe des produits
 						if (datas.product_list.match('ajax_block_product') != null) {
-	
-							$('#ukoosummary_bloc_summary_group_' + $(elt).data('id-group') + '_tab_' +
-								$(elt).data('id-tab')).append(data.product_list).find('.owl-carousel').owlCarousel({
-								responsive: {
-									0: {
-										items: 1,
+							$(group_type_id_prefix + '_tab_' + $(elt).data('id-tab')).append(data.product_list)
+								.find('.owl-carousel').owlCarousel({
+									responsive: {
+										0: {
+											items: 1,
+										},
+										1024: {
+											items: 2,
+										},
+										1280: {
+											items: 3,
+										},
 									},
-									1024: {
-										items: 2,
-									},
-									1280: {
-										items: 3,
-									},
-								},
-								margin: 15,
-								autoplay: false,
-								autoplayTimeout: 3000,
-								autoplayHoverPause: true,
-								nav: true,
-								rewind: true,
-								lazyLoad: true
-								//onInitialized: carousel_items_setHeight,
-								//onRefreshed: carousel_items_setHeight,
-							});
+									margin: 15,
+									autoplay: false,
+									autoplayTimeout: 3000,
+									autoplayHoverPause: true,
+									nav: true,
+									rewind: true,
+									lazyLoad: true
+									//onInitialized: carousel_items_setHeight,
+									//onRefreshed: carousel_items_setHeight,
+								});
 	
 							// on réapplique l'écouteur sur les boutons d'ajout au panier pour prendre en compte ceux
 							// qui viennent d'être chargés en ajax
 							ajaxCart.overrideButtonsInThePage();
-	
 						} else { // [ukoo_sebastien.f] [2018-09-06 15:20] -> sinon supprimer bloc
-							$('#ukoosummary_bloc_summary_group_' + $(elt).data('id-group') + '_tab_' +
-								$(elt).data('id-tab')).remove();
+							$(group_type_id_prefix + '_tab_' + $(elt).data('id-tab')).remove();
 						}
 	
 						// Lors de la récupération des produits du groupe occasions
@@ -7194,11 +7674,11 @@ module.exports = {
 							&& data.occasion_from_price !== ''
 						) {
 							$('#availability_statut').before(
-								'<!-- Injecté depuis ukoosummary-product-tab-content-content.tpl --><p class="occasion_from_price"><a href="javascript:void(0);" onclick="$(\'#more_info_block .responsiveTabs\').responsiveTabs(\'activate\', ($(\'div#more_info_block ul.r-tabs-nav li.r-tabs-tab\').length - 1)); location.hash=\'#more_info_block\'">Disponible en occasion à partir de <b>' +
+								'<!-- Injecté depuis ukoosummary-product-tab-content-content.tpl --><p class="occasion_from_price"><a href="#more_info_block" onclick="$(\'#more_info_block a.tab-associated-2\').click();">Disponible en occasion à partir de <b>' +
 								data.occasion_from_price + '</b></a></p>');
 						}
 					} else {
-						alert(data.message);
+						console.error('ukoosummary : ' + data.message);
 					}
 				}
 			});
@@ -7236,17 +7716,7 @@ module.exports = {
 	
 	
 		//    [ukoo_guillaume] [2017-06-13 15:58] -> End of Zopim Live Chat Script
-	$(document).ready(function() {
-			// on lance une première fois le chargement différé des blocs qui sont déjà dans le champ de vision
-			// au chargement de la page
-			if ($(document).find('.ajax_module_block').length) {
-				checkAjaxLoadRequired();
-	
-				// lors du scroll, on relance le chargement des blocs différés
-				$(window).scroll(checkAjaxLoadRequired);
-			}
-		});
-	
+	// START - Chargement différés "à la demande" de certains blocs module (ayant la classe ajax_module_block)
 		function checkAjaxLoadRequired() {
 			$(document).find('.ajax_module_block').each(function() {
 				if ($(this).hasClass('ajax_module_block') && elementInView(this)) {
@@ -7280,30 +7750,20 @@ module.exports = {
 				contentType: 'json',
 				success: function(data) {
 					if (data.status === 'ok') {
-						content = data.content;
+						var content = data.content;
+	
 						if (params.module === 'blockviewed') {
 							$('#' + params.id).html(content);
-						} else if (params.module === 'ukoopreorder') {
-							var preorder_content = $(content).find('ul#ul_ukoopreorder_preorder');
-							var coming_soon_content = $(content).find('ul#ul_ukoopreorder_comingsoon');
-							$('#' + params.id + '  .ajax_block_loader').replaceWith(preorder_content);
-							$('#ukoopreorder-comingsoon-home .ajax_block_loader').replaceWith(coming_soon_content);
-	
-							if (!$('#' + params.id).find('.ajax_block_product').length) {
-								$('#' + params.id).find('.view-more').remove();
-							}
-	
-							if (!$('#ukoopreorder-comingsoon-home').find('.ajax_block_product').length) {
-								$('#ukoopreorder-comingsoon-home').find('.view-more').remove();
-							}
 						} else if (params.module === 'ukooreviews') {
-							$('#' + params.id + '  .ajax_block_loader').first().replaceWith($(content).find('ul')[0]);
-							$('#' + params.id + '  .ajax_block_loader').last().replaceWith($(content).find('ul')[1]);
+							$('#' + params.id + '  .ajax_block_loader').first().replaceWith($(content).find('.uk-reviews-home__products-container')[0]);
+							$('#' + params.id + '  .ajax_block_loader').last().replaceWith($(content).find('.uk-reviews-home__products-container')[1]);
 						} else if (params.module === 'youtubewall') {
 							$('#' + params.id + '  .title_block').append($(content).find('#youtuwall-subscribe-custom'));
 							$('#' + params.id + '  .ajax_block_loader').replaceWith($(content).find('#youtuwall'));
 						} else {
-							content = $(content).find('ul');
+							// [ukoo_gilles] [2019-12-19 10:55] -> bugfix - on cible le 1er élément ul uniquement sinon la
+							//  structure HTML injectée n'est plus bonne
+							content = $(content).find('ul').first();
 							$('#' + params.id + '  .ajax_block_loader').replaceWith(content);
 	
 							if (!$('#' + params.id).find('.ajax_block_product').length) {
@@ -7312,34 +7772,10 @@ module.exports = {
 						}
 						// l'id contenu dans params.id n'existe maintenant plus dans le DOM
 	
-						if (params.module === 'ukooreviews') {
-							$(document).find('#blockukooreviews-home .owl-carousel').owlCarousel({
-								responsive: {
-									0: {
-										items: 1
-									},
-									480: {
-										items: 2
-									},
-									768: {
-										items: 3
-									},
-									1024: {
-										items: 4
-									},
-									1280: {
-										items: 5
-									}
-								},
-								margin: 15,
-								autoplay: true,
-								autoplayTimeout: 3000,
-								autoplayHoverPause: true,
-								nav: true,
-								rewind: true,
-								lazyLoad: true
-							});
-						} else if (params.module === 'blockviewed') {
+						if (params.module === 'blockviewed') {
+							if (typeof ajaxCart !== 'undefined') {
+								ajaxCart.overrideButtonsInThePage();
+							}
 							$("#product #viewed-products_block_left .owl-carousel").owlCarousel({
 								responsive: {
 									0: {
@@ -7381,8 +7817,22 @@ module.exports = {
 	
 			return elementBottom > viewportTop && elementTop < viewportBottom;
 		}
+		// END - Chargement différés "à la demande" de certains blocs module (ayant la classe ajax_module_block)
+	
+		$(document).ready(function() {
+			// START - Chargement différés "à la demande" de certains blocs module (ayant la classe ajax_module_block)
+			// on lance une première fois le chargement différé des blocs qui sont déjà dans le champ de vision
+			// au chargement de la page
+			if ($(document).find('.ajax_module_block').length) {
+				checkAjaxLoadRequired();
+	
+				// lors du scroll, on relance le chargement des blocs différés
+				$(window).scroll(checkAjaxLoadRequired);
+			}
+			// END - Chargement différés "à la demande" de certains blocs module (ayant la classe ajax_module_block)
+		});
 	</script>
-	<script type="9996bc0462fe4ac2e530701a-text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8df6e7f247","applicationID":"300230747","transactionName":"NAABYRRRXRUCBUMNXg1KNkcPH1oIBwNPSkELFQ==","queueTime":0,"applicationTime":256,"atts":"GEcCF1xLThs=","errorBeacon":"bam.nr-data.net","agent":""}</script><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="9996bc0462fe4ac2e530701a-|49" defer=""></script></body></html>	
+	<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="3b2ae364050342e6707c608a-|49" defer=""></script></body></html>
 	`,
 
 
