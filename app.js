@@ -4,7 +4,7 @@ const cors = require('cors')
 const HANDLERS = {
     lautapelit: require('./parsers/lautapelit.js'),
     fantasiapelit: require('./parsers/fantasiapelit.js'),
-    puolenkuunpelit: require('./parsers/puolenkuunpelit.js'),
+    // puolenkuunpelit: require('./parsers/puolenkuunpelit.js'),
     poromagia: require('./parsers/poromagia.js'),
     pelipeikko: require('./parsers/pelipeikko.js'),
     philibertnet: require('./parsers/philibertnet.js'),
