@@ -19,7 +19,7 @@ async function query(querystring){
             imageUrl: 'https://poromagia.com' + el.firstChild.firstChild.firstChild.firstChild.getAttribute('src'),
             price: price,
             available: getAvailability(el),
-            itemUrl: 'https://poromagia.com' + el.childNodes[1].firstChild.firstChild.getAttribute('href'),
+            itemUrl: 'https://lautapelit.poromagia.com' + el.childNodes[1].firstChild.firstChild.getAttribute('href'),
             currency: '€',
         })
     }
@@ -37,10 +37,8 @@ function getPrice(el){
 
 function getAvailability(el){
     el = getPriceContainer(el)
-    if(el.childNodes.length == 2){
-        return el.childNodes[1].firstChild.textContent.includes('In stock')
-    } else {
-        return el.childNodes[1].textContent.includes('In stock')
+    if(el.childNodes[1].textContent){
+        return el.childNodes[1].textContent.includes('Total availability')
     }
 }
 

@@ -129,8 +129,8 @@ describe("Intergration", function(){
         item.should.have.property('currency');
     })
 
-    xit("Philibertnet", async()=>{
-        let res = await chai.request(server).get('/query/philibertnet/dungeon%20lords')
+    it("Philibertnet", async()=>{
+        let res = await chai.request(server).get('/query/philibertnet/decrypto')
         res.should.have.status(200);
         res.body.shop.should.equal('philibertnet');
 
@@ -211,7 +211,7 @@ describe("Unit", function(){
         item.should.have.property('available', false);
     })
 
-    it("Poromagia", async function(){
+    it.only("Poromagia", async function(){
         let qs = 'spirint%20island'
         nock('https://lautapelit.poromagia.com')
         .get('/en/search/?q=' + qs)
@@ -219,16 +219,12 @@ describe("Unit", function(){
 
         res = await poromagia(qs)
         item = res[0]
-        item.should.have.property('name', 'Spirit Island: Branch & Claw');
-        item.should.have.property('imageUrl', 'https://poromagia.com/media/cache/d7/c0/d7c0f057cee88ed86b37767114be6697.jpg');
-        item.should.have.property('price', 29.95);
+        item.should.have.property('name', 'Spirit Island');
+        item.should.have.property('imageUrl', 'https://poromagia.com/media/cache/46/eb/46eb3286c16b306fb67a9624192b9a0b.jpg');
+        item.should.have.property('price', 74.95);
         item.should.have.property('available', true);
-        item.should.have.property('itemUrl', 'https://poromagia.com/en/catalogue/spirit-island-branch-claw-exp_147062/');
+        item.should.have.property('itemUrl', 'https://lautapelit.poromagia.com/en/catalogue/spirit-island_147056/');
         item.should.have.property('currency', '€');
-
-        item = res[1]
-        item.should.have.property('price', 71.95);
-        item.should.have.property('available', false);
     })
 
     it("Poromagia Discount", async function(){
@@ -265,27 +261,19 @@ describe("Unit", function(){
         item.should.have.property('available', true);
     })
 
-    xit("Philibertnet", async function(){
-        let qs = 'spirint%20island'
-        nock('https://www.philibertnet.com')
-        .get('/en/search?ajaxSearch=1&id_lang=2&q=' + qs)
+    it.only("Philibertnet", async function(){
+        let qs = 'decrypto'
+        nock('https://eu1-search.doofinder.com')
+        .get('/5/search?hashid=f449cb434a44c266d349556844fbe0a8&query_counter=5&page=1&rpp=30&transformer=basic&query=' + qs)
         .reply(200, mockResponses.RESPONSE_PHILIBERTNET)
-        .get('/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html')
-        .reply(200, mockResponses.RESPONSE_PHILIBERTNET_SPIRIT_ISLAND)
-        .get('/en/folded-space/78145-spirit-island-insert-3800500972596.html')
-        .reply(200, mockResponses.RESPONSE_PHILIBERTNET_SPIRIT_ISLAND_INSERT)
 
         res = await philibertnet(qs)
         item = res[0]
-        item.should.have.property('name', 'Spirit Island Core Game');
-        item.should.have.property('imageUrl', 'https://cdn3.philibertnet.com/404309-large_default/spirit-island.jpg');
-        item.should.have.property('price', 71.95);
-        item.should.have.property('available', false);
-        item.should.have.property('itemUrl', 'https://www.philibertnet.com/en/greater-than-games-llc/53139-spirit-island-core-game-798304339291.html');
+        item.should.have.property('name', 'Decrypto');
+        item.should.have.property('imageUrl', 'https://cdn2.philibertnet.com/390676-medium_default/decrypto.jpg');
+        item.should.have.property('price', 19.9);
+        item.should.have.property('available', undefined);
+        item.should.have.property('itemUrl', 'https://www.philibertnet.com/en/le-scorpion-masque/56970-decrypto-807658000709.html');
         item.should.have.property('currency', '€');
-
-        item = res[1]
-        item.should.have.property('price', 15.95);
-        item.should.have.property('available', false);
     })
 })

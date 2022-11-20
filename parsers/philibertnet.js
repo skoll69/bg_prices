@@ -2,20 +2,19 @@ const rp = require('request-promise')
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-const baseUrl = 'https://www.philibertnet.com/en/search?ajaxSearch=1&id_lang=2&q='
+// const baseUrl = 'https://www.philibertnet.com/en/search?ajaxSearch=1&id_lang=2&q='
+const baseUrl = 'https://eu1-search.doofinder.com/5/search?hashid=f449cb434a44c266d349556844fbe0a8&query_counter=5&page=1&rpp=30&transformer=basic&query='
 
 async function query(querystring){
-    let data = await rp(baseUrl + querystring, {json: true, gzip: false})
+    let data = await rp(baseUrl + querystring, {json: true, gzip: false, headers: {origin: 'https://www.philibertnet.com'}})
     let out = [];
-    for (const el of data) {
-        let html = await rp(el.product_link)
-        let { document } = (new JSDOM(html)).window
+    for (const item of data.results) {
         out.push({
-            name: el.pname,
-            imageUrl: document.querySelector('#bigpic').getAttribute('data-cfsrc'),
-            price: _getPrice(document),
-            available: document.querySelectorAll('#availability_value')[0].getAttribute('class').includes('label-success'),
-            itemUrl: el.product_link,
+            name: item.title,
+            imageUrl: item.image_link,
+            price: _getPrice(item),
+            available: undefined,
+            itemUrl: item.link,
             currency: '€',
         })
     }
@@ -25,7 +24,6 @@ async function query(querystring){
 
 module.exports = query
 
-function _getPrice(document) {
-    const el = document.querySelectorAll('#our_price_display')[0];
-    return el ? Number(el.getAttribute('content')) : 0;
+function _getPrice(item) {
+    return item.sale_price || item.price;
 }

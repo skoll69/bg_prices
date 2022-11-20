@@ -1,5 +1,5 @@
 <template>
-  <div v-if="showUnavailable || data.available">
+  <div v-if="showUnavailable || _available">
     <table class="table">
       <tr>
         <td class="image_td"><img class="thumbnail" :src="data.imageUrl || '/na.png'" /></td>
@@ -17,8 +17,20 @@
 export default {
   props: ['data', 'showUnavailable'],
   data(){
+    let availability_icon = '/question_mark.png';
+    if (this.data.available === true) {
+      availability_icon = '/yes.png';
+    }
+    if (this.data.available === false) {
+      availability_icon = '/no.png';
+    }
     return {
-      availability_icon: this.data.available ? "/yes.png" : "/no.png",
+      availability_icon,
+    }
+  },
+  computed: {
+    _available: function(){
+      return this.data.available || this.data.available === undefined;
     }
   }
 }

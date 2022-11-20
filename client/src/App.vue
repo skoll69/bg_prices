@@ -58,13 +58,15 @@ export default {
             shop.searching = false
         })
       });
-      axios.get(API_BASE_URL + 'query/' + 'lautapelit/' + this.querystring).then(response => {
-          let index = this.shopIndex[response.data.shop]
-          let shop = this.shops[index]
-          shop.data = response.data.data
-          this.$set(this.shops, index, shop)
+      // axios.get(API_BASE_URL + 'query/' + 'lautapelit/' + this.querystring).then(response => {
+      //     let index = this.shopIndex[response.data.shop]
+      //     let shop = this.shops[index]
+      //     console.log('in res');
+      //     console.log(response);
+      //     shop.data = response.data.data
+      //     this.$set(this.shops, index, shop)
 
-      })
+      // })
     } 
   },
   mounted: function(){
