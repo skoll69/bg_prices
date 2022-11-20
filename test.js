@@ -40,7 +40,7 @@ describe("Intergration", function(){
             .get('/handlers/')
             .end((err, res) => {
                 res.should.have.status(200);
-                res.body.should.have.length(6);
+                res.body.should.have.length(5);
                 done();
             })
     })
@@ -87,7 +87,7 @@ describe("Intergration", function(){
         item.should.have.property('currency');
     })
 
-    it("Puolenkuunpelit", async()=>{
+    xit("Puolenkuunpelit", async()=>{
         let res = await chai.request(server).get('/query/puolenkuunpelit/dungeon%20lords')
         res.should.have.status(200);
         res.body.shop.should.equal('puolenkuunpelit');
@@ -102,11 +102,12 @@ describe("Intergration", function(){
     })
 
     it("Poromagia", async()=>{
-        let res = await chai.request(server).get('/query/poromagia/dungeon%20lords')
+        let res = await chai.request(server).get('/query/poromagia/spirit%20island')
         res.should.have.status(200);
         res.body.shop.should.equal('poromagia');
 
         let item = res.body.data[0]
+        console.log(item);
         item.should.have.property('name');
         item.should.have.property('imageUrl');
         item.should.have.property('price');
@@ -191,7 +192,7 @@ describe("Unit", function(){
         item.should.have.property('available', false);
     })
 
-    it("Puolenkuunpelit", async function(){
+    xit("Puolenkuunpelit", async function(){
         let qs = 'dungeon%20lords'
         nock('https://www.puolenkuunpelit.com')
         .get('/kauppa/advanced_search_result.php?manufacturers_id=23&keywords=' + qs)
