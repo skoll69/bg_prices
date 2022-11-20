@@ -7,7 +7,7 @@ const HANDLERS = {
     // puolenkuunpelit: require('./parsers/puolenkuunpelit.js'),
     poromagia: require('./parsers/poromagia.js'),
     pelipeikko: require('./parsers/pelipeikko.js'),
-    philibertnet: require('./parsers/philibertnet.js'),
+    // philibertnet: require('./parsers/philibertnet.js'),
 }
 
 const app = express()

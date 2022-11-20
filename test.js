@@ -40,7 +40,7 @@ describe("Intergration", function(){
             .get('/handlers/')
             .end((err, res) => {
                 res.should.have.status(200);
-                res.body.should.have.length(5);
+                res.body.should.have.length(4);
                 done();
             })
     })
@@ -107,7 +107,6 @@ describe("Intergration", function(){
         res.body.shop.should.equal('poromagia');
 
         let item = res.body.data[0]
-        console.log(item);
         item.should.have.property('name');
         item.should.have.property('imageUrl');
         item.should.have.property('price');
@@ -130,7 +129,7 @@ describe("Intergration", function(){
         item.should.have.property('currency');
     })
 
-    it("Philibertnet", async()=>{
+    xit("Philibertnet", async()=>{
         let res = await chai.request(server).get('/query/philibertnet/dungeon%20lords')
         res.should.have.status(200);
         res.body.shop.should.equal('philibertnet');
@@ -266,7 +265,7 @@ describe("Unit", function(){
         item.should.have.property('available', true);
     })
 
-    it("Philibertnet", async function(){
+    xit("Philibertnet", async function(){
         let qs = 'spirint%20island'
         nock('https://www.philibertnet.com')
         .get('/en/search?ajaxSearch=1&id_lang=2&q=' + qs)
