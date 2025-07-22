@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.21.2",
     "jsdom": "^16.5.0",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "serve-static": "^1.14.1"
+    "serve-static": "^1.16.2"
   },
   "devDependencies": {
     "chai": "^4.3.4",
@@ -30,6 +30,6 @@
     "webpack-node-externals": "^1.7.2"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   }
 }
